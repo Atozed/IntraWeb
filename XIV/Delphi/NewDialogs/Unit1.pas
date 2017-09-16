@@ -1,0 +1,111 @@
+unit Unit1;
+
+interface
+
+uses
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
+  IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompButton,
+  IWCompLabel, IWCompEdit, IWCompRadioButton, IWCompExtCtrls, IWCompCheckbox;
+
+type
+  TIWForm1 = class(TIWAppForm)
+    IWButton1: TIWButton;
+    edtMessage: TIWEdit;
+    IWLabel1: TIWLabel;
+    IWRadioGroup1: TIWRadioGroup;
+    chkTitle: TIWCheckBox;
+    edtTitle: TIWEdit;
+    procedure IWAppFormCreate(Sender: TObject);
+    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
+  private
+    procedure ShowDialogs(const Msg, Title: string; Option: Integer);
+    procedure MyConfirmCallback(EventParams: TStringList);
+    procedure MyPromptCallback(EventParams: TStringList);
+  public
+  end;
+
+implementation
+
+{$R *.dfm}
+
+procedure TIWForm1.IWAppFormCreate(Sender: TObject);
+begin
+  WebApplication.RegisterCallBack('MyConfirmCallback', MyConfirmCallback);
+  WebApplication.RegisterCallBack('MyPromptCallback', MyPromptCallback);
+end;
+
+procedure TIWForm1.IWButton1AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+var
+  aTitle: string;
+begin
+  aTitle := edtTitle.Text;
+  if not chkTitle.Checked then
+    aTitle := '';  // empty title is not shown in dialog!
+  ShowDialogs(edtMessage.Text, aTitle, IWRadioGroup1.ItemIndex + 1);
+end;
+
+procedure TIWForm1.MyConfirmCallback(EventParams: TStringList);
+var
+  Response: Boolean;
+  SelectedButton: string;
+  MsgType: TIWNotifyType;
+begin
+  // Confirm callback has 1 main parameters:
+  // RetValue (Boolean), indicates if the first button (Yes/OK/custom) was choosen
+  Response := SameText(EventParams.Values['RetValue'], 'True');
+  if Response then begin
+    SelectedButton := 'Yes';
+    MsgType := ntSuccess;
+  end
+  else begin
+    SelectedButton := 'No';
+    MsgType := ntError;
+  end;
+  WebApplication.ShowNotification('This is the callback. ' +
+                                  'The selected button was: ' + SelectedButton,
+                                  MsgType);
+end;
+
+procedure TIWForm1.MyPromptCallback(EventParams: TStringList);
+var
+  Response: Boolean;
+  InputValue: string;
+  SelectedButton: string;
+  MsgType: TIWNotifyType;
+  Msg: string;
+begin
+  // Prompt callback has 2 main parameters:
+  // RetValue (Boolean), indicates if the first button (Yes/OK/custom) was choosen
+  // InputStr, contains the string entered in the input box
+  Response := SameText(EventParams.Values['RetValue'], 'True');
+  InputValue := EventParams.Values['InputStr'];
+  if Response then begin
+    SelectedButton := 'OK';
+    MsgType := ntSuccess;
+  end
+  else begin
+    SelectedButton := 'Cancel';
+    MsgType := ntError;
+  end;
+  Msg := 'This is the callback. The selected button was: ' + SelectedButton;
+  if Response then
+    Msg := Msg + ', and the string entered was: ' + InputValue;
+
+  WebApplication.ShowNotification(Msg, MsgType);
+end;
+
+procedure TIWForm1.ShowDialogs(const Msg, Title: string; Option: Integer);
+begin
+  case Option of
+    1: WebApplication.ShowMessage(Msg);
+    2: WebApplication.ShowConfirm(Msg, 'MyConfirmCallback', Title, 'Yes', 'No');
+    3: WebApplication.ShowPrompt(Msg,  'MyPromptCallback', Title, 'This is the default value');
+    4: WebApplication.ShowNotification(Msg);
+  end;
+end;
+
+initialization
+  TIWForm1.SetAsMainForm;
+
+end.

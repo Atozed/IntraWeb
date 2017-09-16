@@ -1,0 +1,85 @@
+object IWForm25: TIWForm25
+  Left = 0
+  Top = 0
+  Width = 555
+  Height = 400
+  RenderInvisibleControls = False
+  OnRender = IWAppFormRender
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  JavaScript.Strings = (
+    '')
+  DesignLeft = 8
+  DesignTop = 8
+  object IWTimerLabel: TIWLabel
+    Left = 48
+    Top = 56
+    Width = 393
+    Height = 16
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    AutoSize = False
+    FriendlyName = 'IWTimerLabel'
+    Caption = 'IWTimerLabel'
+    RawText = False
+  end
+  object IWButton1: TIWButton
+    Left = 48
+    Top = 112
+    Width = 153
+    Height = 25
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Caption = 'Call Server (Sync)'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <>
+    TabOrder = 0
+    OnClick = IWButton1Click
+  end
+  object IWButton2: TIWButton
+    Left = 48
+    Top = 168
+    Width = 153
+    Height = 25
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Caption = 'Call Server (Async)'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton2'
+    ScriptEvents = <>
+    TabOrder = 1
+    OnAsyncClick = IWButton2AsyncClick
+  end
+end

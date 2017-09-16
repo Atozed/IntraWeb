@@ -1,0 +1,63 @@
+object IWForm3: TIWForm3
+  Left = 0
+  Top = 0
+  Width = 555
+  Height = 400
+  RenderInvisibleControls = False
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 8
+  DesignTop = 8
+  object IWLink1: TIWLink
+    Left = 48
+    Top = 72
+    Width = 105
+    Height = 17
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    Color = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = [fsUnderline]
+    ScriptEvents = <>
+    DoSubmitValidation = False
+    FriendlyName = 'IWLink1'
+    OnClick = IWLink1Click
+    TabOrder = 0
+    RawText = False
+    Caption = 'Back to main form'
+  end
+  object IWLabel1: TIWLabel
+    Left = 48
+    Top = 32
+    Width = 90
+    Height = 16
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'This is Form 3'
+    RawText = False
+  end
+end

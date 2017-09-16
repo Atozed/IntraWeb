@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4FCF7BC8-B993-46EF-8543-D498342CBE39}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ISAPIRunProcess.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ConsoleApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ISAPIRunProcess">
+        <MSBuild Projects="ISAPIRunProcess.dproj"/>
+    </Target>
+    <Target Name="ISAPIRunProcess:Clean">
+        <MSBuild Projects="ISAPIRunProcess.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ISAPIRunProcess:Make">
+        <MSBuild Projects="ISAPIRunProcess.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ConsoleApp">
+        <MSBuild Projects="ConsoleApp.dproj"/>
+    </Target>
+    <Target Name="ConsoleApp:Clean">
+        <MSBuild Projects="ConsoleApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConsoleApp:Make">
+        <MSBuild Projects="ConsoleApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ISAPIRunProcess;ConsoleApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ISAPIRunProcess:Clean;ConsoleApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ISAPIRunProcess:Make;ConsoleApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

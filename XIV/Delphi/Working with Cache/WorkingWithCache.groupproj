@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{43A1E21F-09D6-4DFD-86BF-E90CC0E222EA}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SessionCache\SessionCache.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FormCache\FormCache.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="OneTimeCache\OneTimeCache.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SessionCache">
+        <MSBuild Projects="SessionCache\SessionCache.dproj"/>
+    </Target>
+    <Target Name="SessionCache:Clean">
+        <MSBuild Projects="SessionCache\SessionCache.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SessionCache:Make">
+        <MSBuild Projects="SessionCache\SessionCache.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FormCache">
+        <MSBuild Projects="FormCache\FormCache.dproj"/>
+    </Target>
+    <Target Name="FormCache:Clean">
+        <MSBuild Projects="FormCache\FormCache.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FormCache:Make">
+        <MSBuild Projects="FormCache\FormCache.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OneTimeCache">
+        <MSBuild Projects="OneTimeCache\OneTimeCache.dproj"/>
+    </Target>
+    <Target Name="OneTimeCache:Clean">
+        <MSBuild Projects="OneTimeCache\OneTimeCache.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OneTimeCache:Make">
+        <MSBuild Projects="OneTimeCache\OneTimeCache.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SessionCache;FormCache;OneTimeCache"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SessionCache:Clean;FormCache:Clean;OneTimeCache:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SessionCache:Make;FormCache:Make;OneTimeCache:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

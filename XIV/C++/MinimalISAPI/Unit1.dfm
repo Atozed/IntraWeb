@@ -1,0 +1,37 @@
+object IWForm1: TIWForm1
+  Left = 0
+  Top = 0
+  Width = 977
+  Height = 400
+  RenderInvisibleControls = True
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 8
+  DesignTop = 8
+  object IWMemo1: TIWMemo
+    Left = 27
+    Top = 40
+    Width = 932
+    Height = 312
+    BGColor = clNone
+    Editable = True
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    InvisibleBorder = False
+    HorizScrollBar = False
+    VertScrollBar = True
+    Required = False
+    TabOrder = 0
+    SubmitOnAsyncEvent = True
+    FriendlyName = 'IWMemo1'
+  end
+end

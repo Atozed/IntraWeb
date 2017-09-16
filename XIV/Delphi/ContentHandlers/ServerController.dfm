@@ -1,0 +1,33 @@
+object IWServerController: TIWServerController
+  OldCreateOrder = False
+  AuthBeforeNewSession = False
+  AppName = 'MyApp'
+  CacheDir = 'C:\Users\ALEXAN~1\AppData\Local\Temp\019osqd8hn\'
+  ComInitialization = ciNormal
+  Compression.Enabled = True
+  Compression.Level = 6
+  Description = 'My IntraWeb Application'
+  DebugHTML = False
+  DisplayName = 'IntraWeb Application'
+  Log = loNone
+  EnableImageToolbar = False
+  ExceptionDisplayMode = smAlert
+  HistoryEnabled = False
+  JavascriptDebug = False
+  PageTransitions = False
+  Port = 8888
+  RedirectMsgDelay = 0
+  ServerResizeTimeout = 0
+  ShowLoadingAnimation = True
+  SessionTimeout = 1
+  SSLOptions.NonSSLRequest = nsAccept
+  SSLOptions.Port = 0
+  SSLOptions.SSLVersion = sslv3
+  Version = '14.0.11'
+  AllowMultipleSessionsPerUser = False
+  ExceptionLogger.ReportInfos = [riAppInfo, riExceptionInfo, riIWAppInfo, riStackTrace]
+  OnConfig = IWServerControllerBaseConfig
+  OnNewSession = IWServerControllerBaseNewSession
+  Height = 310
+  Width = 342
+end

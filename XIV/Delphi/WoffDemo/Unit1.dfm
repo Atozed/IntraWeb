@@ -1,0 +1,43 @@
+object IWForm1: TIWForm1
+  Left = 0
+  Top = 0
+  Width = 555
+  Height = 400
+  RenderInvisibleControls = False
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 8
+  DesignTop = 8
+  object IWLabel1: TIWLabel
+    Left = 48
+    Top = 48
+    Width = 457
+    Height = 41
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.FontName = 'GoodDog'
+    Font.Size = 18
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    AutoSize = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'This was rendered using GoodDog WOFF Font'
+    RawText = False
+  end
+end

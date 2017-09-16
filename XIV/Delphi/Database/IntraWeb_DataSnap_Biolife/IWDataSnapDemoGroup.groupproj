@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{74954A1E-FF65-4CAB-80F3-B9A41EF183A3}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="DataSnapServer\DataSnapServer.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="IntrawebClient\IWDBDemo.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="DataSnapServer">
+			<MSBuild Projects="DataSnapServer\DataSnapServer.dproj"/>
+		</Target>
+		<Target Name="DataSnapServer:Clean">
+			<MSBuild Targets="Clean" Projects="DataSnapServer\DataSnapServer.dproj"/>
+		</Target>
+		<Target Name="DataSnapServer:Make">
+			<MSBuild Targets="Make" Projects="DataSnapServer\DataSnapServer.dproj"/>
+		</Target>
+		<Target Name="IWDBDemo">
+			<MSBuild Projects="IntrawebClient\IWDBDemo.dproj"/>
+		</Target>
+		<Target Name="IWDBDemo:Clean">
+			<MSBuild Targets="Clean" Projects="IntrawebClient\IWDBDemo.dproj"/>
+		</Target>
+		<Target Name="IWDBDemo:Make">
+			<MSBuild Targets="Make" Projects="IntrawebClient\IWDBDemo.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="DataSnapServer;IWDBDemo"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="DataSnapServer:Clean;IWDBDemo:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="DataSnapServer:Make;IWDBDemo:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

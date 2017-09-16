@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+
+<HEAD>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="cache-control" content="no-cache">
+	<TITLE>{%APPNAME%} Error</TITLE>
+</HEAD>
+
+<BODY>
+
+<P>
+<TABLE BORDER="0" WIDTH="100%" CELLPADING=6>
+    <TR HEIGHT=141>
+        <TD WIDTH=50% ALIGN=LEFT>
+        </TD>
+        <TD WIDTH=50% ALIGN=RIGHT>
+        </TD>
+    </TR>
+	<TR>
+        <TD COLSPAN=2>
+		    <DIV ALIGN=CENTER STYLE="border:1px solid;">
+    			<BR><BR>
+    			<FONT SIZE="4">
+                An unhandled application error has occured within <b>{%APPNAME%}</b>.
+                </FONT>
+    			<BR><BR>
+    			<BR><BR>
+    			{%EXCEPTIONSPECIFIC%}
+    			<BR>
+    			In order to restart the application, please click the link below:
+    			<BR><BR>
+    			 <a href="{%APPADDRESS%}$/start">Click here to restart <b>{%APPNAME%}</b></a>.
+    			<BR><BR>
+    			Please note that depending on the actual exception that occured, restarting the application might not be possible. If this is
+    			the case, please report the error message to the administrator.
+    			<BR><BR>
+    		</DIV>
+        </TD>
+    </TR>
+	<TR>
+		<TD COLSPAN=2">
+		    <DIV ALIGN=CENTER STYLE="border:1px solid; background: yellow">
+		        Error message raised by the application:
+		        <b>
+		        <FONT COLOR="RED">
+		        {%CONTENT%}
+		        </FONT>
+		        </b>
+		    </DIV>
+		</TD>
+	</TR>
+</TABLE>
+
+</BODY>
+
+</HTML>

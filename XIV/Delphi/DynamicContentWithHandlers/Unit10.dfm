@@ -1,0 +1,93 @@
+object IWForm10: TIWForm10
+  Left = 0
+  Top = 0
+  Width = 919
+  Height = 698
+  RenderInvisibleControls = False
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 8
+  DesignTop = 8
+  object IWURLWindow1: TIWURLWindow
+    Left = 48
+    Top = 88
+    Width = 529
+    Height = 561
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    FriendlyName = 'IWURLWindow1'
+    Border = False
+    MarginWidth = 0
+    MarginHeight = 0
+    Scrolling = usAuto
+  end
+  object IWComboBox1: TIWComboBox
+    Left = 48
+    Top = 46
+    Width = 289
+    Height = 21
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FocusColor = clNone
+    AutoHideOnMenuActivation = False
+    ItemsHaveValues = True
+    NoSelectionText = '-- No Selection --'
+    Required = False
+    RequireSelection = True
+    ScriptEvents = <>
+    OnChange = IWComboBox1Change
+    UseSize = True
+    Style = stNormal
+    ButtonColor = clBtnFace
+    Editable = True
+    NonEditableAsLabel = True
+    SubmitOnAsyncEvent = True
+    TabOrder = 1
+    ItemIndex = -1
+    Items.Strings = (
+      'Report 1=1'
+      'Report 2=2'
+      'Report 3=3')
+    Sorted = False
+    FriendlyName = 'IWComboBox1'
+  end
+  object IWLabel1: TIWLabel
+    Left = 48
+    Top = 24
+    Width = 90
+    Height = 16
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'Select Report:'
+    RawText = False
+  end
+end

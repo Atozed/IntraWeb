@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A4FD68B0-3454-48A2-A8FA-73F37513DFD4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="UsingExceptionRenderer\UsingExceptionRenderer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SubclassingExceptionRenderer\SubclassingExceptionRenderer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="UsingTemplates\UsingTemplates.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="UsingExceptionRenderer">
+        <MSBuild Projects="UsingExceptionRenderer\UsingExceptionRenderer.dproj"/>
+    </Target>
+    <Target Name="UsingExceptionRenderer:Clean">
+        <MSBuild Projects="UsingExceptionRenderer\UsingExceptionRenderer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UsingExceptionRenderer:Make">
+        <MSBuild Projects="UsingExceptionRenderer\UsingExceptionRenderer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SubclassingExceptionRenderer">
+        <MSBuild Projects="SubclassingExceptionRenderer\SubclassingExceptionRenderer.dproj"/>
+    </Target>
+    <Target Name="SubclassingExceptionRenderer:Clean">
+        <MSBuild Projects="SubclassingExceptionRenderer\SubclassingExceptionRenderer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SubclassingExceptionRenderer:Make">
+        <MSBuild Projects="SubclassingExceptionRenderer\SubclassingExceptionRenderer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UsingTemplates">
+        <MSBuild Projects="UsingTemplates\UsingTemplates.dproj"/>
+    </Target>
+    <Target Name="UsingTemplates:Clean">
+        <MSBuild Projects="UsingTemplates\UsingTemplates.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UsingTemplates:Make">
+        <MSBuild Projects="UsingTemplates\UsingTemplates.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="UsingExceptionRenderer;SubclassingExceptionRenderer;UsingTemplates"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="UsingExceptionRenderer:Clean;SubclassingExceptionRenderer:Clean;UsingTemplates:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="UsingExceptionRenderer:Make;SubclassingExceptionRenderer:Make;UsingTemplates:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,460 @@
+object IWForm7: TIWForm7
+  Left = 0
+  Top = 0
+  Width = 706
+  Height = 510
+  RenderInvisibleControls = False
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 8
+  DesignTop = 8
+  object IWFileUploader1: TIWFileUploader
+    Left = 40
+    Top = 64
+    Width = 400
+    Height = 60
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    TabOrder = 0
+    TextStrings.DragText = 'Drop files here to upload'
+    TextStrings.UploadButtonText = 'Upload a file'
+    TextStrings.CancelButtonText = 'Cancel'
+    TextStrings.UploadErrorText = 'Upload failed'
+    TextStrings.MultipleFileDropNotAllowedText = 'You may only drop a single file'
+    TextStrings.OfTotalText = 'of'
+    TextStrings.TypeErrorText = 
+      '{file} has an invalid extension. Only {extensions} files are all' +
+      'owed.'
+    TextStrings.SizeErrorText = '{file} is too large, maximum file size is {sizeLimit}.'
+    TextStrings.MinSizeErrorText = '{file} is too small, minimum file size is {minSizeLimit}.'
+    TextStrings.EmptyErrorText = '{file} is empty, please select files again without it.'
+    TextStrings.NoFilesErrorText = 'No files to upload.'
+    TextStrings.OnLeaveWarningText = 
+      'The files are being uploaded, if you leave now the upload will b' +
+      'e cancelled.'
+    Style.ButtonOptions.Alignment = taCenter
+    Style.ButtonOptions.BGColor = clWebMAROON
+    Style.ButtonOptions.Font.Color = clWebWHITE
+    Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ButtonOptions.Font.Size = 10
+    Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Height = 30
+    Style.ButtonOptions.Width = 200
+    Style.ButtonHoverOptions.Alignment = taCenter
+    Style.ButtonHoverOptions.BGColor = 214
+    Style.ButtonHoverOptions.Font.Color = clWebWHITE
+    Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ButtonHoverOptions.Font.Size = 10
+    Style.ButtonHoverOptions.Font.Style = []
+    Style.ListOptions.Alignment = taLeftJustify
+    Style.ListOptions.BGColor = clWebGOLD
+    Style.ListOptions.Font.Color = clWebBLACK
+    Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListOptions.Font.Size = 10
+    Style.ListOptions.Font.Style = []
+    Style.ListOptions.Height = 30
+    Style.ListOptions.Width = 0
+    Style.ListSuccessOptions.Alignment = taLeftJustify
+    Style.ListSuccessOptions.BGColor = clWebFORESTGREEN
+    Style.ListSuccessOptions.Font.Color = clWebWHITE
+    Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListSuccessOptions.Font.Size = 10
+    Style.ListSuccessOptions.Font.Style = []
+    Style.ListErrorOptions.Alignment = taLeftJustify
+    Style.ListErrorOptions.BGColor = clWebRED
+    Style.ListErrorOptions.Font.Color = clWebWHITE
+    Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListErrorOptions.Font.Size = 10
+    Style.ListErrorOptions.Font.Style = []
+    Style.DropAreaOptions.Alignment = taCenter
+    Style.DropAreaOptions.BGColor = clWebDARKORANGE
+    Style.DropAreaOptions.Font.Color = clWebWHITE
+    Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.DropAreaOptions.Font.Size = 10
+    Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Height = 60
+    Style.DropAreaOptions.Width = 0
+    Style.DropAreaActiveOptions.Alignment = taCenter
+    Style.DropAreaActiveOptions.BGColor = clWebLIMEGREEN
+    Style.DropAreaActiveOptions.Font.Color = clWebWHITE
+    Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.DropAreaActiveOptions.Font.Size = 10
+    Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Height = 60
+    Style.DropAreaActiveOptions.Width = 0
+    OnAsyncUploadCompleted = IWFileUploader1AsyncUploadCompleted
+    FriendlyName = 'IWFileUploader1'
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+  end
+  object IWLabel1: TIWLabel
+    Left = 40
+    Top = 41
+    Width = 357
+    Height = 16
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'This will upload a file and save it to a custom folder/path'
+    RawText = False
+  end
+  object IWLabel2: TIWLabel
+    Left = 40
+    Top = 151
+    Width = 345
+    Height = 16
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'This will upload a file and save it with a different name'
+    RawText = False
+  end
+  object IWFileUploader2: TIWFileUploader
+    Left = 40
+    Top = 176
+    Width = 400
+    Height = 60
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    TabOrder = 1
+    TextStrings.DragText = 'Drop files here to upload'
+    TextStrings.UploadButtonText = 'Upload a file'
+    TextStrings.CancelButtonText = 'Cancel'
+    TextStrings.UploadErrorText = 'Upload failed'
+    TextStrings.MultipleFileDropNotAllowedText = 'You may only drop a single file'
+    TextStrings.OfTotalText = 'of'
+    TextStrings.TypeErrorText = 
+      '{file} has an invalid extension. Only {extensions} files are all' +
+      'owed.'
+    TextStrings.SizeErrorText = '{file} is too large, maximum file size is {sizeLimit}.'
+    TextStrings.MinSizeErrorText = '{file} is too small, minimum file size is {minSizeLimit}.'
+    TextStrings.EmptyErrorText = '{file} is empty, please select files again without it.'
+    TextStrings.NoFilesErrorText = 'No files to upload.'
+    TextStrings.OnLeaveWarningText = 
+      'The files are being uploaded, if you leave now the upload will b' +
+      'e cancelled.'
+    Style.ButtonOptions.Alignment = taCenter
+    Style.ButtonOptions.BGColor = clWebMAROON
+    Style.ButtonOptions.Font.Color = clWebWHITE
+    Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ButtonOptions.Font.Size = 10
+    Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Height = 30
+    Style.ButtonOptions.Width = 200
+    Style.ButtonHoverOptions.Alignment = taCenter
+    Style.ButtonHoverOptions.BGColor = 214
+    Style.ButtonHoverOptions.Font.Color = clWebWHITE
+    Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ButtonHoverOptions.Font.Size = 10
+    Style.ButtonHoverOptions.Font.Style = []
+    Style.ListOptions.Alignment = taLeftJustify
+    Style.ListOptions.BGColor = clWebGOLD
+    Style.ListOptions.Font.Color = clWebBLACK
+    Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListOptions.Font.Size = 10
+    Style.ListOptions.Font.Style = []
+    Style.ListOptions.Height = 30
+    Style.ListOptions.Width = 0
+    Style.ListSuccessOptions.Alignment = taLeftJustify
+    Style.ListSuccessOptions.BGColor = clWebFORESTGREEN
+    Style.ListSuccessOptions.Font.Color = clWebWHITE
+    Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListSuccessOptions.Font.Size = 10
+    Style.ListSuccessOptions.Font.Style = []
+    Style.ListErrorOptions.Alignment = taLeftJustify
+    Style.ListErrorOptions.BGColor = clWebRED
+    Style.ListErrorOptions.Font.Color = clWebWHITE
+    Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListErrorOptions.Font.Size = 10
+    Style.ListErrorOptions.Font.Style = []
+    Style.DropAreaOptions.Alignment = taCenter
+    Style.DropAreaOptions.BGColor = clWebDARKORANGE
+    Style.DropAreaOptions.Font.Color = clWebWHITE
+    Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.DropAreaOptions.Font.Size = 10
+    Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Height = 60
+    Style.DropAreaOptions.Width = 0
+    Style.DropAreaActiveOptions.Alignment = taCenter
+    Style.DropAreaActiveOptions.BGColor = clWebLIMEGREEN
+    Style.DropAreaActiveOptions.Font.Color = clWebWHITE
+    Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.DropAreaActiveOptions.Font.Size = 10
+    Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Height = 60
+    Style.DropAreaActiveOptions.Width = 0
+    OnAsyncUploadCompleted = IWFileUploader2AsyncUploadCompleted
+    FriendlyName = 'IWFileUploader2'
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+  end
+  object IWLabel3: TIWLabel
+    Left = 40
+    Top = 271
+    Width = 651
+    Height = 16
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 
+      'Here we will save the uploaded file to a Stream. This can be any' +
+      ' stream, including DataSet BLOB fields.'
+    RawText = False
+  end
+  object IWFileUploader3: TIWFileUploader
+    Left = 40
+    Top = 296
+    Width = 400
+    Height = 60
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    TabOrder = 2
+    TextStrings.DragText = 'Drop files here to upload'
+    TextStrings.UploadButtonText = 'Upload a file'
+    TextStrings.CancelButtonText = 'Cancel'
+    TextStrings.UploadErrorText = 'Upload failed'
+    TextStrings.MultipleFileDropNotAllowedText = 'You may only drop a single file'
+    TextStrings.OfTotalText = 'of'
+    TextStrings.TypeErrorText = 
+      '{file} has an invalid extension. Only {extensions} files are all' +
+      'owed.'
+    TextStrings.SizeErrorText = '{file} is too large, maximum file size is {sizeLimit}.'
+    TextStrings.MinSizeErrorText = '{file} is too small, minimum file size is {minSizeLimit}.'
+    TextStrings.EmptyErrorText = '{file} is empty, please select files again without it.'
+    TextStrings.NoFilesErrorText = 'No files to upload.'
+    TextStrings.OnLeaveWarningText = 
+      'The files are being uploaded, if you leave now the upload will b' +
+      'e cancelled.'
+    Style.ButtonOptions.Alignment = taCenter
+    Style.ButtonOptions.BGColor = clWebMAROON
+    Style.ButtonOptions.Font.Color = clWebWHITE
+    Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ButtonOptions.Font.Size = 10
+    Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Height = 30
+    Style.ButtonOptions.Width = 200
+    Style.ButtonHoverOptions.Alignment = taCenter
+    Style.ButtonHoverOptions.BGColor = 214
+    Style.ButtonHoverOptions.Font.Color = clWebWHITE
+    Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ButtonHoverOptions.Font.Size = 10
+    Style.ButtonHoverOptions.Font.Style = []
+    Style.ListOptions.Alignment = taLeftJustify
+    Style.ListOptions.BGColor = clWebGOLD
+    Style.ListOptions.Font.Color = clWebBLACK
+    Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListOptions.Font.Size = 10
+    Style.ListOptions.Font.Style = []
+    Style.ListOptions.Height = 30
+    Style.ListOptions.Width = 0
+    Style.ListSuccessOptions.Alignment = taLeftJustify
+    Style.ListSuccessOptions.BGColor = clWebFORESTGREEN
+    Style.ListSuccessOptions.Font.Color = clWebWHITE
+    Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListSuccessOptions.Font.Size = 10
+    Style.ListSuccessOptions.Font.Style = []
+    Style.ListErrorOptions.Alignment = taLeftJustify
+    Style.ListErrorOptions.BGColor = clWebRED
+    Style.ListErrorOptions.Font.Color = clWebWHITE
+    Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListErrorOptions.Font.Size = 10
+    Style.ListErrorOptions.Font.Style = []
+    Style.DropAreaOptions.Alignment = taCenter
+    Style.DropAreaOptions.BGColor = clWebDARKORANGE
+    Style.DropAreaOptions.Font.Color = clWebWHITE
+    Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.DropAreaOptions.Font.Size = 10
+    Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Height = 60
+    Style.DropAreaOptions.Width = 0
+    Style.DropAreaActiveOptions.Alignment = taCenter
+    Style.DropAreaActiveOptions.BGColor = clWebLIMEGREEN
+    Style.DropAreaActiveOptions.Font.Color = clWebWHITE
+    Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.DropAreaActiveOptions.Font.Size = 10
+    Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Height = 60
+    Style.DropAreaActiveOptions.Width = 0
+    OnAsyncUploadCompleted = IWFileUploader3AsyncUploadCompleted
+    FriendlyName = 'IWFileUploader2'
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+  end
+  object IWLabel4: TIWLabel
+    Left = 40
+    Top = 385
+    Width = 711
+    Height = 16
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 
+      'This IWFileUploader has AutoSave = True. The uploaded file will ' +
+      'be save to C:\Temp folder. No code is needed. '
+    RawText = False
+  end
+  object IWFileUploader4: TIWFileUploader
+    Left = 40
+    Top = 408
+    Width = 400
+    Height = 60
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    TabOrder = 3
+    TextStrings.DragText = 'Drop files here to upload'
+    TextStrings.UploadButtonText = 'Upload a file'
+    TextStrings.CancelButtonText = 'Cancel'
+    TextStrings.UploadErrorText = 'Upload failed'
+    TextStrings.MultipleFileDropNotAllowedText = 'You may only drop a single file'
+    TextStrings.OfTotalText = 'of'
+    TextStrings.TypeErrorText = 
+      '{file} has an invalid extension. Only {extensions} files are all' +
+      'owed.'
+    TextStrings.SizeErrorText = '{file} is too large, maximum file size is {sizeLimit}.'
+    TextStrings.MinSizeErrorText = '{file} is too small, minimum file size is {minSizeLimit}.'
+    TextStrings.EmptyErrorText = '{file} is empty, please select files again without it.'
+    TextStrings.NoFilesErrorText = 'No files to upload.'
+    TextStrings.OnLeaveWarningText = 
+      'The files are being uploaded, if you leave now the upload will b' +
+      'e cancelled.'
+    Style.ButtonOptions.Alignment = taCenter
+    Style.ButtonOptions.BGColor = clWebMAROON
+    Style.ButtonOptions.Font.Color = clWebWHITE
+    Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ButtonOptions.Font.Size = 10
+    Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Height = 30
+    Style.ButtonOptions.Width = 200
+    Style.ButtonHoverOptions.Alignment = taCenter
+    Style.ButtonHoverOptions.BGColor = 214
+    Style.ButtonHoverOptions.Font.Color = clWebWHITE
+    Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ButtonHoverOptions.Font.Size = 10
+    Style.ButtonHoverOptions.Font.Style = []
+    Style.ListOptions.Alignment = taLeftJustify
+    Style.ListOptions.BGColor = clWebGOLD
+    Style.ListOptions.Font.Color = clWebBLACK
+    Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListOptions.Font.Size = 10
+    Style.ListOptions.Font.Style = []
+    Style.ListOptions.Height = 30
+    Style.ListOptions.Width = 0
+    Style.ListSuccessOptions.Alignment = taLeftJustify
+    Style.ListSuccessOptions.BGColor = clWebFORESTGREEN
+    Style.ListSuccessOptions.Font.Color = clWebWHITE
+    Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListSuccessOptions.Font.Size = 10
+    Style.ListSuccessOptions.Font.Style = []
+    Style.ListErrorOptions.Alignment = taLeftJustify
+    Style.ListErrorOptions.BGColor = clWebRED
+    Style.ListErrorOptions.Font.Color = clWebWHITE
+    Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.ListErrorOptions.Font.Size = 10
+    Style.ListErrorOptions.Font.Style = []
+    Style.DropAreaOptions.Alignment = taCenter
+    Style.DropAreaOptions.BGColor = clWebDARKORANGE
+    Style.DropAreaOptions.Font.Color = clWebWHITE
+    Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.DropAreaOptions.Font.Size = 10
+    Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Height = 60
+    Style.DropAreaOptions.Width = 0
+    Style.DropAreaActiveOptions.Alignment = taCenter
+    Style.DropAreaActiveOptions.BGColor = clWebLIMEGREEN
+    Style.DropAreaActiveOptions.Font.Color = clWebWHITE
+    Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Style.DropAreaActiveOptions.Font.Size = 10
+    Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Height = 60
+    Style.DropAreaActiveOptions.Width = 0
+    AutoSave = True
+    AutoSavePath = 'c:\temp'
+    FriendlyName = 'IWFileUploader1'
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 552
+    Top = 336
+    object ClientDataSet1FileName: TStringField
+      FieldName = 'FileName'
+      Size = 255
+    end
+    object ClientDataSet1FileSize: TIntegerField
+      FieldName = 'FileSize'
+    end
+    object ClientDataSet1FileContent: TBlobField
+      FieldName = 'FileContent'
+    end
+  end
+end

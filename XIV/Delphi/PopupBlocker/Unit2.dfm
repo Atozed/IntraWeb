@@ -1,0 +1,102 @@
+object IWForm2: TIWForm2
+  Left = 0
+  Top = 0
+  Width = 555
+  Height = 400
+  RenderInvisibleControls = False
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 8
+  DesignTop = 8
+  object IWButton1: TIWButton
+    Left = 56
+    Top = 88
+    Width = 153
+    Height = 25
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Caption = 'Open Popup (Sync)'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <>
+    TabOrder = 0
+    OnClick = IWButton1Click
+  end
+  object IWCheckBox1: TIWCheckBox
+    Left = 248
+    Top = 92
+    Width = 209
+    Height = 21
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Caption = 'Detect Popup Blocker'
+    Editable = True
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    SubmitOnAsyncEvent = True
+    ScriptEvents = <>
+    Style = stNormal
+    TabOrder = 1
+    Checked = True
+    FriendlyName = 'IWCheckBox1'
+  end
+  object IWButton2: TIWButton
+    Left = 56
+    Top = 136
+    Width = 153
+    Height = 25
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Caption = 'Open Popup (Async)'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <>
+    TabOrder = 2
+    OnAsyncClick = IWButton2AsyncClick
+  end
+  object IWLabel1: TIWLabel
+    Left = 56
+    Top = 24
+    Width = 457
+    Height = 29
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clWebRED
+    Font.Size = 18
+    Font.Style = []
+    NoWrap = False
+    ConvertSpaces = False
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'This demo requires IntraWeb 14.0.13+'
+    RawText = False
+  end
+end

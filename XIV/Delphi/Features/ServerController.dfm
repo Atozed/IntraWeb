@@ -1,0 +1,31 @@
+object IWServerController: TIWServerController
+  OldCreateOrder = False
+  AuthBeforeNewSession = False
+  AppName = 'Features'
+  ComInitialization = ciNone
+  Compression.Enabled = False
+  Compression.Level = 6
+  Description = 'IntraWeb Feature Demo'
+  DebugHTML = False
+  DisplayName = 'IntraWeb Application'
+  Log = loNone
+  EnableImageToolbar = False
+  ExceptionDisplayMode = smAlert
+  HistoryEnabled = False
+  PageTransitions = False
+  Port = 0
+  RedirectMsgDelay = 0
+  ServerResizeTimeout = 0
+  ShowLoadingAnimation = True
+  SessionTimeout = 10
+  SSLOptions.NonSSLRequest = nsAccept
+  SSLOptions.Port = 0
+  SSLOptions.SSLVersion = sslv3
+  Version = '14.0.13'
+  AllowMultipleSessionsPerUser = False
+  ExceptionLogger.ReportInfos = [riAppInfo, riExceptionInfo, riIWAppInfo, riStackTrace]
+  SearchEngineOptions.RedirectToContentHandler = False
+  OnNewSession = IWServerControllerBaseNewSession
+  Height = 319
+  Width = 435
+end

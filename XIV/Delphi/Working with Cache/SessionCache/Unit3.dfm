@@ -1,0 +1,105 @@
+object IWForm3: TIWForm3
+  Left = 0
+  Top = 0
+  Width = 1013
+  Height = 562
+  RenderInvisibleControls = False
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  XPTheme = True
+  DesignLeft = 8
+  DesignTop = 8
+  object IWImageFile1: TIWImageFile
+    Left = 336
+    Top = 31
+    Width = 250
+    Height = 201
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    BorderOptions.Color = clNone
+    BorderOptions.Width = 0
+    ScriptEvents = <>
+    TabOrder = -1
+    UseSize = False
+    Cacheable = True
+    FriendlyName = 'IWImageFile1'
+  end
+  object IWImageFile2: TIWImageFile
+    Left = 58
+    Top = 31
+    Width = 225
+    Height = 225
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    BorderOptions.Color = clNone
+    BorderOptions.Width = 0
+    ScriptEvents = <>
+    TabOrder = -1
+    UseSize = False
+    Cacheable = True
+    FriendlyName = 'IWImageFile1'
+  end
+  object IWMemo1: TIWMemo
+    Left = 58
+    Top = 286
+    Width = 695
+    Height = 203
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    BGColor = clNone
+    Editable = True
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    ScriptEvents = <>
+    InvisibleBorder = False
+    HorizScrollBar = False
+    VertScrollBar = True
+    Required = False
+    TabOrder = 0
+    SubmitOnAsyncEvent = True
+    FriendlyName = 'IWMemo1'
+    Lines.Strings = (
+      
+        'The same images are here, but they were not served again. They w' +
+        'ere cached by both, the browser and the IntraWeb application')
+  end
+  object IWButton1: TIWButton
+    Left = 624
+    Top = 31
+    Width = 169
+    Height = 25
+    Cursor = crAuto
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Caption = 'Back to main form'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <>
+    TabOrder = 1
+    OnClick = IWButton1Click
+  end
+end

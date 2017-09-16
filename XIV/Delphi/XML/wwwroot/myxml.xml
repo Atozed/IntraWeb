@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="mystylesheet.xsl"?>
+<tutorials>
+<tutorial>
+<name>XML and XSL demo</name>
+<url>http://www.atozed.com</url>
+</tutorial>
+</tutorials>
