@@ -1,2 +1,7 @@
 
 *.dcu
+*.local
+*.identcache
+*.stat
+*.identcache
+*.identcache
