@@ -1,0 +1,32 @@
+object IWServerController: TIWServerController
+  OldCreateOrder = False
+  AuthBeforeNewSession = False
+  AppName = 'FishFact'
+  CharSet = 'UTF-8'
+  CacheExpiry = 2
+  ComInitialization = ciNone
+  Compression.Enabled = False
+  Compression.Level = 6
+  Description = 'FishFact Edit Demo'
+  DebugHTML = False
+  DisplayName = 'IntraWeb (VCL for the Web) Application'
+  Log = loNone
+  EnableImageToolbar = False
+  ExceptionDisplayMode = smAlert
+  HistoryEnabled = True
+  InternalFilesURL = '/'
+  JavascriptDebug = False
+  PageTransitions = True
+  Port = 8888
+  RedirectMsgDelay = 0
+  ServerResizeTimeout = 0
+  ShowLoadingAnimation = True
+  SessionTimeout = 10
+  SSLOptions.NonSSLRequest = nsAccept
+  SSLOptions.Port = 0
+  SSLOptions.SSLVersion = sslv3
+  UseInternalFiles = False
+  Version = '12.0.8'
+  Height = 304
+  Width = 330
+end

@@ -1,0 +1,1 @@
+For more information about the new features, please read http://www.atozed.com/intraweb/XII/index.EN.aspx
