@@ -1,0 +1,180 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{D3F89F66-A24A-4227-BFC3-50BE39DD8ACF}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="AJAXNotifier\AJAXNotifier.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CustomURLResponder\CustomURLResponder.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CustomStandAlone\CustomStandAlone.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Features\Features.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="FileManager\FileManager.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Guess\Guess.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="IWPDemo\IWPDemo.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="IWDocs\IWDocs.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="StandAloneSSL\StandAloneSSL.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="TimeOutResponse\TimeOutResponse.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="URLMapping\URLMappingISAPI.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="URLMapping\URLMapping.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Website\Website.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="AJAXNotifier">
+			<MSBuild Projects="AJAXNotifier\AJAXNotifier.dproj"/>
+		</Target>
+		<Target Name="AJAXNotifier:Clean">
+			<MSBuild Targets="Clean" Projects="AJAXNotifier\AJAXNotifier.dproj"/>
+		</Target>
+		<Target Name="AJAXNotifier:Make">
+			<MSBuild Targets="Make" Projects="AJAXNotifier\AJAXNotifier.dproj"/>
+		</Target>
+		<Target Name="CustomURLResponder">
+			<MSBuild Projects="CustomURLResponder\CustomURLResponder.dproj"/>
+		</Target>
+		<Target Name="CustomURLResponder:Clean">
+			<MSBuild Targets="Clean" Projects="CustomURLResponder\CustomURLResponder.dproj"/>
+		</Target>
+		<Target Name="CustomURLResponder:Make">
+			<MSBuild Targets="Make" Projects="CustomURLResponder\CustomURLResponder.dproj"/>
+		</Target>
+		<Target Name="CustomStandAlone">
+			<MSBuild Projects="CustomStandAlone\CustomStandAlone.dproj"/>
+		</Target>
+		<Target Name="CustomStandAlone:Clean">
+			<MSBuild Targets="Clean" Projects="CustomStandAlone\CustomStandAlone.dproj"/>
+		</Target>
+		<Target Name="CustomStandAlone:Make">
+			<MSBuild Targets="Make" Projects="CustomStandAlone\CustomStandAlone.dproj"/>
+		</Target>
+		<Target Name="Features">
+			<MSBuild Projects="Features\Features.dproj"/>
+		</Target>
+		<Target Name="Features:Clean">
+			<MSBuild Targets="Clean" Projects="Features\Features.dproj"/>
+		</Target>
+		<Target Name="Features:Make">
+			<MSBuild Targets="Make" Projects="Features\Features.dproj"/>
+		</Target>
+		<Target Name="FileManager">
+			<MSBuild Projects="FileManager\FileManager.dproj"/>
+		</Target>
+		<Target Name="FileManager:Clean">
+			<MSBuild Targets="Clean" Projects="FileManager\FileManager.dproj"/>
+		</Target>
+		<Target Name="FileManager:Make">
+			<MSBuild Targets="Make" Projects="FileManager\FileManager.dproj"/>
+		</Target>
+		<Target Name="Guess">
+			<MSBuild Projects="Guess\Guess.dproj"/>
+		</Target>
+		<Target Name="Guess:Clean">
+			<MSBuild Targets="Clean" Projects="Guess\Guess.dproj"/>
+		</Target>
+		<Target Name="Guess:Make">
+			<MSBuild Targets="Make" Projects="Guess\Guess.dproj"/>
+		</Target>
+		<Target Name="IWPDemo">
+			<MSBuild Projects="IWPDemo\IWPDemo.dproj"/>
+		</Target>
+		<Target Name="IWPDemo:Clean">
+			<MSBuild Targets="Clean" Projects="IWPDemo\IWPDemo.dproj"/>
+		</Target>
+		<Target Name="IWPDemo:Make">
+			<MSBuild Targets="Make" Projects="IWPDemo\IWPDemo.dproj"/>
+		</Target>
+		<Target Name="IWDocs">
+			<MSBuild Projects="IWDocs\IWDocs.dproj"/>
+		</Target>
+		<Target Name="IWDocs:Clean">
+			<MSBuild Targets="Clean" Projects="IWDocs\IWDocs.dproj"/>
+		</Target>
+		<Target Name="IWDocs:Make">
+			<MSBuild Targets="Make" Projects="IWDocs\IWDocs.dproj"/>
+		</Target>
+		<Target Name="StandAloneSSL">
+			<MSBuild Projects="StandAloneSSL\StandAloneSSL.dproj"/>
+		</Target>
+		<Target Name="StandAloneSSL:Clean">
+			<MSBuild Targets="Clean" Projects="StandAloneSSL\StandAloneSSL.dproj"/>
+		</Target>
+		<Target Name="StandAloneSSL:Make">
+			<MSBuild Targets="Make" Projects="StandAloneSSL\StandAloneSSL.dproj"/>
+		</Target>
+		<Target Name="TimeOutResponse">
+			<MSBuild Projects="TimeOutResponse\TimeOutResponse.dproj"/>
+		</Target>
+		<Target Name="TimeOutResponse:Clean">
+			<MSBuild Targets="Clean" Projects="TimeOutResponse\TimeOutResponse.dproj"/>
+		</Target>
+		<Target Name="TimeOutResponse:Make">
+			<MSBuild Targets="Make" Projects="TimeOutResponse\TimeOutResponse.dproj"/>
+		</Target>
+		<Target Name="URLMappingISAPI">
+			<MSBuild Projects="URLMapping\URLMappingISAPI.dproj"/>
+		</Target>
+		<Target Name="URLMappingISAPI:Clean">
+			<MSBuild Targets="Clean" Projects="URLMapping\URLMappingISAPI.dproj"/>
+		</Target>
+		<Target Name="URLMappingISAPI:Make">
+			<MSBuild Targets="Make" Projects="URLMapping\URLMappingISAPI.dproj"/>
+		</Target>
+		<Target Name="URLMapping">
+			<MSBuild Projects="URLMapping\URLMapping.dproj"/>
+		</Target>
+		<Target Name="URLMapping:Clean">
+			<MSBuild Targets="Clean" Projects="URLMapping\URLMapping.dproj"/>
+		</Target>
+		<Target Name="URLMapping:Make">
+			<MSBuild Targets="Make" Projects="URLMapping\URLMapping.dproj"/>
+		</Target>
+		<Target Name="Website">
+			<MSBuild Projects="Website\Website.dproj"/>
+		</Target>
+		<Target Name="Website:Clean">
+			<MSBuild Targets="Clean" Projects="Website\Website.dproj"/>
+		</Target>
+		<Target Name="Website:Make">
+			<MSBuild Targets="Make" Projects="Website\Website.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="AJAXNotifier;CustomURLResponder;CustomStandAlone;Features;FileManager;Guess;IWPDemo;IWDocs;StandAloneSSL;TimeOutResponse;URLMappingISAPI;URLMapping;Website"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="AJAXNotifier:Clean;CustomURLResponder:Clean;CustomStandAlone:Clean;Features:Clean;FileManager:Clean;Guess:Clean;IWPDemo:Clean;IWDocs:Clean;StandAloneSSL:Clean;TimeOutResponse:Clean;URLMappingISAPI:Clean;URLMapping:Clean;Website:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="AJAXNotifier:Make;CustomURLResponder:Make;CustomStandAlone:Make;Features:Make;FileManager:Make;Guess:Make;IWPDemo:Make;IWDocs:Make;StandAloneSSL:Make;TimeOutResponse:Make;URLMappingISAPI:Make;URLMapping:Make;Website:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

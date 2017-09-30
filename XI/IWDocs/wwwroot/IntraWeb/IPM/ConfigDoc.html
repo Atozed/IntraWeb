@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <p>Individual pages support optional config files.</p>
+    <p></p>
+    <p>Each Intraweb Page (html file) can have an optional <a href="Config.html">config file</a>. The file is always named &lt;name&gt;#.cfg. For a file named index.html, the corresponding config file is index#.cfg. For a file named about.html, the corresponding config file is about#.cfg.<br>
+    </p>
+    <h3>Example</h3>
+    <p>[Template]<br>Path=..
+      <br>
+    </p>
+    <p>[Enum]<br>Exclude=True
+    </p>
+    <h3>[Template]<br>
+    </h3>
+    <p>Controls how and what templates are applied to this page. <br>
+    </p>
+    <h4>Path</h4>
+    <ul>
+      <li>.. - .. tells the page to ignore the default template if it exists in its directory, and instead start looking at the parent directory.</li>
+      <li>/ - Look for the template only in the web root.</li>
+      <li>. - Start with directory where page exists.<br>
+      </li>
+    </ul>
+    <p>Default is .</p>
+    <h4>Name<br>
+    </h4>
+    <p>Specifies name of the template to use.</p>
+    <ul>
+      <li>&lt;name&gt; - Name of template to use.</li>
+      <li>! -&nbsp; Explicitly specifies no template is to be used.&nbsp; Useful when a default template exists, and a page needs exepted from the default template.<br>
+      </li>
+    </ul>
+    <p>If no name is specified, Default is used. That is, if a template named Default is found, it will be used.</p>
+    <h3>[Enum]</h3>
+    <p>Specifies attributes related to enumerators that use this document.<br>
+    </p>
+    <h3>Exclude</h3>
+    <p>Default is false. If true, Enumerators will ignore this document.</p>
+
+  </body>
+</html>

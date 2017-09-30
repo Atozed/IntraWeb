@@ -1,0 +1,144 @@
+<html>
+  <head>
+  </head>
+<body><h3>Example
+</h3>
+<p>{%%Enum.List ID="Default" Type="Bullet" Target="Doc" Path="Template" Match="*.*" Text="&lt;a href='{%Doc.URL%}'&gt;{%Doc.Name%}&lt;/a&gt; {%Doc.Size .Format='#,### bytes'%}"%%}
+</p>
+<p>Note that there are embedded tags in params. In such cases single quotes must be used instead of double quotes (as in Size .Format) because it is already inside of a set of double quotes.
+</p>
+<h3>Parameters
+</h3>
+<h4>Type
+</h4>
+<ul>
+  <li>
+<div>Bullet - Bulleted list.
+</div></li>
+  <li>
+<div>Numbered - Numbered list.
+</div></li>
+  <li>
+<div>Line - Each item is on a new line and seperated by a html line break tag.
+</div></li>
+  <li>
+<div>Paragraph - Each item is surrounded by html paragraph tags.
+</div></li>
+  <li>
+<div>Delim - A list delimited by text.
+</div></li>
+  <li>
+<div>Inline - No seperation.
+</div>
+  </li>
+</ul>
+<p>There is no default.
+</p>
+<h4>Target
+</h4>
+<ul>
+  <li>
+<div>Doc - File list in Path.
+</div></li>
+  <li>
+<div>Dir&nbsp;- Directory list in Path.
+</div>
+  </li>
+</ul>
+<p>Default is "Doc".
+</p>
+<h4>Path
+</h4>
+<p>Path where enumerated items exist. Path is relative to current directory. If absolute, it is relative to wwwroot.
+</p>
+<p>Default is the current directory.
+</p>
+<h4>Match
+</h4>
+<p>A pattern match used to select which files or directories are enumerated. Example, "*.jpg", "*.props.html".
+</p>
+<p>For Target="Dir", default is "*.*". For Target="Doc", default is "*.html".
+</p>
+<h4>Text
+</h4>
+<p>Specifies the text to display using Doc or Dir variables. When Path="Dir", only Dir variables may be used.
+</p>
+<p>Default is Doc.Name or Dir.Name depending on Type.
+</p>
+<h4>Delimeter
+</h4>
+<p>Used for Type=Delim.
+</p>
+<p>Default is ", ".
+</p>
+<h4>ExcludeIndex
+</h4>
+<ul>
+  <li>
+<div>True
+</div></li>
+  <li>
+<div>False
+</div>
+  </li>
+</ul>
+<p>Specifies whether or not to exclude index.html in the enumeration.
+</p>
+<p>Default is "True".
+</p>
+<h4>SortBy
+</h4>
+<p>Variable used to&nbsp;sort the&nbsp;results.&nbsp;Currently for documents only Doc.* variables are valid when Target="Doc" and File.* variables when Target="Dir". Only a single variable can be specified and the .Format parameter cannot be specified. In the future, all of these restrictions will be removed allowing other variables, multiple variables, and formatting to be specified.
+</p>
+<p>Examples:
+</p>
+    <ul>
+      <li>
+<div>"{%Doc.Size%}"
+</div></li>
+      <li>
+<div>"{%Doc.Name%}"
+</div>
+      </li>
+    </ul>
+<p>Numbers will be sorted as numbers, timestamps as timestamps, and strings as strings.
+</p>
+<p>If no value is specified, a default sort will be looked for in #Dir.cfg of the target directory. If none is specified in #Dir.cfg, no sorting will be applied and the order should be considered random.
+</p>
+<h4>SortOrder
+</h4>
+    <ul>
+      <li>
+<div>Ascending - "Asc"
+</div></li>
+      <li>
+<div>Descending - "Desc".
+</div>
+      </li>
+    </ul>
+<p>Default is "Asc".
+</p>
+<h4>ID
+</h4>
+    <p>An optional document unique&nbsp;ID.&nbsp;ID is used to enable <a href="RSS.html">RSS
+</a> functionality and for <a href="../Doc/EnumPageNo.html">Doc.EnumPageNo</a>. If no&nbsp;ID is specified, RSS and other functionality will be disabled for the enumerator. "Default" is a special string, and specifies that this enum is the default RSS feed for the document. ID values are case insensitive.
+</p>
+<h4>Title
+</h4>
+    <p>An optional title used for title of the RSS feed. If no Title is specified, the&nbsp;ID is used. Titles are used when describing or publishing the RSS feed.
+</p>
+    <h4>MaxItems
+</h4>
+<p>Specifies the maximum number of items to be returned.
+</p>
+<p>Default is 0, which means return all items.
+</p>
+<h4>Page
+</h4>
+    <p dir="ltr">Optional page number of items to return. Page numbers start from 1. If no MaxItems value is specified, Page's only valid value is 1 or not specified.
+</p>
+    <p dir="ltr">Default value is 1.
+</p>
+
+</body>
+</html>

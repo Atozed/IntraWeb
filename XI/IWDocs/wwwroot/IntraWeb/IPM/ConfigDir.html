@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <p>Directories can be configured using #Dir.cfg.</p>
+    <p>Each folder can have an optional <a href="Config.html">config file</a>. For directories, the file is always named #Dir.cfg irregardless of the actual folder name and is contained in the folder that it applies to.
+    </p>
+    <h3>Example</h3>
+    <p>[Dir]<br>Title=Our Team
+    </p>
+    <p>[Sort]<br>Doc=Doc.Size
+      <br>
+    </p>
+    <p>[Dir Sort]<br>Subdir1
+      <br>Subdir3
+      <br>Subdir2
+      <br>
+    </p>
+    <p>[Doc Sort]<br>About.html
+      <br>Team.html
+      <br>Credits.html
+      <br>
+    </p>
+    <h3>[Folder]<br>
+    </h3>
+    <h4>Title</h4>
+    <p>Optional. Contains a descriptive title of the folder. Used for breadcrumbs and directory lister to display a friendlier name for a folder.</p>
+    <h3>[Sort]</h3>
+    <h4>Dir</h4>
+    <p>Same as Doc, but applies to sub directories instead.<br>
+    </p>
+    <h4>Doc</h4>
+    <p>Specifies the default sort order for documents. Value is a variable name. Example "Doc.Size". If no value is specified, "Doc.SortIndex" is used.<br>
+    </p>
+    <h3>[Dir Sort]</h3>
+    <p>Functionality is the same as [Doc Sort] but applies to sub directories instead of documents.<br>
+    </p>
+    <h3>[Doc Sort]<br>
+    </h3>
+    <p>Specifies a manual sorting order for enumerators. An integer value is given to each document in its Doc.SortIndex variable starting at 1 and incrementing. Documents are listed by their full name in the order of the desired sorting. Any documents not listed in this section will be given a value of MaxInt and treated as unsorted. They will appear after the explicitly sorted documents. The order in which they will appear after the explicitly sorted documents is undefined.<br>
+    </p>
+    <h3>[Enum]</h3>
+    <p>Same as Enum section in <a href="ConfigDoc.html">document config</a>, but applies to the folder.
+    </p>
+
+  </body>
+</html>

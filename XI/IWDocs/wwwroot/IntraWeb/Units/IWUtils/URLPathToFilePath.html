@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+  <h3>
+    function URLPathToFilePath(aRootPath: string; aSubPath: string): string;</h3>
+  <p>
+    Using the base path on disk and a URL (excluding the host), this function 
+    converts and merges the two into a physical path on disk. It does not check to 
+    see if the resulting file actually exists.</p>
+  <p>
+    URLPathToFilePath verifies that the resulting path:</p>
+  <ul>
+    <li>Does not contain any relative paths</li>
+    <li>Does not refer to a path above aRootPath</li>
+  </ul>
+  <h3>
+    Example</h3>
+  <pre>xURI := TInURI.Create(WebApplication.ReferringURLLast);
+xLocalFile := URLPathToFilePath(gSC.ContentPath, xURI.Path + xURI.Document);</pre>
+  <p>
+    &nbsp;</p>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+object formQuestion1: TformQuestion1
+  Left = 0
+  Top = 0
+  Width = 384
+  Height = 242
+  ConnectionMode = cmAny
+  SupportedBrowsers = [brIE, brNetscape7, brNetscape6]
+  ActiveControl = editMinutes
+  BrowserSecurityCheck = True
+  Background.Filename = 'background.gif'
+  Background.Fixed = True
+  LayoutMgr = IWTemplateProcessorHTML1
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  OnDefaultAction = butnNextClick
+  XPTheme = True
+  DesignLeft = 313
+  DesignTop = 197
+  object textPrompt: TIWText
+    Left = 8
+    Top = 8
+    Width = 289
+    Height = 57
+    Cursor = crAuto
+    IW50Hint = False
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    BGColor = clNone
+    ConvertSpaces = True
+    Font.Color = clWindowText
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'textPrompt'
+    Lines.Strings = (
+      'How many minutes per month do you spend '
+      'on your cell phone during business hours?'
+      '(M-F 8-5)')
+    RawText = False
+    UseFrame = False
+    WantReturns = True
+  end
+  object editMinutes: TIWEdit
+    Left = 136
+    Top = 71
+    Width = 65
+    Height = 21
+    Cursor = crAuto
+    IW50Hint = False
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Alignment = taLeftJustify
+    BGColor = clNone
+    FocusColor = clNone
+    DoSubmitValidation = True
+    Editable = True
+    NonEditableAsLabel = True
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'TIWEdit1'
+    MaxLength = 4
+    ReadOnly = False
+    Required = False
+    ScriptEvents = <>
+    TabOrder = 0
+    PasswordPrompt = False
+    Text = '0'
+  end
+  object butnNext: TIWButton
+    Left = 136
+    Top = 103
+    Width = 75
+    Height = 25
+    Cursor = crAuto
+    IW50Hint = False
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Caption = 'Next'
+    DoSubmitValidation = True
+    Color = 13160660
+    Font.Color = clWindowText
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'butnNext'
+    ScriptEvents = <>
+    TabOrder = 1
+    OnClick = butnNextClick
+  end
+  object btnStartOver: TIWButton
+    Left = 16
+    Top = 191
+    Width = 75
+    Height = 25
+    Cursor = crAuto
+    IW50Hint = False
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    Caption = 'Start over'
+    DoSubmitValidation = True
+    Color = 13160660
+    Font.Color = clWindowText
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'butnNext'
+    ScriptEvents = <>
+    TabOrder = 2
+    OnClick = btnStartOverClick
+  end
+  object IWTemplateProcessorHTML1: TIWTemplateProcessorHTML
+    TagType = ttIntraWeb
+    Left = 32
+    Top = 112
+  end
+end

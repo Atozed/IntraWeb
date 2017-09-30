@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CrossTalk Project Manager</title>
+</head>
+<body>
+
+    <h1>Using CrossTalk in a Project</h1><p>CrossTalk Projects are not special Delphi projects. In fact a <a href="http://www.atozed.com/crosstalk/Docs/ProjectFile.EN.aspx">CrossTalk Project
+</a>refers to the CTP file used to generate the .pas files used by your Delphi application(s).
+</p><p>Generally each Delphi project that uses CrossTalk will also have an accompanying CTP file. However a singleDelphi project could have multiple CTP files, and a single CTP file could be shared among several Delphi project.
+</p><h3>Create a Delphi Project
+</h3><p>Create a VCL Forms Delphi project and save it.</p><h3>Creating a CTP file
+</h3><p>To create a CTP file, run the CrossTalk Project Manager. It can be accessed from the CrossTalk program group, or in \Program Files\CrossTalk\. The executable name is CTClassgen.exe.
+</p><p><img src="../index_files\CTPMNewProject.jpg" border="0"></p><p>Select "Create a new CrossTalk Project". A Save As dialog will appear. Browse to the directory where you saved the Delphi project. Select a name for your CTP file. It can be named anything. For example Test.ctp.
+</p><p>Next the editor form will appear.
+</p><p><img src="../index_files\CTPMEditor.jpg" border="0"></p><p>This form allows the selection of .NET assemblies, and then classes that we want to use in our Delphi project. The Add GAC button allows addition ofassemblies that are in the GAC, and the Add User button allows non GAC assemblies to be added. Click the Add GAC button. The Add GAC Assembly form will appear.
+</p><p><img src="../index_files\CTPMAddGAC.jpg" border="0"></p><p>Assemblies can be browsed or filtered. For this example lets add mscorlib, where much of the System namespace exists. To do this type "mscor" in the search text field.
+</p><p><img src="../index_files\CTPMAddGACmscor.jpg" border="0"></p><p>Now select mscorlib. The form will display the version and culture. This isuseful as assemblies with duplicate names can exist in the GAC, but with different versions and/or cultures.
+</p><p><img src="../index_files\CTPMmscorlib.jpg" border="0"></p><p>Now click OK. The main edit form will reappear with mscorlib added to the assembly list.
+</p><p><img src="../index_files\CTPMmscorlib2.jpg" border="0"></p><p>Now we will add a class from mscrolib. Select mscorlib in the Assembly References list.
+</p><p><img src="../index_files\CTPMmscorlib3.jpg" border="0"></p><p>Click the Add button to the right of the Types list, and an Add Type form will appear.
+</p><p><img src="../index_files\CTPMAddTypeForm.jpg" border="0"></p><p>Available Types lists the types that are available in mscorlib for use. A search text field also exists. Type 'stringbu' into the search text field.
+</p><p><img src="../index_files\CTPMstringbu.jpg" border="0"></p><p>Select System.Text.StringBuilder.
+</p><p><img src="../index_files\CTPMStringBuilderSelected.jpg" border="0"></p><p>Click OK.
+</p><p><img src="../index_files\CTPMReady.jpg" border="0"></p><p>In this example we have added one assembly reference, and selected one class. More can be added but we will continue with only one for simplicity. The CTP file can be edited again at a later date to add more types or assembly references.
+</p><p>Click Save, and then close the CTP Manager. Go to the Delphi project directory and you will see your Delphi project files, and your newly created CTP file.
+</p><p><img src="../index_files\ProjectWithCTPFile.jpg" border="0"></p><p>Double click on Test.ctp to run the CTP manager again. This time we run the CTP manager to generate the necessary .pas files.
+</p><p><img src="../index_files\TestCTPOpen.jpg" border="0"></p><p>Click "Generate ..."
+</p><p><img src="../index_files\TestCTPGenerate.jpg" border="0"></p><p>Close this window. The .pas files are ready and have been generated in our project directory.
+</p><p><img src="../index_files\TestCTPPas.jpg" border="0"></p><p>Switch back to Delphi and test compile the application.
+</p><h3>Using StringBuilder
+</h3><p>Open the .pas file for the form in the Delphi project and add CTmscorlib to the uses clause.
+</p><p><img src="../index_files\UsesCTmscorlib.jpg" border="0"></p><p>Now we can use StringBuilder. Add a button to the form and create a Click event. Add the following code.
+</p><p><img src="../index_files\ButtonClick.jpg" border="0"></p><p>Now run the project and press the button.
+</p><p><img src="../index_files\HelloWorld.jpg" border="0"></p><p>You have just successfully created a native VCL Forms application that calls a .NET class! This sample was designed to be simplistic to reduce the possiblities for errors. However now you should understand how to add more classes including your own custom .NET classes and use them from Delphi. CrossTalk can use System.XML, .NET DataSet classes, and much more. 
+</p>
+    
+</body>
+</html>

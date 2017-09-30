@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Installing a License Key</title>
+</head>
+<body>
+
+    <p>
+        Without a license key CrossTalk will run in &quot;evaluation mode&quot; and enforce 
+        certain restrictions. After purchaing CrossTalk, you will receive a license key. 
+        A license key consists of three parts:</p>
+    <ol>
+        <li>Registration name. This will be your name or your company name.</li>
+        <li>Serial number</li>
+        <li>Key String</li>
+    </ol>
+    <p>
+        Each of these three items must be entered exactly. To install the license key 
+        select the &quot;CrossTalk Source Code&quot; item in the CrossTalk program group. This 
+        opens a directory containing some linkable CrossTalk source files. In this 
+        directory you will find CTLicenseKey.inc. Open CTLicenseKey.inc in notepad or 
+        some other text editor. The default contents are shown here:</p>
+    <pre>// This file will contain your license key information if you have
+// a license key.
+//
+// This unit must NOT be redistributed.
+//
+
+  xName := &#39;&#39;;
+  xSerial := 0;
+  xKey := &#39;&#39;; </pre>
+    <p>
+        Insert your registration name and key string into the string literals, and 
+        change the xSerial value to your serial number. Save the file, and perform a 
+        rebuild all on your CrossTalk applications.</p>
+
+</body>
+</html>

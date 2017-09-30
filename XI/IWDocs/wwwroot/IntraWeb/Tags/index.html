@@ -1,0 +1,123 @@
+<html>
+  <head>
+  </head>
+<body>
+<p>Variables are used to replace content during request. Currently variables are only available in integrated page mode, however in the future they will be available in app mode as well.
+</p>
+<h3>Syntax
+</h3>
+<p>Variables are of the form:
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr"><p>{%%Type.Name Param1="Value1" Param2="Value2" ... %%}
+</p>
+</blockquote><p dir="ltr">Type, name, and parameter names are all case insensitive.
+</p><p>Param names are specific to the variable. Param names that start with . are reserved for system use, and are not specific to a variable. Values must be surrounded in quotes, they are not optional.
+</p><p>If a variable does not require any parameters, in the simplest form a variable can be:
+</p>
+<blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>{%%Type.Name%%}
+</p>
+</blockquote>
+<h3>System Params
+</h3>
+<h4>.Base
+</h4>
+<p>Base can be used only with numbers and alters the base that the number is emitted in. Base is applied before .Format.&nbsp;Values are case insensitive.
+</p>hex&nbsp;- Number is converted to hex. Type becomes string, and thus affects the use of .Format parameter.
+<ul>
+	<li>
+<div>kb - Number is divided by 1024 (kilobyte).
+</div></li>
+	<li>
+<div>mb - Number is divided by 1024 x 1024 (megabyte).
+</div></li>
+	<li>
+<div>gb - Number is divided by 1024 x 1024 x 1024 (gigabyte).
+</div>
+	</li>
+  </ul>
+<h4>.Format
+</h4>
+<p>Format strings depend on the data type that the variable returns.
+</p>
+<ul>
+  <li>
+<div>Date or Time - String is as specified in SysUtils.FormatDateTime.
+</div></li>
+  <li>
+<div>Number - String is as specified in SysUtils.FormatFloat.
+</div></li>
+  <li>
+<div>String - This parameter is not valid. Strings are output as is.
+</div>
+  </li>
+</ul>
+<p>If no format is specified, the format is specified by the operating system settings.
+</p>
+<h3>Types
+</h3>
+<p>Type (also known as a type's prefix) is one of the following:
+</p>
+<p>{%Enum.ListDirs%}
+</p>
+    <h3>Tags
+</h3>
+    <p>IPM content consists of any content in the wwwroot. For now I want to discuss IWP (IW Pages) files which have an .html extension. We chose an .html extension so that the files would be readily recognized by HTML editors and the Delphi IDE as HTML files. They are however not limited to static content and can contain a variety of IW tags. IW Tags are of the format:
+</p>
+    <p>{%%TagType.TagName%%}
+</p>
+    <p>Tags are case insensitive and can optionally also contain attributes. For an example of an attribute, see Escaping Tags. We used the {%% and %%} markers instead of &lt; &gt; so that your markup can be seen in any HTML editor. These tags are used for visible content as well as invisible content, and allows for easy editing without resorting to editing only in HTML source view.
+</p>
+    <p>Tag types consists of one of the following:
+</p>
+    <ul>
+      <li>Template - Only usable from within templates (aka skins).<br></li>
+      <li>Sys - A system variable such as time, year, etc.<br></li>
+      <li>Var - A variable as a html or text file in the content path.<br></li>
+      <li>User - User defined variables to be handled by an event, or a registered handler class.
+</li>
+    </ul>
+    <p>The TagName specifies the actual tag to use. For example {%%Sys.Year%%} would be replaced with the current year. "(C) {%%Sys.Year%%} - Our Company" would become "(C) 2010 - Our Company" in the user's browser.
+</p>
+    <h3>Unrecognized Tags<br>
+
+
+
+
+
+
+
+</h3>
+    <p>Unregognized tags usually generate an exception. See documentation of each tag type for specifics. <a href="Var\index.html">Variable tags
+</a>&nbsp;are an example of on exception to this rule.
+</p>
+    <h3>Escaping Tags
+
+
+
+
+
+
+</h3>
+    <p>If the tags need to be displayed directly to the browser such as is seen on this page they can be escaped in the following manner. To display:
+</p>
+    <p style="MARGIN-LEFT: 40px">{%%var.Phone%%}
+</p>
+    <p>use
+</p>
+    <p style="MARGIN-LEFT: 40px">{%%%var.Phone%%}
+</p>
+    <p>The double %% tells IntraWeb it is not a tag and should be displayed rather than processed. Only one % will be displayed to the user.
+
+
+</p>
+
+
+
+
+
+
+
+
+</body>
+</html>

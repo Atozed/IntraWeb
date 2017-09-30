@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <p>List enum in a document can be&nbsp;exposed as RSS. To enable RSS functionality for a list&nbsp;enum, specify an <a href="List.html">RSSID
+</a>.
+</p>
+    <h3>RSS URL
+</h3>
+    <p>To access an RSS feed, change the document extension from .html to .rss and optionally specify parameters. Given the following document URL:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+      <pre><a href="http://www.myapp.com/team/index.html">http://www.myapp.com/team/index.html
+</a>
+      </pre>
+    </blockquote>
+    <p dir="ltr">The RSS URL would be:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+      <pre dir="ltr">
+      <pre><a href="http://www.myapp.com/team/index.rss">http://www.myapp.com/team/index.rss
+</a>
+      </pre></pre>
+    </blockquote>
+    <p dir="ltr">This URL would access an enum in index.html with an RSSID of "Default". To access a different RSSID it can be selected using the ID param:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+      <pre><a href="http://www.myapp.com/team/index.rss?RSS.ID=Research">http://www.myapp.com/team/index.rss?RSS.ID=Research
+</a>
+      </pre>
+    </blockquote>
+    <p dir="ltr">The RSS. prefix is used to avoid conflicting with user parameters used in conjunction with HTTP. tags.
+</p>
+    <h3 dir="ltr">Params
+</h3>
+    <p dir="ltr">In addition to RSS.ID, there are other params that can be specified.
+</p>
+    <h4 dir="ltr">RSS.ID
+</h4>
+    <p dir="ltr">Specifies which RSS feed to return. If no RSS.ID is specified, one named "Default" is searched for.
+</p>
+    <h4 dir="ltr">RSS.MaxItems
+</h4>
+    <p dir="ltr">Specifies the maximum number of items to be returned. If MaxItems is also specified in the list enum, RSS.MaxItems will override that value.
+</p>
+    <h4 dir="ltr">RSS.Page
+</h4>
+    <p dir="ltr">Specifies which page to return and overrides any page value specified in the list enum. For values of the RSS.Page parameter, see <a href="List.html">list enum page parameter
+</a>.
+</p>
+    <h3 dir="ltr">Other Params
+</h3>
+    <p dir="ltr">In the future other&nbsp;params which allow sorting, filtering, and other options will be available.
+</p>
+
+  </body>
+</html>

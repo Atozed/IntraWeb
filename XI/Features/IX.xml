@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ApplicationSettings>
+	<DBSettings>
+		<ConnectionString>User=SYSDBA;Password=1ntraw3b;Database=D:\\IISDomains\\atozedsoftware.com\\wwwroot\\apps\\cgi-bin\\IX\\database\\ElkSupport.gdb;DataSource=localhost;Port=3050;Dialect=3;Charset=NONE;Role=;Connection lifetime=15;Pooling=true;Packet Size=8192</ConnectionString>
+	</DBSettings>
+	<MailSettings>
+		<MailServer>mail.atozedsoftware.com</MailServer>
+		<MailPort>25</MailPort>
+		<MailUser>patric@atozedsoftware.com</MailUser>
+		<MailPassword>budapest</MailPassword>
+		<MailFrom>Experts System - Atozed &lt;patric@atozedsoftware.com&gt;</MailFrom>
+	</MailSettings>
+</ApplicationSettings>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <p>These directions were developed by starting with a fresh installation of Windows Server 2003 R2 with default options, and all available Windows updates installed.
+</p>
+    <p>Install IIS
+</p>
+    <p>Check to see that IIS is installed. If not, Control Panel, Add/Remove Programs, Add/Remove Windows Components, Application Server, Details, Check Internet Information Services (IIS), OK, Next.
+</p>
+    <p>After its complete, Internet Information Services should appear under Administrative Tools in All Programs in the Start Menu.
+</p>
+    <h3>Configure IIS 6.0
+</h3>
+    <p>Copy ISAPIChecker.dll.
+</p>
+    <h3>Change Permissions
+</h3>
+    <p>Add everyone.
+</p>
+    <h3>Configure Website
+</h3>
+    <p>Create a new website. Properties, Home Directory, Change Execute Permissions to Scripts and Executables, OK.
+</p>
+    <h3>Enable ISAPI Extensions
+</h3>
+    <p>Select Web Service Extensions.
+</p>
+    <p>Select All Unknown ISAPI Extensions and click Allow.<br>or <br>Individually allow your ISAPI extension.
+</p>
+    <h3>Test ISAPIChecker
+</h3>
+    <p><a href="http://127.0.0.1/ISAPIChecker.dll">http://127.0.0.1/ISAPIChecker.dll
+</a>
+    </p>
+    <p>The page cannot be found - Not installed, website not configured, or did not enable ISAPI extensions.
+</p>
+    <p>You are not authorized to view this page - Add everyone
+</p>
+    <p>ISAPIChecker checks:
+</p>
+    <ul>
+      <li>
+    <div>Temp directory
+</div>
+      </li>
+    </ul>
+    <p>Also see <a href="http://www.atozed.com/intraweb/blog/20090506.aspx">http://www.atozed.com/intraweb/blog/20090506.aspx</a>
+</p>
+
+  </body>
+</html>

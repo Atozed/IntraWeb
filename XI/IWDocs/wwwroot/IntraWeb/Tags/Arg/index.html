@@ -1,0 +1,71 @@
+<html>
+  <head>
+  </head>
+<body><h3>Prefix
+</h3><p>The prefix for argument tags is Arg.
+</p><h3>Example
+</h3>
+<p>{%%arg.Year%%}
+</p>
+<h3>Description
+</h3>
+<p>Arguments are used to pass values to <a href="..\Vars\Index.html">variable tags
+</a>. For example, given a variable named Copyright (#Copyright.html) with WYSIWYG the contents of:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>(C) Copyright {%%arg.StartYear%%}-{%%sys.Year%%}
+</p>
+    </blockquote>
+<p dir="ltr">The variable could then be embedded in another document and specify the year using the following syntax:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr">{%%var.Copyright StartYear="2002"%%}
+</p>
+    </blockquote>
+<p dir="ltr">For they year 2010, the final output would be:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p>(C) Copyright 2002-2010
+</p>
+    </blockquote>
+<h3 dir="ltr">Nesting
+</h3>
+<p dir="ltr"><a href="..\Vars\index.html">Variables
+</a> can be nested, however arguments only apply to the variable they are applied to. This is by design. For example if our Copyright variable was used in another variable called Footer with the WYSIWYG value of:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr">All rights reserved. We are not responsible for typographical errors.<br>{%%var.Copyright%%} <br>Please contact <a href="mailto:Webmaster@asdkfjswerwerew.com">Webmaster
+</a> with any corrections.
+</p>
+    </blockquote>
+<p dir="ltr">And in a document the following tag was used:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr">{%%var.Footer StartYear="2002"%%}
+</p>
+    </blockquote>
+<p dir="ltr">This will produce:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr">All rights reserved. We are not responsible for typographical errors.<br>(C) Copyright -2010<br>Please contact <a href="mailto:Webmaster@asdkfjswerwerew.com">Webmaster
+</a> with any corrections.
+</p>
+    </blockquote>
+<p dir="ltr">This is because arguments are only valid in their target, not in other variables included in the target. Arguments can be repassed to provide nesting functionality if required. In our example Footer should be changed to:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr">All rights reserved. We are not responsible for typographical errors.<br>{%%var.Copyright StartYear="{%%arg.StartYear%%}"%%} <br>Please contact <a href="mailto:Webmaster@asdkfjswerwerew.com">Webmaster
+</a> with any corrections.
+</p>
+    </blockquote>
+<p dir="ltr">This would then produce:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+<p dir="ltr">All rights reserved. We are not responsible for typographical errors.<br>(C) Copyright 2002-2010<br>Please contact <a href="mailto:Webmaster@asdkfjswerwerew.com">Webmaster
+</a> with any corrections.
+</p>
+    </blockquote>
+<p dir="ltr">
+</p>
+</body>
+</html>

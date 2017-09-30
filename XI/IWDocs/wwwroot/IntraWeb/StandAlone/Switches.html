@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>Command Line Parameters
+</title>
+  </head>
+
+  <body>
+    <h3>/Install<br>/Uninstall
+</h3>
+    <p><a href="..\Deployment\Service\">Installs or uninstalls
+</a>the application as a Windows Service. For older project types this is only valid in Service Projects. In XI Service and GUI projects have been unified but older projects may still use the older project type.
+</p>
+    <h3>/Silent
+</h3>
+    <p>Only valid in conjunction with /Install or /Uninstall. /Silent prevents any status dialogs from appearing.
+</p>
+    <h3>/GUI
+</h3>
+    <p>For XI project types this specifies to display the GUI instead of running as a service. Without this parameter, the application will try to run as a service and should not be started directly.
+</p>
+    <h3>/LogConfig
+</h3>
+    <p>Emits a config.log file in the application directory containing name value pairs specifying information about the application. This is used by Site Manager, but can be used for other purposes as well. The server is not started, and immediately after the config.log is written the application is exited. This option can be used while an existing instance of the application is already running, however in the case of dynamic ports the previous config.log will be overwritten and may contain different information than the running instance.
+</p>
+    <p>Because /LogConfig causes the application to terminate, /Install, /Uninstall, and /GUI are ignored when /LogConfig is used.
+</p>
+    <p>Only valid in XI project types.
+</p>
+
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.highlight {font:10pt Tahoma; color:red; text-decoration: none} 
+
+.pageheading {font:11pt Verdana; font-weight:bold; color: black; text-decoration: none; text-align : center; }
+.sectionheading {font:12pt Verdana; font-weight:bold; color: silver; text-decoration: none; text-align : left; }
+
+.bodytext{font: 8pt Verdana; color:blue; text-decoration: none;  text-align : justify;    }
+.bodytextbold{font:10pt Verdana; color:black; text-decoration: none;  font-weight : bold; text-align : justify;   }
+.bodytextsmall{font:8pt Verdana; color:black; text-decoration: none; text-align : justify;   }
+.bodytextcentered{font: 10pt Verdana; color:black; text-decoration: none;  text-align : center;    }
+.bodytexthighlight{font:10pt Verdana; color:orange; text-decoration: none;text-align : justify;   }
+.bodytextboldhighlight{font:10pt Verdana; color:orange; text-decoration: none;  font-weight : bold; text-align : justify;   }
+.bodystandout{font:11pt Verdana; color:red; text-decoration: none;  font-weight : bold  }
+
+.code{font: monospace; color:black; text-decoration: none;   }
+.comment{font: monospace; color:teal; text-decoration: none;  font-style : italic;    }
+

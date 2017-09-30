@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Aliasing</title>
+    <style type="text/css">
+        .style1
+        {
+            background-color: #FF9933;
+        }
+    </style>
+</head>
+<body>
+    <p>The following example demonstrates usage of the .NET XmlReader class. It is a 
+        direct translation of a C# example.</p><div style="MARGIN-LEFT: 40px">
+        <pre>procedure TestXML();
+var
+&nbsp; xSettings: XmlReaderSettings;
+&nbsp; xReader: XmlReader;
+begin
+&nbsp; xSettings := XmlReaderSettings.Create; try
+&nbsp;&nbsp;&nbsp; xSettings.ConformanceLevel := ConformanceLevel.Fragment;
+&nbsp;&nbsp;&nbsp; xSettings.IgnoreWhitespace := true;
+&nbsp;&nbsp;&nbsp; xSettings.IgnoreComments := true;
+&nbsp;&nbsp;&nbsp; xReader := XmlReader.<span class="style1">Create2</span>(&#39;C:\source\CrossTalk\source\TestLeft\test.xml&#39;, xSettings);
+&nbsp;&nbsp;&nbsp; try
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while not xReader.EOF do begin
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (xReader.MoveToContent = XmlNodeType.Element)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and (xReader.Name = &#39;ProductName&#39;) then begin
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WriteLn(&#39;Product: &#39; + xReader.ReadString);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xReader.Read();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; end;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xReader.Close;
+&nbsp;&nbsp;&nbsp; finally xReader.Free; end;
+&nbsp; finally xSettings.Free; end;
+end;
+</pre>
+</div><p>end;
+</pre>
+</div><h3>XmlReader.Create
+</h3><p>XmlReader.Create is actually a static method in .NET called Create and not the 
+        consructor. C# does not use the keyword Create for constructors. To avoid 
+        conflict with the commonly used Create name in Delphi for most constructors, 
+        CrossTalk will alias any method named Create to Create2. That is why in the 
+        above example Create2 is used instead of Create.</p>
+    <p>In this example, Create is a class factory and not a constructor.</p>
+
+</body>
+</html>

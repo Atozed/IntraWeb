@@ -1,0 +1,36 @@
+<html>
+  <head>
+  </head>
+<body>
+<p>
+  IntraWeb XI has a new pallete with components for user authentication. Currently 
+  there are 3 components: TIWAutherINI, TIWAutherList and TIWAutherEvent. The 
+  ServerController has the new property Auther, which must be used to connect it 
+  to any of the available authentication components.</p>
+  <h3>
+    Authentication Process</h3>
+  <p>
+    If no auther exists, no authentication will ever be requested of the user.</p>
+  <p>
+    If an auther exists:</p>
+  <ul>
+    <li>The auther will be responsible for validating the username and password 
+      supplied when authentication is requested.</li>
+    <li><a href="TIWAuther/Policy.html">TIWAuther.Policy</a> controls the default 
+      mechanism for requests. Policy can be used to control whether requests required 
+      authentication or not by default.</li>
+    <li>This default can be overriden on a form by form basis by implementing a
+      <a href="../TIWAppForm/RequestAuth.html">RequestAuth</a> method. If not override 
+      exists for a form, the default set by Policy is used.</li>
+  </ul>
+  <h3>
+    Built In Authers</h3>
+<p>{%Enum.List ExcludeIndex="True" Type="Bullet" Target="Dir" SortBy="Dir.Name" SortOrder="Asc" Text="&lt;a href='{%Dir.URL%}'&gt;{%Dir.Name%}&lt;/a&gt;"%}</p>
+  <h3>To Do</h3>
+  <ul>
+    <li>Status of session</li>
+    <li>How exceptions are handled</li>
+  </ul>
+  <p>&nbsp;</p>
+</body>
+</html>

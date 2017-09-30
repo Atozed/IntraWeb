@@ -1,0 +1,100 @@
+a:link {font:10pt Verdana; font-weight: normal; color:blue} 
+a:visited {font:10pt Verdana; font-weight:normal; color:purple} 
+a:hover {font: normal 10pt Verdana; font-weight:; color:red} 
+
+a.style1:link {font:10pt Verdana; font-weight:bold; color:white; text-decoration: none} 
+a.style1:visited {font:10pt Verdana; font-weight:bold; color:white; text-decoration: none} 
+a.style1:hover {font:10pt Verdana; font-weight:bold; color:orange; text-decoration: none}
+
+a.clsMenu:link {font:10pt Verdana; font-weight:bold; color:white; text-decoration: none} 
+a.clsMenu:visited {font:10pt Verdana; font-weight:bold; color:white; text-decoration: none} 
+a.clsMenu:hover {font:10pt Verdana; font-weight:bold; color:orange; text-decoration: none}
+
+a.clsMenuSelected:link {font:10pt Verdana; font-weight:bold; color:orange; text-decoration: none} 
+a.clsMenuSelected:visited {font:10pt Verdana; font-weight:bold; color:orange; text-decoration: none} 
+a.clsMenuSelected:hover {font:10pt Verdana; font-weight:bold; color:white; text-decoration: none}
+
+
+a.style2:link {font:9pt Verdana; font-weight:bold; color:black; text-decoration: none} 
+/*a.style2:visited {font:9pt Verdana; font-weight:bold; color:black; text-decoration: none}  */
+a.style2:hover {font:9pt Verdana; font-weight:bold; color:orange; text-decoration: none}
+
+a.submenu:link {font:9pt Verdana; font-weight:bold; color:black; text-decoration: none}
+a.submenu:visited {font:9pt Verdana; font-weight:bold; color:black; text-decoration: none}
+a.submenu:hover {font:9pt Verdana; font-weight:bold; color: #2B7BFF; text-decoration: none}
+
+a.currentsubmenu:link {font:9pt Verdana; font-weight:bold; color:#2B7BFF; text-decoration: none}
+a.currentsubmenu:visited {font:9pt Verdana; font-weight:bold; color:#2B7BFF; text-decoration: none}
+a.currentsubmenu:hover {font:9pt Verdana; font-weight:bold; color:#2B7BFF; text-decoration: none}
+
+.separator {font:10pt Verdana; font-weight:bold; color:navy; text-decoration: none}
+
+
+.verdanawhite {font:8pt Verdana; color:white; text-decoration: none}
+.verdanablack {font:8pt Verdana; color:black; text-decoration: none}
+.verdanagray {font:8pt Verdana; color:#DDDDDD; text-decoration: none}
+.verdanablack9 {font:9pt Verdana; color:black; text-decoration: none}
+.verdanaorange {font:9pt Verdana; font-weight:bold; color:orange; text-decoration: none}
+.verdanablack10 {font:9pt Verdana; color:black; text-decoration: none}
+.verdanawhite10 {font:10pt Verdana; color:white; text-decoration: none}
+
+.codeblock{font: 9pt "Courier New", Courier, monospace; color:black; text-decoration: none}
+
+.tdborderleft {border-left: 1 solid #DDDDDD}
+.tdbordertopbot {border-top: 1 solid #DDDDDD; border-bottom: 1 solid #DDDDDD}
+.tdbordertop {border-top: 1 solid #DDDDDD; border-bottom: 0 solid black; }
+.tdborderall {border-top: 1 solid black; border-bottom: 1 solid black; border-left: 1 solid #DDDDDD }
+
+tr.trbordertopbot {border-top: 1 solid black; border-bottom: 1 solid black}
+
+.orderformtable {
+					border : 1px solid Gray; background-color : #FFFFFF;
+					font:10pt Verdana; color:black; text-decoration: none
+}
+tr.orderformrow {
+					border : 1;
+}
+.inputfield {
+					border : 1px solid Gray; background-color : #FFFFFF;}
+.totalfield {
+					border : 1px solid Gray; background-color : #EEFFFF;}
+.totalrow {
+					border : 1px solid Gray; background-color : orange;
+					font:bold 10pt Verdana; color:white;	
+}
+
+.pageheading {font:13pt Verdana; font-weight:bold; color: black; text-decoration: none; text-align : center; }
+
+.sectionheading {font:11pt Verdana; font-weight:bold; color: black; text-decoration: none; text-align : left; }
+
+.bodytext{font: 10pt Verdana; color:black; text-decoration: none;}
+.bodytextbold{font:10pt Verdana; color:black; text-decoration: none;  font-weight : bold;}
+.bodytextsmall{font:8pt Verdana; color:black; text-decoration: none;}
+.bodytextcentered{font: 10pt Verdana; color:black; text-decoration: none;  text-align : center;    }
+
+
+.bodytexthighlight{
+	font:10pt Verdana;
+	color: #CE6300;
+	text-decoration: none;
+}
+.bodytextboldhighlight{
+	font:10pt Verdana;
+	color: #CE6300;
+	text-decoration: none;
+	font-weight : bold;
+}
+.bodystandout{font:11pt Verdana; color:red; text-decoration: none;  font-weight : bold  }
+
+.code{font: monospace; color:black; text-decoration: none;   }
+.comment{font: monospace; color:teal; text-decoration: none;  font-style : italic;    }
+
+.newstext{font: 8pt Verdana; color:black; text-decoration: none;  text-align : left;    }
+.newstextbold{font:8pt Verdana; color:black; text-decoration: none;  font-weight : bold; text-align : left;   }
+.a.imagelink{font:10pt Verdana; font-weight: normal; color:blue; 	border : none; }
+.quotetext{
+	font: normal 8pt Verdana;
+	color: #0063FF;
+	text-decoration: none;
+	text-align : justify;
+}

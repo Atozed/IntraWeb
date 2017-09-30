@@ -1,0 +1,53 @@
+
+<html>
+<head>
+<title>
+<%= Page.Title %>
+</title>
+</head>
+<body>
+<h1><%= Application.Title %></h1>
+
+<% if (EndUser.Logout != null) { %>
+<%   if (EndUser.DisplayName != '') { %>
+  <h1>Welcome <%=EndUser.DisplayName %></h1>
+<%   } %>
+<%   if (EndUser.Logout.Enabled) { %>
+  <a href="<%=EndUser.Logout.AsHREF%>">Logout</a>
+<%   } %>
+<%   if (EndUser.LoginForm.Enabled) { %>
+  <a href=<%=EndUser.LoginForm.AsHREF%>>Login</a>
+<%   } %>
+<% } %>
+
+<h2><%= Page.Title %></h2>
+
+<table cellspacing="0" cellpadding="0">
+<td>
+<%  e = new Enumerator(Pages)
+     s = ''
+     c = 0
+     for (; !e.atEnd(); e.moveNext())
+     {
+       if (e.item().Published)
+       {
+         if (c>0) s += '&nbsp;|&nbsp;'
+         if (Page.Name != e.item().Name)
+           s += '<a href="' + e.item().HREF + '">' + e.item().Title + '</a>'
+         else
+           s += e.item().Title
+         c++
+       }
+     }
+     if (c>1) Response.Write(s)
+%>
+</td>
+</table>
+
+Enter <B>test</B> for username and <B>test</B> for password to login.
+
+<#SERVERSCRIPT>
+
+</body>
+</html>
+ 

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <p>.NET and Delphi handle enumerations quite differently. Because of this CrossTalk has to do a bit of a translation and cannot translate .NET enums directly into Delphi enums.
+</p><h3>Namespace
+</h3><p>Except in later Delphi versions with scoped enums, Delphi enums have no namespace.This is why Delphi enums typically have a prefix. i.e. clRed, clBack, etc.
+</p><p>Let's take the example of System.Xml.ConformanceLevel which is an enum that look like this:
+</p><div style="MARGIN-LEFT: 40px">
+      <pre>public enum ConformanceLevel {
+&nbsp;&nbsp;&nbsp; Auto, Fragment, Document
+}</pre>
+    </div><p>If CrossTalk translated it as:
+</p>
+    <pre style="MARGIN-LEFT: 40px">type ConformanceLevel = (Auto, Fragment, Document); </pre>
+    <p>
+      Then Auto, Fragment, and Document become global identifiers and would easilyconflict with other identifiers. CrossTalk could have prefixed each like this:
+    </p>
+    <pre style="MARGIN-LEFT: 40px">type ConformanceLevel = (ConformanceLevel_Auto, ConformanceLevel_Fragment, ConformanceLevel_Document); </pre>
+    <p>
+      This gets a bit ugly, but potentially in many cases could create conflicts as well. Because of these factors CrossTalk instead creates a class with class functions.
+    </p>
+    <pre style="MARGIN-LEFT: 40px">type
+  ConformanceLevel = class
+  public
+    class function Auto: Longword;
+    class function Fragment: Longword;
+    class function Document: Longword;
+  end;
+
+implementation
+
+{ System.Xml.ConformanceLevel }
+
+class function ConformanceLevel.Auto: Longword;
+begin
+   Result := 0;
+end;
+
+class function ConformanceLevel.Fragment: Longword;
+begin
+   Result := 1;
+end;
+
+class function ConformanceLevel.Document: Longword;
+begin
+   Result := 2;
+end;</pre>
+    <h3>
+      Read Only Properties?</h3>
+    <p>We considered using read only properties as this would be more efficient to read values, however this has the drawback of requiring the class to be created first, and also then later destroyed. 
+      Later editions supported class properties, but originally we supported Delphi 7 
+      which did not support this language feature.</p><h3>Enums as LongWords</h3><p>CrossTalk translates enum references to LongWord.
+</p>
+    <pre style="MARGIN-LEFT: 40px">property ConformanceLevel: Longword {Enum: &#39;System.Xml.ConformanceLevel} read ConformanceLevelRead write ConformanceLevelWrite;</pre>
+    <p>
+      While this removes type safety of enums, it allows natural code to be written.
+    </p>
+    <div style="MARGIN-LEFT: 40px">
+      <pre>xSettings := XmlReaderSettings.Create; try
+&nbsp;&nbsp;&nbsp; xSettings.ConformanceLevel := ConformanceLevel.Fragment;
+&nbsp;&nbsp;&nbsp; xSettings.IgnoreWhitespace := true;
+&nbsp;&nbsp;&nbsp; xSettings.IgnoreComments := true;
+&nbsp;&nbsp;&nbsp; ........
+finally xSettings.Free; end;</pre>
+    </div><h3>One Enum = One Unit?</h3><p>We considered emitting one enum per unit and using unit qualifications. The problem is that to do this the unit still has to be added to the uses clause, thus entering it into that units global namespace. This does not really enable namespaces, so much as it forces disambiguation. Not only would the reference to the enum need to be qualified, but so would the opposite conflicting symbol(s). With a lot of conflicts (as would exist most definitely) it creates quite a mess. 
+</p><h3>Scoped Enums?</h3>
+    <p>When we originaly built CrossTalk, we supported Delphi 7 which did not support 
+      this newer Delphi language feature.</p>
+    <pScoped enums were introduced later in Delphi's evolution. CrossTalk originally supported back to Delphi 5, and we wanted too focus on as much unified code as possible. If scoped enums prove to provide tangible benefits over our existing solution we will certainly consider them for a future version when Delphi compilers are used that support them.</p> 
+
+</body>
+</html>

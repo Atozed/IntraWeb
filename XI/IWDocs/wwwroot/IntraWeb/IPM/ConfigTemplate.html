@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <p>Templates can be configured using config files.</p>
+    <p>Each template can have an optional <a href="Config.html">config file</a>. The file is always named #Tmplt.&lt;name&gt;.cfg.<br>
+    </p>
+    <h3>Example</h3>
+    <p>[Template]<br>Parent=Default
+    </p>
+    <h3>[Template]<br>
+    </h3>
+    <h4>Parent</h4>
+    <p>Specifies the name of a parent template. If a parent template is used, cascading templates are enabled and the templates are merged from this template to the parent template. If the parent template also has a parent, the cascade will occur at another level. See templates for more details. If no Parent value exists, no parent template will be used. A value . specifies that a parent template of the same name should be used.<br>
+    </p>
+
+  </body>
+</html>

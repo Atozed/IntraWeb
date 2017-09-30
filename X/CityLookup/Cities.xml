@@ -1,0 +1,4345 @@
+<Cities>
+<City><Name>Kabul</Name></City>
+<City><Name>Herat</Name></City>
+<City><Name>Qandahar</Name></City>
+<City><Name>Mazar-e Sharif</Name></City>
+<City><Name>Jalalabad</Name></City>
+<City><Name>Konduz</Name></City>
+<City><Name>Amsterdam</Name></City>
+<City><Name>Rotterdam</Name></City>
+<City><Name>Haag</Name></City>
+<City><Name>Utrecht</Name></City>
+<City><Name>Eindhoven</Name></City>
+<City><Name>Tilburg</Name></City>
+<City><Name>Groningen</Name></City>
+<City><Name>Almere</Name></City>
+<City><Name>Breda</Name></City>
+<City><Name>Nijmegen</Name></City>
+<City><Name>Apeldoorn</Name></City>
+<City><Name>Enschede</Name></City>
+<City><Name>Haarlem</Name></City>
+<City><Name>Arnhem</Name></City>
+<City><Name>Zaanstad</Name></City>
+<City><Name>Amersfoort</Name></City>
+<City><Name>Haarlemmermeer</Name></City>
+<City><Name>´s-Hertogenbosch</Name></City>
+<City><Name>Maastricht</Name></City>
+<City><Name>Dordrecht</Name></City>
+<City><Name>Leiden</Name></City>
+<City><Name>Zoetermeer</Name></City>
+<City><Name>Zwolle</Name></City>
+<City><Name>Emmen</Name></City>
+<City><Name>Ede</Name></City>
+<City><Name>Westland</Name></City>
+<City><Name>Deventer</Name></City>
+<City><Name>Sittard-Geleen</Name></City>
+<City><Name>Delft</Name></City>
+<City><Name>Alkmaar</Name></City>
+<City><Name>Venlo</Name></City>
+<City><Name>Leeuwarden</Name></City>
+<City><Name>Heerlen</Name></City>
+<City><Name>Willemstad</Name></City>
+<City><Name>Tirana</Name></City>
+<City><Name>Dürres</Name></City>
+<City><Name>Alger</Name></City>
+<City><Name>Oran</Name></City>
+<City><Name>Constantine</Name></City>
+<City><Name>Annaba</Name></City>
+<City><Name>Batna</Name></City>
+<City><Name>Sétif</Name></City>
+<City><Name>Sidi Bel Abbès</Name></City>
+<City><Name>Biskra</Name></City>
+<City><Name>Djelfa</Name></City>
+<City><Name>Tébessa</Name></City>
+<City><Name>Blida (el-Boulaida)</Name></City>
+<City><Name>Skikda</Name></City>
+<City><Name>Béjaïa</Name></City>
+<City><Name>Tiaret</Name></City>
+<City><Name>Chlef (el-Asnam)</Name></City>
+<City><Name>Béchar</Name></City>
+<City><Name>Bordj Bou Arreridj</Name></City>
+<City><Name>Mostaganem</Name></City>
+<City><Name>Médéa</Name></City>
+<City><Name>Tlemcen</Name></City>
+<City><Name>Ouargla</Name></City>
+<City><Name>Souk Ahras</Name></City>
+<City><Name>Saïda</Name></City>
+<City><Name>Guelma</Name></City>
+<City><Name>Khenchela</Name></City>
+<City><Name>Jijel</Name></City>
+<City><Name>El Eulma</Name></City>
+<City><Name>El Oued</Name></City>
+<City><Name>Relizane</Name></City>
+<City><Name>Ghardaïa</Name></City>
+<City><Name>El Bouni</Name></City>
+<City><Name>M'Sila</Name></City>
+<City><Name>Bou Saada</Name></City>
+<City><Name>Laghouat</Name></City>
+<City><Name>Tafuna</Name></City>
+<City><Name>Fagatogo</Name></City>
+<City><Name>Andorra la Vella</Name></City>
+<City><Name>Luanda</Name></City>
+<City><Name>Huambo</Name></City>
+<City><Name>Lobito</Name></City>
+<City><Name>Benguela</Name></City>
+<City><Name>Namibe</Name></City>
+<City><Name>South Hill</Name></City>
+<City><Name>The Valley</Name></City>
+<City><Name>Saint John's</Name></City>
+<City><Name>Dubai</Name></City>
+<City><Name>Abu Dhabi</Name></City>
+<City><Name>Sharja</Name></City>
+<City><Name>al-'Ayn</Name></City>
+<City><Name>´Ajman</Name></City>
+<City><Name>Ra's al-Khayma</Name></City>
+<City><Name>Buenos Aires</Name></City>
+<City><Name>Córdoba</Name></City>
+<City><Name>La Matanza</Name></City>
+<City><Name>Rosario</Name></City>
+<City><Name>Lomas de Zamora</Name></City>
+<City><Name>La Plata</Name></City>
+<City><Name>Mar del Plata</Name></City>
+<City><Name>San Miguel de Tucumán</Name></City>
+<City><Name>Quilmes</Name></City>
+<City><Name>Almirante Brown</Name></City>
+<City><Name>Merlo</Name></City>
+<City><Name>Salta</Name></City>
+<City><Name>Lanús</Name></City>
+<City><Name>General San Martín</Name></City>
+<City><Name>Moreno</Name></City>
+<City><Name>Santa Fe</Name></City>
+<City><Name>Florencio Varela</Name></City>
+<City><Name>Tres de Febrero</Name></City>
+<City><Name>Avellaneda</Name></City>
+<City><Name>Corrientes</Name></City>
+<City><Name>Morón</Name></City>
+<City><Name>Tigre</Name></City>
+<City><Name>San Isidro</Name></City>
+<City><Name>Malvinas Argentinas</Name></City>
+<City><Name>Berazategui</Name></City>
+<City><Name>Bahía Blanca</Name></City>
+<City><Name>Resistencia</Name></City>
+<City><Name>Vicente López</Name></City>
+<City><Name>San Miguel</Name></City>
+<City><Name>Posadas</Name></City>
+<City><Name>Esteban Echeverría</Name></City>
+<City><Name>Paraná</Name></City>
+<City><Name>San Salvador de Jujuy</Name></City>
+<City><Name>Santiago del Estero</Name></City>
+<City><Name>José Carlos Paz </Name></City>
+<City><Name>Pilar</Name></City>
+<City><Name>Guaymallén</Name></City>
+<City><Name>Neuquén</Name></City>
+<City><Name>Formosa</Name></City>
+<City><Name>Godoy Cruz</Name></City>
+<City><Name>Belén de Escobar</Name></City>
+<City><Name>Hurlingham</Name></City>
+<City><Name>Las Heras</Name></City>
+<City><Name>Ituzaingó</Name></City>
+<City><Name>San Luis</Name></City>
+<City><Name>San Fernando</Name></City>
+<City><Name>Río Cuarto</Name></City>
+<City><Name>La Rioja</Name></City>
+<City><Name>San Fernando del Valle de Catamarca</Name></City>
+<City><Name>Concordia</Name></City>
+<City><Name>Comodoro Rivadavia</Name></City>
+<City><Name>San Nicolás de los Arroyos</Name></City>
+<City><Name>José María Ezeiza</Name></City>
+<City><Name>San Juan</Name></City>
+<City><Name>Mendoza</Name></City>
+<City><Name>San Rafael</Name></City>
+<City><Name>Villa Krause</Name></City>
+<City><Name>Tandil</Name></City>
+<City><Name>Jerevan</Name></City>
+<City><Name>Gjumri</Name></City>
+<City><Name>Vanadzor</Name></City>
+<City><Name>Oranjestad</Name></City>
+<City><Name>Sydney</Name></City>
+<City><Name>Melbourne</Name></City>
+<City><Name>Brisbane</Name></City>
+<City><Name>Perth</Name></City>
+<City><Name>Adelaide</Name></City>
+<City><Name>Gold Coast</Name></City>
+<City><Name>Canberra</Name></City>
+<City><Name>Newcastle</Name></City>
+<City><Name>Central Coast </Name></City>
+<City><Name>Wollongong</Name></City>
+<City><Name>Sunshine Coast</Name></City>
+<City><Name>Geelong</Name></City>
+<City><Name>Hobart</Name></City>
+<City><Name>Townsville</Name></City>
+<City><Name>Baku</Name></City>
+<City><Name>Sumqayit</Name></City>
+<City><Name>Nassau</Name></City>
+<City><Name>al-Manama</Name></City>
+<City><Name>Dhaka</Name></City>
+<City><Name>Chittagong</Name></City>
+<City><Name>Khulna</Name></City>
+<City><Name>Rajshahi</Name></City>
+<City><Name>Sylhet</Name></City>
+<City><Name>Tongi</Name></City>
+<City><Name>Rangpur</Name></City>
+<City><Name>Narayanganj</Name></City>
+<City><Name>Mymensingh</Name></City>
+<City><Name>Barisal</Name></City>
+<City><Name>Jessore</Name></City>
+<City><Name>Comilla</Name></City>
+<City><Name>Dinajpur</Name></City>
+<City><Name>Nawabganj</Name></City>
+<City><Name>Bogra</Name></City>
+<City><Name>Brahmanbaria</Name></City>
+<City><Name>Tangail</Name></City>
+<City><Name>Sirajganj</Name></City>
+<City><Name>Kadamrasul</Name></City>
+<City><Name>Madhabdi</Name></City>
+<City><Name>Savar</Name></City>
+<City><Name>Gazipur</Name></City>
+<City><Name>Naogaon</Name></City>
+<City><Name>Jamalpur</Name></City>
+<City><Name>Pabna</Name></City>
+<City><Name>Saidpur</Name></City>
+<City><Name>Faridpur</Name></City>
+<City><Name>Bridgetown</Name></City>
+<City><Name>Antwerpen</Name></City>
+<City><Name>Gent</Name></City>
+<City><Name>Charleroi</Name></City>
+<City><Name>Liège</Name></City>
+<City><Name>Bryssel</Name></City>
+<City><Name>Brugge</Name></City>
+<City><Name>Schaerbeek</Name></City>
+<City><Name>Namur</Name></City>
+<City><Name>Anderlecht</Name></City>
+<City><Name>Mons</Name></City>
+<City><Name>Leuven</Name></City>
+<City><Name>Belize City</Name></City>
+<City><Name>Belmopan</Name></City>
+<City><Name>Cotonou</Name></City>
+<City><Name>Porto-Novo</Name></City>
+<City><Name>Godomey</Name></City>
+<City><Name>Parakou</Name></City>
+<City><Name>Saint George</Name></City>
+<City><Name>Hamilton</Name></City>
+<City><Name>Thimphu</Name></City>
+<City><Name>Santa Cruz de la Sierra</Name></City>
+<City><Name>La Paz</Name></City>
+<City><Name>El Alto</Name></City>
+<City><Name>Cochabamba</Name></City>
+<City><Name>Sucre</Name></City>
+<City><Name>Oruro</Name></City>
+<City><Name>Tarija</Name></City>
+<City><Name>Potosí</Name></City>
+<City><Name>Sacaba</Name></City>
+<City><Name>Sarajevo</Name></City>
+<City><Name>Banja Luka</Name></City>
+<City><Name>Gaborone</Name></City>
+<City><Name>São Paulo</Name></City>
+<City><Name>Rio de Janeiro</Name></City>
+<City><Name>Salvador</Name></City>
+<City><Name>Belo Horizonte</Name></City>
+<City><Name>Fortaleza</Name></City>
+<City><Name>Brasília</Name></City>
+<City><Name>Curitiba</Name></City>
+<City><Name>Manaus</Name></City>
+<City><Name>Recife</Name></City>
+<City><Name>Belém</Name></City>
+<City><Name>Porto Alegre</Name></City>
+<City><Name>Guarulhos</Name></City>
+<City><Name>Goiânia</Name></City>
+<City><Name>Campinas</Name></City>
+<City><Name>São Gonçalo</Name></City>
+<City><Name>São Luís</Name></City>
+<City><Name>Maceió</Name></City>
+<City><Name>Duque de Caxias</Name></City>
+<City><Name>Nova Iguaçu</Name></City>
+<City><Name>Natal</Name></City>
+<City><Name>São Bernardo do Campo</Name></City>
+<City><Name>Teresina</Name></City>
+<City><Name>Campo Grande</Name></City>
+<City><Name>Osasco</Name></City>
+<City><Name>Santo André</Name></City>
+<City><Name>João Pessoa</Name></City>
+<City><Name>Jaboatão dos Guararapes</Name></City>
+<City><Name>São José dos Campos</Name></City>
+<City><Name>Contagem</Name></City>
+<City><Name>Uberlândia</Name></City>
+<City><Name>Sorocaba</Name></City>
+<City><Name>Ribeirão Preto</Name></City>
+<City><Name>Cuiabá</Name></City>
+<City><Name>Aracaju</Name></City>
+<City><Name>Juiz de Fora</Name></City>
+<City><Name>Ananindeua</Name></City>
+<City><Name>Belford Roxo</Name></City>
+<City><Name>Niterói</Name></City>
+<City><Name>Feira de Santana</Name></City>
+<City><Name>Londrina</Name></City>
+<City><Name>Joinville</Name></City>
+<City><Name>São João de Meriti</Name></City>
+<City><Name>Aparecida de Goiânia</Name></City>
+<City><Name>Santos</Name></City>
+<City><Name>Mauá</Name></City>
+<City><Name>Vila Velha</Name></City>
+<City><Name>Diadema</Name></City>
+<City><Name>Florianópolis</Name></City>
+<City><Name>Carapicuíba</Name></City>
+<City><Name>São José do Rio Preto</Name></City>
+<City><Name>Campos dos Goytacazes</Name></City>
+<City><Name>Serra</Name></City>
+<City><Name>Betim</Name></City>
+<City><Name>Olinda</Name></City>
+<City><Name>Caxias do Sul</Name></City>
+<City><Name>Campina Grande</Name></City>
+<City><Name>Piracicaba</Name></City>
+<City><Name>Bauru</Name></City>
+<City><Name>Cariacica</Name></City>
+<City><Name>Itaquaquecetuba</Name></City>
+<City><Name>Macapá</Name></City>
+<City><Name>Moji das Cruzes</Name></City>
+<City><Name>Canoas</Name></City>
+<City><Name>São Vicente</Name></City>
+<City><Name>Montes Claros</Name></City>
+<City><Name>Jundíaí</Name></City>
+<City><Name>Pelotas</Name></City>
+<City><Name>Franca</Name></City>
+<City><Name>Maringá</Name></City>
+<City><Name>Vitória</Name></City>
+<City><Name>Ribeirão das Neves</Name></City>
+<City><Name>Porto Velho</Name></City>
+<City><Name>Anápolis</Name></City>
+<City><Name>Foz do Iguaçu</Name></City>
+<City><Name>Guarujá</Name></City>
+<City><Name>Paulista</Name></City>
+<City><Name>Ponta Grossa</Name></City>
+<City><Name>Petrópolis</Name></City>
+<City><Name>Caucaia</Name></City>
+<City><Name>Rio Branco</Name></City>
+<City><Name>Uberaba</Name></City>
+<City><Name>Blumenau</Name></City>
+<City><Name>Suzano</Name></City>
+<City><Name>Limeira</Name></City>
+<City><Name>Cascavel</Name></City>
+<City><Name>Barueri</Name></City>
+<City><Name>Volta Redonda</Name></City>
+<City><Name>Santa Maria</Name></City>
+<City><Name>Taubaté</Name></City>
+<City><Name>Novo Hamburgo</Name></City>
+<City><Name>Governador Valadares</Name></City>
+<City><Name>Vitória da Conquista</Name></City>
+<City><Name>Várzea Grande</Name></City>
+<City><Name>Gravataí</Name></City>
+<City><Name>Embu</Name></City>
+<City><Name>Caruaru</Name></City>
+<City><Name>Viamão</Name></City>
+<City><Name>Boa Vista</Name></City>
+<City><Name>Praia Grande</Name></City>
+<City><Name>Ipatinga</Name></City>
+<City><Name>Sumaré</Name></City>
+<City><Name>São José dos Pinhais</Name></City>
+<City><Name>Juazeiro do Norte</Name></City>
+<City><Name>Taboão da Serra</Name></City>
+<City><Name>Imperatriz</Name></City>
+<City><Name>Magé</Name></City>
+<City><Name>Colombo</Name></City>
+<City><Name>Santa Luzia</Name></City>
+<City><Name>Mossoró</Name></City>
+<City><Name>Marília</Name></City>
+<City><Name>Alvorada</Name></City>
+<City><Name>São Leopoldo</Name></City>
+<City><Name>Sete Lagoas</Name></City>
+<City><Name>Itaboraí</Name></City>
+<City><Name>São Carlos</Name></City>
+<City><Name>Palmas</Name></City>
+<City><Name>Americana</Name></City>
+<City><Name>Jacareí</Name></City>
+<City><Name>Presidente Prudente</Name></City>
+<City><Name>Itabuna</Name></City>
+<City><Name>Divinópolis</Name></City>
+<City><Name>Itapevi</Name></City>
+<City><Name>Santarém</Name></City>
+<City><Name>Hortolândia</Name></City>
+<City><Name>São José</Name></City>
+<City><Name>Maracanaú</Name></City>
+<City><Name>Petrolina</Name></City>
+<City><Name>Rio Grande</Name></City>
+<City><Name>Araraquara</Name></City>
+<City><Name>Santa Bárbara d´Oeste</Name></City>
+<City><Name>Camaçari</Name></City>
+<City><Name>Mesquita</Name></City>
+<City><Name>Rio Claro</Name></City>
+<City><Name>Passo Fundo</Name></City>
+<City><Name>Cotia</Name></City>
+<City><Name>Araçatuba</Name></City>
+<City><Name>Indaiatuba</Name></City>
+<City><Name>Cachoeiro de Itapemirim</Name></City>
+<City><Name>Nossa Senhora do Socorro</Name></City>
+<City><Name>Ferraz de Vasconcelos</Name></City>
+<City><Name>Barra Mansa</Name></City>
+<City><Name>Criciúma</Name></City>
+<City><Name>Ibirité</Name></City>
+<City><Name>Dourados</Name></City>
+<City><Name>Luziânia</Name></City>
+<City><Name>Francisco Morato</Name></City>
+<City><Name>Arapiraca</Name></City>
+<City><Name>Lages</Name></City>
+<City><Name>Ilhéus</Name></City>
+<City><Name>Águas Lindas de Goiás</Name></City>
+<City><Name>Itajaí</Name></City>
+<City><Name>Rondonópolis</Name></City>
+<City><Name>Marabá</Name></City>
+<City><Name>Itapecerica da Serra</Name></City>
+<City><Name>Nova Friburgo</Name></City>
+<City><Name>Juazeiro</Name></City>
+<City><Name>Chapecó</Name></City>
+<City><Name>Guarapuava</Name></City>
+<City><Name>Nilópolis</Name></City>
+<City><Name>Sobral</Name></City>
+<City><Name>Cabo de Santo Agostinho</Name></City>
+<City><Name>Macaé</Name></City>
+<City><Name>Camaragibe</Name></City>
+<City><Name>Poços de Caldas</Name></City>
+<City><Name>Parnamirim</Name></City>
+<City><Name>Itu</Name></City>
+<City><Name>Castanhal</Name></City>
+<City><Name>Paranaguá</Name></City>
+<City><Name>Queimados</Name></City>
+<City><Name>Lauro de Freitas</Name></City>
+<City><Name>Angra dos Reis</Name></City>
+<City><Name>São Caetano do Sul</Name></City>
+<City><Name>Parnaíba</Name></City>
+<City><Name>Cabo Frio</Name></City>
+<City><Name>Pindamonhangaba</Name></City>
+<City><Name>Sapucaia do Sul</Name></City>
+<City><Name>Jequié</Name></City>
+<City><Name>Mogi Guaçu</Name></City>
+<City><Name>Sabará</Name></City>
+<City><Name>Uruguaiana</Name></City>
+<City><Name>Itapetininga</Name></City>
+<City><Name>Timon</Name></City>
+<City><Name>Bragança Paulista</Name></City>
+<City><Name>Teresópolis</Name></City>
+<City><Name>Patos de Minas</Name></City>
+<City><Name>Rio Verde</Name></City>
+<City><Name>Cachoeirinha</Name></City>
+<City><Name>Alagoinhas</Name></City>
+<City><Name>Valparaíso de Goiás</Name></City>
+<City><Name>Araguaína</Name></City>
+<City><Name>Cubatão</Name></City>
+<City><Name>Palhoça</Name></City>
+<City><Name>Barreiras</Name></City>
+<City><Name>Jaú</Name></City>
+<City><Name>Pinhais</Name></City>
+<City><Name>Ribeirão Pires</Name></City>
+<City><Name>Varginha</Name></City>
+<City><Name>Botucatu</Name></City>
+<City><Name>Jaraguá do Sul</Name></City>
+<City><Name>Catanduva</Name></City>
+<City><Name>Franco da Rocha</Name></City>
+<City><Name>Pouso Alegre</Name></City>
+<City><Name>Santa Rita</Name></City>
+<City><Name>Barbacena</Name></City>
+<City><Name>Garanhuns</Name></City>
+<City><Name>Porto Seguro</Name></City>
+<City><Name>Teixeira de Freitas</Name></City>
+<City><Name>Atibaia</Name></City>
+<City><Name>Jandira</Name></City>
+<City><Name>Conselheiro Lafaiete</Name></City>
+<City><Name>Resende</Name></City>
+<City><Name>Várzea Paulista</Name></City>
+<City><Name>Apucarana</Name></City>
+<City><Name>Araras</Name></City>
+<City><Name>Poá</Name></City>
+<City><Name>Caxias</Name></City>
+<City><Name>Guaratinguetá</Name></City>
+<City><Name>Almirante Tamandaré</Name></City>
+<City><Name>Vitória de Santo Antão</Name></City>
+<City><Name>Araucária</Name></City>
+<City><Name>Barretos</Name></City>
+<City><Name>Santa Cruz do Sul</Name></City>
+<City><Name>Birigui</Name></City>
+<City><Name>Coronel Fabriciano</Name></City>
+<City><Name>Votorantim</Name></City>
+<City><Name>Guaíba</Name></City>
+<City><Name>Teófilo Otoni</Name></City>
+<City><Name>Linhares</Name></City>
+<City><Name>Sertãozinho</Name></City>
+<City><Name>Lontoo [London]</Name></City>
+<City><Name>Birmingham</Name></City>
+<City><Name>Leeds</Name></City>
+<City><Name>Glasgow</Name></City>
+<City><Name>Sheffield</Name></City>
+<City><Name>Bradford</Name></City>
+<City><Name>Edinburgh</Name></City>
+<City><Name>Liverpool</Name></City>
+<City><Name>Manchester</Name></City>
+<City><Name>Bristol</Name></City>
+<City><Name>Kirklees</Name></City>
+<City><Name>Wakefield</Name></City>
+<City><Name>Cardiff [Caerdydd]</Name></City>
+<City><Name>Wirral</Name></City>
+<City><Name>Wigan</Name></City>
+<City><Name>Dudley</Name></City>
+<City><Name>Coventry</Name></City>
+<City><Name>Doncaster</Name></City>
+<City><Name>Leicester</Name></City>
+<City><Name>Sandwell</Name></City>
+<City><Name>Sunderland</Name></City>
+<City><Name>Stockport</Name></City>
+<City><Name>Sefton</Name></City>
+<City><Name>Nottingham</Name></City>
+<City><Name>Newcastle upon Tyne</Name></City>
+<City><Name>Belfast</Name></City>
+<City><Name>Bolton</Name></City>
+<City><Name>Brighton and Hove</Name></City>
+<City><Name>Walsall</Name></City>
+<City><Name>Rotherham</Name></City>
+<City><Name>Medway</Name></City>
+<City><Name>Kingston upon Hull</Name></City>
+<City><Name>Plymouth</Name></City>
+<City><Name>Wolverhampton</Name></City>
+<City><Name>Stoke-on-Trent</Name></City>
+<City><Name>Derby</Name></City>
+<City><Name>Rhondda, Cynon, Taff</Name></City>
+<City><Name>Swansea [Abertawe]</Name></City>
+<City><Name>Barnsley</Name></City>
+<City><Name>Southampton</Name></City>
+<City><Name>Oldham</Name></City>
+<City><Name>Milton Keynes</Name></City>
+<City><Name>Salford</Name></City>
+<City><Name>Tameside</Name></City>
+<City><Name>Trafford</Name></City>
+<City><Name>Rochdale</Name></City>
+<City><Name>Aberdeen</Name></City>
+<City><Name>Solihull</Name></City>
+<City><Name>Calderdale</Name></City>
+<City><Name>Northampton</Name></City>
+<City><Name>Warrington</Name></City>
+<City><Name>North Tyneside</Name></City>
+<City><Name>Gateshead</Name></City>
+<City><Name>Portsmouth</Name></City>
+<City><Name>York</Name></City>
+<City><Name>Stockton-on-Tees</Name></City>
+<City><Name>Luton</Name></City>
+<City><Name>Swindon</Name></City>
+<City><Name>Bury</Name></City>
+<City><Name>Saint Helens</Name></City>
+<City><Name>Basildon</Name></City>
+<City><Name>Bournemouth</Name></City>
+<City><Name>Chelmsford</Name></City>
+<City><Name>Peterborough</Name></City>
+<City><Name>Southend-on-Sea</Name></City>
+<City><Name>South Tyneside</Name></City>
+<City><Name>Oxford</Name></City>
+<City><Name>Knowsley</Name></City>
+<City><Name>Thurrock</Name></City>
+<City><Name>Reading</Name></City>
+<City><Name>Canterbury</Name></City>
+<City><Name>Blackpool</Name></City>
+<City><Name>Dundee</Name></City>
+<City><Name>Blackburn with Darwen</Name></City>
+<City><Name>Newport [Casnewydd]</Name></City>
+<City><Name>Windsor and Maidenhead</Name></City>
+<City><Name>Lancaster</Name></City>
+<City><Name>Middlesbrough</Name></City>
+<City><Name>Poole</Name></City>
+<City><Name>Neath Port Talbot</Name></City>
+<City><Name>Saint Albans</Name></City>
+<City><Name>Torbay</Name></City>
+<City><Name>Preston</Name></City>
+<City><Name>Wrexham</Name></City>
+<City><Name>Norwich</Name></City>
+<City><Name>Cambridge</Name></City>
+<City><Name>Halton</Name></City>
+<City><Name>Chester</Name></City>
+<City><Name>Ipswich</Name></City>
+<City><Name>Exeter</Name></City>
+<City><Name>Slough</Name></City>
+<City><Name>Havant</Name></City>
+<City><Name>Winchester</Name></City>
+<City><Name>Cheltenham</Name></City>
+<City><Name>Conwy</Name></City>
+<City><Name>Lisburn</Name></City>
+<City><Name>Gloucester</Name></City>
+<City><Name>Bracknell Forest</Name></City>
+<City><Name>Derry (Londonderry)</Name></City>
+<City><Name>Carlisle</Name></City>
+<City><Name>Chesterfield</Name></City>
+<City><Name>Darlington</Name></City>
+<City><Name>Mansfield</Name></City>
+<City><Name>Crawley</Name></City>
+<City><Name>Worthing</Name></City>
+<City><Name>Worcester</Name></City>
+<City><Name>Eastbourne</Name></City>
+<City><Name>Great Yarmouth</Name></City>
+<City><Name>Durham</Name></City>
+<City><Name>Woking</Name></City>
+<City><Name>Torfaen</Name></City>
+<City><Name>Hartlepool</Name></City>
+<City><Name>Road Town</Name></City>
+<City><Name>Bandar Seri Begawan</Name></City>
+<City><Name>Sofia [Sofija]</Name></City>
+<City><Name>Plovdiv</Name></City>
+<City><Name>Varna</Name></City>
+<City><Name>Burgas</Name></City>
+<City><Name>Ruse</Name></City>
+<City><Name>Stara Zagora</Name></City>
+<City><Name>Pleven</Name></City>
+<City><Name>Sliven</Name></City>
+<City><Name>Dobric</Name></City>
+<City><Name>Ouagadougou</Name></City>
+<City><Name>Bobo-Dioulasso</Name></City>
+<City><Name>Bujumbura</Name></City>
+<City><Name>George Town</Name></City>
+<City><Name>Santiago de Chile</Name></City>
+<City><Name>Puente Alto</Name></City>
+<City><Name>Viña del Mar</Name></City>
+<City><Name>Antofagasta</Name></City>
+<City><Name>Valparaíso</Name></City>
+<City><Name>San Bernardo</Name></City>
+<City><Name>Temuco</Name></City>
+<City><Name>Concepción</Name></City>
+<City><Name>Rancagua</Name></City>
+<City><Name>Talca </Name></City>
+<City><Name>Arica</Name></City>
+<City><Name>Iquique</Name></City>
+<City><Name>Talcahuano</Name></City>
+<City><Name>Puerto Montt</Name></City>
+<City><Name>Coquimbo</Name></City>
+<City><Name>La Serena</Name></City>
+<City><Name>Chillán</Name></City>
+<City><Name>Osorno</Name></City>
+<City><Name>Valdivia</Name></City>
+<City><Name>Quilpué</Name></City>
+<City><Name>Calama</Name></City>
+<City><Name>Copiapó</Name></City>
+<City><Name>Los Angeles</Name></City>
+<City><Name>Punta Arenas</Name></City>
+<City><Name>Avarua</Name></City>
+<City><Name>San José</Name></City>
+<City><Name>Djibouti</Name></City>
+<City><Name>Roseau</Name></City>
+<City><Name>Santo Domingo de Guzmán</Name></City>
+<City><Name>Santiago de los Caballeros</Name></City>
+<City><Name>San Pedro de Macorís</Name></City>
+<City><Name>La Romana</Name></City>
+<City><Name>Los Alcarrizos</Name></City>
+<City><Name>San Cristóbal</Name></City>
+<City><Name>San Francisco de Macorís</Name></City>
+<City><Name>San Felipe de Puerto Plata</Name></City>
+<City><Name>Salvaleón de Higüey</Name></City>
+<City><Name>Guayaquil</Name></City>
+<City><Name>Quito</Name></City>
+<City><Name>Cuenca</Name></City>
+<City><Name>Machala</Name></City>
+<City><Name>Santo Domingo de los Colorados</Name></City>
+<City><Name>Portoviejo</Name></City>
+<City><Name>Manta</Name></City>
+<City><Name>Durán [Eloy Alfaro]</Name></City>
+<City><Name>Ambato</Name></City>
+<City><Name>Riobamba</Name></City>
+<City><Name>Loja</Name></City>
+<City><Name>Quevedo</Name></City>
+<City><Name>Milagro</Name></City>
+<City><Name>Ibarra</Name></City>
+<City><Name>Esmeraldas</Name></City>
+<City><Name>Kairo</Name></City>
+<City><Name>Aleksandria</Name></City>
+<City><Name>Giza</Name></City>
+<City><Name>Shubra al-Khayma</Name></City>
+<City><Name>Port Said</Name></City>
+<City><Name>Suez</Name></City>
+<City><Name>Luxor</Name></City>
+<City><Name>al-Mahallat al-Kubra</Name></City>
+<City><Name>al-Mansura</Name></City>
+<City><Name>Tanta</Name></City>
+<City><Name>Asyut</Name></City>
+<City><Name>al-Faiyum</Name></City>
+<City><Name>Zagazig</Name></City>
+<City><Name>Ismailia</Name></City>
+<City><Name>Kafr al-Dawwar</Name></City>
+<City><Name>Assuan</Name></City>
+<City><Name>Damanhur</Name></City>
+<City><Name>al-Minya</Name></City>
+<City><Name>Sawhaj</Name></City>
+<City><Name>Bani Suwayf</Name></City>
+<City><Name>Qina</Name></City>
+<City><Name>Shibin al-Kawm</Name></City>
+<City><Name>Banha</Name></City>
+<City><Name>Mallawi</Name></City>
+<City><Name>Kafr al-Shaykh</Name></City>
+<City><Name>Bilbays</Name></City>
+<City><Name>al-Arish</Name></City>
+<City><Name>Mit Ghamr</Name></City>
+<City><Name>San Salvador</Name></City>
+<City><Name>Soyapango</Name></City>
+<City><Name>Mejicanos</Name></City>
+<City><Name>San Miguel</Name></City>
+<City><Name>Santa Ana</Name></City>
+<City><Name>Apopa</Name></City>
+<City><Name>Nueva San Salvador</Name></City>
+<City><Name>Ilopango</Name></City>
+<City><Name>Asmara</Name></City>
+<City><Name>Madrid</Name></City>
+<City><Name>Barcelona</Name></City>
+<City><Name>Valencia</Name></City>
+<City><Name>Sevilla</Name></City>
+<City><Name>Zaragoza</Name></City>
+<City><Name>Málaga</Name></City>
+<City><Name>Murcia</Name></City>
+<City><Name>Las Palmas de Gran Canaria</Name></City>
+<City><Name>Palma de Mallorca</Name></City>
+<City><Name>Bilbao</Name></City>
+<City><Name>Córdoba</Name></City>
+<City><Name>Alicante [Alacant]</Name></City>
+<City><Name>Valladolid</Name></City>
+<City><Name>Vigo</Name></City>
+<City><Name>Gijón</Name></City>
+<City><Name>L'Hospitalet de Llobregat</Name></City>
+<City><Name>A Coruña (La Coruña)</Name></City>
+<City><Name>Granada</Name></City>
+<City><Name>Vitoria-Gasteiz</Name></City>
+<City><Name>Santa Cruz de Tenerife</Name></City>
+<City><Name>Badalona</Name></City>
+<City><Name>Elche [Elx]</Name></City>
+<City><Name>Oviedo</Name></City>
+<City><Name>Cartagena</Name></City>
+<City><Name>Móstoles</Name></City>
+<City><Name>Alcalá de Henares</Name></City>
+<City><Name>Sabadell</Name></City>
+<City><Name>Terrassa</Name></City>
+<City><Name>Jerez de la Frontera</Name></City>
+<City><Name>Pamplona [Iruña]</Name></City>
+<City><Name>Fuenlabrada</Name></City>
+<City><Name>Almería</Name></City>
+<City><Name>Donostia-San Sebastián</Name></City>
+<City><Name>Santander</Name></City>
+<City><Name>Leganés</Name></City>
+<City><Name>Burgos</Name></City>
+<City><Name>Castellón de la Plana [Castelló d.l.Pl.]</Name></City>
+<City><Name>Alcorcón</Name></City>
+<City><Name>Albacete</Name></City>
+<City><Name>Salamanca</Name></City>
+<City><Name>Getafe</Name></City>
+<City><Name>Logroño</Name></City>
+<City><Name>Huelva</Name></City>
+<City><Name>Badajoz</Name></City>
+<City><Name>San Cristóbal de la Laguna</Name></City>
+<City><Name>León</Name></City>
+<City><Name>Tarragona</Name></City>
+<City><Name>Cádiz</Name></City>
+<City><Name>Lleida (Lérida)</Name></City>
+<City><Name>Marbella</Name></City>
+<City><Name>Santa Coloma de Gramenet</Name></City>
+<City><Name>Mataró</Name></City>
+<City><Name>Jaén</Name></City>
+<City><Name>Dos Hermanas</Name></City>
+<City><Name>Algeciras</Name></City>
+<City><Name>Torrejón de Ardoz</Name></City>
+<City><Name>Ourense (Orense)</Name></City>
+<City><Name>Alcobendas</Name></City>
+<City><Name>Reus</Name></City>
+<City><Name>Telde</Name></City>
+<City><Name>Barakaldo</Name></City>
+<City><Name>Parla</Name></City>
+<City><Name>San Fernando</Name></City>
+<City><Name>Santiago de Compostela</Name></City>
+<City><Name>Lugo</Name></City>
+<City><Name>Torrevieja</Name></City>
+<City><Name>Cáceres</Name></City>
+<City><Name>Johannesburg</Name></City>
+<City><Name>Kapkaupunki</Name></City>
+<City><Name>Durban</Name></City>
+<City><Name>East Rand</Name></City>
+<City><Name>Pretoria</Name></City>
+<City><Name>Port Elizabeth</Name></City>
+<City><Name>Vereeniging</Name></City>
+<City><Name>Bloemfontein</Name></City>
+<City><Name>East London</Name></City>
+<City><Name>Pietermaritzburg</Name></City>
+<City><Name>Welkom</Name></City>
+<City><Name>Klerksdorp</Name></City>
+<City><Name>Newcastle</Name></City>
+<City><Name>Krugersdorp</Name></City>
+<City><Name>Witbank</Name></City>
+<City><Name>Kimberley</Name></City>
+<City><Name>Bethal</Name></City>
+<City><Name>Rustenburg</Name></City>
+<City><Name>Carletonville</Name></City>
+<City><Name>Paarl</Name></City>
+<City><Name>Pietersburg</Name></City>
+<City><Name>Kroonstad</Name></City>
+<City><Name>Nelspruit</Name></City>
+<City><Name>Queenstown</Name></City>
+<City><Name>George</Name></City>
+<City><Name>Ladysmith</Name></City>
+<City><Name>Stanger</Name></City>
+<City><Name>Randfontein</Name></City>
+<City><Name>Potchefstroom</Name></City>
+<City><Name>Sasolburg</Name></City>
+<City><Name>Richards Bay</Name></City>
+<City><Name>Addis Abeba</Name></City>
+<City><Name>Dire Dawa</Name></City>
+<City><Name>Nazret</Name></City>
+<City><Name>Gondar</Name></City>
+<City><Name>Mekele</Name></City>
+<City><Name>Dessie</Name></City>
+<City><Name>Bahir Dar</Name></City>
+<City><Name>Jimma</Name></City>
+<City><Name>Debre Zeit</Name></City>
+<City><Name>Awasa</Name></City>
+<City><Name>Harar</Name></City>
+<City><Name>Stanley</Name></City>
+<City><Name>Suva</Name></City>
+<City><Name>Quezon</Name></City>
+<City><Name>Manila</Name></City>
+<City><Name>Kalookan</Name></City>
+<City><Name>Davao</Name></City>
+<City><Name>Cebu</Name></City>
+<City><Name>Las Piñas</Name></City>
+<City><Name>Muntinlupa</Name></City>
+<City><Name>Taguig</Name></City>
+<City><Name>Valenzuela</Name></City>
+<City><Name>Zamboanga</Name></City>
+<City><Name>Pasig</Name></City>
+<City><Name>Parañaque</Name></City>
+<City><Name>Makati</Name></City>
+<City><Name>Antipolo</Name></City>
+<City><Name>Marikina</Name></City>
+<City><Name>Cagayan de Oro</Name></City>
+<City><Name>Bacolod</Name></City>
+<City><Name>Malabon</Name></City>
+<City><Name>Pasay</Name></City>
+<City><Name>General Santos</Name></City>
+<City><Name>Dasmariñas</Name></City>
+<City><Name>Iloilo</Name></City>
+<City><Name>San José del Monte</Name></City>
+<City><Name>Bacoor</Name></City>
+<City><Name>Mandaluyong</Name></City>
+<City><Name>Iligan</Name></City>
+<City><Name>Calamba</Name></City>
+<City><Name>Navotas</Name></City>
+<City><Name>Butuan</Name></City>
+<City><Name>Angeles</Name></City>
+<City><Name>Tarlac</Name></City>
+<City><Name>Mandaue</Name></City>
+<City><Name>Baguio</Name></City>
+<City><Name>Batangas</Name></City>
+<City><Name>Cainta</Name></City>
+<City><Name>San Pedro</Name></City>
+<City><Name>Cabanatuan</Name></City>
+<City><Name>San Fernando</Name></City>
+<City><Name>Lipa</Name></City>
+<City><Name>Lapu-Lapu</Name></City>
+<City><Name>San Pablo</Name></City>
+<City><Name>Biñan</Name></City>
+<City><Name>Taytay</Name></City>
+<City><Name>Lucena</Name></City>
+<City><Name>Imus</Name></City>
+<City><Name>Olongapo</Name></City>
+<City><Name>Binangonan</Name></City>
+<City><Name>Santa Rosa</Name></City>
+<City><Name>Tagum</Name></City>
+<City><Name>Tacloban</Name></City>
+<City><Name>Malolos</Name></City>
+<City><Name>Mabalacat</Name></City>
+<City><Name>Cotabato</Name></City>
+<City><Name>Meycauayan</Name></City>
+<City><Name>Puerto Princesa</Name></City>
+<City><Name>Legazpi</Name></City>
+<City><Name>Silang</Name></City>
+<City><Name>Ormoc</Name></City>
+<City><Name>San Carlos</Name></City>
+<City><Name>Kabankalan</Name></City>
+<City><Name>Talisay</Name></City>
+<City><Name>Valencia</Name></City>
+<City><Name>Calbayog</Name></City>
+<City><Name>Santa Maria</Name></City>
+<City><Name>Pagadian</Name></City>
+<City><Name>Cadiz</Name></City>
+<City><Name>Bago</Name></City>
+<City><Name>Toledo</Name></City>
+<City><Name>Naga</Name></City>
+<City><Name>San Mateo</Name></City>
+<City><Name>Panabo</Name></City>
+<City><Name>Koronadal</Name></City>
+<City><Name>Marawi</Name></City>
+<City><Name>Dagupan</Name></City>
+<City><Name>Sagay</Name></City>
+<City><Name>Roxas</Name></City>
+<City><Name>Lubao</Name></City>
+<City><Name>Digos</Name></City>
+<City><Name>San Miguel</Name></City>
+<City><Name>Malaybalay</Name></City>
+<City><Name>Tuguegarao</Name></City>
+<City><Name>Ilagan</Name></City>
+<City><Name>Baliuag</Name></City>
+<City><Name>Surigao</Name></City>
+<City><Name>San Carlos</Name></City>
+<City><Name>Tanauan</Name></City>
+<City><Name>Concepcion</Name></City>
+<City><Name>Rodriguez (Montalban)</Name></City>
+<City><Name>Sariaya</Name></City>
+<City><Name>Malasiqui</Name></City>
+<City><Name>General Mariano Alvarez</Name></City>
+<City><Name>Urdaneta</Name></City>
+<City><Name>Hagonoy</Name></City>
+<City><Name>San Jose</Name></City>
+<City><Name>Polomolok</Name></City>
+<City><Name>Santiago</Name></City>
+<City><Name>Tanza</Name></City>
+<City><Name>Ozamis</Name></City>
+<City><Name>Mexico</Name></City>
+<City><Name>San Jose</Name></City>
+<City><Name>Silay</Name></City>
+<City><Name>General Trias</Name></City>
+<City><Name>Tabaco</Name></City>
+<City><Name>Cabuyao</Name></City>
+<City><Name>Calapan</Name></City>
+<City><Name>Mati</Name></City>
+<City><Name>Midsayap</Name></City>
+<City><Name>San Juan del Monte</Name></City>
+<City><Name>Cauayan</Name></City>
+<City><Name>Gingoog</Name></City>
+<City><Name>Dumaguete</Name></City>
+<City><Name>San Fernando</Name></City>
+<City><Name>Arayat</Name></City>
+<City><Name>Bayawan (Tulong)</Name></City>
+<City><Name>Kidapawan</Name></City>
+<City><Name>Daraga (Locsin)</Name></City>
+<City><Name>Marilao</Name></City>
+<City><Name>Malita</Name></City>
+<City><Name>Tórshavn</Name></City>
+<City><Name>Libreville</Name></City>
+<City><Name>Kanifing</Name></City>
+<City><Name>Banjul</Name></City>
+<City><Name>Tbilisi</Name></City>
+<City><Name>Kutaisi</Name></City>
+<City><Name>Batumi</Name></City>
+<City><Name>Rustavi</Name></City>
+<City><Name>Accra</Name></City>
+<City><Name>Kumasi</Name></City>
+<City><Name>Tamale</Name></City>
+<City><Name>Tema</Name></City>
+<City><Name>Ashiaman</Name></City>
+<City><Name>Obuasi</Name></City>
+<City><Name>Sekondi</Name></City>
+<City><Name>Gibraltar</Name></City>
+<City><Name>Saint George's</Name></City>
+<City><Name>Nuuk</Name></City>
+<City><Name>Les Abymes</Name></City>
+<City><Name>Basse-Terre</Name></City>
+<City><Name>Tamuning</Name></City>
+<City><Name>Hagåtña</Name></City>
+<City><Name>Ciudad de Guatemala</Name></City>
+<City><Name>Mixco</Name></City>
+<City><Name>Villa Nueva</Name></City>
+<City><Name>Quetzaltenango</Name></City>
+<City><Name>Conakry</Name></City>
+<City><Name>N'Zérékoré</Name></City>
+<City><Name>Kankan</Name></City>
+<City><Name>Bissau</Name></City>
+<City><Name>Georgetown</Name></City>
+<City><Name>Port-au-Prince</Name></City>
+<City><Name>Carrefour</Name></City>
+<City><Name>Delmas</Name></City>
+<City><Name>Cap-Haïtien</Name></City>
+<City><Name>Gonaïves</Name></City>
+<City><Name>Tegucigalpa</Name></City>
+<City><Name>San Pedro Sula</Name></City>
+<City><Name>La Ceiba</Name></City>
+<City><Name>Choloma</Name></City>
+<City><Name>Kowloon</Name></City>
+<City><Name>Victoria</Name></City>
+<City><Name>Tuen Mun</Name></City>
+<City><Name>Sha Tin</Name></City>
+<City><Name>Tseung Kwan O</Name></City>
+<City><Name>Kwai Chung</Name></City>
+<City><Name>Tai Po</Name></City>
+<City><Name>Tin Shui Wai</Name></City>
+<City><Name>Tsuen Wan</Name></City>
+<City><Name>Fanling–Sheung Shui</Name></City>
+<City><Name>Tsing Yi</Name></City>
+<City><Name>Ma On Shan</Name></City>
+<City><Name>Aberdeen</Name></City>
+<City><Name>Yuen Long</Name></City>
+<City><Name>Longyearbyen</Name></City>
+<City><Name>Jakarta</Name></City>
+<City><Name>Surabaya</Name></City>
+<City><Name>Medan</Name></City>
+<City><Name>Bandung</Name></City>
+<City><Name>Bekasi</Name></City>
+<City><Name>Semarang</Name></City>
+<City><Name>Tangerang</Name></City>
+<City><Name>Palembang</Name></City>
+<City><Name>Makasar</Name></City>
+<City><Name>Depok</Name></City>
+<City><Name>Bogor</Name></City>
+<City><Name>Malang</Name></City>
+<City><Name>Padang</Name></City>
+<City><Name>Bandar Lampung</Name></City>
+<City><Name>Pekalongan</Name></City>
+<City><Name>Surakarta</Name></City>
+<City><Name>Pekan Baru</Name></City>
+<City><Name>Banjarmasin</Name></City>
+<City><Name>Cimahi</Name></City>
+<City><Name>Tegal</Name></City>
+<City><Name>Pontianak</Name></City>
+<City><Name>Balikpapan</Name></City>
+<City><Name>Yogyakarta</Name></City>
+<City><Name>Manado</Name></City>
+<City><Name>Denpasar</Name></City>
+<City><Name>Jambi</Name></City>
+<City><Name>Samarinda</Name></City>
+<City><Name>Mataram</Name></City>
+<City><Name>Cilegon</Name></City>
+<City><Name>Tasikmalaya</Name></City>
+<City><Name>Cirebon</Name></City>
+<City><Name>Jember</Name></City>
+<City><Name>Pondokgede</Name></City>
+<City><Name>Kediri</Name></City>
+<City><Name>Sukabumi</Name></City>
+<City><Name>Pacet</Name></City>
+<City><Name>Bengkulu</Name></City>
+<City><Name>Percut Sei Tuan</Name></City>
+<City><Name>Tambun</Name></City>
+<City><Name>Palu</Name></City>
+<City><Name>Pematang Siantar</Name></City>
+<City><Name>Kupang</Name></City>
+<City><Name>Purwokerto</Name></City>
+<City><Name>Cilacap</Name></City>
+<City><Name>Cimanggis</Name></City>
+<City><Name>Ciputat</Name></City>
+<City><Name>Binjai</Name></City>
+<City><Name>Ambon</Name></City>
+<City><Name>Loa Janan</Name></City>
+<City><Name>Probolinggo</Name></City>
+<City><Name>Karawang</Name></City>
+<City><Name>Kendari</Name></City>
+<City><Name>Pemalang</Name></City>
+<City><Name>Majalaya</Name></City>
+<City><Name>Madiun</Name></City>
+<City><Name>Purwakarta</Name></City>
+<City><Name>Cibadak</Name></City>
+<City><Name>Pamulang</Name></City>
+<City><Name>Pasuruan</Name></City>
+<City><Name>Ciomas</Name></City>
+<City><Name>Cibinong</Name></City>
+<City><Name>Banda Aceh</Name></City>
+<City><Name>Taman</Name></City>
+<City><Name>Ciampea</Name></City>
+<City><Name>Pondok Aren</Name></City>
+<City><Name>Serang</Name></City>
+<City><Name>Cileungsi</Name></City>
+<City><Name>Cibungbulang</Name></City>
+<City><Name>Palangka Raya</Name></City>
+<City><Name>Sukaraja</Name></City>
+<City><Name>Sumedang</Name></City>
+<City><Name>Brebes</Name></City>
+<City><Name>Pasarkemis</Name></City>
+<City><Name>Cibitung</Name></City>
+<City><Name>Leuwiliang</Name></City>
+<City><Name>Rengasdengklok</Name></City>
+<City><Name>Waru</Name></City>
+<City><Name>Curug</Name></City>
+<City><Name>Parung</Name></City>
+<City><Name>Sunggal</Name></City>
+<City><Name>Lembang</Name></City>
+<City><Name>Magelang</Name></City>
+<City><Name>Gorontalo</Name></City>
+<City><Name>Bojong Gede</Name></City>
+<City><Name>Blitar</Name></City>
+<City><Name>Tanjung Morawa</Name></City>
+<City><Name>Banjar Baru</Name></City>
+<City><Name>Cikupa</Name></City>
+<City><Name>Taman</Name></City>
+<City><Name>Lawang</Name></City>
+<City><Name>Plumbon</Name></City>
+<City><Name>Balaraja</Name></City>
+<City><Name>Pangkal Pinang</Name></City>
+<City><Name>Jaya Pura</Name></City>
+<City><Name>Bitung</Name></City>
+<City><Name>Klaten</Name></City>
+<City><Name>Dumai</Name></City>
+<City><Name>Tanjung Balai</Name></City>
+<City><Name>Rangkasbitung</Name></City>
+<City><Name>Metro</Name></City>
+<City><Name>Kebumen</Name></City>
+<City><Name>Tebing Tinggi</Name></City>
+<City><Name>Purwodadi</Name></City>
+<City><Name>Cicalengka</Name></City>
+<City><Name>Banjaran</Name></City>
+<City><Name>Adiwerna</Name></City>
+<City><Name>Jombang</Name></City>
+<City><Name>Rancaekek</Name></City>
+<City><Name>Cianjur</Name></City>
+<City><Name>Mojokerto</Name></City>
+<City><Name>Sidoarjo</Name></City>
+<City><Name>Salatiga</Name></City>
+<City><Name>Tanjung Pinang</Name></City>
+<City><Name>Singaraja</Name></City>
+<City><Name>Perbaungan</Name></City>
+<City><Name>Ciparay</Name></City>
+<City><Name>Lubuk Linggau</Name></City>
+<City><Name>Sepatan</Name></City>
+<City><Name>Kisaran</Name></City>
+<City><Name>Hamparan Perak</Name></City>
+<City><Name>Depok</Name></City>
+<City><Name>Citeureup</Name></City>
+<City><Name>Pare Pare</Name></City>
+<City><Name>Lumajang</Name></City>
+<City><Name>Baturaja</Name></City>
+<City><Name>Kedungwuni</Name></City>
+<City><Name>Batang</Name></City>
+<City><Name>Banyuwangi</Name></City>
+<City><Name>Mumbai (Bombay)</Name></City>
+<City><Name>Delhi</Name></City>
+<City><Name>Kalkutta [Kolkata]</Name></City>
+<City><Name>Chennai (Madras)</Name></City>
+<City><Name>Bangalore</Name></City>
+<City><Name>Hyderabad</Name></City>
+<City><Name>Ahmedabad</Name></City>
+<City><Name>Kanpur</Name></City>
+<City><Name>Pune</Name></City>
+<City><Name>Surat</Name></City>
+<City><Name>Jaipur</Name></City>
+<City><Name>Lucknow</Name></City>
+<City><Name>Nagpur</Name></City>
+<City><Name>Indore</Name></City>
+<City><Name>Bhopal</Name></City>
+<City><Name>Ludhiana</Name></City>
+<City><Name>Patna</Name></City>
+<City><Name>Vadodara (Baroda)</Name></City>
+<City><Name>Agra</Name></City>
+<City><Name>Thane (Thana)</Name></City>
+<City><Name>Kalyan-Dombivali</Name></City>
+<City><Name>Varanasi (Benares)</Name></City>
+<City><Name>Nashik (Nasik)</Name></City>
+<City><Name>Meerut</Name></City>
+<City><Name>Faridabad</Name></City>
+<City><Name>Pimpri Chinchwad</Name></City>
+<City><Name>Haora (Howrah)</Name></City>
+<City><Name>Vishakhapatnam</Name></City>
+<City><Name>Allahabad</Name></City>
+<City><Name>Ghaziabad</Name></City>
+<City><Name>Rajkot</Name></City>
+<City><Name>Amritsar</Name></City>
+<City><Name>Jabalpur</Name></City>
+<City><Name>Coimbatore</Name></City>
+<City><Name>Madurai</Name></City>
+<City><Name>Srinagar</Name></City>
+<City><Name>Shambajinagar (Aurangabad)</Name></City>
+<City><Name>Solapur (Sholapur)</Name></City>
+<City><Name>Vijayawada</Name></City>
+<City><Name>Jodhpur</Name></City>
+<City><Name>Ranchi</Name></City>
+<City><Name>Gwalior</Name></City>
+<City><Name>Guwahati (Gauhati)</Name></City>
+<City><Name>Chandigarh</Name></City>
+<City><Name>Hubli-Dharwad</Name></City>
+<City><Name>Mysore</Name></City>
+<City><Name>Tiruchirapalli</Name></City>
+<City><Name>Thiruvananthapuram (Trivandrum)</Name></City>
+<City><Name>Bareilly</Name></City>
+<City><Name>Jalandhar (Jullundur)</Name></City>
+<City><Name>Navi Mumbai (New Bombay)</Name></City>
+<City><Name>Salem</Name></City>
+<City><Name>Kota</Name></City>
+<City><Name>Aligarh</Name></City>
+<City><Name>Bhubaneswar</Name></City>
+<City><Name>Moradabad</Name></City>
+<City><Name>Gorakhpur</Name></City>
+<City><Name>Raipur</Name></City>
+<City><Name>Bhiwandi</Name></City>
+<City><Name>Cochin (Kochi)</Name></City>
+<City><Name>Jamshedpur</Name></City>
+<City><Name>Bhilai Nagar</Name></City>
+<City><Name>Amravati</Name></City>
+<City><Name>Kataka (Cuttack)</Name></City>
+<City><Name>Warangal</Name></City>
+<City><Name>Bikaner</Name></City>
+<City><Name>Mira-Bhayandar</Name></City>
+<City><Name>Guntur</Name></City>
+<City><Name>Bhavnagar</Name></City>
+<City><Name>Durgapur</Name></City>
+<City><Name>Kolhapur</Name></City>
+<City><Name>Ajmer</Name></City>
+<City><Name>Asansol</Name></City>
+<City><Name>Ulhasnagar</Name></City>
+<City><Name>Saharanpur</Name></City>
+<City><Name>Jamnagar</Name></City>
+<City><Name>Bhatpara</Name></City>
+<City><Name>Sangli-Miraj</Name></City>
+<City><Name>Calicut (Kozhikode)</Name></City>
+<City><Name>Nanded-Waghala</Name></City>
+<City><Name>Ujjain</Name></City>
+<City><Name>Dehra Dun</Name></City>
+<City><Name>Gulbarga</Name></City>
+<City><Name>Tirunelveli</Name></City>
+<City><Name>Malegaon</Name></City>
+<City><Name>Akola</Name></City>
+<City><Name>Belgaum</Name></City>
+<City><Name>Mangalore</Name></City>
+<City><Name>Bokaro Steel City</Name></City>
+<City><Name>South Dumdum</Name></City>
+<City><Name>Udaipur</Name></City>
+<City><Name>Gaya</Name></City>
+<City><Name>Maheshtala</Name></City>
+<City><Name>Jhansi</Name></City>
+<City><Name>Nellore</Name></City>
+<City><Name>Jammu</Name></City>
+<City><Name>Jalgaon</Name></City>
+<City><Name>Davangere</Name></City>
+<City><Name>Kollam (Quilon)</Name></City>
+<City><Name>Panihati</Name></City>
+<City><Name>Tiruppur (Tirupper)</Name></City>
+<City><Name>Dhule (Dhulia)</Name></City>
+<City><Name>Bhagalpur</Name></City>
+<City><Name>Rajpur Sonarpur</Name></City>
+<City><Name>Thrissur</Name></City>
+<City><Name>Bellary</Name></City>
+<City><Name>Muzaffarnagar</Name></City>
+<City><Name>Korba</Name></City>
+<City><Name>Rajahmundry</Name></City>
+<City><Name>Kamarhati</Name></City>
+<City><Name>Ambattur</Name></City>
+<City><Name>Brahmapur</Name></City>
+<City><Name>Ahmadnagar</Name></City>
+<City><Name>Muzaffarpur</Name></City>
+<City><Name>Noida</Name></City>
+<City><Name>Patiala</Name></City>
+<City><Name>Mathura</Name></City>
+<City><Name>New Delhi (Ni Dilli)</Name></City>
+<City><Name>Latur</Name></City>
+<City><Name>Shahjahanpur</Name></City>
+<City><Name>Kakinada</Name></City>
+<City><Name>Kukatpalle</Name></City>
+<City><Name>Kulti</Name></City>
+<City><Name>Chandrapur</Name></City>
+<City><Name>Nizamabad</Name></City>
+<City><Name>Rohtak</Name></City>
+<City><Name>Barddhaman (Burdwan)</Name></City>
+<City><Name>Siliguri (Shiliguri)</Name></City>
+<City><Name>Rampur</Name></City>
+<City><Name>Bhilwara</Name></City>
+<City><Name>Firozabad</Name></City>
+<City><Name>Bilaspur</Name></City>
+<City><Name>Shimoga</Name></City>
+<City><Name>Rajarhat Gopalpur</Name></City>
+<City><Name>Kurnool</Name></City>
+<City><Name>Lalbahadur Nagar</Name></City>
+<City><Name>Darbhanga</Name></City>
+<City><Name>Dasarahalli</Name></City>
+<City><Name>Panipat</Name></City>
+<City><Name>Bally</Name></City>
+<City><Name>Alwar</Name></City>
+<City><Name>Parbhani</Name></City>
+<City><Name>Gajuwaka</Name></City>
+<City><Name>Ichalkaranji</Name></City>
+<City><Name>Hisar (Hissar)</Name></City>
+<City><Name>Barahanagar (Baranagar)</Name></City>
+<City><Name>Tumkur (Timkur)</Name></City>
+<City><Name>Ramagundam</Name></City>
+<City><Name>Jalna</Name></City>
+<City><Name>Durg</Name></City>
+<City><Name>Sagar</Name></City>
+<City><Name>Bihar</Name></City>
+<City><Name>Dewas</Name></City>
+<City><Name>Barasat</Name></City>
+<City><Name>Qutubullapur</Name></City>
+<City><Name>Avadi</Name></City>
+<City><Name>Farrukhabad-cum-Fatehgarh</Name></City>
+<City><Name>Aizawl</Name></City>
+<City><Name>Tirupati</Name></City>
+<City><Name>Bijapur</Name></City>
+<City><Name>Satna</Name></City>
+<City><Name>Raurkela</Name></City>
+<City><Name>Ratlam</Name></City>
+<City><Name>Imphal</Name></City>
+<City><Name>Pondicherry</Name></City>
+<City><Name>North Dumdum</Name></City>
+<City><Name>Anantapur</Name></City>
+<City><Name>Ozhukarai</Name></City>
+<City><Name>Bhatinda (Bathinda)</Name></City>
+<City><Name>Tuticorin (Thoothukkudi)</Name></City>
+<City><Name>Thanjavur</Name></City>
+<City><Name>Naihati</Name></City>
+<City><Name>Sonipat (Sonepat)</Name></City>
+<City><Name>Maunath Bhanjan</Name></City>
+<City><Name>Tiruvottiyur</Name></City>
+<City><Name>Hapur</Name></City>
+<City><Name>Ganganagar</Name></City>
+<City><Name>Etawah</Name></City>
+<City><Name>Nagercoil</Name></City>
+<City><Name>Karnal</Name></City>
+<City><Name>Raichur</Name></City>
+<City><Name>Raurkela Industrialship</Name></City>
+<City><Name>Secunderabad</Name></City>
+<City><Name>Karimnagar</Name></City>
+<City><Name>Mirzapur-cum-Vindhyachal</Name></City>
+<City><Name>Bharatpur</Name></City>
+<City><Name>Amarnath</Name></City>
+<City><Name>Arrah (Ara)</Name></City>
+<City><Name>Ulubaria</Name></City>
+<City><Name>Bommanahalli</Name></City>
+<City><Name>Dhanbad</Name></City>
+<City><Name>Serampore</Name></City>
+<City><Name>Dindigul</Name></City>
+<City><Name>Gandhinagar</Name></City>
+<City><Name>Malkajgiri</Name></City>
+<City><Name>Burhanpur</Name></City>
+<City><Name>Nadiad</Name></City>
+<City><Name>Eluru</Name></City>
+<City><Name>Agartala</Name></City>
+<City><Name>Yamunanagar</Name></City>
+<City><Name>Kharagpur</Name></City>
+<City><Name>Munger (Monghyr)</Name></City>
+<City><Name>Pali</Name></City>
+<City><Name>Murwara (Katni)</Name></City>
+<City><Name>Krishnarajapura</Name></City>
+<City><Name>Sikar</Name></City>
+<City><Name>Singrauli</Name></City>
+<City><Name>Nala Sopara</Name></City>
+<City><Name>Rewa</Name></City>
+<City><Name>Sambhal</Name></City>
+<City><Name>Byatarayanapura</Name></City>
+<City><Name>Machilipatnam (Masulipatam)</Name></City>
+<City><Name>Chapra</Name></City>
+<City><Name>Vellore</Name></City>
+<City><Name>Alappuzha (Alleppey)</Name></City>
+<City><Name>Bulandshahr</Name></City>
+<City><Name>Hardwar (Haridwar)</Name></City>
+<City><Name>Katihar</Name></City>
+<City><Name>Vizianagaram</Name></City>
+<City><Name>Gurgaon</Name></City>
+<City><Name>Bidar</Name></City>
+<City><Name>Bhusawal</Name></City>
+<City><Name>Khandwa</Name></City>
+<City><Name>Purnea (Purnia)</Name></City>
+<City><Name>Haldia</Name></City>
+<City><Name>Hugli-Chinsurah</Name></City>
+<City><Name>Bhiwani</Name></City>
+<City><Name>Rae Bareli</Name></City>
+<City><Name>Junagadh</Name></City>
+<City><Name>Bahraich</Name></City>
+<City><Name>Mango</Name></City>
+<City><Name>Raiganj</Name></City>
+<City><Name>Amroha</Name></City>
+<City><Name>Sultanpur Majra</Name></City>
+<City><Name>Hospet</Name></City>
+<City><Name>Bidhan Nagar</Name></City>
+<City><Name>Chandannagar</Name></City>
+<City><Name>Ingraj Bazar (English Bazar)</Name></City>
+<City><Name>Sirsa</Name></City>
+<City><Name>Bhadravati</Name></City>
+<City><Name>Berhampore (Baharampur)</Name></City>
+<City><Name>Jaunpur</Name></City>
+<City><Name>Khammam</Name></City>
+<City><Name>Kapra</Name></City>
+<City><Name>Cuddalore</Name></City>
+<City><Name>Pathankot</Name></City>
+<City><Name>Puri</Name></City>
+<City><Name>Adoni</Name></City>
+<City><Name>Surendranagar</Name></City>
+<City><Name>Madhyamgram</Name></City>
+<City><Name>Gadag-Betigeri</Name></City>
+<City><Name>Kirari Suleman Nagar</Name></City>
+<City><Name>Tenali</Name></City>
+<City><Name>Bhind</Name></City>
+<City><Name>Sambalpur</Name></City>
+<City><Name>Serilingampalle</Name></City>
+<City><Name>Kanchipuram</Name></City>
+<City><Name>Nandyal</Name></City>
+<City><Name>Chittoor</Name></City>
+<City><Name>Bhalswa Jahangirpur</Name></City>
+<City><Name>Fatehpur</Name></City>
+<City><Name>Sitapur</Name></City>
+<City><Name>Gandhidham</Name></City>
+<City><Name>Morena</Name></City>
+<City><Name>Nangloi Jat</Name></City>
+<City><Name>Erode</Name></City>
+<City><Name>Ongole</Name></City>
+<City><Name>Uttarpara Kotrung</Name></City>
+<City><Name>Proddatur</Name></City>
+<City><Name>Midnapore (Medinipur)</Name></City>
+<City><Name>Hoshiarpur</Name></City>
+<City><Name>Karawal Nagar</Name></City>
+<City><Name>Bharuch (Broach)</Name></City>
+<City><Name>Budaun</Name></City>
+<City><Name>Shivpuri</Name></City>
+<City><Name>Alandur</Name></City>
+<City><Name>Morvi</Name></City>
+<City><Name>Faizabad</Name></City>
+<City><Name>Unnao</Name></City>
+<City><Name>Pallavaram</Name></City>
+<City><Name>Barrackpur</Name></City>
+<City><Name>Rajnandgaon</Name></City>
+<City><Name>Rajendranagar</Name></City>
+<City><Name>Shimla</Name></City>
+<City><Name>Silchar</Name></City>
+<City><Name>Robertson Pet</Name></City>
+<City><Name>Veraval</Name></City>
+<City><Name>Panchkula Urban Estate</Name></City>
+<City><Name>Kumbakonam</Name></City>
+<City><Name>Orai</Name></City>
+<City><Name>Ambala</Name></City>
+<City><Name>Krishnanagar</Name></City>
+<City><Name>Santipur</Name></City>
+<City><Name>Bid (Bhir)</Name></City>
+<City><Name>Tambaram</Name></City>
+<City><Name>Bhimavaram</Name></City>
+<City><Name>Guna</Name></City>
+<City><Name>Jind</Name></City>
+<City><Name>Mahadevapura</Name></City>
+<City><Name>Balurghat</Name></City>
+<City><Name>Tonk</Name></City>
+<City><Name>Banda</Name></City>
+<City><Name>Navsari</Name></City>
+<City><Name>Porbandar</Name></City>
+<City><Name>Shillong</Name></City>
+<City><Name>Dallo Pura</Name></City>
+<City><Name>Mandya</Name></City>
+<City><Name>Dinapur Nizamat</Name></City>
+<City><Name>Sasaram</Name></City>
+<City><Name>Mahbubnagar</Name></City>
+<City><Name>Palghat (Palakkad)</Name></City>
+<City><Name>Anand</Name></City>
+<City><Name>Tiruvannamalai</Name></City>
+<City><Name>Hanumangarh</Name></City>
+<City><Name>Jamuria</Name></City>
+<City><Name>Haldwani-cum-Kathgodam</Name></City>
+<City><Name>Bankura</Name></City>
+<City><Name>Habra</Name></City>
+<City><Name>Neyveli</Name></City>
+<City><Name>Hazaribag</Name></City>
+<City><Name>Cuddapah</Name></City>
+<City><Name>Kanchrapara</Name></City>
+<City><Name>Batala</Name></City>
+<City><Name>Moga</Name></City>
+<City><Name>Vidisha</Name></City>
+<City><Name>Saharsa</Name></City>
+<City><Name>Hindupur</Name></City>
+<City><Name>Delhi Cantonment</Name></City>
+<City><Name>Halisahar</Name></City>
+<City><Name>Abohar</Name></City>
+<City><Name>Pilibhit</Name></City>
+<City><Name>Titagarh</Name></City>
+<City><Name>Beawar</Name></City>
+<City><Name>North Barrackpur</Name></City>
+<City><Name>S.A.S. Nagar (Mohali)</Name></City>
+<City><Name>Hathras</Name></City>
+<City><Name>Chitradurga</Name></City>
+<City><Name>Rajapalayam</Name></City>
+<City><Name>Chhindwara</Name></City>
+<City><Name>Dibrugarh</Name></City>
+<City><Name>Godhra</Name></City>
+<City><Name>Lakhimpur</Name></City>
+<City><Name>Loni</Name></City>
+<City><Name>Gondiya</Name></City>
+<City><Name>Yeotmal (Yavatmal)</Name></City>
+<City><Name>Gonda</Name></City>
+<City><Name>Bahadurgarh</Name></City>
+<City><Name>Thanesar</Name></City>
+<City><Name>Deoli</Name></City>
+<City><Name>Hajipur</Name></City>
+<City><Name>Adityapur</Name></City>
+<City><Name>Puna</Name></City>
+<City><Name>Dehri</Name></City>
+<City><Name>Virar</Name></City>
+<City><Name>Kaithal</Name></City>
+<City><Name>Uppal Kalan</Name></City>
+<City><Name>Guntakal</Name></City>
+<City><Name>Navghar-Manikpur</Name></City>
+<City><Name>Bettiah</Name></City>
+<City><Name>Hassan</Name></City>
+<City><Name>Mandsaur (Mandasor)</Name></City>
+<City><Name>Khardaha</Name></City>
+<City><Name>Kishangarh</Name></City>
+<City><Name>Nabadwip</Name></City>
+<City><Name>Kolar</Name></City>
+<City><Name>Puruliya</Name></City>
+<City><Name>Vejalpur</Name></City>
+<City><Name>Rishra</Name></City>
+<City><Name>Modinagar</Name></City>
+<City><Name>Basirhat</Name></City>
+<City><Name>Udupi</Name></City>
+<City><Name>Gudivada</Name></City>
+<City><Name>Hardoi</Name></City>
+<City><Name>Patan</Name></City>
+<City><Name>Damoh</Name></City>
+<City><Name>Lalitpur</Name></City>
+<City><Name>Ashoknagar-Kalyangarh</Name></City>
+<City><Name>Raigarh</Name></City>
+<City><Name>Wardha</Name></City>
+<City><Name>Raniganj</Name></City>
+<City><Name>Rewari</Name></City>
+<City><Name>Palanpur</Name></City>
+<City><Name>Nalgonda</Name></City>
+<City><Name>Siwan</Name></City>
+<City><Name>Srikakulam</Name></City>
+<City><Name>Adilabad</Name></City>
+<City><Name>Pudukkottai</Name></City>
+<City><Name>Nagaon</Name></City>
+<City><Name>Baidyabati</Name></City>
+<City><Name>Satara</Name></City>
+<City><Name>Neemuch</Name></City>
+<City><Name>Basti</Name></City>
+<City><Name>Achalpur</Name></City>
+<City><Name>Darjiling</Name></City>
+<City><Name>Etah</Name></City>
+<City><Name>Maler Kotla</Name></City>
+<City><Name>Ghatlodiya</Name></City>
+<City><Name>Ambala Sadar</Name></City>
+<City><Name>Baleshwar</Name></City>
+<City><Name>Bhadreswar</Name></City>
+<City><Name>Barshi</Name></City>
+<City><Name>Bansbaria</Name></City>
+<City><Name>Jetpur Navagadh</Name></City>
+<City><Name>Deoria</Name></City>
+<City><Name>Panvel</Name></City>
+<City><Name>Chandausi</Name></City>
+<City><Name>Dharmavaram</Name></City>
+<City><Name>Champdani</Name></City>
+<City><Name>Khanna</Name></City>
+<City><Name>Tadepalligudem</Name></City>
+<City><Name>Bangaon</Name></City>
+<City><Name>Ballia</Name></City>
+<City><Name>Dumdum</Name></City>
+<City><Name>Jagadhri</Name></City>
+<City><Name>Chikmagalur</Name></City>
+<City><Name>Kanpur Cantonment</Name></City>
+<City><Name>Palwal</Name></City>
+<City><Name>Motihari</Name></City>
+<City><Name>Jhunjhunun</Name></City>
+<City><Name>Jalpaiguri</Name></City>
+<City><Name>Botad</Name></City>
+<City><Name>Sultanpur</Name></City>
+<City><Name>Kalol</Name></City>
+<City><Name>Port Blair</Name></City>
+<City><Name>Bagdad</Name></City>
+<City><Name>Mosul</Name></City>
+<City><Name>Irbil</Name></City>
+<City><Name>Basra</Name></City>
+<City><Name>al-Sulaymaniya</Name></City>
+<City><Name>al-Najaf</Name></City>
+<City><Name>Kirkuk</Name></City>
+<City><Name>Karbala</Name></City>
+<City><Name>al-Nasiriya</Name></City>
+<City><Name>al-Hilla</Name></City>
+<City><Name>al-Amara</Name></City>
+<City><Name>al-Falluja</Name></City>
+<City><Name>al-Diwaniya</Name></City>
+<City><Name>Ba'quba</Name></City>
+<City><Name>al-Kut</Name></City>
+<City><Name>Samarra</Name></City>
+<City><Name>al-Ramadi</Name></City>
+<City><Name>al-Zubayr</Name></City>
+<City><Name>Tall 'Afar</Name></City>
+<City><Name>Shatra</Name></City>
+<City><Name>al-Samawa</Name></City>
+<City><Name>al-Kufa</Name></City>
+<City><Name>Teheran</Name></City>
+<City><Name>Mashhad</Name></City>
+<City><Name>Esfahan</Name></City>
+<City><Name>Tabriz</Name></City>
+<City><Name>Karaj</Name></City>
+<City><Name>Shiraz</Name></City>
+<City><Name>Qom</Name></City>
+<City><Name>Ahvaz</Name></City>
+<City><Name>Kermanshah</Name></City>
+<City><Name>Urmia</Name></City>
+<City><Name>Zahedan</Name></City>
+<City><Name>Kerman</Name></City>
+<City><Name>Rasht</Name></City>
+<City><Name>Hamadan</Name></City>
+<City><Name>Arak</Name></City>
+<City><Name>Yazd</Name></City>
+<City><Name>Ardebil</Name></City>
+<City><Name>Zanjan</Name></City>
+<City><Name>Sanandaj</Name></City>
+<City><Name>Bandar Abbas</Name></City>
+<City><Name>Khorramabad</Name></City>
+<City><Name>Qazvin</Name></City>
+<City><Name>Abadan</Name></City>
+<City><Name>Eslamshahr</Name></City>
+<City><Name>Sari</Name></City>
+<City><Name>Kashan</Name></City>
+<City><Name>Borujerd</Name></City>
+<City><Name>Dezful</Name></City>
+<City><Name>Gorgan</Name></City>
+<City><Name>Qods</Name></City>
+<City><Name>Sabzevar</Name></City>
+<City><Name>Neyshabur</Name></City>
+<City><Name>Najafabad</Name></City>
+<City><Name>Sirjan</Name></City>
+<City><Name>Babol</Name></City>
+<City><Name>Amol</Name></City>
+<City><Name>Varamin</Name></City>
+<City><Name>Birjand</Name></City>
+<City><Name>Bojnurd</Name></City>
+<City><Name>Khomeynishahr</Name></City>
+<City><Name>Bukan</Name></City>
+<City><Name>Malayer</Name></City>
+<City><Name>Qaemshahr</Name></City>
+<City><Name>Khoy</Name></City>
+<City><Name>Qarchak</Name></City>
+<City><Name>Maragheh</Name></City>
+<City><Name>Bushehr</Name></City>
+<City><Name>Saqqez</Name></City>
+<City><Name>Khorramshahr</Name></City>
+<City><Name>Ilam</Name></City>
+<City><Name>Mahabad</Name></City>
+<City><Name>Andimeshk</Name></City>
+<City><Name>Saveh</Name></City>
+<City><Name>Masjed-e-Soleyman</Name></City>
+<City><Name>Shahrud</Name></City>
+<City><Name>Gonbad-e Qabus</Name></City>
+<City><Name>Marv Dasht</Name></City>
+<City><Name>Shahr-e Kord</Name></City>
+<City><Name>Semnan</Name></City>
+<City><Name>Zabol</Name></City>
+<City><Name>Yasuj</Name></City>
+<City><Name>Dublin</Name></City>
+<City><Name>Cork</Name></City>
+<City><Name>Reykjavík</Name></City>
+<City><Name>Jerusalem</Name></City>
+<City><Name>Tel Aviv-Jaffa</Name></City>
+<City><Name>Haifa</Name></City>
+<City><Name>Rishon Le Ziyyon</Name></City>
+<City><Name>Ashdod</Name></City>
+<City><Name>Beerseba</Name></City>
+<City><Name>Petah Tiqwa</Name></City>
+<City><Name>Netanya</Name></City>
+<City><Name>Holon</Name></City>
+<City><Name>Bene Beraq</Name></City>
+<City><Name>Bat Yam</Name></City>
+<City><Name>Ramat Gan</Name></City>
+<City><Name>Ashqelon</Name></City>
+<City><Name>Rehovot</Name></City>
+<City><Name>Rooma [Roma]</Name></City>
+<City><Name>Milano </Name></City>
+<City><Name>Napoli</Name></City>
+<City><Name>Torino</Name></City>
+<City><Name>Palermo </Name></City>
+<City><Name>Genova</Name></City>
+<City><Name>Bologna</Name></City>
+<City><Name>Firenze</Name></City>
+<City><Name>Bari </Name></City>
+<City><Name>Catania</Name></City>
+<City><Name>Venetsia [Venezia]</Name></City>
+<City><Name>Verona</Name></City>
+<City><Name>Messina</Name></City>
+<City><Name>Padova</Name></City>
+<City><Name>Trieste</Name></City>
+<City><Name>Taranto</Name></City>
+<City><Name>Brescia</Name></City>
+<City><Name>Reggio di Calabria</Name></City>
+<City><Name>Prato</Name></City>
+<City><Name>Modena</Name></City>
+<City><Name>Parma</Name></City>
+<City><Name>Perugia</Name></City>
+<City><Name>Livorno</Name></City>
+<City><Name>Cagliari</Name></City>
+<City><Name>Reggio nell' Emilia</Name></City>
+<City><Name>Foggia</Name></City>
+<City><Name>Ravenna</Name></City>
+<City><Name>Rimini</Name></City>
+<City><Name>Salerno</Name></City>
+<City><Name>Ferrara</Name></City>
+<City><Name>Sassari</Name></City>
+<City><Name>Syrakusa</Name></City>
+<City><Name>Pescara</Name></City>
+<City><Name>Monza</Name></City>
+<City><Name>Bergamo</Name></City>
+<City><Name>Vicenza</Name></City>
+<City><Name>Latina</Name></City>
+<City><Name>Forlì</Name></City>
+<City><Name>Trento</Name></City>
+<City><Name>Terni</Name></City>
+<City><Name>Giugliano in Campania            </Name></City>
+<City><Name>Novara</Name></City>
+<City><Name>Ancona</Name></City>
+<City><Name>Piacenza</Name></City>
+<City><Name>Bolzano</Name></City>
+<City><Name>Andria</Name></City>
+<City><Name>Udine</Name></City>
+<City><Name>Arezzo</Name></City>
+<City><Name>Catanzaro</Name></City>
+<City><Name>La Spezia</Name></City>
+<City><Name>Cesena</Name></City>
+<City><Name>Barletta</Name></City>
+<City><Name>Lecce</Name></City>
+<City><Name>Pesaro</Name></City>
+<City><Name>Alessandria</Name></City>
+<City><Name>Brindisi</Name></City>
+<City><Name>Dili</Name></City>
+<City><Name>Wien</Name></City>
+<City><Name>Graz</Name></City>
+<City><Name>Linz</Name></City>
+<City><Name>Salzburg</Name></City>
+<City><Name>Innsbruck</Name></City>
+<City><Name>Klagenfurt</Name></City>
+<City><Name>Portmore</Name></City>
+<City><Name>Spanish Town</Name></City>
+<City><Name>Kingston</Name></City>
+<City><Name>Tokio [Tokyo]</Name></City>
+<City><Name>Jokohama [Yokohama]</Name></City>
+<City><Name>Osaka</Name></City>
+<City><Name>Nagoya</Name></City>
+<City><Name>Sapporo</Name></City>
+<City><Name>Kobe</Name></City>
+<City><Name>Kioto [Kyoto]</Name></City>
+<City><Name>Fukuoka</Name></City>
+<City><Name>Kawasaki</Name></City>
+<City><Name>Saitama</Name></City>
+<City><Name>Hiroshima</Name></City>
+<City><Name>Sendai</Name></City>
+<City><Name>Kitakyushu</Name></City>
+<City><Name>Chiba</Name></City>
+<City><Name>Sakai</Name></City>
+<City><Name>Niigata</Name></City>
+<City><Name>Hamamatsu</Name></City>
+<City><Name>Shizuoka</Name></City>
+<City><Name>Okayama</Name></City>
+<City><Name>Kumamoto</Name></City>
+<City><Name>Sagamihara</Name></City>
+<City><Name>Kagoshima</Name></City>
+<City><Name>Funabashi</Name></City>
+<City><Name>Hachioji</Name></City>
+<City><Name>Himeji</Name></City>
+<City><Name>Matsuyama</Name></City>
+<City><Name>Higashiosaka</Name></City>
+<City><Name>Kawaguchi</Name></City>
+<City><Name>Matsudo</Name></City>
+<City><Name>Nishinomiya</Name></City>
+<City><Name>Kurashiki</Name></City>
+<City><Name>Ichikawa</Name></City>
+<City><Name>Oita</Name></City>
+<City><Name>Amagasaki</Name></City>
+<City><Name>Fukuyama</Name></City>
+<City><Name>Utsunomiya</Name></City>
+<City><Name>Kanazawa</Name></City>
+<City><Name>Nagasaki</Name></City>
+<City><Name>Yokosuka</Name></City>
+<City><Name>Toyama</Name></City>
+<City><Name>Takamatsu</Name></City>
+<City><Name>Toyota</Name></City>
+<City><Name>Gifu</Name></City>
+<City><Name>Machida</Name></City>
+<City><Name>Hirakata</Name></City>
+<City><Name>Fujisawa</Name></City>
+<City><Name>Toyonaka</Name></City>
+<City><Name>Kashiwa</Name></City>
+<City><Name>Nagano</Name></City>
+<City><Name>Toyohashi</Name></City>
+<City><Name>Wakayama</Name></City>
+<City><Name>Ichinomiya</Name></City>
+<City><Name>Nara</Name></City>
+<City><Name>Miyazaki</Name></City>
+<City><Name>Okazaki</Name></City>
+<City><Name>Takatsuki</Name></City>
+<City><Name>Suita</Name></City>
+<City><Name>Asahikawa</Name></City>
+<City><Name>Iwaki</Name></City>
+<City><Name>Takasaki</Name></City>
+<City><Name>Koriyama</Name></City>
+<City><Name>Tokorozawa</Name></City>
+<City><Name>Kawagoe</Name></City>
+<City><Name>Kochi</Name></City>
+<City><Name>Akita</Name></City>
+<City><Name>Otsu</Name></City>
+<City><Name>Maebashi</Name></City>
+<City><Name>Koshigaya</Name></City>
+<City><Name>Naha</Name></City>
+<City><Name>Aomori</Name></City>
+<City><Name>Kurume</Name></City>
+<City><Name>Yokkaichi</Name></City>
+<City><Name>Morioka</Name></City>
+<City><Name>Kasugai</Name></City>
+<City><Name>Akashi</Name></City>
+<City><Name>Hakodate</Name></City>
+<City><Name>Fukushima</Name></City>
+<City><Name>Tsu</Name></City>
+<City><Name>Shimonoseki</Name></City>
+<City><Name>Nagaoka</Name></City>
+<City><Name>Ichihara</Name></City>
+<City><Name>Yao</Name></City>
+<City><Name>Fukui</Name></City>
+<City><Name>Ibaraki</Name></City>
+<City><Name>Tokushima</Name></City>
+<City><Name>Kakogawa</Name></City>
+<City><Name>Mito</Name></City>
+<City><Name>Hiratsuka</Name></City>
+<City><Name>Sasebo</Name></City>
+<City><Name>Yamagata</Name></City>
+<City><Name>Kure</Name></City>
+<City><Name>Fuchu</Name></City>
+<City><Name>Hachinohe</Name></City>
+<City><Name>Neyagawa</Name></City>
+<City><Name>Kasukabe</Name></City>
+<City><Name>Soka</Name></City>
+<City><Name>Fuji</Name></City>
+<City><Name>Chigasaki</Name></City>
+<City><Name>Matsumoto</Name></City>
+<City><Name>Atsugi</Name></City>
+<City><Name>Yamato</Name></City>
+<City><Name>Ageo</Name></City>
+<City><Name>Takarazuka</Name></City>
+<City><Name>Chofu</Name></City>
+<City><Name>Ota</Name></City>
+<City><Name>Numazu</Name></City>
+<City><Name>Joetsu</Name></City>
+<City><Name>Saga</Name></City>
+<City><Name>Tsukuba</Name></City>
+<City><Name>Isesaki</Name></City>
+<City><Name>Tottori</Name></City>
+<City><Name>Kishiwada</Name></City>
+<City><Name>Kofu</Name></City>
+<City><Name>Odawara</Name></City>
+<City><Name>Hitachi</Name></City>
+<City><Name>Matsue</Name></City>
+<City><Name>Suzuka</Name></City>
+<City><Name>Itami</Name></City>
+<City><Name>Nishitokyo</Name></City>
+<City><Name>Yamaguchi</Name></City>
+<City><Name>Kumagaya</Name></City>
+<City><Name>Uji</Name></City>
+<City><Name>Kushiro</Name></City>
+<City><Name>Hirosaki</Name></City>
+<City><Name>Higashihiroshima</Name></City>
+<City><Name>Kodaira</Name></City>
+<City><Name>Yachiyo</Name></City>
+<City><Name>Takaoka</Name></City>
+<City><Name>Izumi</Name></City>
+<City><Name>Hino</Name></City>
+<City><Name>Ube</Name></City>
+<City><Name>Mitaka</Name></City>
+<City><Name>Tachikawa</Name></City>
+<City><Name>Anjo</Name></City>
+<City><Name>Tomakomai</Name></City>
+<City><Name>Kamakura</Name></City>
+<City><Name>Imabari</Name></City>
+<City><Name>Iwata</Name></City>
+<City><Name>Sakura</Name></City>
+<City><Name>Miyakonojo</Name></City>
+<City><Name>Obihiro</Name></City>
+<City><Name>Matsusaka</Name></City>
+<City><Name>Hadano</Name></City>
+<City><Name>Ishinomaki</Name></City>
+<City><Name>Ueda</Name></City>
+<City><Name>Ogaki</Name></City>
+<City><Name>Oyama</Name></City>
+<City><Name>Ashikaga</Name></City>
+<City><Name>Narashino</Name></City>
+<City><Name>Kawanishi</Name></City>
+<City><Name>Sayama</Name></City>
+<City><Name>Urayasu</Name></City>
+<City><Name>Nagareyama</Name></City>
+<City><Name>Hitachinaka</Name></City>
+<City><Name>Niiza</Name></City>
+<City><Name>Noda</Name></City>
+<City><Name>Shunan</Name></City>
+<City><Name>Yonago</Name></City>
+<City><Name>Onomichi</Name></City>
+<City><Name>Iwakuni</Name></City>
+<City><Name>Iruma</Name></City>
+<City><Name>Komaki</Name></City>
+<City><Name>Moriguchi</Name></City>
+<City><Name>Tama</Name></City>
+<City><Name>Fukaya</Name></City>
+<City><Name>Izumo</Name></City>
+<City><Name>Higashimurayama</Name></City>
+<City><Name>Koga</Name></City>
+<City><Name>Kakamigahara</Name></City>
+<City><Name>Tsuchiura</Name></City>
+<City><Name>Kariya</Name></City>
+<City><Name>Isahaya</Name></City>
+<City><Name>Ome</Name></City>
+<City><Name>Tsuruoka</Name></City>
+<City><Name>Otaru</Name></City>
+<City><Name>Kuwana</Name></City>
+<City><Name>Musashino</Name></City>
+<City><Name>Toyokawa</Name></City>
+<City><Name>Osaki</Name></City>
+<City><Name>Inazawa</Name></City>
+<City><Name>Yatsushiro</Name></City>
+<City><Name>Ise</Name></City>
+<City><Name>Iizuka</Name></City>
+<City><Name>Abiko</Name></City>
+<City><Name>Seto</Name></City>
+<City><Name>Kadoma</Name></City>
+<City><Name>Aizuwakamatsu</Name></City>
+<City><Name>Karatsu</Name></City>
+<City><Name>Omuta</Name></City>
+<City><Name>Oshu</Name></City>
+<City><Name>Nobeoka</Name></City>
+<City><Name>Misato</Name></City>
+<City><Name>Fujieda</Name></City>
+<City><Name>Kitami</Name></City>
+<City><Name>Zama</Name></City>
+<City><Name>Kirishima</Name></City>
+<City><Name>Mino</Name></City>
+<City><Name>Okinawa</Name></City>
+<City><Name>Beppu</Name></City>
+<City><Name>Kiryu</Name></City>
+<City><Name>Daito</Name></City>
+<City><Name>Matsubara</Name></City>
+<City><Name>Ebetsu</Name></City>
+<City><Name>Asaka</Name></City>
+<City><Name>Ichinoseki</Name></City>
+<City><Name>Kashihara</Name></City>
+<City><Name>Ebina</Name></City>
+<City><Name>Niihama</Name></City>
+<City><Name>Sano</Name></City>
+<City><Name>Tondabayashi</Name></City>
+<City><Name>Narita</Name></City>
+<City><Name>Kisarazu</Name></City>
+<City><Name>Kusatsu</Name></City>
+<City><Name>Fujinomiya</Name></City>
+<City><Name>Yaizu</Name></City>
+<City><Name>Konosu</Name></City>
+<City><Name>Habikino</Name></City>
+<City><Name>Kakegawa</Name></City>
+<City><Name>Kokubunji</Name></City>
+<City><Name>Toda</Name></City>
+<City><Name>Handa</Name></City>
+<City><Name>Higashiomi</Name></City>
+<City><Name>Hofu</Name></City>
+<City><Name>Sakata</Name></City>
+<City><Name>Kawachinagano</Name></City>
+<City><Name>Hatsukaichi</Name></City>
+<City><Name>Nasushiobara</Name></City>
+<City><Name>Higashikurume</Name></City>
+<City><Name>Tajimi</Name></City>
+<City><Name>Ikoma</Name></City>
+<City><Name>Koganei</Name></City>
+<City><Name>Uruma</Name></City>
+<City><Name>Sanda</Name></City>
+<City><Name>Saijo</Name></City>
+<City><Name>Mishima</Name></City>
+<City><Name>Chikusei</Name></City>
+<City><Name>Akishima</Name></City>
+<City><Name>Toride</Name></City>
+<City><Name>Hikone</Name></City>
+<City><Name>Marugame</Name></City>
+<City><Name>Tsuyama</Name></City>
+<City><Name>Hakusan</Name></City>
+<City><Name>Komatsu</Name></City>
+<City><Name>Kasuga</Name></City>
+<City><Name>Iida</Name></City>
+<City><Name>Urasoe</Name></City>
+<City><Name>Kanoya</Name></City>
+<City><Name>Tokai</Name></City>
+<City><Name>Nishio</Name></City>
+<City><Name>Fujimi</Name></City>
+<City><Name>Hanamaki</Name></City>
+<City><Name>Sanjo</Name></City>
+<City><Name>Shibata</Name></City>
+<City><Name>Mihara</Name></City>
+<City><Name>Kanuma</Name></City>
+<City><Name>Kamagaya</Name></City>
+<City><Name>Ikeda</Name></City>
+<City><Name>Fujimino</Name></City>
+<City><Name>Yokote</Name></City>
+<City><Name>Satsumasendai</Name></City>
+<City><Name>Isehara</Name></City>
+<City><Name>Iga</Name></City>
+<City><Name>Saku</Name></City>
+<City><Name>Sanaa</Name></City>
+<City><Name>Aden</Name></City>
+<City><Name>Ta'izz</Name></City>
+<City><Name>Hodeida</Name></City>
+<City><Name>al-Mukalla</Name></City>
+<City><Name>Ibb</Name></City>
+<City><Name>Dhamar</Name></City>
+<City><Name>Amman</Name></City>
+<City><Name>al-Zarqa'</Name></City>
+<City><Name>Irbid</Name></City>
+<City><Name>al-Russayfa</Name></City>
+<City><Name>al-Quwaysima</Name></City>
+<City><Name>Wadi al-Sir</Name></City>
+<City><Name>Tila' al-'Ali</Name></City>
+<City><Name>Flying Fish Cove</Name></City>
+<City><Name>Phnom Penh</Name></City>
+<City><Name>Battambang</Name></City>
+<City><Name>Siem Reap</Name></City>
+<City><Name>Douala</Name></City>
+<City><Name>Yaoundé</Name></City>
+<City><Name>Garoua</Name></City>
+<City><Name>Bamenda</Name></City>
+<City><Name>Maroua</Name></City>
+<City><Name>Bafoussam</Name></City>
+<City><Name>Ngaoundéré</Name></City>
+<City><Name>Bertoua</Name></City>
+<City><Name>Loum</Name></City>
+<City><Name>Kumba</Name></City>
+<City><Name>Edéa</Name></City>
+<City><Name>Kumbo</Name></City>
+<City><Name>Foumban</Name></City>
+<City><Name>Nkongsamba</Name></City>
+<City><Name>Mbouda</Name></City>
+<City><Name>Saint Helier</Name></City>
+<City><Name>Saint Peter Port</Name></City>
+<City><Name>Toronto</Name></City>
+<City><Name>Montréal</Name></City>
+<City><Name>Calgary</Name></City>
+<City><Name>Ottawa</Name></City>
+<City><Name>Edmonton</Name></City>
+<City><Name>Mississauga</Name></City>
+<City><Name>Winnipeg</Name></City>
+<City><Name>Vancouver</Name></City>
+<City><Name>Hamilton</Name></City>
+<City><Name>Québec</Name></City>
+<City><Name>Brampton</Name></City>
+<City><Name>Surrey</Name></City>
+<City><Name>Halifax</Name></City>
+<City><Name>Laval</Name></City>
+<City><Name>London</Name></City>
+<City><Name>Markham</Name></City>
+<City><Name>Gatineau</Name></City>
+<City><Name>Vaughan</Name></City>
+<City><Name>Longueuil</Name></City>
+<City><Name>Windsor</Name></City>
+<City><Name>Kitchener</Name></City>
+<City><Name>Burnaby</Name></City>
+<City><Name>Saskatoon</Name></City>
+<City><Name>Regina</Name></City>
+<City><Name>Richmond</Name></City>
+<City><Name>Oakville</Name></City>
+<City><Name>Burlington</Name></City>
+<City><Name>Richmond Hill</Name></City>
+<City><Name>Sudbury</Name></City>
+<City><Name>Sherbrooke</Name></City>
+<City><Name>Saguenay</Name></City>
+<City><Name>Oshawa</Name></City>
+<City><Name>Saint Catharines</Name></City>
+<City><Name>Lévis</Name></City>
+<City><Name>Barrie</Name></City>
+<City><Name>Trois-Rivières</Name></City>
+<City><Name>Abbotsford</Name></City>
+<City><Name>Cambridge</Name></City>
+<City><Name>Kingston</Name></City>
+<City><Name>Guelph</Name></City>
+<City><Name>Coquitlam</Name></City>
+<City><Name>Whitby</Name></City>
+<City><Name>Thunder Bay</Name></City>
+<City><Name>Saanich</Name></City>
+<City><Name>Chatham-Kent</Name></City>
+<City><Name>Kelowna</Name></City>
+<City><Name>Cape Breton</Name></City>
+<City><Name>Saint John's</Name></City>
+<City><Name>Praia</Name></City>
+<City><Name>Almaty</Name></City>
+<City><Name>Shymkent</Name></City>
+<City><Name>Qaraghandy</Name></City>
+<City><Name>Astana</Name></City>
+<City><Name>Taraz</Name></City>
+<City><Name>Öskemen</Name></City>
+<City><Name>Pavlodar</Name></City>
+<City><Name>Semey</Name></City>
+<City><Name>Aqtöbe</Name></City>
+<City><Name>Qostanay</Name></City>
+<City><Name>Oral</Name></City>
+<City><Name>Petropavl [Qiziliar]</Name></City>
+<City><Name>Temirtau</Name></City>
+<City><Name>Qyzylorda [Aq-Meshet]</Name></City>
+<City><Name>Aqtau</Name></City>
+<City><Name>Atyrau</Name></City>
+<City><Name>Kökshetau</Name></City>
+<City><Name>Ekibastuz</Name></City>
+<City><Name>Rudnyy</Name></City>
+<City><Name>Taldyqorghan</Name></City>
+<City><Name>Nairobi</Name></City>
+<City><Name>Mombasa</Name></City>
+<City><Name>Nakuru</Name></City>
+<City><Name>Kisumu</Name></City>
+<City><Name>Eldoret</Name></City>
+<City><Name>Bangui</Name></City>
+<City><Name>Bimbo</Name></City>
+<City><Name>Shanghai</Name></City>
+<City><Name>Peking [Beijing]</Name></City>
+<City><Name>Tianjin</Name></City>
+<City><Name>Kanton [Guangzhou]</Name></City>
+<City><Name>Wuhan</Name></City>
+<City><Name>Chongqing</Name></City>
+<City><Name>Shenyang</Name></City>
+<City><Name>Nanking [Nanjing]</Name></City>
+<City><Name>Harbin</Name></City>
+<City><Name>Chengdu</Name></City>
+<City><Name>Xi'an</Name></City>
+<City><Name>Jinan</Name></City>
+<City><Name>Changchun</Name></City>
+<City><Name>Dalian</Name></City>
+<City><Name>Hangzhou</Name></City>
+<City><Name>Shijiazhuang</Name></City>
+<City><Name>Taiyuan</Name></City>
+<City><Name>Qingdao</Name></City>
+<City><Name>Zhengzhou</Name></City>
+<City><Name>Kunming</Name></City>
+<City><Name>Lanzhou</Name></City>
+<City><Name>Changsha</Name></City>
+<City><Name>Zibo</Name></City>
+<City><Name>Tangshan</Name></City>
+<City><Name>Nanchang</Name></City>
+<City><Name>Fuzhou</Name></City>
+<City><Name>Guiyang</Name></City>
+<City><Name>Wuxi</Name></City>
+<City><Name>Anshan</Name></City>
+<City><Name>Fushun</Name></City>
+<City><Name>Jilin</Name></City>
+<City><Name>Suzhou</Name></City>
+<City><Name>Xuzhou</Name></City>
+<City><Name>Shantou</Name></City>
+<City><Name>Hefei</Name></City>
+<City><Name>Baotou</Name></City>
+<City><Name>Qiqihar</Name></City>
+<City><Name>Shenzhen</Name></City>
+<City><Name>Handan</Name></City>
+<City><Name>Luoyang</Name></City>
+<City><Name>Ningbo</Name></City>
+<City><Name>Nanning</Name></City>
+<City><Name>Datong</Name></City>
+<City><Name>Yantai</Name></City>
+<City><Name>Amoy [Xiamen]</Name></City>
+<City><Name>Changzhou</Name></City>
+<City><Name>Daqing</Name></City>
+<City><Name>Huainan</Name></City>
+<City><Name>Xiangfan</Name></City>
+<City><Name>Benxi</Name></City>
+<City><Name>Liuzhou</Name></City>
+<City><Name>Hohhot</Name></City>
+<City><Name>Yichun</Name></City>
+<City><Name>Shangqiu</Name></City>
+<City><Name>Chaoyang</Name></City>
+<City><Name>Jixi</Name></City>
+<City><Name>Huai'an</Name></City>
+<City><Name>Zaozhuang</Name></City>
+<City><Name>Zhanjiang</Name></City>
+<City><Name>Weifang</Name></City>
+<City><Name>Jinzhou</Name></City>
+<City><Name>Fuxin</Name></City>
+<City><Name>Zhangjiakou</Name></City>
+<City><Name>Pingdingshan</Name></City>
+<City><Name>Linyi</Name></City>
+<City><Name>Baoding</Name></City>
+<City><Name>Mudanjiang</Name></City>
+<City><Name>Xining</Name></City>
+<City><Name>Yichang</Name></City>
+<City><Name>Shunde</Name></City>
+<City><Name>Xinxiang</Name></City>
+<City><Name>Tai'an</Name></City>
+<City><Name>Hengyang</Name></City>
+<City><Name>Huaibei</Name></City>
+<City><Name>Jingzhou</Name></City>
+<City><Name>Puning</Name></City>
+<City><Name>Dandong</Name></City>
+<City><Name>Huangshi</Name></City>
+<City><Name>Kaifeng</Name></City>
+<City><Name>Hegang</Name></City>
+<City><Name>Jiamusi</Name></City>
+<City><Name>Liaoyang</Name></City>
+<City><Name>Zhongshan</Name></City>
+<City><Name>Zhuzhou</Name></City>
+<City><Name>Jiaozuo</Name></City>
+<City><Name>Wenzhou</Name></City>
+<City><Name>Anyang</Name></City>
+<City><Name>Wuhu</Name></City>
+<City><Name>Nantong</Name></City>
+<City><Name>Dongguan</Name></City>
+<City><Name>Xiangtan</Name></City>
+<City><Name>Qinhuangdao</Name></City>
+<City><Name>Yangzhou</Name></City>
+<City><Name>Xianyang</Name></City>
+<City><Name>Dongying</Name></City>
+<City><Name>Lianyungang</Name></City>
+<City><Name>Zhenjiang</Name></City>
+<City><Name>Yinchuan</Name></City>
+<City><Name>Guilin</Name></City>
+<City><Name>Haikou</Name></City>
+<City><Name>Bengbu</Name></City>
+<City><Name>Nanyang</Name></City>
+<City><Name>Yingkou</Name></City>
+<City><Name>Yueyang</Name></City>
+<City><Name>Nanchong</Name></City>
+<City><Name>Siping</Name></City>
+<City><Name>Panzhihua</Name></City>
+<City><Name>Jining</Name></City>
+<City><Name>Quanzhou</Name></City>
+<City><Name>Baoji</Name></City>
+<City><Name>Panjin</Name></City>
+<City><Name>Jinxi</Name></City>
+<City><Name>Chifeng</Name></City>
+<City><Name>Xingtai</Name></City>
+<City><Name>Yangquan</Name></City>
+<City><Name>Zigong</Name></City>
+<City><Name>Changzhi</Name></City>
+<City><Name>Tianshui</Name></City>
+<City><Name>Mianyang</Name></City>
+<City><Name>Shaoguan</Name></City>
+<City><Name>Zhuhai</Name></City>
+<City><Name>Maoming</Name></City>
+<City><Name>Changshu</Name></City>
+<City><Name>Ma'anshan</Name></City>
+<City><Name>Changde</Name></City>
+<City><Name>Shuangyashan</Name></City>
+<City><Name>Lufeng</Name></City>
+<City><Name>Xiantao</Name></City>
+<City><Name>Foshan</Name></City>
+<City><Name>Leshan</Name></City>
+<City><Name>Yancheng</Name></City>
+<City><Name>Laiwu</Name></City>
+<City><Name>Tengzhou</Name></City>
+<City><Name>Jiujiang</Name></City>
+<City><Name>Xinyang</Name></City>
+<City><Name>Shiyan</Name></City>
+<City><Name>Luzhou</Name></City>
+<City><Name>Weihai</Name></City>
+<City><Name>Tonghua</Name></City>
+<City><Name>Liupanshui</Name></City>
+<City><Name>Jingmen</Name></City>
+<City><Name>Tianmen</Name></City>
+<City><Name>Liaoyuan</Name></City>
+<City><Name>Fuyang</Name></City>
+<City><Name>Yakeshi</Name></City>
+<City><Name>Anqing</Name></City>
+<City><Name>Zunyi</Name></City>
+<City><Name>Gongzhuling</Name></City>
+<City><Name>Tongzhou</Name></City>
+<City><Name>Nanhai</Name></City>
+<City><Name>Cangzhou</Name></City>
+<City><Name>Rizhao</Name></City>
+<City><Name>Haimen</Name></City>
+<City><Name>Luoding</Name></City>
+<City><Name>Jiangmen</Name></City>
+<City><Name>Dezhou</Name></City>
+<City><Name>Jiangjin</Name></City>
+<City><Name>Jieyang</Name></City>
+<City><Name>Pingxiang</Name></City>
+<City><Name>Zhangzhou</Name></City>
+<City><Name>Zhangjiagang</Name></City>
+<City><Name>Huizhou</Name></City>
+<City><Name>Zhaoqing</Name></City>
+<City><Name>Shihezi</Name></City>
+<City><Name>Pizhou</Name></City>
+<City><Name>Xintai</Name></City>
+<City><Name>Zoucheng</Name></City>
+<City><Name>Wuhai</Name></City>
+<City><Name>Huzhou</Name></City>
+<City><Name>Shaoyang</Name></City>
+<City><Name>Dongtai</Name></City>
+<City><Name>Liaocheng</Name></City>
+<City><Name>Suizhou</Name></City>
+<City><Name>Yanji</Name></City>
+<City><Name>Shaoxing</Name></City>
+<City><Name>Liyang</Name></City>
+<City><Name>Heze</Name></City>
+<City><Name>Jingdezhen</Name></City>
+<City><Name>Neijiang</Name></City>
+<City><Name>Tieling</Name></City>
+<City><Name>Hebi</Name></City>
+<City><Name>Chengde</Name></City>
+<City><Name>Luohe</Name></City>
+<City><Name>Puyang</Name></City>
+<City><Name>Tongliao</Name></City>
+<City><Name>Linfen</Name></City>
+<City><Name>Taixing</Name></City>
+<City><Name>Tongling</Name></City>
+<City><Name>Shizuishan</Name></City>
+<City><Name>Feicheng</Name></City>
+<City><Name>Yiyang</Name></City>
+<City><Name>Ganzhou</Name></City>
+<City><Name>Qitaihe</Name></City>
+<City><Name>Wafangdian</Name></City>
+<City><Name>Gaozhou</Name></City>
+<City><Name>Rugao</Name></City>
+<City><Name>Suzhou</Name></City>
+<City><Name>Lu'an</Name></City>
+<City><Name>Songyuan</Name></City>
+<City><Name>Chaoyang</Name></City>
+<City><Name>Qianjiang</Name></City>
+<City><Name>Yangjiang</Name></City>
+<City><Name>Jiaxing</Name></City>
+<City><Name>Chaohu</Name></City>
+<City><Name>Yibin</Name></City>
+<City><Name>Kunshan</Name></City>
+<City><Name>Tongchuan</Name></City>
+<City><Name>Taizhou</Name></City>
+<City><Name>Chaozhou</Name></City>
+<City><Name>Ezhou</Name></City>
+<City><Name>Xuchang</Name></City>
+<City><Name>Chenghai</Name></City>
+<City><Name>Xingning</Name></City>
+<City><Name>Longyan</Name></City>
+<City><Name>Yixing</Name></City>
+<City><Name>Jinjian</Name></City>
+<City><Name>Yongzhou</Name></City>
+<City><Name>Jiangyin</Name></City>
+<City><Name>Chenzhou</Name></City>
+<City><Name>Fuqing</Name></City>
+<City><Name>Xinyu</Name></City>
+<City><Name>Guangyuan</Name></City>
+<City><Name>Suihua</Name></City>
+<City><Name>Haicheng</Name></City>
+<City><Name>Baiyin</Name></City>
+<City><Name>Fengcheng</Name></City>
+<City><Name>Kaiping</Name></City>
+<City><Name>Taizhou</Name></City>
+<City><Name>Xinyi</Name></City>
+<City><Name>Sanming</Name></City>
+<City><Name>Tieli</Name></City>
+<City><Name>Langfang</Name></City>
+<City><Name>Wuchuan</Name></City>
+<City><Name>Baicheng</Name></City>
+<City><Name>Fuzhou (Linchuan)</Name></City>
+<City><Name>Deyang</Name></City>
+<City><Name>Jinhua</Name></City>
+<City><Name>Nanping</Name></City>
+<City><Name>Suining</Name></City>
+<City><Name>Jiaonan</Name></City>
+<City><Name>Jiaozhou</Name></City>
+<City><Name>Dunhua</Name></City>
+<City><Name>Zhaodong</Name></City>
+<City><Name>Lianjiang</Name></City>
+<City><Name>Hechuan</Name></City>
+<City><Name>Xinghua</Name></City>
+<City><Name>Jinzhong</Name></City>
+<City><Name>Wuzhou</Name></City>
+<City><Name>Rongcheng</Name></City>
+<City><Name>Meihekou</Name></City>
+<City><Name>Baishan</Name></City>
+<City><Name>Jimo</Name></City>
+<City><Name>Chongming</Name></City>
+<City><Name>Ghulja</Name></City>
+<City><Name>Bozhou</Name></City>
+<City><Name>Qidong</Name></City>
+<City><Name>Zhoushan</Name></City>
+<City><Name>Leizhou</Name></City>
+<City><Name>Aqsu</Name></City>
+<City><Name>Shangzhi</Name></City>
+<City><Name>Yongchuan</Name></City>
+<City><Name>Loudi</Name></City>
+<City><Name>Xiaogan</Name></City>
+<City><Name>Pingdu</Name></City>
+<City><Name>Heyuan</Name></City>
+<City><Name>Hailin</Name></City>
+<City><Name>Acheng</Name></City>
+<City><Name>Bei'an</Name></City>
+<City><Name>Jiyuan</Name></City>
+<City><Name>Taishan</Name></City>
+<City><Name>Beihai</Name></City>
+<City><Name>Weinan</Name></City>
+<City><Name>Zhucheng</Name></City>
+<City><Name>Langzhong</Name></City>
+<City><Name>Gaizhou</Name></City>
+<City><Name>Qaramay</Name></City>
+<City><Name>Binzhou</Name></City>
+<City><Name>Xinhui</Name></City>
+<City><Name>Hami</Name></City>
+<City><Name>Xuancheng</Name></City>
+<City><Name>Meizhou</Name></City>
+<City><Name>Hanzhong</Name></City>
+<City><Name>Longkou</Name></City>
+<City><Name>Jiangdu</Name></City>
+<City><Name>Suqian</Name></City>
+<City><Name>Hengshui</Name></City>
+<City><Name>Jiangyou</Name></City>
+<City><Name>Shanwei</Name></City>
+<City><Name>Wuchang</Name></City>
+<City><Name>Korla</Name></City>
+<City><Name>Yichun</Name></City>
+<City><Name>Qujing</Name></City>
+<City><Name>Qashqar</Name></City>
+<City><Name>Huiyang</Name></City>
+<City><Name>Zhangqiu</Name></City>
+<City><Name>Jining</Name></City>
+<City><Name>Zhumadian</Name></City>
+<City><Name>Zengcheng</Name></City>
+<City><Name>Danzhou</Name></City>
+<City><Name>Guigang</Name></City>
+<City><Name>Danyang</Name></City>
+<City><Name>Zaoyang</Name></City>
+<City><Name>Wujiang</Name></City>
+<City><Name>Xianning</Name></City>
+<City><Name>Zhoukou</Name></City>
+<City><Name>Yanzhou</Name></City>
+<City><Name>Wendeng</Name></City>
+<City><Name>Anshun</Name></City>
+<City><Name>Gaomi</Name></City>
+<City><Name>Gejiu</Name></City>
+<City><Name>Shouguang</Name></City>
+<City><Name>Huaihua</Name></City>
+<City><Name>Changji</Name></City>
+<City><Name>Dazhou</Name></City>
+<City><Name>Jingjiang</Name></City>
+<City><Name>Fuding</Name></City>
+<City><Name>Ji'an</Name></City>
+<City><Name>Laizhou</Name></City>
+<City><Name>Yingde</Name></City>
+<City><Name>Yangchun</Name></City>
+<City><Name>Sanmenxia</Name></City>
+<City><Name>Shulan</Name></City>
+<City><Name>Linhe</Name></City>
+<City><Name>Chuzhou</Name></City>
+<City><Name>Hailar</Name></City>
+<City><Name>Yunfu</Name></City>
+<City><Name>Ulanhot</Name></City>
+<City><Name>Zhongxiang</Name></City>
+<City><Name>Xinyi</Name></City>
+<City><Name>Qingyuan</Name></City>
+<City><Name>Yuncheng</Name></City>
+<City><Name>Laiyang</Name></City>
+<City><Name>Beipiao</Name></City>
+<City><Name>Yulin</Name></City>
+<City><Name>Honghu</Name></City>
+<City><Name>Huanggang</Name></City>
+<City><Name>Huadian</Name></City>
+<City><Name>Huazhou</Name></City>
+<City><Name>Dashiqiao</Name></City>
+<City><Name>Wuwei</Name></City>
+<City><Name>Bazhong</Name></City>
+<City><Name>Jiutai</Name></City>
+<City><Name>Ankang</Name></City>
+<City><Name>Qingzhou</Name></City>
+<City><Name>Dali</Name></City>
+<City><Name>Qufu</Name></City>
+<City><Name>Wujin</Name></City>
+<City><Name>Qinzhou</Name></City>
+<City><Name>Yizheng</Name></City>
+<City><Name>Sanya</Name></City>
+<City><Name>Anda</Name></City>
+<City><Name>Jincheng</Name></City>
+<City><Name>Lechang</Name></City>
+<City><Name>Lengshuijiang</Name></City>
+<City><Name>Macheng</Name></City>
+<City><Name>Xichang</Name></City>
+<City><Name>Genhe</Name></City>
+<City><Name>Fengcheng</Name></City>
+<City><Name>Shuangcheng</Name></City>
+<City><Name>Hanchuan</Name></City>
+<City><Name>Yushu</Name></City>
+<City><Name>Jiaohe</Name></City>
+<City><Name>Hailun</Name></City>
+<City><Name>Putian</Name></City>
+<City><Name>Wenling</Name></City>
+<City><Name>Sanshui</Name></City>
+<City><Name>Shangrao</Name></City>
+<City><Name>Tianchang</Name></City>
+<City><Name>Gao'an</Name></City>
+<City><Name>Pulandian</Name></City>
+<City><Name>Diaobingshan</Name></City>
+<City><Name>Laohekou</Name></City>
+<City><Name>Quzhou</Name></City>
+<City><Name>Duyun</Name></City>
+<City><Name>Panshi</Name></City>
+<City><Name>Enping</Name></City>
+<City><Name>Guang'an</Name></City>
+<City><Name>Longhai</Name></City>
+<City><Name>Rui'an</Name></City>
+<City><Name>Kaili</Name></City>
+<City><Name>Leiyang</Name></City>
+<City><Name>Zhaoyuan</Name></City>
+<City><Name>Qiongshan</Name></City>
+<City><Name>Kuytun</Name></City>
+<City><Name>Yuyao</Name></City>
+<City><Name>Chibi</Name></City>
+<City><Name>Jianyang</Name></City>
+<City><Name>Zhuanghe</Name></City>
+<City><Name>Guiping</Name></City>
+<City><Name>Laixi</Name></City>
+<City><Name>Dehui</Name></City>
+<City><Name>Rushan</Name></City>
+<City><Name>Dujiangyan</Name></City>
+<City><Name>Bijie</Name></City>
+<City><Name>Mishan</Name></City>
+<City><Name>Shuozhou</Name></City>
+<City><Name>Shishou</Name></City>
+<City><Name>Renqiu</Name></City>
+<City><Name>Zhangye</Name></City>
+<City><Name>Yan'an</Name></City>
+<City><Name>Anqiu</Name></City>
+<City><Name>Danjiangkou</Name></City>
+<City><Name>Wudalianchi</Name></City>
+<City><Name>Da'an</Name></City>
+<City><Name>Songzi</Name></City>
+<City><Name>Fujin</Name></City>
+<City><Name>Wuxue</Name></City>
+<City><Name>Gaoyou</Name></City>
+<City><Name>Hulin</Name></City>
+<City><Name>Guangshui</Name></City>
+<City><Name>Xinzheng</Name></City>
+<City><Name>Beiliu</Name></City>
+<City><Name>Manzhouli</Name></City>
+<City><Name>Tao'an</Name></City>
+<City><Name>Dafeng</Name></City>
+<City><Name>Zalantun</Name></City>
+<City><Name>Zhuozhou</Name></City>
+<City><Name>Xiangcheng</Name></City>
+<City><Name>Jintan</Name></City>
+<City><Name>Huangshan</Name></City>
+<City><Name>Heshan</Name></City>
+<City><Name>Shangzhou</Name></City>
+<City><Name>Jinghong</Name></City>
+<City><Name>Jiangyan</Name></City>
+<City><Name>Jinchang</Name></City>
+<City><Name>Cixi</Name></City>
+<City><Name>Yuzhou</Name></City>
+<City><Name>Changle</Name></City>
+<City><Name>Ning'an</Name></City>
+<City><Name>Yuanjiang</Name></City>
+<City><Name>Yongcheng</Name></City>
+<City><Name>Lingyuan</Name></City>
+<City><Name>Changning</Name></City>
+<City><Name>Anning</Name></City>
+<City><Name>Ziyang</Name></City>
+<City><Name>Lianyuan</Name></City>
+<City><Name>Erdos</Name></City>
+<City><Name>Xinzhou</Name></City>
+<City><Name>Linqing</Name></City>
+<City><Name>Conghua</Name></City>
+<City><Name>Longjing</Name></City>
+<City><Name>Pingliang</Name></City>
+<City><Name>Daye</Name></City>
+<City><Name>Shangyu</Name></City>
+<City><Name>Hunchun</Name></City>
+<City><Name>Shuangliao</Name></City>
+<City><Name>Kaiyuan</Name></City>
+<City><Name>Meishan</Name></City>
+<City><Name>Liling</Name></City>
+<City><Name>Muling</Name></City>
+<City><Name>Gongyi</Name></City>
+<City><Name>Jurong</Name></City>
+<City><Name>Jiayuguan</Name></City>
+<City><Name>Linhai</Name></City>
+<City><Name>Leping</Name></City>
+<City><Name>Liuyang</Name></City>
+<City><Name>Zhuji</Name></City>
+<City><Name>Chuxiong</Name></City>
+<City><Name>Shaowu</Name></City>
+<City><Name>Nehe</Name></City>
+<City><Name>Xinmin</Name></City>
+<City><Name>Yingcheng</Name></City>
+<City><Name>Xiaoyi</Name></City>
+<City><Name>Helong</Name></City>
+<City><Name>Haining</Name></City>
+<City><Name>Emeishan</Name></City>
+<City><Name>Ya'an</Name></City>
+<City><Name>Zhijiang</Name></City>
+<City><Name>Enshi</Name></City>
+<City><Name>Sihui</Name></City>
+<City><Name>Bazhou</Name></City>
+<City><Name>Jishou</Name></City>
+<City><Name>Guanghan</Name></City>
+<City><Name>Sanhe</Name></City>
+<City><Name>Xuanwei</Name></City>
+<City><Name>Dengzhou</Name></City>
+<City><Name>Yong'an</Name></City>
+<City><Name>Linzhou</Name></City>
+<City><Name>Yulin</Name></City>
+<City><Name>Lhasa</Name></City>
+<City><Name>Miyun</Name></City>
+<City><Name>Fangchenggang</Name></City>
+<City><Name>Zhangjiajie</Name></City>
+<City><Name>Zhangshu</Name></City>
+<City><Name>Changge</Name></City>
+<City><Name>Hongjiang</Name></City>
+<City><Name>Baise</Name></City>
+<City><Name>Changyi</Name></City>
+<City><Name>Yuxi</Name></City>
+<City><Name>Xingcheng</Name></City>
+<City><Name>Pengzhou</Name></City>
+<City><Name>Gujiao</Name></City>
+<City><Name>Mingguang</Name></City>
+<City><Name>Zixing</Name></City>
+<City><Name>Yingtan</Name></City>
+<City><Name>Heihe</Name></City>
+<City><Name>Yima</Name></City>
+<City><Name>Dingzhou</Name></City>
+<City><Name>Gaoming</Name></City>
+<City><Name>Hezhou</Name></City>
+<City><Name>Chizhou</Name></City>
+<City><Name>Jiuquan</Name></City>
+<City><Name>Cenxi</Name></City>
+<City><Name>Xilinhot</Name></City>
+<City><Name>Yicheng</Name></City>
+<City><Name>Hancheng</Name></City>
+<City><Name>Dangyang</Name></City>
+<City><Name>Lishui</Name></City>
+<City><Name>Lingbao</Name></City>
+<City><Name>Taicang</Name></City>
+<City><Name>Dongyang</Name></City>
+<City><Name>Haiyang</Name></City>
+<City><Name>Houma</Name></City>
+<City><Name>Xingyi</Name></City>
+<City><Name>Altay</Name></City>
+<City><Name>Tongxiang</Name></City>
+<City><Name>Qixia</Name></City>
+<City><Name>Xiangxiang</Name></City>
+<City><Name>Linjiang</Name></City>
+<City><Name>Donggang</Name></City>
+<City><Name>Penglai</Name></City>
+<City><Name>Zhaotong</Name></City>
+<City><Name>Lanxi</Name></City>
+<City><Name>Xingping</Name></City>
+<City><Name>Jianyang</Name></City>
+<City><Name>Gaoyao</Name></City>
+<City><Name>Baoshan</Name></City>
+<City><Name>Qingzhen</Name></City>
+<City><Name>Nankang</Name></City>
+<City><Name>Dongsheng</Name></City>
+<City><Name>Hechi</Name></City>
+<City><Name>Ningguo</Name></City>
+<City><Name>Wuzhong</Name></City>
+<City><Name>Pinghu</Name></City>
+<City><Name>Linxiang</Name></City>
+<City><Name>Jiande</Name></City>
+<City><Name>Yuanping</Name></City>
+<City><Name>Guixi</Name></City>
+<City><Name>Botou</Name></City>
+<City><Name>Fuyang</Name></City>
+<City><Name>Dexing</Name></City>
+<City><Name>Miluo</Name></City>
+<City><Name>Nan'an</Name></City>
+<City><Name>Kaiyuan</Name></City>
+<City><Name>Linxia</Name></City>
+<City><Name>Beining</Name></City>
+<City><Name>Ruzhou</Name></City>
+<City><Name>Anlu</Name></City>
+<City><Name>Tongren</Name></City>
+<City><Name>Yumen</Name></City>
+<City><Name>Jieshou</Name></City>
+<City><Name>Tongcheng</Name></City>
+<City><Name>Huixian</Name></City>
+<City><Name>Weihui</Name></City>
+<City><Name>Tumen</Name></City>
+<City><Name>Jinghai</Name></City>
+<City><Name>Xingyang</Name></City>
+<City><Name>Yueqing</Name></City>
+<City><Name>Shengzhou</Name></City>
+<City><Name>Yizhou</Name></City>
+<City><Name>Mianzhu</Name></City>
+<City><Name>Fu'an</Name></City>
+<City><Name>Bishkek</Name></City>
+<City><Name>Osh</Name></City>
+<City><Name>Betio</Name></City>
+<City><Name>Bairiki</Name></City>
+<City><Name>Santafé de Bogotá</Name></City>
+<City><Name>Medellín</Name></City>
+<City><Name>Cali</Name></City>
+<City><Name>Barranquilla</Name></City>
+<City><Name>Cartagena</Name></City>
+<City><Name>Cúcuta</Name></City>
+<City><Name>Bucaramanga</Name></City>
+<City><Name>Ibagué</Name></City>
+<City><Name>Soledad</Name></City>
+<City><Name>Soacha</Name></City>
+<City><Name>Santa Marta</Name></City>
+<City><Name>Villavicencio</Name></City>
+<City><Name>Bello</Name></City>
+<City><Name>Pereira</Name></City>
+<City><Name>Manizales</Name></City>
+<City><Name>Pasto</Name></City>
+<City><Name>Neiva</Name></City>
+<City><Name>Valledupar</Name></City>
+<City><Name>Buenaventura</Name></City>
+<City><Name>Montería</Name></City>
+<City><Name>Armenia</Name></City>
+<City><Name>Floridablanca</Name></City>
+<City><Name>Popayán</Name></City>
+<City><Name>Palmira</Name></City>
+<City><Name>Sincelejo</Name></City>
+<City><Name>Itagüí</Name></City>
+<City><Name>Barrancabermeja</Name></City>
+<City><Name>Envigado</Name></City>
+<City><Name>Dos Quebradas</Name></City>
+<City><Name>Tuluá</Name></City>
+<City><Name>Tunja</Name></City>
+<City><Name>Ríohacha</Name></City>
+<City><Name>Florencia</Name></City>
+<City><Name>Cartago</Name></City>
+<City><Name>Girón</Name></City>
+<City><Name>Apartadó</Name></City>
+<City><Name>Quibdó</Name></City>
+<City><Name>Moroni</Name></City>
+<City><Name>Brazzaville</Name></City>
+<City><Name>Pointe-Noire</Name></City>
+<City><Name>Dolisie</Name></City>
+<City><Name>Kinshasa</Name></City>
+<City><Name>Lubumbashi</Name></City>
+<City><Name>Mbuji-Mayi</Name></City>
+<City><Name>Kananga</Name></City>
+<City><Name>Kisangani</Name></City>
+<City><Name>Bukavu</Name></City>
+<City><Name>Kolwezi</Name></City>
+<City><Name>Likasi</Name></City>
+<City><Name>Tshikapa</Name></City>
+<City><Name>Kikwit</Name></City>
+<City><Name>Mbandaka</Name></City>
+<City><Name>Goma</Name></City>
+<City><Name>Matadi</Name></City>
+<City><Name>Uvira</Name></City>
+<City><Name>Bunia</Name></City>
+<City><Name>Boma</Name></City>
+<City><Name>Mwene-Ditu</Name></City>
+<City><Name>Butembo</Name></City>
+<City><Name>Isiro</Name></City>
+<City><Name>Kindu</Name></City>
+<City><Name>Kabinda</Name></City>
+<City><Name>Gandajika</Name></City>
+<City><Name>Bandundu</Name></City>
+<City><Name>Kamina</Name></City>
+<City><Name>Gemena</Name></City>
+<City><Name>Bantam</Name></City>
+<City><Name>West Island</Name></City>
+<City><Name>Pjongjang</Name></City>
+<City><Name>Hamhung</Name></City>
+<City><Name>Chongjin</Name></City>
+<City><Name>Nampo</Name></City>
+<City><Name>Sinuiju</Name></City>
+<City><Name>Wonsan</Name></City>
+<City><Name>Pyongsong</Name></City>
+<City><Name>Sariwon</Name></City>
+<City><Name>Haeju</Name></City>
+<City><Name>Kanggye</Name></City>
+<City><Name>Hyesan</Name></City>
+<City><Name>Kaesong</Name></City>
+<City><Name>Soul</Name></City>
+<City><Name>Busan</Name></City>
+<City><Name>Incheon</Name></City>
+<City><Name>Daegu</Name></City>
+<City><Name>Daejeon</Name></City>
+<City><Name>Gwangju</Name></City>
+<City><Name>Ulsan</Name></City>
+<City><Name>Suwon</Name></City>
+<City><Name>Seongnam</Name></City>
+<City><Name>Goyang</Name></City>
+<City><Name>Bucheon</Name></City>
+<City><Name>Yongin</Name></City>
+<City><Name>Ansan</Name></City>
+<City><Name>Cheongju</Name></City>
+<City><Name>Jeonju</Name></City>
+<City><Name>Anyang</Name></City>
+<City><Name>Cheonan</Name></City>
+<City><Name>Changwon</Name></City>
+<City><Name>Pohang</Name></City>
+<City><Name>Gimhae</Name></City>
+<City><Name>Masan</Name></City>
+<City><Name>Namyangju</Name></City>
+<City><Name>Uijeongbu</Name></City>
+<City><Name>Siheung</Name></City>
+<City><Name>Gumi</Name></City>
+<City><Name>Pyeongtaek</Name></City>
+<City><Name>Jinju</Name></City>
+<City><Name>Gwangmyeong</Name></City>
+<City><Name>Jeju</Name></City>
+<City><Name>Iksan</Name></City>
+<City><Name>Hwaseong</Name></City>
+<City><Name>Wonju</Name></City>
+<City><Name>Yeosu</Name></City>
+<City><Name>Gunpo</Name></City>
+<City><Name>Gyeongju</Name></City>
+<City><Name>Suncheon</Name></City>
+<City><Name>Chuncheon</Name></City>
+<City><Name>Gunsan</Name></City>
+<City><Name>Mokpo</Name></City>
+<City><Name>Gyeongsan</Name></City>
+<City><Name>Paju</Name></City>
+<City><Name>Gangneung</Name></City>
+<City><Name>Yangsan</Name></City>
+<City><Name>Asan</Name></City>
+<City><Name>Gwangju</Name></City>
+<City><Name>Chungju</Name></City>
+<City><Name>Geoje</Name></City>
+<City><Name>Gimpo</Name></City>
+<City><Name>Icheon</Name></City>
+<City><Name>Guri</Name></City>
+<City><Name>Andong</Name></City>
+<City><Name>Anseong</Name></City>
+<City><Name>Yangju</Name></City>
+<City><Name>Jinhae</Name></City>
+<City><Name>Seosan</Name></City>
+<City><Name>Uiwang</Name></City>
+<City><Name>Pocheon</Name></City>
+<City><Name>Gimcheon</Name></City>
+<City><Name>Gwangyang</Name></City>
+<City><Name>Jecheon</Name></City>
+<City><Name>Osan</Name></City>
+<City><Name>Gongju</Name></City>
+<City><Name>Nonsan</Name></City>
+<City><Name>Hanam</Name></City>
+<City><Name>Tongyeong</Name></City>
+<City><Name>Jeongeup</Name></City>
+<City><Name>Yeongju</Name></City>
+<City><Name>Sacheon</Name></City>
+<City><Name>Miryang</Name></City>
+<City><Name>Sangju</Name></City>
+<City><Name>Yeongcheon</Name></City>
+<City><Name>Ateena [Athenai]</Name></City>
+<City><Name>Thessaloniki</Name></City>
+<City><Name>Pireus</Name></City>
+<City><Name>Patras</Name></City>
+<City><Name>Peristerion</Name></City>
+<City><Name>Herakleion</Name></City>
+<City><Name>Larisa</Name></City>
+<City><Name>Kallithea</Name></City>
+<City><Name>Nikaia</Name></City>
+<City><Name>Zagreb</Name></City>
+<City><Name>Split</Name></City>
+<City><Name>Rijeka</Name></City>
+<City><Name>Osijek</Name></City>
+<City><Name>Havanna [La Habana]</Name></City>
+<City><Name>Santiago de Cuba</Name></City>
+<City><Name>Camagüey</Name></City>
+<City><Name>Holguín</Name></City>
+<City><Name>Santa Clara</Name></City>
+<City><Name>Guantánamo</Name></City>
+<City><Name>Victoria de las Tunas</Name></City>
+<City><Name>Bayamo</Name></City>
+<City><Name>Cienfuegos</Name></City>
+<City><Name>Pinar del Río</Name></City>
+<City><Name>Matanzas</Name></City>
+<City><Name>Ciego de Ávila</Name></City>
+<City><Name>Qalib al-Shuyukh</Name></City>
+<City><Name>al-Salimiya</Name></City>
+<City><Name>Hawalli</Name></City>
+<City><Name>Kuwait</Name></City>
+<City><Name>Limassol</Name></City>
+<City><Name>Nikosia, TRNC</Name></City>
+<City><Name>Nikosia, ROC</Name></City>
+<City><Name>Vientiane</Name></City>
+<City><Name>Riika [Riga]</Name></City>
+<City><Name>Daugavpils</Name></City>
+<City><Name>Maseru</Name></City>
+<City><Name>Beirut</Name></City>
+<City><Name>Tripoli</Name></City>
+<City><Name>Sidon</Name></City>
+<City><Name>Tyros</Name></City>
+<City><Name>Monrovia</Name></City>
+<City><Name>Tripoli</Name></City>
+<City><Name>Bengasi</Name></City>
+<City><Name>Misrata</Name></City>
+<City><Name>al-'Aziziya</Name></City>
+<City><Name>Tarhuna</Name></City>
+<City><Name>al-Khums</Name></City>
+<City><Name>al-Zawiya</Name></City>
+<City><Name>Zuwara</Name></City>
+<City><Name>Ajdabiya</Name></City>
+<City><Name>Sabha</Name></City>
+<City><Name>Surt</Name></City>
+<City><Name>Tubruq</Name></City>
+<City><Name>al-Bayda</Name></City>
+<City><Name>Schaan</Name></City>
+<City><Name>Vaduz</Name></City>
+<City><Name>Vilna [Vilnius]</Name></City>
+<City><Name>Kaunas</Name></City>
+<City><Name>Klaipeda</Name></City>
+<City><Name>Luxemburg</Name></City>
+<City><Name>El-Aaiún</Name></City>
+<City><Name>Macao</Name></City>
+<City><Name>Antananarivo</Name></City>
+<City><Name>Toamasina</Name></City>
+<City><Name>Antsirabé</Name></City>
+<City><Name>Fianarantsoa</Name></City>
+<City><Name>Mahajanga</Name></City>
+<City><Name>Toliary</Name></City>
+<City><Name>Skopje</Name></City>
+<City><Name>Kumanovo</Name></City>
+<City><Name>Blantyre</Name></City>
+<City><Name>Lilongwe</Name></City>
+<City><Name>Mzuzu</Name></City>
+<City><Name>Zomba</Name></City>
+<City><Name>Male' </Name></City>
+<City><Name>Kuala Lumpur</Name></City>
+<City><Name>Ipoh</Name></City>
+<City><Name>Kelang</Name></City>
+<City><Name>Petaling Jaya</Name></City>
+<City><Name>Johor Baharu</Name></City>
+<City><Name>Shah Alam</Name></City>
+<City><Name>Kuantan</Name></City>
+<City><Name>Kuala Terengganu</Name></City>
+<City><Name>Seremban</Name></City>
+<City><Name>Kota Baharu</Name></City>
+<City><Name>Sandakan</Name></City>
+<City><Name>Taiping </Name></City>
+<City><Name>Pinang</Name></City>
+<City><Name>Selayang Baru</Name></City>
+<City><Name>Sungai Petani</Name></City>
+<City><Name>Sibu</Name></City>
+<City><Name>Kuching</Name></City>
+<City><Name>Melaka</Name></City>
+<City><Name>Kota Kinabalu</Name></City>
+<City><Name>Tawau</Name></City>
+<City><Name>Miri</Name></City>
+<City><Name>Ampang Jaya</Name></City>
+<City><Name>Alor Setar</Name></City>
+<City><Name>Bamako</Name></City>
+<City><Name>Sikasso</Name></City>
+<City><Name>Birkirkara</Name></City>
+<City><Name>Valletta</Name></City>
+<City><Name>Douglas</Name></City>
+<City><Name>Casablanca</Name></City>
+<City><Name>Marrakech</Name></City>
+<City><Name>Fès</Name></City>
+<City><Name>Rabat</Name></City>
+<City><Name>Meknès</Name></City>
+<City><Name>Tanger</Name></City>
+<City><Name>Salé</Name></City>
+<City><Name>Oujda</Name></City>
+<City><Name>Kénitra</Name></City>
+<City><Name>Tétouan</Name></City>
+<City><Name>Safi</Name></City>
+<City><Name>Mohammedia</Name></City>
+<City><Name>Khouribga</Name></City>
+<City><Name>Beni-Mellal</Name></City>
+<City><Name>Agadir</Name></City>
+<City><Name>El Jadida</Name></City>
+<City><Name>Taza</Name></City>
+<City><Name>Témara</Name></City>
+<City><Name>Nador</Name></City>
+<City><Name>Settat</Name></City>
+<City><Name>Ksar el Kebir</Name></City>
+<City><Name>El Araich</Name></City>
+<City><Name>Khemissét</Name></City>
+<City><Name>Delap-Uliga-Darrit</Name></City>
+<City><Name>Fort-de-France</Name></City>
+<City><Name>Nouakchott</Name></City>
+<City><Name>Port-Louis</Name></City>
+<City><Name>Beau Bassin-Rose Hill</Name></City>
+<City><Name>Vacoas-Phoenix</Name></City>
+<City><Name>Mamoudzou</Name></City>
+<City><Name>Ciudad de México</Name></City>
+<City><Name>Ecatepec de Morelos</Name></City>
+<City><Name>Guadalajara</Name></City>
+<City><Name>Puebla de Zaragoza</Name></City>
+<City><Name>Ciudad Juárez</Name></City>
+<City><Name>Tijuana</Name></City>
+<City><Name>León de los Aldamas</Name></City>
+<City><Name>Nezahualcóyotl</Name></City>
+<City><Name>Monterrey</Name></City>
+<City><Name>Zapopan</Name></City>
+<City><Name>Naucalpan de Juárez</Name></City>
+<City><Name>Chihuahua</Name></City>
+<City><Name>Mérida</Name></City>
+<City><Name>Guadalupe</Name></City>
+<City><Name>San Luis Potosí</Name></City>
+<City><Name>Tlalnepantla de Baz</Name></City>
+<City><Name>Aguascalientes</Name></City>
+<City><Name>Mexicali</Name></City>
+<City><Name>Hermosillo</Name></City>
+<City><Name>Saltillo</Name></City>
+<City><Name>Acapulco de Juárez</Name></City>
+<City><Name>Morelia</Name></City>
+<City><Name>Culiacán Rosales</Name></City>
+<City><Name>Querétaro</Name></City>
+<City><Name>Torreón</Name></City>
+<City><Name>Tlaquepaque</Name></City>
+<City><Name>Cancún</Name></City>
+<City><Name>Chimalhuacán</Name></City>
+<City><Name>Reynosa</Name></City>
+<City><Name>Tuxtla Gutiérrez</Name></City>
+<City><Name>Cuautitlán Izcalli</Name></City>
+<City><Name>San Nicolás de los Garzas</Name></City>
+<City><Name>Ciudad López Mateos</Name></City>
+<City><Name>Toluca de Lerdo</Name></City>
+<City><Name>Victoria de Durango</Name></City>
+<City><Name>Veracruz</Name></City>
+<City><Name>Matamoros</Name></City>
+<City><Name>Ciudad Apodaca</Name></City>
+<City><Name>Xalapa de Enríquez</Name></City>
+<City><Name>Tonalá</Name></City>
+<City><Name>Mazatlán</Name></City>
+<City><Name>Nuevo Laredo</Name></City>
+<City><Name>Irapuato</Name></City>
+<City><Name>Villahermosa</Name></City>
+<City><Name>Cuernavaca</Name></City>
+<City><Name>Valle de Chalco Solidaridad</Name></City>
+<City><Name>Celaya</Name></City>
+<City><Name>Tampico</Name></City>
+<City><Name>Tepic</Name></City>
+<City><Name>General Escobedo</Name></City>
+<City><Name>Ixtapaluca</Name></City>
+<City><Name>San Francisco Coacalco de Berriozábal</Name></City>
+<City><Name>Ciudad Victoria</Name></City>
+<City><Name>Ciudad Obregón</Name></City>
+<City><Name>Pachuca de Soto</Name></City>
+<City><Name>Ensenada</Name></City>
+<City><Name>Ciudad Santa Catarina</Name></City>
+<City><Name>Oaxaca de Juárez</Name></City>
+<City><Name>Villa Nicolás Romero</Name></City>
+<City><Name>Gómez Palacio</Name></City>
+<City><Name>Uruapan del Progreso</Name></City>
+<City><Name>Tehuacán</Name></City>
+<City><Name>Coatzacoalcos</Name></City>
+<City><Name>Los Reyes la Paz</Name></City>
+<City><Name>Los Mochis</Name></City>
+<City><Name>Soledad Díez Gutiérrez</Name></City>
+<City><Name>Campeche</Name></City>
+<City><Name>Monclova</Name></City>
+<City><Name>Buenavista</Name></City>
+<City><Name>Ciudad Madero</Name></City>
+<City><Name>Tapachula</Name></City>
+<City><Name>Nogales</Name></City>
+<City><Name>La Paz</Name></City>
+<City><Name>Puerto Vallarta</Name></City>
+<City><Name>Poza Rica de Hidalgo</Name></City>
+<City><Name>Chicoloapan de Juárez</Name></City>
+<City><Name>Chilpancingo de los Bravo</Name></City>
+<City><Name>Metepec</Name></City>
+<City><Name>Ojo de Agua</Name></City>
+<City><Name>San Pablo de las Salinas</Name></City>
+<City><Name>Ciudad del Carmen</Name></City>
+<City><Name>Jiutepec</Name></City>
+<City><Name>Cuautla Morelos</Name></City>
+<City><Name>Chalco</Name></City>
+<City><Name>Salamanca</Name></City>
+<City><Name>Piedras Negras</Name></City>
+<City><Name>San Luis Río Colorado</Name></City>
+<City><Name>Chetumal</Name></City>
+<City><Name>Córdoba</Name></City>
+<City><Name>San Cristóbal de las Casas</Name></City>
+<City><Name>Boca del Río</Name></City>
+<City><Name>Zamora de Hidalgo</Name></City>
+<City><Name>Ciudad Acuña</Name></City>
+<City><Name>Colima</Name></City>
+<City><Name>Zacatecas</Name></City>
+<City><Name>San Pedro Garza García</Name></City>
+<City><Name>San Juan del Río</Name></City>
+<City><Name>Huixquilucan de Degollado</Name></City>
+<City><Name>Orizaba</Name></City>
+<City><Name>Ciudad Valles</Name></City>
+<City><Name>Fresnillo</Name></City>
+<City><Name>Manzanillo</Name></City>
+<City><Name>Iguala de la Independencia</Name></City>
+<City><Name>Minatitlán</Name></City>
+<City><Name>Delicias</Name></City>
+<City><Name>Navojoa</Name></City>
+<City><Name>Guaymas</Name></City>
+<City><Name>Hidalgo del Parral</Name></City>
+<City><Name>Playa del Carmen</Name></City>
+<City><Name>Weno</Name></City>
+<City><Name>Palikir</Name></City>
+<City><Name>Chisinau</Name></City>
+<City><Name>Tiraspol</Name></City>
+<City><Name>Balti</Name></City>
+<City><Name>Tighina (Bender)</Name></City>
+<City><Name>Monte-Carlo</Name></City>
+<City><Name>Monaco-Ville</Name></City>
+<City><Name>Ulan Bator</Name></City>
+<City><Name>Podgorica</Name></City>
+<City><Name>Cork Hill</Name></City>
+<City><Name>Plymouth</Name></City>
+<City><Name>Maputo</Name></City>
+<City><Name>Matola</Name></City>
+<City><Name>Beira</Name></City>
+<City><Name>Nampula</Name></City>
+<City><Name>Chimoio</Name></City>
+<City><Name>Naçala-Porto</Name></City>
+<City><Name>Quelimane</Name></City>
+<City><Name>Tete</Name></City>
+<City><Name>Xai-Xai</Name></City>
+<City><Name>Lichinga</Name></City>
+<City><Name>Pemba</Name></City>
+<City><Name>Yangon (Rangoon)</Name></City>
+<City><Name>Mandalay</Name></City>
+<City><Name>Mawlamyine</Name></City>
+<City><Name>Pathein</Name></City>
+<City><Name>Bago</Name></City>
+<City><Name>Monywa</Name></City>
+<City><Name>Sittwe</Name></City>
+<City><Name>Meiktila</Name></City>
+<City><Name>Taunggyi </Name></City>
+<City><Name>Myeik</Name></City>
+<City><Name>Dawei</Name></City>
+<City><Name>Lashio</Name></City>
+<City><Name>Pyay</Name></City>
+<City><Name>Myingyan</Name></City>
+<City><Name>Hinthada</Name></City>
+<City><Name>Pyin-Oo-Lwin</Name></City>
+<City><Name>Pakokku</Name></City>
+<City><Name>Thaton</Name></City>
+<City><Name>Windhoek</Name></City>
+<City><Name>Denigomodu</Name></City>
+<City><Name>Yaren</Name></City>
+<City><Name>Kathmandu</Name></City>
+<City><Name>Biratnagar</Name></City>
+<City><Name>Lalitapur</Name></City>
+<City><Name>Pokhara</Name></City>
+<City><Name>Birgunj</Name></City>
+<City><Name>Managua</Name></City>
+<City><Name>León</Name></City>
+<City><Name>Niamey</Name></City>
+<City><Name>Zinder</Name></City>
+<City><Name>Maradi</Name></City>
+<City><Name>Lagos</Name></City>
+<City><Name>Kano</Name></City>
+<City><Name>Ibadan</Name></City>
+<City><Name>Kaduna</Name></City>
+<City><Name>Benin City</Name></City>
+<City><Name>Port Harcourt</Name></City>
+<City><Name>Maiduguri</Name></City>
+<City><Name>Zaria</Name></City>
+<City><Name>Aba</Name></City>
+<City><Name>Ilorin</Name></City>
+<City><Name>Jos</Name></City>
+<City><Name>Warri</Name></City>
+<City><Name>Enugu</Name></City>
+<City><Name>Onitsha</Name></City>
+<City><Name>Abuja</Name></City>
+<City><Name>Oyo</Name></City>
+<City><Name>Ogbomosho</Name></City>
+<City><Name>Abeokuta</Name></City>
+<City><Name>Katsina</Name></City>
+<City><Name>Sokoto</Name></City>
+<City><Name>Calabar</Name></City>
+<City><Name>Akure</Name></City>
+<City><Name>Bauchi</Name></City>
+<City><Name>Okene</Name></City>
+<City><Name>Oshogbo</Name></City>
+<City><Name>Ikorodu</Name></City>
+<City><Name>Minna</Name></City>
+<City><Name>Gombe</Name></City>
+<City><Name>Umuahia</Name></City>
+<City><Name>Jimeta</Name></City>
+<City><Name>Ife</Name></City>
+<City><Name>Makurdi</Name></City>
+<City><Name>Iseyin</Name></City>
+<City><Name>Mubi</Name></City>
+<City><Name>Owo</Name></City>
+<City><Name>Ugep</Name></City>
+<City><Name>Owerri</Name></City>
+<City><Name>Ondo</Name></City>
+<City><Name>Sagamu</Name></City>
+<City><Name>Ikot Ekpene</Name></City>
+<City><Name>Gusau</Name></City>
+<City><Name>Effon-Alaiye</Name></City>
+<City><Name>Ado-Ekiti</Name></City>
+<City><Name>Gboko</Name></City>
+<City><Name>Ijebu-Ode</Name></City>
+<City><Name>Ikire</Name></City>
+<City><Name>Ise</Name></City>
+<City><Name>Bida</Name></City>
+<City><Name>Ede</Name></City>
+<City><Name>Damaturu</Name></City>
+<City><Name>Ilesha</Name></City>
+<City><Name>Awka</Name></City>
+<City><Name>Sapele</Name></City>
+<City><Name>Iwo</Name></City>
+<City><Name>Ilawe-Ekiti</Name></City>
+<City><Name>Nnewi</Name></City>
+<City><Name>Ikare</Name></City>
+<City><Name>Okpogho</Name></City>
+<City><Name>Suleja</Name></City>
+<City><Name>Saki</Name></City>
+<City><Name>Sango Otta</Name></City>
+<City><Name>Alofi</Name></City>
+<City><Name>Kingston</Name></City>
+<City><Name>Oslo</Name></City>
+<City><Name>Bergen</Name></City>
+<City><Name>Trondheim</Name></City>
+<City><Name>Stavanger</Name></City>
+<City><Name>Bærum</Name></City>
+<City><Name>Abidjan</Name></City>
+<City><Name>Bouaké</Name></City>
+<City><Name>Daloa</Name></City>
+<City><Name>Yamoussoukro</Name></City>
+<City><Name>Korhogo</Name></City>
+<City><Name>San-Pédro</Name></City>
+<City><Name>Man</Name></City>
+<City><Name>Gagnoa</Name></City>
+<City><Name>al-Sib</Name></City>
+<City><Name>Matra</Name></City>
+<City><Name>Salala</Name></City>
+<City><Name>Bawshar</Name></City>
+<City><Name>Suhar</Name></City>
+<City><Name>al-Suwayq</Name></City>
+<City><Name>Ibri</Name></City>
+<City><Name>Masqat</Name></City>
+<City><Name>Karachi</Name></City>
+<City><Name>Lahore</Name></City>
+<City><Name>Faisalabad</Name></City>
+<City><Name>Rawalpindi</Name></City>
+<City><Name>Multan</Name></City>
+<City><Name>Gujranwala</Name></City>
+<City><Name>Hyderabad</Name></City>
+<City><Name>Peshawar</Name></City>
+<City><Name>Islamabad</Name></City>
+<City><Name>Quetta</Name></City>
+<City><Name>Sargodha</Name></City>
+<City><Name>Bahawalpur</Name></City>
+<City><Name>Sialkot</Name></City>
+<City><Name>Sukkur</Name></City>
+<City><Name>Jhang Sadar</Name></City>
+<City><Name>Sheikhupura</Name></City>
+<City><Name>Larkana</Name></City>
+<City><Name>Gujrat</Name></City>
+<City><Name>Mardan</Name></City>
+<City><Name>Kasur</Name></City>
+<City><Name>Rahimyar Khan</Name></City>
+<City><Name>Sahiwal</Name></City>
+<City><Name>Okara</Name></City>
+<City><Name>Wah</Name></City>
+<City><Name>Dera Ghazi Khan</Name></City>
+<City><Name>Nawabshah</Name></City>
+<City><Name>Mirpur Khas</Name></City>
+<City><Name>Chiniot</Name></City>
+<City><Name>Mingora</Name></City>
+<City><Name>Kamoke</Name></City>
+<City><Name>Mandi Burewala</Name></City>
+<City><Name>Jhelum</Name></City>
+<City><Name>Sadiqabad</Name></City>
+<City><Name>Jacobabad</Name></City>
+<City><Name>Shikarpur</Name></City>
+<City><Name>Khanewal</Name></City>
+<City><Name>Hafizabad</Name></City>
+<City><Name>Kohat</Name></City>
+<City><Name>Muzaffargarh</Name></City>
+<City><Name>Khanpur</Name></City>
+<City><Name>Gojra</Name></City>
+<City><Name>Muridke</Name></City>
+<City><Name>Bahawalnagar</Name></City>
+<City><Name>Pak Pattan</Name></City>
+<City><Name>Jaranwala</Name></City>
+<City><Name>Abottabad</Name></City>
+<City><Name>Khairpur</Name></City>
+<City><Name>Tando Adam</Name></City>
+<City><Name>Daska</Name></City>
+<City><Name>Dadu</Name></City>
+<City><Name>Chishtian Mandi</Name></City>
+<City><Name>Koror</Name></City>
+<City><Name>Melekeok</Name></City>
+<City><Name>Gaza</Name></City>
+<City><Name>Hebron</Name></City>
+<City><Name>Nablus</Name></City>
+<City><Name>Khan Yunis</Name></City>
+<City><Name>Ram Allah</Name></City>
+<City><Name>Panamá</Name></City>
+<City><Name>San Miguelito</Name></City>
+<City><Name>Port Moresby</Name></City>
+<City><Name>Asunción</Name></City>
+<City><Name>Ciudad del Este</Name></City>
+<City><Name>San Lorenzo</Name></City>
+<City><Name>Luque</Name></City>
+<City><Name>Capiatá</Name></City>
+<City><Name>Lambaré</Name></City>
+<City><Name>Fernando de la Mora</Name></City>
+<City><Name>Lima</Name></City>
+<City><Name>Arequipa</Name></City>
+<City><Name>Trujillo</Name></City>
+<City><Name>Chiclayo</Name></City>
+<City><Name>Callao</Name></City>
+<City><Name>Piura</Name></City>
+<City><Name>Iquitos</Name></City>
+<City><Name>Cusco</Name></City>
+<City><Name>Chimbote</Name></City>
+<City><Name>Huancayo</Name></City>
+<City><Name>Pucallpa</Name></City>
+<City><Name>Ventanilla</Name></City>
+<City><Name>Tacna</Name></City>
+<City><Name>Juliaca</Name></City>
+<City><Name>Ica</Name></City>
+<City><Name>Sullana</Name></City>
+<City><Name>Huánuco</Name></City>
+<City><Name>Ayacucho</Name></City>
+<City><Name>Chincha Alta</Name></City>
+<City><Name>Cajamarca</Name></City>
+<City><Name>Puno</Name></City>
+<City><Name>Tarapoto</Name></City>
+<City><Name>Adamstown</Name></City>
+<City><Name>San Antonio</Name></City>
+<City><Name>Capitol Hill</Name></City>
+<City><Name>Lissabon [Lisboa]</Name></City>
+<City><Name>Porto</Name></City>
+<City><Name>Amadora</Name></City>
+<City><Name>Setúbal</Name></City>
+<City><Name>Braga</Name></City>
+<City><Name>Coimbra</Name></City>
+<City><Name>Funchal</Name></City>
+<City><Name>San Juan</Name></City>
+<City><Name>Bayamón</Name></City>
+<City><Name>Carolina</Name></City>
+<City><Name>Ponce</Name></City>
+<City><Name>Caguas</Name></City>
+<City><Name>Guaynabo</Name></City>
+<City><Name>Arecibo</Name></City>
+<City><Name>Varsova [Warszawa]</Name></City>
+<City><Name>Lódz</Name></City>
+<City><Name>Krakova [Kraków]</Name></City>
+<City><Name>Wroclaw</Name></City>
+<City><Name>Poznan</Name></City>
+<City><Name>Gdansk</Name></City>
+<City><Name>Szczecin</Name></City>
+<City><Name>Bydgoszcz</Name></City>
+<City><Name>Lublin</Name></City>
+<City><Name>Katowice</Name></City>
+<City><Name>Bialystok</Name></City>
+<City><Name>Gdynia</Name></City>
+<City><Name>Czestochowa</Name></City>
+<City><Name>Radom</Name></City>
+<City><Name>Sosnowiec</Name></City>
+<City><Name>Kielce</Name></City>
+<City><Name>Torun</Name></City>
+<City><Name>Gliwice</Name></City>
+<City><Name>Zabrze</Name></City>
+<City><Name>Bytom</Name></City>
+<City><Name>Bielsko-Biala</Name></City>
+<City><Name>Olsztyn</Name></City>
+<City><Name>Rzeszów</Name></City>
+<City><Name>Ruda Slaska</Name></City>
+<City><Name>Rybnik</Name></City>
+<City><Name>Tychy</Name></City>
+<City><Name>Dabrowa Górnicza</Name></City>
+<City><Name>Opole</Name></City>
+<City><Name>Plock</Name></City>
+<City><Name>Elblag</Name></City>
+<City><Name>Walbrzych</Name></City>
+<City><Name>Gorzów Wielkopolski</Name></City>
+<City><Name>Wloclawek</Name></City>
+<City><Name>Zielona Góra</Name></City>
+<City><Name>Tarnów</Name></City>
+<City><Name>Chorzów</Name></City>
+<City><Name>Kalisz</Name></City>
+<City><Name>Koszalin</Name></City>
+<City><Name>Legnica</Name></City>
+<City><Name>Grudziadz</Name></City>
+<City><Name>Slupsk</Name></City>
+<City><Name>Jaworzno</Name></City>
+<City><Name>Jastrzebie-Zdrój</Name></City>
+<City><Name>Malabo</Name></City>
+<City><Name>Doha</Name></City>
+<City><Name>al-Rayyan</Name></City>
+<City><Name>Pariisi [Paris]</Name></City>
+<City><Name>Marseille</Name></City>
+<City><Name>Lyon</Name></City>
+<City><Name>Toulouse</Name></City>
+<City><Name>Nizza [Nice]</Name></City>
+<City><Name>Nantes</Name></City>
+<City><Name>Strasbourg</Name></City>
+<City><Name>Montpellier</Name></City>
+<City><Name>Bordeaux</Name></City>
+<City><Name>Lille</Name></City>
+<City><Name>Rennes</Name></City>
+<City><Name>Reims</Name></City>
+<City><Name>Le Havre</Name></City>
+<City><Name>Saint-Étienne</Name></City>
+<City><Name>Toulon</Name></City>
+<City><Name>Grenoble</Name></City>
+<City><Name>Angers</Name></City>
+<City><Name>Dijon</Name></City>
+<City><Name>Brest</Name></City>
+<City><Name>Le Mans</Name></City>
+<City><Name>Nîmes</Name></City>
+<City><Name>Clermont-Ferrand</Name></City>
+<City><Name>Aix-en-Provence</Name></City>
+<City><Name>Tours</Name></City>
+<City><Name>Amiens</Name></City>
+<City><Name>Limoges</Name></City>
+<City><Name>Villeurbanne</Name></City>
+<City><Name>Metz</Name></City>
+<City><Name>Besançon</Name></City>
+<City><Name>Perpignan</Name></City>
+<City><Name>Orléans</Name></City>
+<City><Name>Mulhouse</Name></City>
+<City><Name>Rouen</Name></City>
+<City><Name>Boulogne-Billancourt</Name></City>
+<City><Name>Caen</Name></City>
+<City><Name>Nancy</Name></City>
+<City><Name>Argenteuil</Name></City>
+<City><Name>Montreuil</Name></City>
+<City><Name>Roubaix</Name></City>
+<City><Name>Saint-Denis</Name></City>
+<City><Name>Tourcoing</Name></City>
+<City><Name>Avignon</Name></City>
+<City><Name>Cayenne</Name></City>
+<City><Name>Faa'a</Name></City>
+<City><Name>Papeete</Name></City>
+<City><Name>Saint-Denis</Name></City>
+<City><Name>Bukarest [Bucuresti]</Name></City>
+<City><Name>Iasi</Name></City>
+<City><Name>Constanta</Name></City>
+<City><Name>Timisoara</Name></City>
+<City><Name>Galati</Name></City>
+<City><Name>Cluj-Napoca</Name></City>
+<City><Name>Craiova</Name></City>
+<City><Name>Brasov</Name></City>
+<City><Name>Ploiesti</Name></City>
+<City><Name>Braila</Name></City>
+<City><Name>Oradea</Name></City>
+<City><Name>Bacau</Name></City>
+<City><Name>Pitesti</Name></City>
+<City><Name>Arad</Name></City>
+<City><Name>Sibiu</Name></City>
+<City><Name>Târgu Mures</Name></City>
+<City><Name>Baia Mare</Name></City>
+<City><Name>Buzau</Name></City>
+<City><Name>Satu Mare</Name></City>
+<City><Name>Botosani</Name></City>
+<City><Name>Râmnicu Vâlcea</Name></City>
+<City><Name>Piatra Neamt</Name></City>
+<City><Name>Drobeta-Turnu Severin</Name></City>
+<City><Name>Suceava</Name></City>
+<City><Name>Focsani</Name></City>
+<City><Name>Târgu Jiu</Name></City>
+<City><Name>Tulcea</Name></City>
+<City><Name>Târgoviste</Name></City>
+<City><Name>Kigali</Name></City>
+<City><Name>Tukholma [Stockholm]</Name></City>
+<City><Name>Göteborg</Name></City>
+<City><Name>Malmö</Name></City>
+<City><Name>Uppsala</Name></City>
+<City><Name>Linköping</Name></City>
+<City><Name>Västerås</Name></City>
+<City><Name>Örebro</Name></City>
+<City><Name>Norrköping</Name></City>
+<City><Name>Helsingborg</Name></City>
+<City><Name>Jönköping</Name></City>
+<City><Name>Uumaja [Umeå]</Name></City>
+<City><Name>Lund</Name></City>
+<City><Name>Borås</Name></City>
+<City><Name>Sundsvall</Name></City>
+<City><Name>Gävle</Name></City>
+<City><Name>Eskilstuna</Name></City>
+<City><Name>Huddinge</Name></City>
+<City><Name>Half Tree Hollow</Name></City>
+<City><Name>Jamestown</Name></City>
+<City><Name>Basseterre</Name></City>
+<City><Name>Castries</Name></City>
+<City><Name>Kingstown</Name></City>
+<City><Name>Gustavia</Name></City>
+<City><Name>Marigot</Name></City>
+<City><Name>St-Pierre</Name></City>
+<City><Name>Berliini [Berlin]</Name></City>
+<City><Name>Hampuri [Hamburg]</Name></City>
+<City><Name>München</Name></City>
+<City><Name>Köln</Name></City>
+<City><Name>Frankfurt am Main</Name></City>
+<City><Name>Stuttgart</Name></City>
+<City><Name>Dortmund</Name></City>
+<City><Name>Essen</Name></City>
+<City><Name>Düsseldorf</Name></City>
+<City><Name>Bremen</Name></City>
+<City><Name>Hannover</Name></City>
+<City><Name>Leipzig</Name></City>
+<City><Name>Duisburg</Name></City>
+<City><Name>Nürnberg</Name></City>
+<City><Name>Dresden</Name></City>
+<City><Name>Bochum</Name></City>
+<City><Name>Wuppertal</Name></City>
+<City><Name>Bielefeld</Name></City>
+<City><Name>Bonn</Name></City>
+<City><Name>Mannheim</Name></City>
+<City><Name>Karlsruhe</Name></City>
+<City><Name>Wiesbaden</Name></City>
+<City><Name>Münster</Name></City>
+<City><Name>Gelsenkirchen</Name></City>
+<City><Name>Augsburg</Name></City>
+<City><Name>Mönchengladbach</Name></City>
+<City><Name>Aachen</Name></City>
+<City><Name>Chemnitz</Name></City>
+<City><Name>Braunschweig</Name></City>
+<City><Name>Krefeld</Name></City>
+<City><Name>Halle/Saale</Name></City>
+<City><Name>Kiel</Name></City>
+<City><Name>Magdeburg</Name></City>
+<City><Name>Oberhausen</Name></City>
+<City><Name>Freiburg im Breisgau</Name></City>
+<City><Name>Lyypekki [Lübeck]</Name></City>
+<City><Name>Erfurt</Name></City>
+<City><Name>Rostock</Name></City>
+<City><Name>Hagen</Name></City>
+<City><Name>Kassel</Name></City>
+<City><Name>Mainz</Name></City>
+<City><Name>Hamm</Name></City>
+<City><Name>Saarbrücken</Name></City>
+<City><Name>Herne</Name></City>
+<City><Name>Mülheim an der Ruhr</Name></City>
+<City><Name>Osnabrück</Name></City>
+<City><Name>Solingen</Name></City>
+<City><Name>Ludwigshafen am Rhein</Name></City>
+<City><Name>Leverkusen</Name></City>
+<City><Name>Oldenburg</Name></City>
+<City><Name>Neuss</Name></City>
+<City><Name>Potsdam</Name></City>
+<City><Name>Paderborn</Name></City>
+<City><Name>Heidelberg</Name></City>
+<City><Name>Darmstadt</Name></City>
+<City><Name>Würzburg</Name></City>
+<City><Name>Regensburg</Name></City>
+<City><Name>Göttingen</Name></City>
+<City><Name>Recklinghausen</Name></City>
+<City><Name>Heilbronn</Name></City>
+<City><Name>Ingolstadt</Name></City>
+<City><Name>Wolfsburg</Name></City>
+<City><Name>Ulm</Name></City>
+<City><Name>Offenbach am Main</Name></City>
+<City><Name>Bottrop</Name></City>
+<City><Name>Pforzheim</Name></City>
+<City><Name>Bremerhaven</Name></City>
+<City><Name>Remscheid</Name></City>
+<City><Name>Fürth</Name></City>
+<City><Name>Reutlingen</Name></City>
+<City><Name>Salzgitter</Name></City>
+<City><Name>Moers</Name></City>
+<City><Name>Koblenz</Name></City>
+<City><Name>Siegen</Name></City>
+<City><Name>Bergisch Gladbach</Name></City>
+<City><Name>Cottbus</Name></City>
+<City><Name>Gera</Name></City>
+<City><Name>Erlangen</Name></City>
+<City><Name>Hildesheim</Name></City>
+<City><Name>Jena</Name></City>
+<City><Name>Witten</Name></City>
+<City><Name>Trier</Name></City>
+<City><Name>Kaiserslautern</Name></City>
+<City><Name>Zwickau</Name></City>
+<City><Name>Iserlohn</Name></City>
+<City><Name>Schwerin</Name></City>
+<City><Name>Gütersloh</Name></City>
+<City><Name>Düren</Name></City>
+<City><Name>Esslingen am Neckar</Name></City>
+<City><Name>Ratingen</Name></City>
+<City><Name>Marl</Name></City>
+<City><Name>Lünen</Name></City>
+<City><Name>Honiara</Name></City>
+<City><Name>Lusaka</Name></City>
+<City><Name>Ndola</Name></City>
+<City><Name>Kitwe</Name></City>
+<City><Name>Kabwe</Name></City>
+<City><Name>Chingola</Name></City>
+<City><Name>Mufulira</Name></City>
+<City><Name>Luanshya</Name></City>
+<City><Name>Apia</Name></City>
+<City><Name>Serravalle</Name></City>
+<City><Name>San Marino</Name></City>
+<City><Name>São Tomé</Name></City>
+<City><Name>Riad</Name></City>
+<City><Name>Jedda</Name></City>
+<City><Name>Mekka</Name></City>
+<City><Name>Medina</Name></City>
+<City><Name>al-Dammam</Name></City>
+<City><Name>al-Ta'if</Name></City>
+<City><Name>Tabuk</Name></City>
+<City><Name>Burayda</Name></City>
+<City><Name>Khamis Mushayt</Name></City>
+<City><Name>al-Hufuf</Name></City>
+<City><Name>al-Mubarraz</Name></City>
+<City><Name>Ha'il</Name></City>
+<City><Name>Najran</Name></City>
+<City><Name>Hafar al-Batin</Name></City>
+<City><Name>al-Jubayl</Name></City>
+<City><Name>Abha</Name></City>
+<City><Name>al-Kharj</Name></City>
+<City><Name>al-Thuqba</Name></City>
+<City><Name>Yanbu' al-Bahr</Name></City>
+<City><Name>al-Khubar</Name></City>
+<City><Name>Ara'ar</Name></City>
+<City><Name>al-Hawiya</Name></City>
+<City><Name>Unayza</Name></City>
+<City><Name>Sakaka</Name></City>
+<City><Name>Jizan</Name></City>
+<City><Name>al-Qurayyat</Name></City>
+<City><Name>Dakar</Name></City>
+<City><Name>Pikine</Name></City>
+<City><Name>Guédiawaye</Name></City>
+<City><Name>Thiès</Name></City>
+<City><Name>Kaolack</Name></City>
+<City><Name>Mbour</Name></City>
+<City><Name>Saint-Louis</Name></City>
+<City><Name>Rufisque</Name></City>
+<City><Name>Ziguinchor</Name></City>
+<City><Name>Belgrad [Beograd]</Name></City>
+<City><Name>Novi Sad</Name></City>
+<City><Name>Kragujevac</Name></City>
+<City><Name>Prizren</Name></City>
+<City><Name>Subotica</Name></City>
+<City><Name>Victoria</Name></City>
+<City><Name>Freetown</Name></City>
+<City><Name>Bo</Name></City>
+<City><Name>Kenema</Name></City>
+<City><Name>Singapore</Name></City>
+<City><Name>Bratislava</Name></City>
+<City><Name>Ljubljana</Name></City>
+<City><Name>Maribor</Name></City>
+<City><Name>Mogadishu</Name></City>
+<City><Name>Marka</Name></City>
+<City><Name>Colombo</Name></City>
+<City><Name>Dehiwala-Mount Lavinia</Name></City>
+<City><Name>Moratuwa</Name></City>
+<City><Name>Jaffna</Name></City>
+<City><Name>Negombo</Name></City>
+<City><Name>Sri Jayawardanapura Kotte</Name></City>
+<City><Name>Kandy</Name></City>
+<City><Name>Omdurman</Name></City>
+<City><Name>Khartum</Name></City>
+<City><Name>al-Khartum Bahri (Pohjois-Khartum)</Name></City>
+<City><Name>Port Sudan</Name></City>
+<City><Name>Nyala</Name></City>
+<City><Name>Kassala</Name></City>
+<City><Name>Obeid</Name></City>
+<City><Name>Wad Madani</Name></City>
+<City><Name>al-Qadarif</Name></City>
+<City><Name>Kusti</Name></City>
+<City><Name>al-Fashir</Name></City>
+<City><Name>Juba</Name></City>
+<City><Name>al-Junayna</Name></City>
+<City><Name>Malakal</Name></City>
+<City><Name>Waw</Name></City>
+<City><Name>Sannar al-Madina</Name></City>
+<City><Name>Atbara</Name></City>
+<City><Name>Helsinki</Name></City>
+<City><Name>Espoo</Name></City>
+<City><Name>Tampere</Name></City>
+<City><Name>Vantaa</Name></City>
+<City><Name>Turku</Name></City>
+<City><Name>Oulu</Name></City>
+<City><Name>Lahti</Name></City>
+<City><Name>Kuopio</Name></City>
+<City><Name>Paramaribo</Name></City>
+<City><Name>Mbabane</Name></City>
+<City><Name>Zürich</Name></City>
+<City><Name>Geneve</Name></City>
+<City><Name>Basel</Name></City>
+<City><Name>Bern</Name></City>
+<City><Name>Lausanne</Name></City>
+<City><Name>Winterthur</Name></City>
+<City><Name>Damaskos</Name></City>
+<City><Name>Aleppo</Name></City>
+<City><Name>Hims</Name></City>
+<City><Name>Hama</Name></City>
+<City><Name>Latakia</Name></City>
+<City><Name>Dayr al-Zawr</Name></City>
+<City><Name>al-Raqqa</Name></City>
+<City><Name>al-Bab</Name></City>
+<City><Name>Idlib</Name></City>
+<City><Name>Duma</Name></City>
+<City><Name>Dushanbe</Name></City>
+<City><Name>Khujand</Name></City>
+<City><Name>Taipei</Name></City>
+<City><Name>Kaohsiung</Name></City>
+<City><Name>Taichung</Name></City>
+<City><Name>Tainan</Name></City>
+<City><Name>Banciao</Name></City>
+<City><Name>Jhonghe</Name></City>
+<City><Name>Keelung (Chilung)</Name></City>
+<City><Name>Hsinchu</Name></City>
+<City><Name>Sinjhuang</Name></City>
+<City><Name>Sanchong</Name></City>
+<City><Name>Taoyuan</Name></City>
+<City><Name>Jhongli</Name></City>
+<City><Name>Fongshan</Name></City>
+<City><Name>Sindian</Name></City>
+<City><Name>Chiayi</Name></City>
+<City><Name>Tucheng</Name></City>
+<City><Name>Yonghe</Name></City>
+<City><Name>Jhanghua</Name></City>
+<City><Name>Pingdong</Name></City>
+<City><Name>Yongkang</Name></City>
+<City><Name>Pingjhen</Name></City>
+<City><Name>Dali</Name></City>
+<City><Name>Lujhou</Name></City>
+<City><Name>Sijhih</Name></City>
+<City><Name>Taiping</Name></City>
+<City><Name>Bade</Name></City>
+<City><Name>Fongyuan</Name></City>
+<City><Name>Shulin</Name></City>
+<City><Name>Yangmei</Name></City>
+<City><Name>Danshuei</Name></City>
+<City><Name>Yuanlin</Name></City>
+<City><Name>Gueishan</Name></City>
+<City><Name>Lujhu</Name></City>
+<City><Name>Jhubei</Name></City>
+<City><Name>Longtan</Name></City>
+<City><Name>Taidong</Name></City>
+<City><Name>Daliao</Name></City>
+<City><Name>Hualian</Name></City>
+<City><Name>Nantou</Name></City>
+<City><Name>Douliou</Name></City>
+<City><Name>Dar es Salaam</Name></City>
+<City><Name>Arusha</Name></City>
+<City><Name>Mbeya</Name></City>
+<City><Name>Mwanza</Name></City>
+<City><Name>Morogoro</Name></City>
+<City><Name>Zanzibar</Name></City>
+<City><Name>Tanga</Name></City>
+<City><Name>Dodoma</Name></City>
+<City><Name>Moshi</Name></City>
+<City><Name>Kigoma</Name></City>
+<City><Name>Tabora</Name></City>
+<City><Name>Musoma</Name></City>
+<City><Name>Kööpenhamina [København]</Name></City>
+<City><Name>Århus</Name></City>
+<City><Name>Aalborg</Name></City>
+<City><Name>Odense</Name></City>
+<City><Name>Esbjerg</Name></City>
+<City><Name>Vejle</Name></City>
+<City><Name>Randers</Name></City>
+<City><Name>Frederiksberg</Name></City>
+<City><Name>Viborg</Name></City>
+<City><Name>Bangkok</Name></City>
+<City><Name>Samut Prakan</Name></City>
+<City><Name>Nonthaburi</Name></City>
+<City><Name>Udon Thani</Name></City>
+<City><Name>Nakhon Ratchasima</Name></City>
+<City><Name>Hat Yai</Name></City>
+<City><Name>Chon Buri</Name></City>
+<City><Name>Chiang Mai</Name></City>
+<City><Name>Phra Pradaeng</Name></City>
+<City><Name>Lampang</Name></City>
+<City><Name>Pak Kret</Name></City>
+<City><Name>Si Racha</Name></City>
+<City><Name>Khon Kaen</Name></City>
+<City><Name>Nakhon Pathom</Name></City>
+<City><Name>Nakhon Si Thammarat</Name></City>
+<City><Name>Pattaya / Bang Lamung</Name></City>
+<City><Name>Thanya Buri</Name></City>
+<City><Name>Surat Thani</Name></City>
+<City><Name>Rayong</Name></City>
+<City><Name>Ubon Ratchathani</Name></City>
+<City><Name>Khlong Luang</Name></City>
+<City><Name>Lomé</Name></City>
+<City><Name>Fakaofo</Name></City>
+<City><Name>Nuku'alofa</Name></City>
+<City><Name>Chaguanas</Name></City>
+<City><Name>Port-of-Spain</Name></City>
+<City><Name>N'Djamena</Name></City>
+<City><Name>Moundou</Name></City>
+<City><Name>Praha</Name></City>
+<City><Name>Brno</Name></City>
+<City><Name>Ostrava</Name></City>
+<City><Name>Plzen</Name></City>
+<City><Name>Olomouc</Name></City>
+<City><Name>Liberec</Name></City>
+<City><Name>Ceské Budejovice</Name></City>
+<City><Name>Hradec Králové</Name></City>
+<City><Name>Ústí nad Labem</Name></City>
+<City><Name>Tunis</Name></City>
+<City><Name>Sfax</Name></City>
+<City><Name>Ariana</Name></City>
+<City><Name>Sousse</Name></City>
+<City><Name>Ettadhamen</Name></City>
+<City><Name>Kairouan</Name></City>
+<City><Name>Gabès</Name></City>
+<City><Name>Biserta</Name></City>
+<City><Name>Istanbul</Name></City>
+<City><Name>Ankara</Name></City>
+<City><Name>Izmir</Name></City>
+<City><Name>Bursa</Name></City>
+<City><Name>Adana</Name></City>
+<City><Name>Gaziantep</Name></City>
+<City><Name>Konya</Name></City>
+<City><Name>Antalya</Name></City>
+<City><Name>Diyarbakir</Name></City>
+<City><Name>Mersin (Içel)</Name></City>
+<City><Name>Kayseri</Name></City>
+<City><Name>Eskisehir</Name></City>
+<City><Name>Malatya</Name></City>
+<City><Name>Sanliurfa</Name></City>
+<City><Name>Erzurum</Name></City>
+<City><Name>Samsun</Name></City>
+<City><Name>Kahramanmaras</Name></City>
+<City><Name>Van</Name></City>
+<City><Name>Denizli</Name></City>
+<City><Name>Sakarya (Adapazari)</Name></City>
+<City><Name>Gebze</Name></City>
+<City><Name>Elazig</Name></City>
+<City><Name>Batman</Name></City>
+<City><Name>Sivas</Name></City>
+<City><Name>Manisa</Name></City>
+<City><Name>Trabzon</Name></City>
+<City><Name>Balikesir</Name></City>
+<City><Name>Tarsus</Name></City>
+<City><Name>Kirikkale</Name></City>
+<City><Name>Adiyaman</Name></City>
+<City><Name>Izmit (Kocaeli)</Name></City>
+<City><Name>Osmaniye</Name></City>
+<City><Name>Kütahya</Name></City>
+<City><Name>Sultanbeyli</Name></City>
+<City><Name>Çorum</Name></City>
+<City><Name>Çorlu</Name></City>
+<City><Name>Iskenderun</Name></City>
+<City><Name>Isparta</Name></City>
+<City><Name>Aydin</Name></City>
+<City><Name>Hatay (Antakya)</Name></City>
+<City><Name>Siverek</Name></City>
+<City><Name>Usak</Name></City>
+<City><Name>Viransehir</Name></City>
+<City><Name>Aksaray</Name></City>
+<City><Name>Afyonkarahisar</Name></City>
+<City><Name>Kiziltepe</Name></City>
+<City><Name>Edirne</Name></City>
+<City><Name>Tokat</Name></City>
+<City><Name>Inegöl</Name></City>
+<City><Name>Ceyhan</Name></City>
+<City><Name>Ordu</Name></City>
+<City><Name>Karaman</Name></City>
+<City><Name>Tekirdag</Name></City>
+<City><Name>Nazilli</Name></City>
+<City><Name>Erzincan</Name></City>
+<City><Name>Siirt</Name></City>
+<City><Name>Zonguldak</Name></City>
+<City><Name>Turhal</Name></City>
+<City><Name>Bandirma</Name></City>
+<City><Name>Derince</Name></City>
+<City><Name>Karabük</Name></City>
+<City><Name>Asgabat</Name></City>
+<City><Name>Türkmenabat</Name></City>
+<City><Name>Dasoguz</Name></City>
+<City><Name>Mari</Name></City>
+<City><Name>Balkanabat</Name></City>
+<City><Name>Five Cays</Name></City>
+<City><Name>Cockburn Town</Name></City>
+<City><Name>Alapi</Name></City>
+<City><Name>Vaiaku</Name></City>
+<City><Name>Kampala</Name></City>
+<City><Name>Gulu</Name></City>
+<City><Name>Kiova [Kyjiv]</Name></City>
+<City><Name>Harkova [Harkiv]</Name></City>
+<City><Name>Dnipropetrovsk</Name></City>
+<City><Name>Odesa</Name></City>
+<City><Name>Donetsk</Name></City>
+<City><Name>Lviv</Name></City>
+<City><Name>Kryvyi Rih</Name></City>
+<City><Name>Mykolajiv</Name></City>
+<City><Name>Mariupol</Name></City>
+<City><Name>Luhansk</Name></City>
+<City><Name>Makijivka</Name></City>
+<City><Name>Vinnytsja</Name></City>
+<City><Name>Simferopol</Name></City>
+<City><Name>Sevastopol</Name></City>
+<City><Name>Herson</Name></City>
+<City><Name>Pultava [Poltava]</Name></City>
+<City><Name>Sumy</Name></City>
+<City><Name>Horlivka</Name></City>
+<City><Name>Hmelnytskyi</Name></City>
+<City><Name>Kirovohrad</Name></City>
+<City><Name>Rivne</Name></City>
+<City><Name>Ternopil</Name></City>
+<City><Name>Ivano-Frankivsk</Name></City>
+<City><Name>Bila Tserkva</Name></City>
+<City><Name>Lutsk</Name></City>
+<City><Name>Kramatorsk</Name></City>
+<City><Name>Melitopol</Name></City>
+<City><Name>Nikopol</Name></City>
+<City><Name>Slovjansk</Name></City>
+<City><Name>Berdjansk</Name></City>
+<City><Name>Sjeverodonetsk</Name></City>
+<City><Name>Pavlohrad</Name></City>
+<City><Name>Jevpatorija</Name></City>
+<City><Name>Kamjanets-Podilskyi</Name></City>
+<City><Name>Jenakijive</Name></City>
+<City><Name>Konotop</Name></City>
+<City><Name>Budapest</Name></City>
+<City><Name>Debrecen</Name></City>
+<City><Name>Miskolc</Name></City>
+<City><Name>Szeged</Name></City>
+<City><Name>Pécs</Name></City>
+<City><Name>Gyor</Name></City>
+<City><Name>Nyíregyháza</Name></City>
+<City><Name>Kecskemét</Name></City>
+<City><Name>Székesfehérvár</Name></City>
+<City><Name>Montevideo</Name></City>
+<City><Name>Nouméa</Name></City>
+<City><Name>Auckland</Name></City>
+<City><Name>Christchurch</Name></City>
+<City><Name>Manukau</Name></City>
+<City><Name>North Shore</Name></City>
+<City><Name>Waitakere</Name></City>
+<City><Name>Wellington</Name></City>
+<City><Name>Hamilton</Name></City>
+<City><Name>Dunedin</Name></City>
+<City><Name>Tauranga</Name></City>
+<City><Name>Toshkent</Name></City>
+<City><Name>Namangan</Name></City>
+<City><Name>Samarqand</Name></City>
+<City><Name>Andijon</Name></City>
+<City><Name>Buxoro</Name></City>
+<City><Name>Nukus</Name></City>
+<City><Name>Qarshi</Name></City>
+<City><Name>Qo'qon</Name></City>
+<City><Name>Farg'ona</Name></City>
+<City><Name>Marg'ilon</Name></City>
+<City><Name>Chirchiq</Name></City>
+<City><Name>Urganch</Name></City>
+<City><Name>Navoiy</Name></City>
+<City><Name>Jizzax</Name></City>
+<City><Name>Angren</Name></City>
+<City><Name>Termiz</Name></City>
+<City><Name>Olmaliq</Name></City>
+<City><Name>Minsk</Name></City>
+<City><Name>Gomel</Name></City>
+<City><Name>Mogiljov</Name></City>
+<City><Name>Vitebsk</Name></City>
+<City><Name>Grodno</Name></City>
+<City><Name>Brest</Name></City>
+<City><Name>Bobruisk</Name></City>
+<City><Name>Borisov</Name></City>
+<City><Name>Pinsk</Name></City>
+<City><Name>Mozyr</Name></City>
+<City><Name>Novopolotsk</Name></City>
+<City><Name>Soligorsk</Name></City>
+<City><Name>Lida</Name></City>
+<City><Name>Mata-Utu</Name></City>
+<City><Name>Port-Vila</Name></City>
+<City><Name>Città del Vaticano</Name></City>
+<City><Name>Caracas</Name></City>
+<City><Name>Maracaibo</Name></City>
+<City><Name>Valencia</Name></City>
+<City><Name>Barquisimeto</Name></City>
+<City><Name>Ciudad Guayana</Name></City>
+<City><Name>Maracay</Name></City>
+<City><Name>Petare</Name></City>
+<City><Name>Barcelona</Name></City>
+<City><Name>Maturín</Name></City>
+<City><Name>Turmero</Name></City>
+<City><Name>Ciudad Bolívar</Name></City>
+<City><Name>Cumaná</Name></City>
+<City><Name>San Cristóbal</Name></City>
+<City><Name>Barinas</Name></City>
+<City><Name>Cabimas</Name></City>
+<City><Name>Mérida</Name></City>
+<City><Name>Nuestra Señora del Rosario de Baruta</Name></City>
+<City><Name>Guarenas</Name></City>
+<City><Name>Los Teques</Name></City>
+<City><Name>Tocuyito</Name></City>
+<City><Name>Santa Ana de Coro</Name></City>
+<City><Name>Los Guayos</Name></City>
+<City><Name>Puerto Cabello</Name></City>
+<City><Name>Pozuelos</Name></City>
+<City><Name>El Tigre</Name></City>
+<City><Name>Naguanagua</Name></City>
+<City><Name>Guacara</Name></City>
+<City><Name>San Francisco</Name></City>
+<City><Name>Acarigua</Name></City>
+<City><Name>El Silencio</Name></City>
+<City><Name>Guatire</Name></City>
+<City><Name>Santa Teresa del Tuy</Name></City>
+<City><Name>Punto Fijo</Name></City>
+<City><Name>Ciudad Ojeda</Name></City>
+<City><Name>Valera</Name></City>
+<City><Name>Catia La Mar</Name></City>
+<City><Name>Carúpano</Name></City>
+<City><Name>Guanare</Name></City>
+<City><Name>Santa Lucía</Name></City>
+<City><Name>Ocumare del Tuy</Name></City>
+<City><Name>La Victoria</Name></City>
+<City><Name>Calabozo</Name></City>
+<City><Name>Moskova</Name></City>
+<City><Name>Pietari</Name></City>
+<City><Name>Novosibirsk</Name></City>
+<City><Name>Jekaterinburg</Name></City>
+<City><Name>Samara</Name></City>
+<City><Name>Omsk</Name></City>
+<City><Name>Kazan</Name></City>
+<City><Name>Rostov-na-Donu</Name></City>
+<City><Name>Ufa</Name></City>
+<City><Name>Perm</Name></City>
+<City><Name>Volgograd</Name></City>
+<City><Name>Krasnojarsk</Name></City>
+<City><Name>Saratov</Name></City>
+<City><Name>Krasnodar</Name></City>
+<City><Name>Toljatti</Name></City>
+<City><Name>Uljanovsk</Name></City>
+<City><Name>Barnaul</Name></City>
+<City><Name>Jaroslavl</Name></City>
+<City><Name>Vladivostok</Name></City>
+<City><Name>Irkutsk</Name></City>
+<City><Name>Habarovsk</Name></City>
+<City><Name>Novokuznetsk</Name></City>
+<City><Name>Tjumen</Name></City>
+<City><Name>Orenburg</Name></City>
+<City><Name>Kemerovo</Name></City>
+<City><Name>Rjazan</Name></City>
+<City><Name>Penza</Name></City>
+<City><Name>Tula</Name></City>
+<City><Name>Lipetsk</Name></City>
+<City><Name>Astrahan</Name></City>
+<City><Name>Tomsk</Name></City>
+<City><Name>Kirov</Name></City>
+<City><Name>Kaliningrad</Name></City>
+<City><Name>Brjansk</Name></City>
+<City><Name>Magnitogorsk</Name></City>
+<City><Name>Ivanovo</Name></City>
+<City><Name>Tver</Name></City>
+<City><Name>Kursk</Name></City>
+<City><Name>Stavropol</Name></City>
+<City><Name>Arkangeli</Name></City>
+<City><Name>Ulan-Ude [Ulaan Üdë]</Name></City>
+<City><Name>Belgorod</Name></City>
+<City><Name>Vladimir</Name></City>
+<City><Name>Kurgan</Name></City>
+<City><Name>Kaluga</Name></City>
+<City><Name>Orjol</Name></City>
+<City><Name>Murmansk</Name></City>
+<City><Name>Smolensk</Name></City>
+<City><Name>Vladikavkaz</Name></City>
+<City><Name>Saransk [Saran os]</Name></City>
+<City><Name>Surgut</Name></City>
+<City><Name>Vologda</Name></City>
+<City><Name>Tambov</Name></City>
+<City><Name>Kostroma</Name></City>
+<City><Name>Komsomolsk-na-Amure</Name></City>
+<City><Name>Taganrog</Name></City>
+<City><Name>Sterlitamak</Name></City>
+<City><Name>Petroskoi</Name></City>
+<City><Name>Bratsk</Name></City>
+<City><Name>Orsk</Name></City>
+<City><Name>Angarsk</Name></City>
+<City><Name>Jakutsk [Jakutskai]</Name></City>
+<City><Name>Novorossijsk</Name></City>
+<City><Name>Syktyvkar</Name></City>
+<City><Name>Bijsk</Name></City>
+<City><Name>Groznyi [Sölz-Gala]</Name></City>
+<City><Name>Staryi Oskol</Name></City>
+<City><Name>Veliki Novgorod</Name></City>
+<City><Name>Prokopjevsk</Name></City>
+<City><Name>Zelenograd</Name></City>
+<City><Name>Rybinsk</Name></City>
+<City><Name>Norilsk</Name></City>
+<City><Name>Balakovo</Name></City>
+<City><Name>Pihkova</Name></City>
+<City><Name>Severodvinsk</Name></City>
+<City><Name>Engels</Name></City>
+<City><Name>Armavir</Name></City>
+<City><Name>Zlatoust</Name></City>
+<City><Name>Kamensk-Uralski</Name></City>
+<City><Name>Syzran</Name></City>
+<City><Name>Himki</Name></City>
+<City><Name>Podolsk</Name></City>
+<City><Name>Koroljov</Name></City>
+<City><Name>Nahodka</Name></City>
+<City><Name>Volgodonsk</Name></City>
+<City><Name>Berjozniki</Name></City>
+<City><Name>Abakan</Name></City>
+<City><Name>Ljubertsy</Name></City>
+<City><Name>Rubtsovsk</Name></City>
+<City><Name>Salavat</Name></City>
+<City><Name>Maikop [Myjeqwape]</Name></City>
+<City><Name>Ussurijsk</Name></City>
+<City><Name>Miass</Name></City>
+<City><Name>Kovrov</Name></City>
+<City><Name>Kolomna</Name></City>
+<City><Name>Elektrostal</Name></City>
+<City><Name>Almetjevsk</Name></City>
+<City><Name>Pjatigorsk</Name></City>
+<City><Name>Kopeisk</Name></City>
+<City><Name>Kolpino</Name></City>
+<City><Name>Pervouralsk</Name></City>
+<City><Name>Odintsovo</Name></City>
+<City><Name>Nazran</Name></City>
+<City><Name>Nevinnomyssk</Name></City>
+<City><Name>Kislovodsk</Name></City>
+<City><Name>Dimitrovgrad</Name></City>
+<City><Name>Novomoskovsk</Name></City>
+<City><Name>Hasavjurt</Name></City>
+<City><Name>Serpuhov</Name></City>
+<City><Name>Murom</Name></City>
+<City><Name>Orehovo-Zujevo</Name></City>
+<City><Name>Neftekamsk</Name></City>
+<City><Name>Noginsk</Name></City>
+<City><Name>Jelets</Name></City>
+<City><Name>Neftejugansk</Name></City>
+<City><Name>Sergijev Posad</Name></City>
+<City><Name>Novyi Urengoi</Name></City>
+<City><Name>Kyzyl</Name></City>
+<City><Name>Nojabrsk</Name></City>
+<City><Name>Leninsk-Kuznetski</Name></City>
+<City><Name>Oktjabrski</Name></City>
+<City><Name>Seversk</Name></City>
+<City><Name>Arzamas</Name></City>
+<City><Name>Derbent</Name></City>
+<City><Name>Obninsk</Name></City>
+<City><Name>Bataisk</Name></City>
+<City><Name>Novotroitsk</Name></City>
+<City><Name>Kiseljovsk</Name></City>
+<City><Name>Uhta</Name></City>
+<City><Name>Elista [Ëlst]</Name></City>
+<City><Name>Velikije Luki</Name></City>
+<City><Name>Artjom</Name></City>
+<City><Name>Kansk</Name></City>
+<City><Name>Tobolsk</Name></City>
+<City><Name>Glazov</Name></City>
+<City><Name>Magadan</Name></City>
+<City><Name>Hanoi</Name></City>
+<City><Name>Haiphong</Name></City>
+<City><Name>Biên Hoà</Name></City>
+<City><Name>Nha Trang</Name></City>
+<City><Name>Qui Nhon</Name></City>
+<City><Name>Vung Tàu</Name></City>
+<City><Name>Long Xuyên</Name></City>
+<City><Name>Cam Pha</Name></City>
+<City><Name>Phan Thiêt</Name></City>
+<City><Name>Hong Gai</Name></City>
+<City><Name>Cam Ranh</Name></City>
+<City><Name>Buôn Me Thuôt</Name></City>
+<City><Name>Thái Nguyên</Name></City>
+<City><Name>Sóc Trang</Name></City>
+<City><Name>Plei Ku</Name></City>
+<City><Name>Thanh Hóa</Name></City>
+<City><Name>Cà Mau</Name></City>
+<City><Name>Vinh</Name></City>
+<City><Name>Vinh Long</Name></City>
+<City><Name>Hoà Bình</Name></City>
+<City><Name>Tallinna [Tallinn]</Name></City>
+<City><Name>Tartto [Tartu]</Name></City>
+<City><Name>New York</Name></City>
+<City><Name>Los Angeles</Name></City>
+<City><Name>Chicago</Name></City>
+<City><Name>Houston</Name></City>
+<City><Name>Philadelphia</Name></City>
+<City><Name>Phoenix</Name></City>
+<City><Name>San Antonio</Name></City>
+<City><Name>San Diego</Name></City>
+<City><Name>Dallas</Name></City>
+<City><Name>San Jose</Name></City>
+<City><Name>Detroit</Name></City>
+<City><Name>Indianapolis</Name></City>
+<City><Name>Jacksonville</Name></City>
+<City><Name>San Francisco</Name></City>
+<City><Name>Columbus</Name></City>
+<City><Name>Austin</Name></City>
+<City><Name>Memphis</Name></City>
+<City><Name>Baltimore</Name></City>
+<City><Name>Fort Worth</Name></City>
+<City><Name>Charlotte</Name></City>
+<City><Name>El Paso</Name></City>
+<City><Name>Milwaukee</Name></City>
+<City><Name>Seattle</Name></City>
+<City><Name>Boston</Name></City>
+<City><Name>Denver</Name></City>
+<City><Name>Louisville</Name></City>
+<City><Name>Washington</Name></City>
+<City><Name>Nashville-Davidson </Name></City>
+<City><Name>Las Vegas</Name></City>
+<City><Name>Portland</Name></City>
+<City><Name>Oklahoma City</Name></City>
+<City><Name>Tucson</Name></City>
+<City><Name>Albuquerque</Name></City>
+<City><Name>Long Beach</Name></City>
+<City><Name>Atlanta</Name></City>
+<City><Name>Fresno</Name></City>
+<City><Name>Sacramento</Name></City>
+<City><Name>New Orleans</Name></City>
+<City><Name>Cleveland</Name></City>
+<City><Name>Kansas City</Name></City>
+<City><Name>Mesa</Name></City>
+<City><Name>Virginia Beach</Name></City>
+<City><Name>Omaha</Name></City>
+<City><Name>Oakland</Name></City>
+<City><Name>Miami</Name></City>
+<City><Name>Tulsa</Name></City>
+<City><Name>Honolulu</Name></City>
+<City><Name>Minneapolis</Name></City>
+<City><Name>Colorado Springs</Name></City>
+<City><Name>Arlington</Name></City>
+<City><Name>Wichita</Name></City>
+<City><Name>Saint Louis</Name></City>
+<City><Name>Raleigh</Name></City>
+<City><Name>Santa Ana</Name></City>
+<City><Name>Anaheim</Name></City>
+<City><Name>Tampa</Name></City>
+<City><Name>Pittsburgh</Name></City>
+<City><Name>Cincinnati</Name></City>
+<City><Name>Toledo</Name></City>
+<City><Name>Aurora</Name></City>
+<City><Name>Bakersfield</Name></City>
+<City><Name>Riverside</Name></City>
+<City><Name>Stockton</Name></City>
+<City><Name>Corpus Christi</Name></City>
+<City><Name>Newark</Name></City>
+<City><Name>Buffalo</Name></City>
+<City><Name>Saint Paul</Name></City>
+<City><Name>Anchorage</Name></City>
+<City><Name>Lexington-Fayette</Name></City>
+<City><Name>Plano</Name></City>
+<City><Name>Saint Petersburg</Name></City>
+<City><Name>Jersey City</Name></City>
+<City><Name>Glendale</Name></City>
+<City><Name>Lincoln</Name></City>
+<City><Name>Chandler</Name></City>
+<City><Name>Henderson</Name></City>
+<City><Name>Greensboro</Name></City>
+<City><Name>Norfolk</Name></City>
+<City><Name>Birmingham</Name></City>
+<City><Name>Scottsdale</Name></City>
+<City><Name>Fort Wayne</Name></City>
+<City><Name>Baton Rouge</Name></City>
+<City><Name>Madison</Name></City>
+<City><Name>Hialeah</Name></City>
+<City><Name>Chesapeake</Name></City>
+<City><Name>Garland</Name></City>
+<City><Name>Orlando</Name></City>
+<City><Name>Rochester</Name></City>
+<City><Name>Akron</Name></City>
+<City><Name>Chula Vista</Name></City>
+<City><Name>Lubbock</Name></City>
+<City><Name>Laredo</Name></City>
+<City><Name>Modesto</Name></City>
+<City><Name>Paradise</Name></City>
+<City><Name>Durham</Name></City>
+<City><Name>Reno</Name></City>
+<City><Name>Fremont</Name></City>
+<City><Name>Montgomery</Name></City>
+<City><Name>Glendale</Name></City>
+<City><Name>Shreveport</Name></City>
+<City><Name>San Bernardino</Name></City>
+<City><Name>Spokane</Name></City>
+<City><Name>Yonkers</Name></City>
+<City><Name>Arlington</Name></City>
+<City><Name>Tacoma</Name></City>
+<City><Name>Huntington Beach</Name></City>
+<City><Name>Des Moines</Name></City>
+<City><Name>Grand Rapids</Name></City>
+<City><Name>Richmond</Name></City>
+<City><Name>Winston-Salem</Name></City>
+<City><Name>Irving</Name></City>
+<City><Name>Boise City</Name></City>
+<City><Name>Mobile</Name></City>
+<City><Name>Augusta-Richmond County</Name></City>
+<City><Name>Irvine</Name></City>
+<City><Name>Columbus</Name></City>
+<City><Name>Little Rock</Name></City>
+<City><Name>Oxnard</Name></City>
+<City><Name>Amarillo</Name></City>
+<City><Name>Knoxville</Name></City>
+<City><Name>Newport News</Name></City>
+<City><Name>Moreno Valley</Name></City>
+<City><Name>Salt Lake City</Name></City>
+<City><Name>Jackson</Name></City>
+<City><Name>Providence</Name></City>
+<City><Name>North Las Vegas</Name></City>
+<City><Name>Worcester</Name></City>
+<City><Name>Sunrise Manor</Name></City>
+<City><Name>Gilbert</Name></City>
+<City><Name>Ontario</Name></City>
+<City><Name>Rancho Cucamonga</Name></City>
+<City><Name>Santa Clarita</Name></City>
+<City><Name>Aurora</Name></City>
+<City><Name>Brownsville</Name></City>
+<City><Name>Fort Lauderdale</Name></City>
+<City><Name>Huntsville</Name></City>
+<City><Name>Oceanside</Name></City>
+<City><Name>Garden Grove</Name></City>
+<City><Name>Overland Park</Name></City>
+<City><Name>Fontana</Name></City>
+<City><Name>Tempe</Name></City>
+<City><Name>Dayton</Name></City>
+<City><Name>Tallahassee</Name></City>
+<City><Name>Vancouver</Name></City>
+<City><Name>Chattanooga</Name></City>
+<City><Name>Pomona</Name></City>
+<City><Name>Santa Rosa</Name></City>
+<City><Name>Rockford</Name></City>
+<City><Name>Springfield</Name></City>
+<City><Name>Pembroke Pines</Name></City>
+<City><Name>Springfield</Name></City>
+<City><Name>Paterson</Name></City>
+<City><Name>Corona</Name></City>
+<City><Name>Salem</Name></City>
+<City><Name>Salinas</Name></City>
+<City><Name>Hollywood</Name></City>
+<City><Name>Hampton</Name></City>
+<City><Name>Metairie</Name></City>
+<City><Name>Eugene</Name></City>
+<City><Name>Grand Prairie</Name></City>
+<City><Name>Kansas City</Name></City>
+<City><Name>Pasadena</Name></City>
+<City><Name>Pasadena</Name></City>
+<City><Name>Torrance</Name></City>
+<City><Name>Syracuse</Name></City>
+<City><Name>Naperville</Name></City>
+<City><Name>Lakewood</Name></City>
+<City><Name>Hayward</Name></City>
+<City><Name>Cape Coral</Name></City>
+<City><Name>Sioux Falls</Name></City>
+<City><Name>Bridgeport</Name></City>
+<City><Name>Peoria</Name></City>
+<City><Name>Joliet</Name></City>
+<City><Name>Alexandria</Name></City>
+<City><Name>Warren</Name></City>
+<City><Name>Spring Valley</Name></City>
+<City><Name>Orange</Name></City>
+<City><Name>Palmdale</Name></City>
+<City><Name>Escondido</Name></City>
+<City><Name>Lancaster</Name></City>
+<City><Name>Fullerton</Name></City>
+<City><Name>Port Saint Lucie</Name></City>
+<City><Name>Fayetteville</Name></City>
+<City><Name>Mesquite</Name></City>
+<City><Name>Sunnyvale</Name></City>
+<City><Name>Coral Springs</Name></City>
+<City><Name>Savannah</Name></City>
+<City><Name>Sterling Heights</Name></City>
+<City><Name>Fort Collins</Name></City>
+<City><Name>Elizabeth</Name></City>
+<City><Name>New Haven</Name></City>
+<City><Name>Hartford</Name></City>
+<City><Name>Thousand Oaks</Name></City>
+<City><Name>East Los Angeles</Name></City>
+<City><Name>McAllen</Name></City>
+<City><Name>Concord</Name></City>
+<City><Name>Cedar Rapids</Name></City>
+<City><Name>El Monte</Name></City>
+<City><Name>Topeka</Name></City>
+<City><Name>Waco</Name></City>
+<City><Name>Stamford</Name></City>
+<City><Name>Carrollton</Name></City>
+<City><Name>Simi Valley</Name></City>
+<City><Name>Flint</Name></City>
+<City><Name>Vallejo</Name></City>
+<City><Name>Bellevue</Name></City>
+<City><Name>Columbia</Name></City>
+<City><Name>Evansville</Name></City>
+<City><Name>Springfield</Name></City>
+<City><Name>Lansing</Name></City>
+<City><Name>Abilene</Name></City>
+<City><Name>Inglewood</Name></City>
+<City><Name>Provo</Name></City>
+<City><Name>West Valley City</Name></City>
+<City><Name>Ann Arbor</Name></City>
+<City><Name>Clarksville</Name></City>
+<City><Name>Peoria</Name></City>
+<City><Name>Elk Grove</Name></City>
+<City><Name>Lafayette</Name></City>
+<City><Name>Beaumont</Name></City>
+<City><Name>Olathe</Name></City>
+<City><Name>Independence</Name></City>
+<City><Name>Costa Mesa</Name></City>
+<City><Name>Downey</Name></City>
+<City><Name>Manchester</Name></City>
+<City><Name>Clearwater</Name></City>
+<City><Name>Visalia</Name></City>
+<City><Name>West Covina</Name></City>
+<City><Name>Gainesville</Name></City>
+<City><Name>Waterbury</Name></City>
+<City><Name>Allentown</Name></City>
+<City><Name>Charleston</Name></City>
+<City><Name>Miramar</Name></City>
+<City><Name>Cary</Name></City>
+<City><Name>Roseville</Name></City>
+<City><Name>Norwalk</Name></City>
+<City><Name>Santa Clara</Name></City>
+<City><Name>South Bend</Name></City>
+<City><Name>Thornton </Name></City>
+<City><Name>Westminster</Name></City>
+<City><Name>Fairfield</Name></City>
+<City><Name>Pompano Beach</Name></City>
+<City><Name>Denton</Name></City>
+<City><Name>Burbank</Name></City>
+<City><Name>San Buenaventura</Name></City>
+<City><Name>Arvada</Name></City>
+<City><Name>Pueblo</Name></City>
+<City><Name>Athens-Clarke County</Name></City>
+<City><Name>Lowell</Name></City>
+<City><Name>Erie</Name></City>
+<City><Name>Richmond</Name></City>
+<City><Name>Norman</Name></City>
+<City><Name>Green Bay</Name></City>
+<City><Name>Berkeley</Name></City>
+<City><Name>Antioch</Name></City>
+<City><Name>Daly City</Name></City>
+<City><Name>Killeen</Name></City>
+<City><Name>Portsmouth</Name></City>
+<City><Name>Cambridge</Name></City>
+<City><Name>Charlotte Amalie</Name></City>
+<City><Name>Harare</Name></City>
+<City><Name>Bulawayo</Name></City>
+<City><Name>Chitungwiza</Name></City>
+<City><Name>Mutare</Name></City>
+<City><Name>Gweru</Name></City>
+<City><Name>Epworth</Name></City>
+</Cities>

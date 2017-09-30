@@ -1,0 +1,29 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>IntraWeb Pages Demo</title>
+</head>
+<intraweb:header>
+FormName=FormStep2
+</intraweb:header>
+
+&nbsp;
+
+
+
+<body>
+<p><font face="Arial" size="5"><b>Step 2</b></font></p>
+<p><FONT FACE="Arial">And of course, like normal PageMode IW applications, you
+can use controls to interact with the user input. Add some text to the edit
+box and click on the button:</FONT></p>
+<p><FONT FACE="Arial">{%IWEdit321%}&nbsp; {%IWButton321%}</FONT></p>
+<p>&nbsp;</p>
+<p><FONT FACE="Arial">{%IWLabel321%}</FONT></p>
+<P>&nbsp;</P>
+</body>
+
+</html>

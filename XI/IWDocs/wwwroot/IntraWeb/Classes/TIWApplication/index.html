@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>TIWApplication</title>
+  </head>
+
+  <body>
+    <p>The TIWApplication class represents a user session at the IntraWeb level, without the custom user extensions of the UserSession object. It is also used to manage the UserSession object if implemented.</p>
+    <p>The TIWApplication class is automatically managed by IntraWeb and an instance exists for each user session. It can be accessed as an argument to some events in the ServerController, and in most other places as a threadvar named WebApplication. The declaration exists in the IWApplication unit, so to access it IWApplication must exist in your uses clause.</p>
+    <h3>Example</h3>
+    <pre>procedure TFormEdit.IWAppFormCreate(Sender: TObject);<br>begin
+      <br>&nbsp; lablURL.Caption := WebApplication.ReferringURL;
+      <br>end;</pre>
+    <p></p>
+
+  </body>
+</html>

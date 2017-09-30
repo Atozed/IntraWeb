@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <h3>Supported IIS Versions
+</h3>
+    <ul>
+      <li>
+    <div>IIS 6.0, Windows Server 2003 and Windows XP Professional x64 Edition
+</div></li>
+      <li>IIS 7.0, Windows Server 2008 and Windows Vista (Home Premium, Business, Enterprise, Ultimate Editions)
+</li>
+      <li>IIS 7.5, Windows Server 2008 R2 and Windows 7
+<div></div>
+
+</li>
+    </ul>
+    <p>IIS 5.1 (Windows XP) is not supported although as of this writing it will work if you configure it properly. If you are developing on Windows XP, we suggest stand alone&nbsp;for debugging, and ISAPI for deployment on a non Windows XP server.
+</p>
+    <h3>Notes for 64 bit
+</h3>
+    <p>There are some issues. Need to run the ISAPI dll as 32 bit, because Delphi always compiles 32 bit binaries.
+</p>
+    <h3>Deployment Instructions
+</h3>
+    <ul>
+      <li>
+    <div><a href="2003\">Windows Server 2003
+</a>
+</div>
+      </li>
+    </ul>
+    <p>Other Windows&nbsp;version are similar to the above instructions. Pick the Windows version that corresponds to the same IIS version as your Windows version.
+</p>
+    <h3>Cache Dir
+</h3>
+    <p>Defaults to c:\Windows\temp. Add Everyone (default permissions).
+</p>
+    <p>Or subdir Cache, and uncheck read in IIS admin for security reasons.
+</p>
+    <p>Full control to web directory. Everyone or network, or assigned user.
+</p>
+    <h3>Multiple DLLs per Directory
+</h3>
+    <p>Even though you can deploy multiple IntraWeb ISAPI DLLs to a single directory with different names, never do this. Each IntraWeb ISAPI DLL must exist in its own directory.
+</p>
+    <h3>Packages
+</h3>
+    <p>Compile with packages off for easiest deployment.
+</p>
+    <h3>Try GuessDLL.dll
+</h3>
+    <p>GuessDLL is simplistic demo, but is useful in determining if you have met all the required steps in deploying an IntraWeb ISAPI. After ISAPIChecker is used, try GuessDLL next.
+</p>
+
+  </body>
+</html>

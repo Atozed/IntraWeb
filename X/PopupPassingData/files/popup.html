@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Popup</title>
+<meta http-equiv="expires" content="0">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+  var CallerControl = 'IWEDIT1';
+</script>
+</head>
+
+<body>
+<p>Please enter a value:</p>
+<p>
+  <input type="text" id="PopupEdit">
+</p>
+<p>
+  <input type="button" name="OKButton" value="OK" onClick="opener.document.getElementById(CallerControl).value=document.getElementById('PopupEdit').value; window.close();">
+</p>
+</body>
+</html>

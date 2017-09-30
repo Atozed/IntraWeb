@@ -1,0 +1,83 @@
+object formDialog: TformDialog
+  Left = 0
+  Top = 0
+  Width = 549
+  Height = 237
+  ConnectionMode = cmAny
+  OnRender = IWAppFormRender
+  SupportedBrowsers = [brIE, brNetscape7, brNetscape6]
+  Background.Fixed = False
+  HandleTabs = False
+  ServerOnResize = False
+  UpdateMode = umAll
+  DesignLeft = 305
+  DesignTop = 112
+  object IWMemo1: TIWMemo
+    Left = 8
+    Top = 8
+    Width = 209
+    Height = 217
+    Cursor = crAuto
+    IW50Hint = False
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = True
+    BGColor = clWebWHITE
+    Editable = True
+    Font.Color = clNone
+    Font.Enabled = True
+    Font.Size = 10
+    Font.Style = []
+    ScriptEvents = <>
+    HorizScrollBar = False
+    Required = False
+    TabOrder = 0
+    FriendlyName = 'IWMemo1'
+  end
+  object lablCount: TIWLabel
+    Left = 268
+    Top = 8
+    Width = 222
+    Height = 16
+    Cursor = crAuto
+    IW50Hint = False
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    Alignment = taLeftJustify
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Enabled = True
+    Font.Size = 10
+    Font.Style = []
+    NoWrap = False
+    AutoSize = False
+    FriendlyName = 'lablCount'
+    Caption = 'This form has been shown x times.'
+    RawText = False
+  end
+  object linkReturn: TIWLink
+    Left = 268
+    Top = 64
+    Width = 129
+    Height = 17
+    Cursor = crAuto
+    IW50Hint = False
+    ParentShowHint = False
+    ShowHint = True
+    ZIndex = 0
+    RenderSize = False
+    Color = clNone
+    Caption = 'Return to Main form.'
+    Font.Color = clNone
+    Font.Enabled = True
+    Font.Size = 10
+    Font.Style = []
+    ScriptEvents = <>
+    DoSubmitValidation = False
+    FriendlyName = 'linkReturn'
+    OnClick = linkReturnClick
+  end
+end

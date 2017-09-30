@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Request Auth Method</title>
+</head>
+<body>
+
+  <h3>
+    class function RequestAuth(aRequest: TWebRequest; var rGroup: string): boolean; 
+    virtual;</h3>
+  <p>
+    RequestAuth allows you to conrol authentication on a form by form basis. To use 
+    this functionality, override the class method in your form class. If this method 
+    is not overriden, the implied result is controlled by
+    <a href="../Authers/TIWAuther/Policy.html">TIWAuther.Policy</a>.</p>
+  <h4>
+    aRequest</h4>
+  <p>
+    The raw web request which caused this request.</p>
+  <h4>
+    rGroup</h4>
+  <p>
+    rGroup is reserved for future use when the Auther classes are expanded to 
+    support groups. Currently this property can be ignored and there is no need to 
+    set it and any value in this argument should be ignored</p>
+  <h4>
+    Result</h4>
+  <p>
+    True will cause authentication to be required to access this form. False will 
+    allow unauthenticated access. </p>
+
+</body>
+</html>

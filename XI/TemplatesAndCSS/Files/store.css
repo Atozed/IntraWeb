@@ -1,0 +1,27 @@
+.computer_list {
+	position: absolute;
+	height: 152px;
+	width: 200px;
+	left: 11px;
+	top: 105px;
+}
+.model_picture {
+
+	position: absolute;
+	height: 438px;
+	width: 750px;
+	left: 322px;
+	top: 105px;
+}
+.logo {
+
+	position: absolute;
+	height: auto;
+	width: auto;
+	left: 10px;
+	top: 7px;
+}
+body {
+	font-family: "Trebuchet MS";
+	font-size: medium;
+}

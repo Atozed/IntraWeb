@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Custom Class Demo</title>
+</head>
+<body>
+
+    <p>For this demo we will show you how to construct it from scratch. The demo is also available as a completed demo in the <a href="http://ctdemos.codeplex.com/" target="_Blank">demo respository on Codeplex
+</a>.
+</p><h3>New .NET Class Library</h3><p>UsingVisual Studio, create a new class library. The class library name and class name is up to you. For most of our demos we use "Right" (the .NET portion) and "Left" (the Delphi portion). "Middle" is the CrossTalk library itself.</p><p>
+    <img src="../index_files\NewCustomClassLib.jpg" border="0"></p><h3>The Class
+</h3><p>By default, a class named Class1 will be created. You can leave it alone, or rename it. Add a method. For example:
+</p><p><img src="../index_files\CustomClassClass.jpg" border="0"></p><p>Nowwe have a functional, albeit simple, .NET class that can be called fromDelphi using CrossTalk. Delphi strings and .NET strings are very different, but CrossTalk will handle all of the conversions for us.
+</p><h3>Build the Project
+</h3><p>Buildthe project. This is important not only to make sure our code is ok, but the CrossTalk Project Manager will need to use the output of this project.</p><h3>Delphi Project
+</h3><p>If you have an existing Delphi project that will use the .NET class you can skip this step. Otherwise create a shell Delphi project and save it. For this demo we will assume it is a VCL forms application. CrossTalk however works in packages, DLLs, console applications, and more.</p><h3>CrossTalk Project</h3>
+    <p>Select Project, CrossTalk Project Settings. A browse dialog will appear, select the directory where your Delphi project file exists. This can be a different directory if you plan to share the library among several projects, but for now it will simplify search path issues. Select a new filename such as CustomClass.ctp.</p><p>
+    <img src="../index_files\20090906-CustomClassCTP.jpg" border="0"></p><p>Click Add User. This adds a reference to a user assembly. Navigate to the output directory of the .NET project and select the assembly (DLL file).</p><p>Select the assembly, and then click Add. Select the class by name.
+</p><p><img src="../index_files\20090906-AddClass.jpg" border="0"></p><p>Click OK.
+</p><p><img src="../index_files\20090906-BeforeSave.jpg" border="0"></p><p>Click 
+    Save, and then close the window.</p>
+    <p>Returnto Delphi and add CTHelloWorld to the uses clause of the unit that you want to use the .NET class in. In our case, Unit1.pas. If the CTP file exists in the same directory as the project file, Delphi will find the CrossTalk generated units without any need to explicitly add them or modify the search path.
+</p><p><img src="../index_files\20090906-Uses.jpg" border="0"></p><p>Now we can write code to use our .NET class. Here is some example code:
+</p><p><img src="../index_files\20090906-Code.jpg" border="0"></p><p>Class1 is the name of the class, because we never renamed it from the default.<br>
+</p>
+    <h1>&nbsp;</h1>
+
+</body>
+</html>

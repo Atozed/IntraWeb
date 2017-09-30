@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>.NET Datasets</title>
+</head>
+<body>
+
+    <p>CrossTalk can allow you to access .NET DataSets.
+</p><p>Here is a DataSet with a DataTable declared in Visual Studio.
+</p><p><img src="../index_files\20090610-DataSet.jpg" border="0"></p><p>Now with CrossTalk we can easily access this DataSet.
+</p><p><img src="../index_files\20090610-DelphiCode.jpg" border="0"></p><p>Note that the Row[i] needs to be typecasted. This is true in .NET as well because Row[i] returns a DataRow, not a CountryRow. I decided that this was also a good example to show that you can cast objects as needed to descendant types just as you can in .NET.
+</p><p>You can also access the properly typed version by using the Items (also set as the default indexer) property instead and eliminate the need for typecasting.
+</p><p><img src="../index_files\20090610-DelphiCode2.jpg" border="0"></p><h3>VCL Connector
+</h3><p>In the future (Version 2.0 or later) we plan to also create VCL dataset connector that will allow you to bind Delphi databound controls to .NET DataSets.</p>
+
+</body>
+</html>

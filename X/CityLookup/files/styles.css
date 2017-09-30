@@ -1,0 +1,50 @@
+code {
+font-family:Lucida Console,monospace;
+}
+code.comment {
+color:#008000;
+font-weight:normal;
+}
+code.keyword {
+color:#0000C0;
+}
+code.parameter {
+color:#800080;
+font-weight:normal;
+}
+code.preproc {
+color:#004000;
+font-weight:normal;
+}
+code.quote {
+color:#800000;
+font-weight:normal;
+}
+code.special {
+color:#FF0000;
+font-weight:normal;
+}
+
+pre.SourceCode {
+background-color:#F5F5F5;
+border:1px solid #C0C0C0;
+color:#000000;
+font-family:Lucida Console,monospace;
+margin-left:0px;
+margin-right:20px;
+padding:5px 20px;
+white-space:pre;
+}
+pre.sourcecode li {
+margin-bottom:-10pt;
+}
+pre.SourceCode em {
+color:#9933CC;
+font-style:normal;
+white-space:pre;
+}
+pre.SourceCode2 {
+background-color:#ECFFEC;
+border:medium outset #C0C0C0;
+white-space:pre;
+}

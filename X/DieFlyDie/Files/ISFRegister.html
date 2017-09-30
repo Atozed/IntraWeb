@@ -1,0 +1,129 @@
+unit uRegister;
+
+interface
+
+uses
+  Classes, SysUtils, IWAppForm, IWApplication, IWTypes, IWHTMLControls,
+  IWCompButton, IWCompEdit, IWCompLabel, IWVCLBaseControl, IWBaseControl,
+  IWControl, IWCompRectangle, frTopBar, Controls, Forms, frProductTree;
+
+type
+  TISFRegister = class(TIWAppForm)
+    LeftTree: TISFProductTree;
+    TopBar: TISFTopBar;
+    rectMain: TIWRectangle;
+    rectLeft: TIWRectangle;
+    IWLabel5: TIWLabel;
+    IWLabel6: TIWLabel;
+    IWLabel7: TIWLabel;
+    edRegisterUserName: TIWEdit;
+    edRegisterPassword: TIWEdit;
+    edRegisterRepeatPassword: TIWEdit;
+    edRegisterEmail: TIWEdit;
+    IWLabel10: TIWLabel;
+    lblNameError: TIWLabel;
+    rectTitle: TIWRectangle;
+    lnkSubmit: TIWLink;
+    lblRegisterNew: TIWLabel;
+    lblEMailError: TIWLabel;
+    lblPassError: TIWLabel;
+    lblConfirmPassError: TIWLabel;
+    procedure lnkSubmitClick(Sender: TObject);
+    procedure IWAppFormCreate(Sender: TObject);
+  public
+  protected
+    function Validate : Boolean ;
+    procedure ClearErrorMessages ; 
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  ServerController,
+  uDBInterface;
+
+procedure TISFRegister.lnkSubmitClick(Sender: TObject);
+var
+  LError : string;
+begin
+  // Register new user
+
+  if Validate then
+    begin
+      ClearErrorMessages; 
+      if AddUser(edRegisterUserName.Text, edRegisterPassword.Text, edRegisterRepeatPassword.Text,
+                  edRegisterEmail.Text, LError) then
+      begin
+//         UserSession.UserName := edRegisterUserName.Text;
+         UserSession.UserPassword := edRegisterPassword.Text;
+         UserSession.EMail := edRegisterEmail.Text;
+         UserSession.AfterLogin;
+      end
+      else
+         lblNameError.Caption := LError;
+    end;
+
+end;
+
+procedure TISFRegister.IWAppFormCreate(Sender: TObject);
+begin
+  LeftTree.LoadTree;
+  lblNameError.Caption := '';
+  lblEMailError.Caption := '';
+  lblPassError.Caption := '';
+  lblConfirmPassError.Caption := '';
+end;
+
+function TISFRegister.Validate: Boolean;
+begin
+  Result := true;
+  ClearErrorMessages;
+  if (Trim(edRegisterUserName.Text) = '') then
+    begin
+      lblNameError.Caption := '''Name'' must not be left blank.';
+      Result := false;
+    end;
+  if (Trim(edRegisterEmail.Text) = '') then
+    begin
+      lblEMailError.Caption := '''EMail'' must not be left blank.';
+      Result := false;
+    end;
+  if (edRegisterPassword.Text = '') then
+    begin
+      lblPassError.Caption := '''Password'' must not be left blank.';
+      Result := false;
+    end;
+  if (Result = false) then 
+    begin
+      Exit;
+    end;
+  if (edRegisterPassword.Text <> edRegisterRepeatPassword.Text) then
+    begin
+      lblConfirmPassError.Caption := 'Password fields do not match.';
+      Result := false;
+    end;
+end;
+
+procedure TISFRegister.ClearErrorMessages;
+begin
+  if lblNameError.Caption <> '' then
+    begin
+     lblNameError.Caption := '';
+    end;
+  if lblEMailError.Caption <> '' then
+    begin
+     lblEMailError.Caption := '';
+    end;
+  if lblPassError.Caption <> '' then
+    begin
+     lblPassError.Caption := '';
+    end;
+  if lblConfirmPassError.Caption <> '' then
+    begin
+     lblConfirmPassError.Caption := '';
+    end;
+end;
+
+end.

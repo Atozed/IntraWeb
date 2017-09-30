@@ -1,0 +1,21 @@
+<html>
+  <head>
+  </head>
+<body><h3>Prefix
+</h3><p>The prefix for HTTP Query tags is HTTP.
+</p><h3>Example
+</h3>
+<p>{%%http.First%%}
+</p>
+<h3>Description
+</h3>
+    <p>HTTP variables are optionally passed as part of the URL. For example:
+</p>
+    <blockquote style="MARGIN-RIGHT: 0px" dir="ltr">
+    <p><a href="http://www.mycompany.com/team/Profile.html?First=John&amp;Last=Smith">http://www.mycompany.com/team/Profile.html?First=John&amp;Last=Smith
+</a></p>
+    </blockquote>
+    <p>{%%HTTP.First%%} would produce John, and {%%HTTP.Last%%} would produce Smith. Any name not found in the URL query list, will be replaced with an empty string.
+</p>
+</body>
+</html>

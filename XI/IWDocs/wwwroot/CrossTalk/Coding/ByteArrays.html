@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Byte Arrays</title>
+</head>
+<body>
+
+    <p>Byte arrays ( byte[]in C# ) are used by many .NET classes. In some ways byte arrays might be considered an essential type of .NET. Because of this, CrossTalk automatically generates a byte array wrapper for all CrossTalk projects.This also causes a CTmscorlib.pas file to be generated for all CrossTalk projects, even no types in MSCorlib have been added to the CrossTalk project.
+</p><p>[] are not valid characters in Delphi class names, so byte arrays are named ByteArray. A default property is also automatically added by CrossTalk.
+</p><h3>Example Code</h3><p>procedure TestByteArray;<br>var<br>&nbsp; x: ByteArray;<br>&nbsp; i: integer;<br>begin<br>&nbsp; x := ByteArray.Create(5);<br>&nbsp; for i := 0 to x.Length - 1 do begin<br>&nbsp;&nbsp;&nbsp; x[i] := i;<br>&nbsp; end;<br>&nbsp; WriteLn(x[2]);<br>end;</p> 
+
+</body>
+</html>

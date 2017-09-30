@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <ol>
+      <li>URL is resolved and matched against content in the wwwroot and subdirectories. If its extension is .html, it is treated as an IW Page. If not, processing is stopped and the file is served as static content.
+</li>
+      <li>A default template is searched for if one is not specified in the .cfg file.
+</li>
+      <li>The IWP and Template files are merged.
+</li>
+      <li>If the Template file is cascading, the templates are merged until no more cascading parents are found.
+</li>
+      <li>HTTP and Cookie tags are processed seperately. This allows these tags to be embedded inside attributes of other tags, allowing user data to affect other tag functionality.
+</li>
+      <li>Remaining tags are processed.
+</li>
+      <li>Resulting HTML is sent to the browser.
+</li>
+    </ol>
+
+  </body>
+</html>

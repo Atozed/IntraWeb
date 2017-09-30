@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>IntraWeb Pages Demo</title>
+</head>
+
+<body>
+
+<p><font face="Arial" size="5"><b>IntraWeb 6 presents.....</b></font></p>
+<p>&nbsp;</p>
+<p align="center"><b><font face="Arial" size="7">I</font><font face="Arial" size="4">ntra</font><font face="Arial" size="7">W</font><font face="Arial" size="4">eb</font><font face="Arial" size="7">P</font><font face="Arial" size="4">ages</font></b></p>
+<p align="center">&nbsp;</p>
+<p align="left"><font face="Arial">IntraWeb 6 expands it's PageMode
+functionality to bring you IWP's (IntraWeb Pages) which allow you to design
+webpages with your favorite web designer application and let IW add the dynamic
+content to it.</font></p>
+<p align="left"><font face="Arial">The difference between this new feature and
+what existed in previous versions is that you now trigger the functionality from
+the static pages. That is, you design the pages and then IntraWeb processes them
+inserting the controls and implementing the server-side actions. If you are
+familiar with PageMode applications and TemplateProcessors, you know that you
+design the form and associate a template file with it. The form then replaces
+the tags in the template (the form requests the template in some way). You can
+think of IWP's as the reverse, i.e., the template requests the form in your
+project.&nbsp;</font></p>
+<p align="left"><FONT FACE="Arial">Two key differences are that:</FONT></p>
+<p align="left"><FONT FACE="Arial">1. You do not need to produce dynamic content
+or associate a form with each template (IWP) file. For example this file does
+not have a corresponding form in the IWPDemo project.</FONT></p>
+<p align="left"><FONT FACE="Arial">2. You do not need to place ANY code in your
+ISAPI or DSO WebBroker application to return contents. Just drop two components
+on the WebModule.</FONT></p>
+<p align="left"><FONT FACE="Arial">Note: Although in this example filenames with
+the .iwp extension are used, you can use any type of extension, just as long as
+you associate it with the correct application (see the manual for more
+information).</FONT></p>
+<p align="left"><font face="Arial">To see how all this works, <a href="step1.iwp"> click here</a></font></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+</body>
+
+</html>

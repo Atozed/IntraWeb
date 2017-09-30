@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CrossTalk Project Files - *.ctp </title>
+</head>
+<body>
+
+<p>The .CTP extension defines a CrossTalk Project file. CTP Projects list assemblies and classes that you want to use in your Delphi code. The CrossTalk Project Manager uses the project file to generate Delphi wrappers. Generally developers should use the CTP Manager to modify CTP files. This topic documents the internal format.</p><h3>Sample CTP File<br>
+</h3><p style="MARGIN-LEFT: 40px">3.0<br><br>GAC:System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089<br>USER:C:\source\CrossTalk\source\CrossTalkRightTest\bin\Debug\CrossTalkRightTest.dll<br><br>#You can stick comments in this area with #<br>CrossTalkRightTest.DataSet1+CountryDataTable<br>CrossTalkRightTest.DataSet1+CountryRow<br>CrossTalkRightTest.DataSet1<br>CrossTalkRightTest.MyClass<br>System.Data.DataRow<br>System.Data.DataRowCollection<br>System.Text.StringBuilder<br>System.Xml.XmlReader<br>System.Xml.XmlReaderSettings<br>System.Xml.ConformanceLevel<br>System.Xml.XmlNodeType<br>
+</p><p>Currentlythe CTP file consists of 3 sections, each terminated by a blank line orend of file. The sections in order are Header, Assembly List, and Class List.
+</p><h3>Header Section<br>
+</h3><p>The header currently contains only one item.
+</p><p>The first line contains the version of the project file. This enables CrossTalk to verify that it knows how to read the data properly. Currently this must be set to 3.
+</p><h3>Assembly List Section<br>
+</h3><p>This section contains a list of assemblies to load. Classes listed in the next section must exist in assemblies listed here, otherwise CrossTalk cannot locate them. The only exception to this rule is mscorlib which isalready loaded and contains many of the classes in the System.x namespace. string, and StringBuilder for example are in mscorlib.
+</p><p>Assemblies are listed one per line. There are two types of entries classified by their prefix of GAC: or USER:
+</p><p>If the prefix is GAC:, it must be followed by a fully qualified name (FQN) of an assembly in the GAC.
+</p><p>Example:
+</p><p style="MARGIN-LEFT: 40px">GAC:System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+</p><p>For user assemblies the full path and name are specified instead.
+</p><p>Example:<br>
+</p><p style="MARGIN-LEFT: 40px">USER:C:\source\CrossTalk\source\CrossTalkRightTest\bin\Debug\CrossTalkRightTest.dll
+</p><p>The path listed here is only used on the developer machine by the CTP Manager. At runtime a different path is used for loading the user assembly.
+</p><h3>Class List Section
+</h3><p>The class list lists classes that you wish to access from Delphi. They mustbe in assemblies listed in the assembly list, or mscorlib. Classes are listed one per line and must be fully qualified.
+</p><p>Example:
+</p><p style="MARGIN-LEFT: 40px">System.Xml.XmlReader
+</p><p>Note that .NET uses + for nested classes.
+</p><p style="MARGIN-LEFT: 40px">CrossTalkRightTest.DataSet1+CountryRow</p>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+This is the frame which appeares on the left side of every form, and allows navigation <br>
+to different categories of products. <br>
+
+<br>
+<b>W</b>hat <B>Y</B>ou <B>S</b>ee: <br>
+<br>
+<br>
+This is what you see in Delphi's designer: 
+<br>
+<br>
+<img src = '.\Files\WYSfrProductTree.JPG'>
+
+<BR>
+<br>
+
+<b>W</b>hat <B>Y</B>ou <B>G</b>et : <br>
+<br>
+This is what you have at runtime: 
+<br>
+<br>
+<img src = '.\Files\WYGfrProductTree.JPG'>
+<br>
+<br>
+
+
+<H3><FONT color=red>The Source Code</FONT></H3> <br>
+<br>
+<br>
+
+
+<i>
+unit frProductTree; <br>
+<br>
+interface <br>
+
+uses <br>
+&nbsp;&nbsp;  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,		<br>
+&nbsp;&nbsp;  Dialogs, IWBaseControl, IWControl, IWCompLabel,									<br>
+&nbsp;&nbsp;  IWHTMLControls, IWVCLBaseControl, IWExtCtrls, IWHTMLTag, IWCompRectangle,         <br>
+&nbsp;&nbsp;  IWVCLBaseContainer, IWContainer, IWRegion;                                        <br>
+                                                                                    <br>
+type                                                                                <br>
+&nbsp;&nbsp;  TISFProductTree = class(TFrame)                                                   <br>
+</i> <font color = grey>
+//Every frame used in IntraWeb must have a frame region on it <br>
+</FONT>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;    IWFrameRegion: TIWRegion;                                                       <br>
+</i><font color = grey>
+//The Die, Fly! Die logo <br>
+</FONT><i>
+&nbsp;&nbsp;&nbsp;&nbsp;    imgLogo: TIWImageFile;                                                          <br>
+</i><font color = grey>
+//Link to documentation page <br>
+</FONT>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;    lnkSource: TIWLink;                                                             <br>
+&nbsp;&nbsp;&nbsp;&nbsp;    rectRight: TIWRectangle;                                                        <br>
+&nbsp;&nbsp;&nbsp;&nbsp;    procedure lnkSourceClick(Sender: TObject);                                      <br>
+&nbsp;&nbsp;  private                                                                           <br>
+&nbsp;&nbsp;&nbsp;&nbsp;    { Private declarations }                                                        <br>
+&nbsp;&nbsp;&nbsp;&nbsp;    procedure DoClick(Sender : TObject);                                            <br>
+&nbsp;&nbsp;&nbsp;&nbsp;    procedure DoLinkHTMLTag(ASender: TObject; ATag: TIWHTMLTag);                    <br>
+&nbsp;&nbsp;  public                                                                            <br>
+&nbsp;&nbsp;    { Public declarations }                                                         <br>
+&nbsp;&nbsp;&nbsp;&nbsp;    procedure LoadTree;                                                             <br>
+&nbsp;&nbsp;  end;                                                                              <br>
+
+implementation                                                                      <br>
+                                                                                    <br>
+{$R *.dfm}                                                                          <br>
+uses                                                                                <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  dmDieFlyDie,                                                                      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  IWColor, IWAppForm, IWForm, IWInit,                                               <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  uDBInterface,                                                                     <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  uDisplayCategory,                                                                 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;  ServerController, IWApplication;                                                  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;                                                                                    <br>
+</i>                                                                                <br>
+                                                                                    <br>
+<font color = grey>
+//This is the event which is triggered when a link is clicked                         <br>
+//Release the current form, and open the one which displays the chosen category   	<br>
+</FONT>
+<br>
+<br>
+<i>
+procedure TISFProductTree.DoClick(Sender: TObject);                                 <br>
+begin                                                                               <br>
+&nbsp;&nbsp;  if not (Sender is TIWLink) then                                      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     Exit;                                                 <br>
+<br>
+</i><font color = grey>
+// Keep the category ID in the User Session                                        <BR> 
+</font><i>
+&nbsp;&nbsp;  UserSession.CurrentCategoryID := TIWLink(Sender).Tag;                             <br>
+&nbsp;&nbsp;  TIWAppForm(WebApplication.ActiveForm).Release;                                    <br>
+&nbsp;&nbsp;  TISFDisplayCategory.Create(WebApplication).Show;                                  <br>
+end;                                                                                <br>
+</I>
+
+<br>
+<br>
+<font color = grey>
+//This procedure queries the database 												  <br>
+//for existing categories, and then programaticaly builds a TIWLink for each one.     <br>
+//It is called by the form who owns the frame.
+</FONT>
+<br>
+<br>
+<i>
+procedure TISFProductTree.LoadTree;                                                 <br>
+var                                                                                 <br>
+&nbsp;&nbsp;   f : integer;                                                                      <br>
+&nbsp;&nbsp;   LTop : integer;                                                                   <br>
+&nbsp;&nbsp;   LLink : TIWLink;                                                                  <br>
+begin                                                                               <br>
+&nbsp;&nbsp;   for f := Pred(ControlCount) downto 1 do                                           <br>
+&nbsp;&nbsp;&nbsp;&nbsp;      if Controls[f] is TIWControl then                                              <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        TIWControl(Controls[f]).Free;                                               <br>
+                                                                                    <br>
+&nbsp;&nbsp;  LTop := 160;                                                                      <br>
+&nbsp;&nbsp;                                                                                    <br>
+&nbsp;&nbsp;  with dmFly.qrCategories do                                                        <br>
+&nbsp;&nbsp;  begin                                                                             <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     Close;                                                                         <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     SQL.Clear;                                                                     <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     SQL.Add('SELECT ID, Name FROM Categories');                                    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     Open;                                                                          <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     while not Eof do                                                               <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     begin                                                                          <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        LLink := TIWLink.Create(Self);                                              <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        LLink.Parent := Self.IWFrameRegion;                                         <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        with LLink do                                                               <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        begin                                                                       <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Caption := FieldByName('Name').AsString;                                 <br>
+</i><font color = grey>
+// Keep the category's ID in the Tag property. <br>
+</FONT>
+<i>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Tag := FieldByName('ID').AsInteger;                                      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Name := Format('CategoryLink%d', [Tag]);                                 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Left := 10;                                                              <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Top := LTop;                                                             <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           OnClick := DoClick;                                                      <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           OnHTMLTag := DoLinkHTMLTag;                                              <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Font.FontName := 'Verdana';                                              <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Font.Color := clWebGOLDENROD;                                            <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Font.Size := 10;                                                         <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Font.Style := [fsBold];                                                  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           Font.CSSStyle := 'body';                                                 <br>
+                                                                                    <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           LTop := LTop + Height + 2;                                               <br>
+&nbsp;&nbsp;&nbsp;&nbsp;        end;                                                                        <br>
+&nbsp;&nbsp;&nbsp;&nbsp;        Next;                                                                       <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     end;                                                                           <br>
+&nbsp;&nbsp;&nbsp;&nbsp;     Close;                                                                         <br>
+&nbsp;&nbsp;  end;                                                                              <br>
+end;                                                                                <br>
+</I>
+                                                                                    <br>
+<i>                                                                                    <br>
+procedure TISFProductTree.lnkSourceClick(Sender: TObject);                          <br>
+begin                                                                               <br>
+&nbsp;&nbsp;  UserSession.LastVisitedForm := TIWAppFormClass(WebApplication.ActiveForm.ClassType);   <br>
+&nbsp;&nbsp;  TIWAppForm(WebApplication.ActiveForm).Release;                          <br>
+&nbsp;&nbsp;  TDocumentation.Create(WebApplication).Show;                             <br>
+                                                                                  <br>
+end;                                                                                <br>
+                                                                                    <br>
+end.
+</I> 			                                                                <br>

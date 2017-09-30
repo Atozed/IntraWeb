@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Deploying a CrossTalk Based Project</title>
+</head>
+<body>
+
+    <p>We have worked to make deployment of CrossTalk applications as easy as possible.
+</p><h3>Don't Panic!
+</h3><p>While these instructions may seem complicated, they are provided to provide you with options and a deep understanding of the options and requirements.
+</p><h3>XCopy Deployment</h3>
+    <p>CrossTalk does support xcopy deployment so that it is possible to deploy without any additional installation steps. There are no registry entries required, and no COM is used so there are no COM DLLs to be registered.</p><h3>Requirements
+</h3><p>The following dependencies must be installed on the target machine.
+</p><ul><li><span style="FONT-WEIGHT: bold">.NET 4.0
+</span>- .NET 4.0 is a superset of .NET 3.5 and .NET 2.0. Because of this, you can use 
+        .NET 2.0 or .NET 3.5 assemblies.</li><li><span style="FONT-WEIGHT: bold">CrossTalk Libraries
+</span> - A set of DLL files that are CrossTalk.</li><li><span style="FONT-WEIGHT: bold">Visual C++ 
+            2010 Runtime Libraries (VCRT)
+</span> - These DLL files consist of less than 1 MB.
+</li><li><span style="FONT-WEIGHT: bold">(Optional) Custom .NET DLL Libraries
+</span>- You mave have additional libraries that you have developed for use with CrossTalk. Some CrossTalk projects may only use 
+            libraries that are part of&nbsp; .NET.</li></ul><h3>.NET 4.0</h3><p>Deploying.NET 
+    4.0 requires an installation program to be run. However many programs use .NET, and the chances that the user has .NET already is quite high.
+</p><h3>CrossTalk Libraries</h3><p>The CrossTalk libraries (CrossTalkMiddle.dll and 
+    CrossTalkRight.dll) must be deployed in your application or library directory.</p><h3>VCRT Libraries
+</h3><p>The VCRT libraries consist of three DLL files, and unfortunately are a bit more complex to deploy.
+</p>
+    <p>There are two options for deploying the VCRT libraries:
+</p><ol><li>Deploy in application directory.</li><li>Install VCRT.</li></ol><h3>VCRT - Deploy in <span style="FONT-WEIGHT: bold">Application
+</span>Directory
+</h3>
+    <p>Copy msvcp100.dll and mvcr100.dll to your application directory. These DLLs must 
+        be in the directory of the host EXE. For applications this is easy. However if 
+        your project is a DLL, the VCRT DLLs must exist in the directory of the EXE 
+        which uses your DLL, which may not be the same as your DLL.</p>
+    <h3>VCRT - Install
+</h3><p style="TEXT-ALIGN: left">Have your users run the VCRT installation which is available on the Microsoft web site (<a 
+            href="http://www.microsoft.com/downloads/en/details.aspx?FamilyID=a7b7a05e-6de6-4d3a-a423-37bf0912db84" 
+            target="_Blank">x86</a>).
+        Do not use the x64 version even if you are running on a 64 bit Operating System. 
+        This is because currently all Delphi applications are 32 bit, and thus depend on 
+        the x86 versions.</p><p>During development you need not worry about deploying or copying the VCRT libraries. The CrossTalk installer 
+        manages the VCRT libraries for you.</p>
+    <h3>Your Custom Libraries
+</h3><p>If you have developed custom libraries you can deploy them using either of these methods:
+</p><ul><li>Install them into the GAC
+</li><li>In the application directory
+</li></ul><p>Installing them into the GAC makes them available to all applications, however GAC access requires extra steps and administrative privileges.
+</p><p>Deploying them in the application directory requires no extra installation steps.</p>
+
+</body>
+</html>

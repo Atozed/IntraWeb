@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Indexed Properties</title>
+</head>
+<body>
+
+    <p>Delphi cannot overload indexed properties. So CrossTalk adds suffixes to the overloads 
+        to cause differentiation.
+</p><p>In System.Xml.XmlReader the Items property is declared as:</p><div style="MARGIN-LEFT: 40px">
+    <pre>public virtual string this[string name]
+public virtual string this[int i]
+public virtual string this[string name, string namespaceURI] </pre>
+</div><p>This declares it to be the default indexer as well. Internally it declares its as "Item" and that is how CrossTalk will translate it. However the second problem is that it uses overloading, which Delphi does not support on indexed properties. Because of this, CrossTalk will add a numeric suffix starting with the second occurrence.
+</p>
+    <pre style="MARGIN-LEFT: 40px">property Item[const ai: Integer]: string read ItemRead;
+property Item1[const aname: string]: string read Item1Read;
+property Item2[const aname: string; const anamespaceURI: string]: string read Item2Read;</pre>
+
+</body>
+</html>

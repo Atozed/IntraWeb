@@ -1,0 +1,18 @@
+﻿body {
+	font-family: Arial, Helvetica, sans-serif
+}
+
+.news {
+	
+	font-size:x-small;
+}
+
+.title {
+	font-size: large;
+	color: #008000;
+}
+
+.team {
+	font-size: small;
+	color: #FF0000;
+}

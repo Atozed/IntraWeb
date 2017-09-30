@@ -1,0 +1,37 @@
+object IWServerController: TIWServerController
+  OldCreateOrder = False
+  AuthBeforeNewSession = False
+  AllowSubFolders = False
+  AppName = 'WebMailMobile'
+  CacheExpiry = 2
+  ComInitialization = ciNone
+  Compression.Enabled = False
+  Compression.Level = 6
+  Description = 'WebMail for PDA and WAP Phones'
+  EnableImageToolbar = False
+  ExceptionDisplayMode = smAlert
+  ExecCmd = 'EXEC'
+  HistoryEnabled = False
+  InternalFilesURL = '/'
+  Browser32Behaviour.Netscape4As32 = True
+  Browser32Behaviour.Netscape6As32 = True
+  Browser32Behaviour.IExplorer4As32 = True
+  Port = 8888
+  ReEntryOptions.AutoCreateSession = False
+  RestrictIPs = True
+  ServerResizeTimeout = 0
+  SessionTrackingMethod = tmURL
+  ShowResyncWarning = True
+  SessionTimeout = 10
+  SupportedBrowsers = [brUnknown, brIE, brNetscape7, brOpera, brIE4, brNetscape6, brNetscape4, brOther, brHTML32Test]
+  SSLOptions.NonSSLRequest = nsAccept
+  SSLOptions.Port = 0
+  ThreadPoolSize = 32
+  UnknownBrowserAction = ubReject
+  Version = 'Internal'
+  OnNewSession = IWServerControllerBaseNewSession
+  Left = 367
+  Top = 314
+  Height = 310
+  Width = 342
+end

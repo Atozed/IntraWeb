@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <PersonalityInfo>
+    <Option>
+      <Option Name="Personality">Default.Personality</Option>
+      <Option Name="ProjectType"></Option>
+      <Option Name="Version">1.0</Option>
+      <Option Name="GUID">{57B53E2F-E236-4DF5-9C1F-4B3694C9A1D6}</Option>
+    </Option>
+  </PersonalityInfo>
+  <Default.Personality>
+    
+    <Projects>
+      <Projects Name="RaveDemo.exe">RaveDemo.bdsproj</Projects>
+      <Projects Name="RaveDemoDLL.dll">RaveDemoDLL.bdsproj</Projects>
+      <Projects Name="Targets">RaveDemo.exe RaveDemoDLL.dll</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>
+</BorlandProject>

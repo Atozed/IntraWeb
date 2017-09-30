@@ -1,0 +1,44 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{0d6b70f5-d7ef-4d0b-a8e4-293ceca73938}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Projects Include="CityLookup.dproj" />
+    <Projects Include="CityLookupIsapi.dproj" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="CityLookup">
+    <MSBuild Projects="CityLookup.dproj" Targets="" />
+  </Target>
+  <Target Name="CityLookup:Clean">
+    <MSBuild Projects="CityLookup.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="CityLookup:Make">
+    <MSBuild Projects="CityLookup.dproj" Targets="Make" />
+  </Target>
+  <Target Name="CityLookupIsapi">
+    <MSBuild Projects="CityLookupIsapi.dproj" Targets="" />
+  </Target>
+  <Target Name="CityLookupIsapi:Clean">
+    <MSBuild Projects="CityLookupIsapi.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="CityLookupIsapi:Make">
+    <MSBuild Projects="CityLookupIsapi.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="CityLookup;CityLookupIsapi" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="CityLookup:Clean;CityLookupIsapi:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="CityLookup:Make;CityLookupIsapi:Make" />
+  </Target>
+  <Import Condition="Exists('$(MSBuildBinPath)\Borland.Group.Targets')" Project="$(MSBuildBinPath)\Borland.Group.Targets" />
+</Project>

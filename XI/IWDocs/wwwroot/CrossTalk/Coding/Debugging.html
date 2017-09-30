@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Debugging .NET Code from Delphi </title>
+</head>
+<body>
+
+    <p>You can debug .NET code even though your main program is written in Delphi.You will need Visual Studio, but even the free Express Edition should work.
+</p><h3>In Delphi</h3><p>Compile your Delphi application to make sure the .exe is current.
+</p><h3>In Visual Studio</h3><p>Make sure that target is Debug and not Release for the assemblies you want to debug.</p><p>Now modify the project properties for any one of the .NET assemblies used via CrossTalk. Select the Debugging tab.
+</p><p><img src="../index_files\20090611-DebugOptions.jpg" border="0"></p><p>In the Command field, enter the full path and name of your Delphi executable. Now select the same assembly as your start up project and run from Visual Studio. Set some breakpoints. Now run the solution. Visual Studio will launch your Delphi application, and when it makes calls via CrossTalk into your assemblies the breakpoints you set will betriggered. From there you can set watches, or perform any other Visual Studio debugging action.</p>
+
+</body>
+</html>

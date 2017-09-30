@@ -1,0 +1,198 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{79e82c42-209d-47ff-bc14-46bef9e19f66}</ProjectGuid>
+    <MainSource>Features.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Features.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">1031</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">Features.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="Features.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="ActiveXForm.pas">
+      <Form>formActiveX</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="AlignAnchorsForm.pas">
+      <Form>formAlignAnchor</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="CalendarForm.pas">
+      <Form>formCalendar</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="ChartForm.pas">
+      <Form>formChart</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="ClientSideDataForm.pas">
+      <Form>formClientSideData</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Combobox.pas">
+      <Form>formComboboxes</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="ContentWindow.pas">
+      <Form>formContentWindow</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="DownloadForm.pas">
+      <Form>formDownload</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="DynamicGridForm.pas">
+      <Form>formDynamicGrid</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="EditGridForm.pas">
+      <Form>formEditGrid</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="FileUploadForm.pas">
+      <Form>formFileUploadDemo</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Flash.pas">
+      <Form>formFlash</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="FlowForm.pas">
+      <Form>formFlow</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Global.pas" />
+    <DCCReference Include="GridForm.pas">
+      <Form>formGrids</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="JavaApplet.pas">
+      <Form>formJavaApplet</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Main.pas">
+      <Form>formMain</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="MapForm.pas">
+      <Form>formMap</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="MenuFrame.pas">
+      <Form>framMenu</Form>
+      <DesignClass>TFrame</DesignClass>
+    </DCCReference>
+    <DCCReference Include="MessageDialogs.pas">
+      <Form>formMessageDialogs</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="MPEGForm.pas">
+      <Form>formMPEG</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="pdfDemoForm.pas">
+      <Form>formPdfDemo</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="QuickTimeForm.pas">
+      <Form>formQuickTime</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="RegionForm.pas">
+      <Form>formRegion</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="ResizeForm.pas">
+      <Form>formResize</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="ServerController.pas">
+      <Form>IWServerController</Form>
+      <DesignClass>TDataModule</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Simple.pas">
+      <Form>formSimple</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="StyleSheetForm.pas">
+      <Form>formStyleSheets</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="SubTemplatesForm.pas">
+      <Form>formSubTemplates</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="TemplateForm.pas">
+      <Form>formTemplate</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="Threaded.pas">
+      <Form>formThreaded</Form>
+      <DesignClass>TIWFormModuleBase</DesignClass>
+    </DCCReference>
+    <DCCReference Include="TimerForm.pas">
+      <Form>formTimer</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+    <DCCReference Include="TreeViewForm.pas">
+      <Form>formTreeView</Form>
+      <DesignClass>TIWAppForm</DesignClass>
+    </DCCReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

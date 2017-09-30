@@ -1,0 +1,68 @@
+
+.plain_text{ 
+	line-height: 15pt;
+	font-size: 11; 
+	font-family: verdana; 
+	width: 321; 
+	height: 150; 
+	border-style: none; 
+	border-width: none; 
+}
+
+.memo_text{
+	border-style:none; 
+	border-width:none; 
+	font-size: 9; 
+	font-family: verdana; 
+	overflow: hidden; 
+	width: 321; 
+	height: 201; 
+}
+A.frame:visited {
+	COLOR : lightgrey; 
+	text-decoration: none; 	
+	font-weight: bold; 
+}
+A.frame:link {	
+	COLOR: lightgrey; 
+	text-decoration: none; 		
+	font-weight: bold; 
+}
+A.frame:hover {	
+	COLOR: white;  
+	text-decoration: underline; 
+	font-weight: bold; 
+}
+A.frame:active {
+	color : lightgrey; 
+	text-decoration: none; 	
+	font-weight: bold; 
+}
+A.body:visited {
+	COLOR : yellow; 
+	text-decoration: none; 		
+	font-size: 13; 
+	font-weight: bold; 
+	font-family: Verdana;
+}
+A.body:link {
+	color: yellow; 
+	text-decoration: none; 		
+	font-size: 13; 
+	font-weight: bold; 
+	font-family: Verdana;	
+}
+A.body:hover {
+	color : white; 
+	font-size: 13; 
+	text-decoration: underline; 
+	font-weight: bold; 
+	font-family: Verdana;		
+}
+A.body:active {
+	color: yellow; 
+	text-decoration: none; 		
+	font-size: 13; 
+	font-weight: bold; 
+	font-family: Verdana;	
+}

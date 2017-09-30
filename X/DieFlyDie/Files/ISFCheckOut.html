@@ -1,0 +1,129 @@
+unit uCheckOut;
+
+interface
+
+uses
+  Classes, SysUtils, IWAppForm, IWApplication, IWTypes, IWCompLabel,
+  frProductTree, Controls, Forms, frTopBar, IWGrids, IWVCLBaseControl,
+  IWBaseControl, IWControl, IWCompRectangle;
+
+type
+  TISFCheckOut = class(TIWAppForm)
+    rectMain: TIWRectangle;
+    grdItems: TIWGrid;
+    TopBar: TISFTopBar;
+    LeftTree: TISFProductTree;
+    rectLeft: TIWRectangle;
+    lblTitle: TIWLabel;
+    rectTitle: TIWRectangle;
+    lblTotal: TIWLabel;
+    procedure IWAppFormCreate(Sender: TObject);
+  public
+  protected
+    procedure LoadOrder;
+    procedure FormatGrid;
+    procedure SetGridColors;
+  end;
+
+implementation
+
+{$R *.dfm}
+
+uses
+  ServerController, dmDieFlyDie, DBISAMTb,
+  uCOnstants, Graphics;
+
+
+procedure TISFCheckOut.FormatGrid;
+var
+  f : Integer;
+begin
+  // format grid
+  with grdItems do
+    begin
+      RowCount := 1;
+
+      Cell[0, 0].Width := '40%';
+      Cell[0, 0].Text := 'Name';
+
+      Cell[0, 1].Width := '20%';
+      Cell[0, 1].Text := 'Quantity';
+
+      Cell[0, 2].Width := '20%';
+      Cell[0, 2].Text := 'Price';
+
+      Cell[0, 3].Width := '20%';
+      Cell[0, 3].Text := 'Subtotal';
+
+      for f := 0 to ColumnCount - 1 do
+        begin
+          Cell[0, f].Font.Style := [fsBold];
+          Cell[0, f].Alignment := taCenter;
+          Cell[0, f].Height := IntToStr(lcHeaderCellHeight);
+        end;
+    end;
+end;
+
+procedure TISFCheckOut.IWAppFormCreate(Sender: TObject);
+begin
+  LeftTree.LoadTree;
+  FormatGrid;
+  LoadOrder;
+  SetGridColors;
+end;
+
+procedure TISFCheckOut.LoadOrder;
+begin
+
+  with dmFly.qrOrderDetails, grdItems do
+    begin
+      CLose;
+      SQL.Clear;
+      SQL.Add('SELECT NAME, QUANTITY, PRICE');
+      SQL.Add('FROM ORDER_DETAILS, PRODUCTS');
+      SQL.Add('WHERE ORDERID = :AOrderID');
+      SQL.Add('AND PRODUCTID = PRODUCTS.ID');
+      ParamByNAme('AOrderID').AsInteger := UserSession.CurrentOrderID;
+      Open;
+
+      while not Eof do
+        begin
+          RowCount := RowCount + 1;
+          Cell[RowCount - 1, 0].Text := FieldByName('NAME').AsString;
+          Cell[RowCount - 1, 0].Alignment := taLeftJustify;
+
+          Cell[RowCount - 1, 1].Text := FieldByName('QUANTITY').AsString;
+          Cell[RowCount - 1, 1].Alignment := taRightJustify;
+
+          Cell[RowCount - 1, 2].Text := FormatFloat('###,###,###,###.00', FieldByName('Price').AsFloat);
+          Cell[RowCount - 1, 2].Alignment := taRightJustify;
+
+          Cell[RowCount - 1, 3].Text := FormatFloat('###,###,###,###.00',
+            FieldByName('QUANTITY').AsInteger * FieldByName('Price').AsFloat);
+          Cell[RowCount - 1, 3].Alignment := taRightJustify;
+
+          Next;
+        end;
+      Close;
+    end;
+
+end;
+
+procedure TISFCheckOut.SetGridColors;
+var
+  f : Integer;
+  g : Integer;
+begin
+  for f := 0 to Pred(grdItems.RowCount) do
+     for g := 0 to Pred(grdItems.ColumnCount) do
+        if f in [0, Pred(grdItems.RowCount)] then
+           grdItems.Cell[f, g].BGColor := lcHeaderColor
+        else
+           if f mod 2 = 0 then
+              grdItems.Cell[f, g].BGColor := lcEvenColor
+           else
+              grdItems.Cell[f, g].BGColor := lcOddColor;
+
+end;
+
+end.

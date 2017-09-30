@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title>API Changes
+</title>
+  </head>
+
+  <body>
+    <p>We are going to great lengths to keep IntraWeb XI as compatible with IntraWeb 10 as possible. We have made a few changes. However for most changes we have put in place stream convertors to upgrade automatically. Our goal is that most projects can be converted to IntraWeb XI in just a few minutes.
+</p>
+    <h3>Forms
+</h3>
+    <p>Our goal (also see Intraweb XI goals) is that all forms will remain interface compatible, or will be auto upgraded. That is, no changes should be required to your DFM files. Some properties have been converted to write only, allowing existing DFM files to be read. <span style="COLOR: rgb(255,0,0)">You
+</span><span style="COLOR: rgb(255,0,0); FONT-WEIGHT: bold">do not need
+</span><span style="COLOR: rgb(255,0,0)"> to load and save your forms to upgrade. They are auto upgrading.
+</span><br>
+
+
+
+</p>
+    <p>Existing changes are:
+</p>
+    <ul>
+      <li>UpdateMode property - This property is no longer needed as umPartial has been eliminated. Use AJAX instead. To preserve API compatibility, the property has been converted to write only. Any umPartial forms will be converted to umAll.
+</li>
+      <li>BrowserSecurityCheck property - Deprecated. To preserve DFM compatibility, a vestigal write only property has been retained.
+</li>
+    </ul>
+    <h3>Server Controller
+</h3>
+    <p>Changes have been made to the Server Controller. However only one Server Controller exists per application, so we considered that it would be acceptable to force one design time load before compilation. To convert to IntraWeb XI, open the Server Controller at design time, and ignore all the property errors that occur. Then perform a save.
+</p>
+    <p>Existing changes are:
+</p>
+    <ul>
+      <li>Removed UnknownBrowserAction property - It controlled if older browsers were treated as 3.2 clients or not. 3.2 is no longer supported, so such clients are simply rejected now.
+</li>
+      <li>Removed SessionTrackingMethod property - Cookies are required for the default tracking method. For developers requiring a single user to be able to host multi sessions in seperate tabs or windows, an alternate method will be provided before the release of IntraWeb XI.
+</li>
+      <li>Removed StartCmd property - All commands will be moved into a separate path to isolate them from interfering with the new page and URL options.
+</li>
+      <li>Removed ExecCmd property - See StartCmd notes.
+</li>
+      <li>Removed SupportedBrowsers property - New functionality will be created allowing control by user code.
+</li>
+      <li>Removed AllowSubFolders property - This property was of little use, and allowing the option of false will conflict with the upcoming integrated pagemode feature.
+</li>
+      <li>Removed InvalidCommandURL property
+</li>
+      <li>Removed OnInvalidCommand event
+</li>
+      <li>Removed NoCookieSupport property
+</li>
+      <li>Removed NoJavaScriptSupport property
+</li>
+      <li>Removed SpecialDevicesSupport property
+</li>
+      <li>Removed DeviceNotSupported property
+</li>
+      <li>Removed UnknownBrowser property
+</li>
+      <li>Removed OnReEntry event
+</li>
+      <li>Removed ReEntryOptions property
+</li>
+      <li>Removed ShowResyncWarning property
+</li>
+      <li>Removed SessionTimeoutURL property - Use new TimeoutResponse property and a URL Responder instead.
+</li>
+      <li>Removed OnFileAccess event - Will be replaced with Auther functionality.
+</li>
+      <li>Removed ThreadPoolSize property - No code references could be found that used this property. Appears to have been vestigal from an older version of IIS.
+
+
+</li>
+    </ul>
+    <h3>Unit Name Changes<br>
+
+
+
+</h3>
+    <p>Three internal units have been renamed. SWStrings, SWSystem, and SWService. They are not IWStrings, IWSystem, and IWServer. These units are internal and rarely used by users, so the impact should be minimal.<br>
+
+
+
+</p>
+    <h3>Code Changes
+</h3>
+    <p>We have minimized the changes required to source code.
+</p>
+    <h3>Project Type
+</h3>
+    <p>A new project type has been added which allows service and non service applications to exist in one project type. The older project types still exist for compatibility.
+</p>
+    <h3>Custom Components
+</h3>
+    <ul>
+      <li>
+    <div>TIWComponent40Context has been eliminated. Use TIWCompContext instead. This is part of the massive code cleanup being performed now that WAP and HTML 3.2 have been elminated. If you need to support multiple versions of IntraWeb, we suggest you make an alias, and ifdef it so that the ifdef only appears in one place in your code.
+</div>
+      </li>
+    </ul>
+
+  </body>
+</html>
