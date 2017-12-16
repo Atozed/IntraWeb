@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Select2 Demo</title>
+
+    <meta name="author" content="Atozed/TeamZed">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" integrity="sha256-xJOZHfpxLR/uhh1BwYFS5fhmOAdIRQaiOul5F/b7v3s=" crossorigin="anonymous" />
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js" integrity="sha256-FA14tBI8v+/1BtcH9XtJpcNbComBEpdawUZA6BPXRVw=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container well">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-xs-12">
+          <h3 class="text-primary">This demo shows how can we use Select2 with IntraWeb</h3>
+          <p>1. Add .css and .js in your template. See Unit1.html in template folder.</p>
+          <p>2. Set ALL StyleRenderOptions of your IWComboBox to FALSE.</p>
+          <p>3. At the IWComboBox CSS, put "form-control select2".</p>
+          <p>4. Initialize Select2 of your IWComboBox.</p>
+          <p>Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about the plugin.</p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12">
+          <a href="https://www.atozed.com/" title="Atozed Software"><img class="site-logo" src="https://www.atozed.com/wp-content/uploads/2017/01/Atozed.gif" alt="Atozed Software"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <form>
+            <div class="form-group">
+              <label>List of States</label>
+              {%IWCOMBOBOX1%}
+            </div>
+          </form> <!-- form -->
+        </div>
+      </div>
+    </div>
+    <script>
+      /*Initialize Select2 Elements*/
+      $('#IWCOMBOBOX1').select2({
+        width: '100%'
+      });
+    </script>
+  </body>
+</html>
