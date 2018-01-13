@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div class="container well">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-xs-12">
+          <h3 class="text-primary">This demo shows how can we use Mailgun (api) with IntraWeb</h3>
+          <h4 class="text-primary">We use a Indy components to do the job</h3>
+          <p>BaseUrl: <strong>https://api.mailgun.net/v3</strong></p>
+          <p>Authentication: <strong>api:key-3ax6xnjp29jd6fds4gc373sgvjxteol0</strong></p>
+          <p>User: <strong>api</strong>, Password: <strong>key-3ax6xnjp29jd6fds4gc373sgvjxteol0</strong></p>
+          <p>Visit <a href="https://www.mailgun.com/" target="_blank">Mailgun <i class="fa fa-external-link"></i></a> for features, resources and documentation.</p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12">
+          <a href="https://www.atozed.com/" title="Atozed Software"><img class="site-logo" src="https://www.atozed.com/wp-content/uploads/2017/01/Atozed.gif" alt="Atozed Software"></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <button type="button" class="btn btn-primary" id="IWBUTTON_POST"><i class="fa fa-upload fa-fw" aria-hidden="true"></i> Send Email (POST) </button>
+          &nbsp;
+          <span class='label label-primary' id="IWLABEL_LOGO">IdHTTP.Post( 'https://api.mailgun.net/v3/samples.mailgun.org/messages', Parameters )</span>
+        </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="col-md-12 col-xs-12">
+          <button type="button" class="btn btn-primary" id="IWBUTTON_GET"><i class="fa fa-user fa-fw" aria-hidden="true"></i> Credentials (GET) </button>
+          &nbsp;
+          <span class='label label-primary' id="IWLABEL_LOGO">IdHTTP1.Get( 'https://api.mailgun.net/v3/domains/samples.mailgun.org/credentials' )</span>
+        </div>
+      </div>
+      </br>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <form>
+            <div class="form-group">
+              <label>Result:</label>
+              {%IWMemo_Response%}
+            </div>
+          </form> <!-- form -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
