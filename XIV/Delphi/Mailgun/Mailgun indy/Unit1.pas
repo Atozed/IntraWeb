@@ -3,14 +3,12 @@ unit Unit1;
 interface
 
 uses
-  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWVCLComponent,
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IdIOHandler,
+  IdIOHandlerSocket, IdIOHandlerStack, IdSSL, IdSSLOpenSSL, IdBaseComponent,
+  IdComponent, IdTCPConnection, IdTCPClient, IdHTTP, IWVCLComponent,
   IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
-  IWTemplateProcessorHTML, Vcl.Controls, IWVCLBaseControl, IWBaseControl,
-  IWBaseHTMLControl, IWControl, IWCompButton, IWCompLabel, IPPeerClient,
-  REST.Client, REST.Authenticator.Basic, Data.Bind.Components,
-  Data.Bind.ObjectScope, IWCompMemo, IdIOHandler, IdIOHandlerSocket,
-  IdIOHandlerStack, IdSSL, IdSSLOpenSSL, IdBaseComponent, IdComponent,
-  IdTCPConnection, IdTCPClient, IdHTTP;
+  IWTemplateProcessorHTML, IWCompMemo, Vcl.Controls, IWVCLBaseControl,
+  IWBaseControl, IWBaseHTMLControl, IWControl, IWCompButton;
 
 type
   TIWForm1 = class(TIWAppForm)
