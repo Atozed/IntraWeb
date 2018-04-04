@@ -10,7 +10,7 @@ type
   TContentReport = class(TContentBase)
   protected
     function Execute(aRequest: THttpRequest; aReply: THttpReply; const aPathname: string;
-      aSession: TIWApplication; aParams: TStrings): Boolean;
+      aSession: TIWApplication; aParams: TStrings): Boolean; override;
   public
     constructor Create; override;
   end;
