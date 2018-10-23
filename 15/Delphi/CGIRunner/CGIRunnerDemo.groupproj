@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{8975D0E6-B834-4BEE-868E-FC780ADB50B7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CGIReport\CGIReport.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CGIRunnerReport\CGIRunnerReport.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CGIReport">
+        <MSBuild Projects="CGIReport\CGIReport.dproj"/>
+    </Target>
+    <Target Name="CGIReport:Clean">
+        <MSBuild Projects="CGIReport\CGIReport.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CGIReport:Make">
+        <MSBuild Projects="CGIReport\CGIReport.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CGIRunnerReport">
+        <MSBuild Projects="CGIRunnerReport\CGIRunnerReport.dproj"/>
+    </Target>
+    <Target Name="CGIRunnerReport:Clean">
+        <MSBuild Projects="CGIRunnerReport\CGIRunnerReport.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CGIRunnerReport:Make">
+        <MSBuild Projects="CGIRunnerReport\CGIRunnerReport.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CGIReport;CGIRunnerReport"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CGIReport:Clean;CGIRunnerReport:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CGIReport:Make;CGIRunnerReport:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
