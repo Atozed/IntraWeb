@@ -32,7 +32,7 @@ end;
 
 procedure TIWForm2.IWGradButton1Click(Sender: TObject);
 begin
-  WebApplication.GoToURL(WebApplication.SessionUrlBase + 'auth/index.html');
+  WebApplication.GoToURL('auth/index.html');
   Release;
 end;
 

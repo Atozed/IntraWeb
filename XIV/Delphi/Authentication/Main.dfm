@@ -19,41 +19,26 @@ object IWForm2: TIWForm2
   object IWLabel1: TIWLabel
     Left = 42
     Top = 24
-    Width = 512
-    Height = 33
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
+    Width = 623
+    Height = 40
     Font.Color = clWebRED
     Font.Size = 20
     Font.Style = []
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'This demo requires IntraWeb 14.0.11+'
-    RawText = False
   end
   object IWMemo1: TIWMemo
     Left = 42
     Top = 88
     Width = 769
     Height = 257
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
+    StyleRenderOptions.RenderBorder = False
     BGColor = clNone
     Editable = True
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    ScriptEvents = <>
     InvisibleBorder = False
     HorizScrollBar = False
     VertScrollBar = True
@@ -73,11 +58,6 @@ object IWForm2: TIWForm2
     Top = 400
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 818394
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -119,30 +99,19 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton1'
-    ScriptEvents = <>
     TabOrder = 1
     OnClick = IWGradButton1Click
   end
   object IWLabel2: TIWLabel
     Left = 42
     Top = 368
-    Width = 123
-    Height = 16
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
+    Width = 161
+    Height = 21
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'Authenticated user:'
-    RawText = False
   end
 end
