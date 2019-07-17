@@ -1,5 +1,6 @@
 object IWServerController: TIWServerController
   OldCreateOrder = False
+  OnCreate = IWServerControllerBaseCreate
   AppName = 'MyApp'
   Compression.Enabled = False
   Description = 'My IntraWeb Application'
