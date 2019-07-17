@@ -3,17 +3,16 @@ unit ServerController;
 interface
 
 uses
-  SysUtils, Classes, IWServerControllerBase, IWBaseForm, HTTPApp,
+  SysUtils, Classes, IWServerControllerBase, IWBaseForm,
   // For OnNewSession Event
   UserSessionUnit, IWApplication, IWAppForm, IWAutherEvent,
-  IWAutherBase;
+  IWAutherBase, IW.Http.Request, IW.Http.Reply;
 
 type
   TIWServerController = class(TIWServerControllerBase)
     IWAutherEvent1: TIWAutherEvent;
-    procedure IWServerControllerBaseNewSession(ASession: TIWApplication;
-      var VMainForm: TIWBaseForm);
     function IWAutherEvent1Check(const aUser, aPass: string): Boolean;
+    procedure IWServerControllerBaseNewSession(aSession: TIWApplication);
 
   private
     
@@ -48,11 +47,10 @@ begin
 end;
 
 procedure TIWServerController.IWServerControllerBaseNewSession(
-  ASession: TIWApplication; var VMainForm: TIWBaseForm);
+  aSession: TIWApplication);
 begin
-  ASession.Data := TIWUserSession.Create(nil);
+  ASession.Data := TIWUserSession.Create(nil, ASession);
 end;
-
 
 initialization
   TIWServerController.SetServerControllerClass;
