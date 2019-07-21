@@ -7,7 +7,8 @@ uses
   UTF8ContentParser,
   Unit7 in 'Unit7.pas' {IWForm7: TIWAppForm},
   ServerController in 'ServerController.pas' {IWServerController: TIWServerControllerBase},
-  UserSessionUnit in 'UserSessionUnit.pas' {IWUserSession: TIWUserSessionBase};
+  UserSessionUnit in 'UserSessionUnit.pas' {IWUserSession: TIWUserSessionBase},
+  IWFileCheck in 'IWFileCheck.pas';
 
 {$R *.res}
 

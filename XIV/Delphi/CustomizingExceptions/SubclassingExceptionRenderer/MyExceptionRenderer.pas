@@ -97,6 +97,6 @@ initialization
   // install TMyIWExceptionRenderer as the default IWExceptionRenderer
   SetExceptionRendererClass(TMyIWExceptionRenderer);
   // if True, all session timeout errors will be redirected to an external site (in this demo, www.atozed.com)
-  TMyIWExceptionRenderer.Redirect := True;
+  TMyIWExceptionRenderer.Redirect := False;
 
 end.

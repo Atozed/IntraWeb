@@ -6,7 +6,7 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl,
-  IWCompFileUploader, IWCompLabel, Data.DB, Datasnap.DBClient;
+  IWCompFileUploader, IWCompLabel, Data.DB, Datasnap.DBClient, IWCompButton;
 
 type
   TIWForm7 = class(TIWAppForm)
@@ -22,6 +22,10 @@ type
     ClientDataSet1FileContent: TBlobField;
     IWLabel4: TIWLabel;
     IWFileUploader4: TIWFileUploader;
+    IWLabel5: TIWLabel;
+    IWFileUploader5: TIWFileUploader;
+    btnSelect: TIWButton;
+    btnUpload: TIWButton;
     procedure IWFileUploader1AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
     procedure IWFileUploader2AsyncUploadCompleted(Sender: TObject; var DestPath,
@@ -29,6 +33,8 @@ type
     procedure IWFileUploader3AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
     procedure IWAppFormCreate(Sender: TObject);
+    procedure IWFileUploader5AsyncUploadCompleted(Sender: TObject; var DestPath,
+      FileName: string; var SaveFile, Overwrite: Boolean);
   public
   end;
 
@@ -37,7 +43,7 @@ implementation
 {$R *.dfm}
 
 uses
-  IW.Common.AppInfo;
+  IW.Common.AppInfo, IWFileCheck;
 
 procedure TIWForm7.IWAppFormCreate(Sender: TObject);
 begin
@@ -95,6 +101,24 @@ begin
     // Release the stream
     MS.Free;
   end;
+end;
+
+procedure TIWForm7.IWFileUploader5AsyncUploadCompleted(Sender: TObject;
+  var DestPath, FileName: string; var SaveFile, Overwrite: Boolean);
+var
+  CurDir: string;
+  MimeType: string;
+begin
+  // get the app path
+  CurDir := TIWAppInfo.GetAppPath;
+
+  MimeType := GetUploadedFileMimeType;
+
+  // save in the same application directory, with the same name of the original file. Overwrite if it already exists.
+  IWFileUploader5.SaveToFile(FileName, CurDir + FileName, True);
+
+  // Inform IWFileUploader that we are taking care of file saving ourselves
+  SaveFile := False;
 end;
 
 initialization

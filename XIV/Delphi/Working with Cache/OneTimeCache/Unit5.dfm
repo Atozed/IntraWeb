@@ -20,6 +20,7 @@ object IWForm5: TIWForm5
     Top = 88
     Width = 769
     Height = 257
+    StyleRenderOptions.RenderBorder = False
     BGColor = clNone
     Editable = True
     Font.Color = clNone
@@ -62,8 +63,8 @@ object IWForm5: TIWForm5
   object IWLabel1: TIWLabel
     Left = 42
     Top = 24
-    Width = 512
-    Height = 33
+    Width = 623
+    Height = 40
     Font.Color = clWebRED
     Font.Size = 20
     Font.Style = []

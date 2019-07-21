@@ -12,6 +12,9 @@
         <Projects Include="OneTimeCache\OneTimeCache.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="CacheHttpSys\CacheHttpSys.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -47,14 +50,23 @@
     <Target Name="OneTimeCache:Make">
         <MSBuild Projects="OneTimeCache\OneTimeCache.dproj" Targets="Make"/>
     </Target>
+    <Target Name="CacheHttpSys">
+        <MSBuild Projects="CacheHttpSys\CacheHttpSys.dproj"/>
+    </Target>
+    <Target Name="CacheHttpSys:Clean">
+        <MSBuild Projects="CacheHttpSys\CacheHttpSys.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CacheHttpSys:Make">
+        <MSBuild Projects="CacheHttpSys\CacheHttpSys.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="SessionCache;FormCache;OneTimeCache"/>
+        <CallTarget Targets="SessionCache;FormCache;OneTimeCache;CacheHttpSys"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="SessionCache:Clean;FormCache:Clean;OneTimeCache:Clean"/>
+        <CallTarget Targets="SessionCache:Clean;FormCache:Clean;OneTimeCache:Clean;CacheHttpSys:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="SessionCache:Make;FormCache:Make;OneTimeCache:Make"/>
+        <CallTarget Targets="SessionCache:Make;FormCache:Make;OneTimeCache:Make;CacheHttpSys:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

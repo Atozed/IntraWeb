@@ -7,7 +7,6 @@ object formTemplate: TformTemplate
   AllowPageAccess = True
   ConnectionMode = cmAny
   Title = 'HTML Template Demonstration'
-  SupportedBrowsers = [brNetscape7, brIE, brNetscape6]
   Background.Fixed = False
   LayoutMgr = IWTemplateProcessorHTML1
   HandleTabs = False
@@ -23,27 +22,12 @@ object formTemplate: TformTemplate
     Top = 32
     Width = 75
     Height = 25
-    Cursor = crAuto
-    IW50Hint = False
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    StyleRenderOptions.RenderSize = True
-    StyleRenderOptions.RenderPosition = True
-    StyleRenderOptions.RenderFont = True
-    StyleRenderOptions.RenderZIndex = True
-    StyleRenderOptions.RenderVisibility = True
-    StyleRenderOptions.RenderStatus = True
-    StyleRenderOptions.RenderAbsolute = True
     Caption = 'Add'
-    DoSubmitValidation = True
     Color = 13160660
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    ScriptEvents = <>
     TabOrder = 0
     OnClick = IWButton1Click
   end
@@ -52,78 +36,32 @@ object formTemplate: TformTemplate
     Top = 32
     Width = 161
     Height = 21
-    Cursor = crAuto
-    IW50Hint = False
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    StyleRenderOptions.RenderSize = True
-    StyleRenderOptions.RenderPosition = True
-    StyleRenderOptions.RenderFont = True
-    StyleRenderOptions.RenderZIndex = True
-    StyleRenderOptions.RenderVisibility = True
-    StyleRenderOptions.RenderStatus = True
-    StyleRenderOptions.RenderAbsolute = True
-    Alignment = taLeftJustify
-    BGColor = clNone
-    FocusColor = clNone
-    DoSubmitValidation = True
-    Editable = True
+    StyleRenderOptions.RenderBorder = False
     NonEditableAsLabel = True
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWEdit1'
-    MaxLength = 0
-    ReadOnly = False
-    Required = False
-    ScriptEvents = <>
     SubmitOnAsyncEvent = True
     TabOrder = 1
-    PasswordPrompt = False
   end
   object IWListbox1: TIWListbox
     Left = 8
     Top = 56
     Width = 161
     Height = 145
-    Cursor = crAuto
-    IW50Hint = False
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
     RenderSize = False
     StyleRenderOptions.RenderSize = False
-    StyleRenderOptions.RenderPosition = True
-    StyleRenderOptions.RenderFont = True
-    StyleRenderOptions.RenderZIndex = True
-    StyleRenderOptions.RenderVisibility = True
-    StyleRenderOptions.RenderStatus = True
-    StyleRenderOptions.RenderAbsolute = True
-    BGColor = clNone
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    FocusColor = clNone
-    AutoHideOnMenuActivation = False
-    ItemsHaveValues = False
-    NoSelectionText = '-- No Selection --'
-    Required = False
-    RequireSelection = True
-    ScriptEvents = <>
     UseSize = False
-    DoSubmitValidation = True
-    Editable = True
     TabOrder = 2
-    SubmitOnAsyncEvent = True
-    MaxItems = 0
     FriendlyName = 'IWListbox1'
     ItemIndex = 0
     Items.Strings = (
       'You can add more items to this list.')
-    MultiSelect = False
-    Sorted = False
+    NoSelectionText = '-- No Selection --'
   end
   inline framMenu1: TframMenu
     Left = 0
@@ -139,14 +77,11 @@ object formTemplate: TformTemplate
     ParentColor = False
     TabOrder = 0
     TabStop = True
-    ExplicitWidth = 382
     inherited IWFrameRegion: TIWRegion
       Width = 382
       TabOrder = 3
-      ExplicitWidth = 382
       inherited IWMenu1: TIWMenu
         Width = 382
-        ExplicitWidth = 382
       end
     end
     inherited MainMenu1: TMainMenu
@@ -158,8 +93,15 @@ object formTemplate: TformTemplate
   end
   object IWTemplateProcessorHTML1: TIWTemplateProcessorHTML
     TagType = ttIntraWeb
-    RenderStyles = True
     Left = 248
     Top = 88
+  end
+  object IWTimer1: TIWTimer
+    Enabled = True
+    Interval = 1000
+    ShowAsyncLock = False
+    OnAsyncTimer = IWTimer1AsyncTimer
+    Left = 256
+    Top = 168
   end
 end
