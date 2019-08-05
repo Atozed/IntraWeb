@@ -6,6 +6,7 @@ object IWForm39: TIWForm39
   RenderInvisibleControls = True
   AllowPageAccess = True
   ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
   Background.Fixed = False
   HandleTabs = False
   LeftToRight = True

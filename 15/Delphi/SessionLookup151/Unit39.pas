@@ -14,6 +14,7 @@ type
     IWButton2: TIWButton;
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWAppFormCreate(Sender: TObject);
   private
     procedure GetSessionList(aList: TStrings);
   public
@@ -51,6 +52,11 @@ begin
                                        LastAccess := TIWApplication(aSession).LastAccess;
                                      end);
   WebApplication.ShowMessage(DateTimeToStr(LastAccess));
+end;
+
+procedure TIWForm39.IWAppFormCreate(Sender: TObject);
+begin
+  IWListbox1.Items.Add(WebApplication.RunParams.Text);
 end;
 
 initialization

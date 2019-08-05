@@ -13,9 +13,9 @@ type
     IWButton2: TIWButton;
     IWButton3: TIWButton;
     IWMemo1: TIWMemo;
-    procedure IWButton1Click(Sender: TObject);
+    procedure IWButton3AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton2Click(Sender: TObject);
-    procedure IWButton3Click(Sender: TObject);
   public
   end;
 
@@ -23,19 +23,22 @@ implementation
 
 {$R *.dfm}
 
-procedure TMainForm.IWButton1Click(Sender: TObject);
+procedure TMainForm.IWButton1AsyncClick(Sender: TObject;
+  EventParams: TStringList);
 begin
   WebApplication.GotoURL('mydoc.html');
 end;
 
+procedure TMainForm.IWButton3AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  WebApplication.GotoURL('blueform.html');
+end;
+
+//
 procedure TMainForm.IWButton2Click(Sender: TObject);
 begin
   WebApplication.GotoURL('redform.html');
-end;
-
-procedure TMainForm.IWButton3Click(Sender: TObject);
-begin
-  WebApplication.GotoURL('blueform.html');
 end;
 
 initialization

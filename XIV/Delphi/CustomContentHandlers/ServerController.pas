@@ -73,6 +73,7 @@ initialization
   with THandlers.Add('', 'GiveMeSomeXML', TContentXML.Create) do begin
     CanStartSession := True;
     RequiresSessionStart := False;
+    //RequiresSession := False;
   end;
 
 end.

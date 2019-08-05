@@ -18,10 +18,11 @@ object IWForm7: TIWForm7
   DesignTop = 8
   object IWFileUploader1: TIWFileUploader
     Left = 40
-    Top = 64
+    Top = 68
     Width = 400
     Height = 60
     TabOrder = 0
+    Multiple = True
     TextStrings.DragText = 'Drop files here to upload'
     TextStrings.UploadButtonText = 'Upload a file'
     TextStrings.CancelButtonText = 'Cancel'
@@ -114,6 +115,7 @@ object IWForm7: TIWForm7
       'success-icon='
       'fail-icon=')
     OnAsyncUploadCompleted = IWFileUploader1AsyncUploadCompleted
+    OnAsyncUploadError = IWFileUploader1AsyncUploadError
     FriendlyName = 'IWFileUploader1'
     Font.Color = clNone
     Font.Size = 10

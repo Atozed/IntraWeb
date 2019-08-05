@@ -27,7 +27,7 @@ object MainForm: TMainForm
     Font.Style = []
     FriendlyName = 'IWButton1'
     TabOrder = 0
-    OnClick = IWButton1Click
+    OnAsyncClick = IWButton1AsyncClick
   end
   object IWButton2: TIWButton
     Left = 24
@@ -55,13 +55,14 @@ object MainForm: TMainForm
     Font.Style = []
     FriendlyName = 'IWButton3'
     TabOrder = 2
-    OnClick = IWButton3Click
+    OnAsyncClick = IWButton3AsyncClick
   end
   object IWMemo1: TIWMemo
     Left = 24
     Top = 25
     Width = 753
     Height = 176
+    StyleRenderOptions.RenderBorder = False
     BGColor = clNone
     Editable = True
     Font.Color = clNone

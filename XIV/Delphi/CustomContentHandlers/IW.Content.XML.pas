@@ -23,6 +23,7 @@ constructor TContentXML.Create;
 begin
   inherited;
   mFileMustExist := False;
+  //mRequiresSession := False;
 end;
 
 function TContentXML.Execute(aRequest: THttpRequest; aReply: THttpReply; const aPathname: string; aSession: TIWApplication;

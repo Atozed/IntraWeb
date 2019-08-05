@@ -1,16 +1,17 @@
 object IWServerController: TIWServerController
   OldCreateOrder = False
+  OnCreate = IWServerControllerBaseCreate
+  OnDestroy = IWServerControllerBaseDestroy
   AppName = 'MyApp'
   Description = 'My IntraWeb Application'
   DisplayName = 'IntraWeb Application'
   Port = 8888
-  SSLOptions.SSLVersion = SSLv3
   Version = '15.0.0'
-  ExceptionLogger.ReportInfos = [riAppInfo, riExceptionInfo, riIWAppInfo, riStackTrace]
+  CookieOptions.UseCookies = False
+  JavaScriptOptions.UseUncompressedFiles = True
   JavaScriptOptions.jQueryVersion = '1.12.4'
   OnConfig = IWServerControllerBaseConfig
   OnNewSession = IWServerControllerBaseNewSession
-  OnBrowserCheck = IWServerControllerBaseBrowserCheck
   Height = 310
   Width = 342
 end
