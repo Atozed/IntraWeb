@@ -10,11 +10,14 @@ uses
 type
   TFrmView2 = class(TIWAppForm)
     tblContainer2: TIWLabel;
-    IWGradButton1: TIWGradButton;
     IWURL1: TIWURL;
+    IWGradButton1: TIWGradButton;
+    IWGradButton2: TIWGradButton;
     procedure IWAppFormRender(Sender: TObject);
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWGradButton1AsyncClick(Sender: TObject;
+      EventParams: TStringList);
+    procedure IWGradButton2AsyncClick(Sender: TObject;
       EventParams: TStringList);
   public
   end;
@@ -55,6 +58,12 @@ begin
     TIWAppFormClass(frm).Create(WebApplication).Show;
     Release;
   end;
+end;
+
+procedure TFrmView2.IWGradButton2AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  WebApplication.GoToURL('/table1');
 end;
 
 initialization

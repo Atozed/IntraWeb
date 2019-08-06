@@ -13,9 +13,12 @@ type
     tblContainer1: TIWLabel;
     IWGradButton1: TIWGradButton;
     IWURL1: TIWURL;
+    IWGradButton2: TIWGradButton;
     procedure IWAppFormRender(Sender: TObject);
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWGradButton1AsyncClick(Sender: TObject;
+      EventParams: TStringList);
+    procedure IWGradButton2AsyncClick(Sender: TObject;
       EventParams: TStringList);
   public
   end;
@@ -56,6 +59,12 @@ begin
     TIWAppFormClass(frm).Create(WebApplication).Show;
     Release;
   end;
+end;
+
+procedure TFrmView1.IWGradButton2AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  WebApplication.GoToURL('/table2');
 end;
 
 initialization
