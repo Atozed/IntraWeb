@@ -11,14 +11,15 @@ type
   TFrmView2 = class(TIWAppForm)
     tblContainer2: TIWLabel;
     IWURL1: TIWURL;
-    IWGradButton1: TIWGradButton;
-    IWGradButton2: TIWGradButton;
+    btn3: TIWGradButton;
+    btn4: TIWGradButton;
     procedure IWAppFormRender(Sender: TObject);
     procedure IWAppFormCreate(Sender: TObject);
-    procedure IWGradButton1AsyncClick(Sender: TObject;
+    procedure btn3AsyncClick(Sender: TObject;
       EventParams: TStringList);
-    procedure IWGradButton2AsyncClick(Sender: TObject;
+    procedure btn4AsyncClick(Sender: TObject;
       EventParams: TStringList);
+    procedure IWAppFormDestroy(Sender: TObject);
   public
   end;
 
@@ -47,23 +48,37 @@ begin
   IWURL1.URL := url;
 end;
 
-procedure TFrmView2.IWGradButton1AsyncClick(Sender: TObject;
+procedure TFrmView2.btn3AsyncClick(Sender: TObject;
   EventParams: TStringList);
 var
-  frm: TPersistentClass;
+  frmClass: TPersistentClass;
+  frm: TIWAppForm;
 begin
-  frm := FindClass('TFrmView1');
+  // use existing instance
+  frm := WebApplication.FindFormByName('TFrmView1') as TIWAppForm;
   if Assigned(frm) then
   begin
-    TIWAppFormClass(frm).Create(WebApplication).Show;
-    Release;
+    frm.Show;
+    Exit; // we are done
+  end;
+
+  // if there is no instance of this class, create one
+  frmClass := FindClass('TFrmView1');
+  if Assigned(frmClass) then
+  begin
+    TIWAppFormClass(frmClass).Create(WebApplication).Show;
   end;
 end;
 
-procedure TFrmView2.IWGradButton2AsyncClick(Sender: TObject;
+procedure TFrmView2.btn4AsyncClick(Sender: TObject;
   EventParams: TStringList);
 begin
   WebApplication.GoToURL('/table1');
+end;
+
+procedure TFrmView2.IWAppFormDestroy(Sender: TObject);
+begin
+//
 end;
 
 initialization

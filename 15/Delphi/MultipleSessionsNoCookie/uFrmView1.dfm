@@ -8,6 +8,7 @@ object FrmView1: TFrmView1
   AllowPageAccess = True
   ConnectionMode = cmAny
   OnCreate = IWAppFormCreate
+  OnDestroy = IWAppFormDestroy
   Background.Fixed = False
   HandleTabs = False
   LeftToRight = True
@@ -32,7 +33,7 @@ object FrmView1: TFrmView1
     Caption = 'table 1 placeholder'
     RawText = True
   end
-  object IWGradButton1: TIWGradButton
+  object btn1: TIWGradButton
     Left = 56
     Top = 34
     Width = 329
@@ -78,9 +79,9 @@ object FrmView1: TFrmView1
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    FriendlyName = 'IWGradButton1'
+    FriendlyName = 'btn1'
     TabOrder = 0
-    OnAsyncClick = IWGradButton1AsyncClick
+    OnAsyncClick = btn1AsyncClick
   end
   object IWURL1: TIWURL
     Left = 816
@@ -103,7 +104,7 @@ object FrmView1: TFrmView1
     RawText = False
     Caption = 'Open Table 2 in another tab (new session)'
   end
-  object IWGradButton2: TIWGradButton
+  object btn2: TIWGradButton
     Left = 416
     Top = 34
     Width = 329
@@ -149,8 +150,44 @@ object FrmView1: TFrmView1
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    FriendlyName = 'IWGradButton1'
+    FriendlyName = 'btn2'
     TabOrder = 2
-    OnAsyncClick = IWGradButton2AsyncClick
+    OnAsyncClick = btn2AsyncClick
+  end
+  object IWButton1: TIWButton
+    Left = 1192
+    Top = 42
+    Width = 75
+    Height = 25
+    Caption = 'IWButton1'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <
+      item
+        EventCode.Strings = (
+          
+            'executeAjaxEvent("&key=1", null, "gotoRecord", false, null, fals' +
+            'e);')
+        Event = 'onClick'
+      end>
+    TabOrder = 3
+  end
+  object IWEdit1: TIWEdit
+    Left = 816
+    Top = 92
+    Width = 121
+    Height = 21
+    StyleRenderOptions.RenderBorder = False
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWEdit1'
+    SubmitOnAsyncEvent = True
+    TabOrder = 4
+    OnAsyncMouseOver = IWEdit1AsyncMouseOver
+    Text = 'IWEdit1'
   end
 end

@@ -8,6 +8,7 @@ object FrmView2: TFrmView2
   AllowPageAccess = True
   ConnectionMode = cmAny
   OnCreate = IWAppFormCreate
+  OnDestroy = IWAppFormDestroy
   Background.Fixed = False
   HandleTabs = False
   LeftToRight = True
@@ -53,7 +54,7 @@ object FrmView2: TFrmView2
     RawText = False
     Caption = 'Open Table 1 in another tab (new session)'
   end
-  object IWGradButton1: TIWGradButton
+  object btn3: TIWGradButton
     Left = 56
     Top = 34
     Width = 329
@@ -99,11 +100,11 @@ object FrmView2: TFrmView2
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    FriendlyName = 'IWGradButton1'
+    FriendlyName = 'btn3'
     TabOrder = 1
-    OnAsyncClick = IWGradButton1AsyncClick
+    OnAsyncClick = btn3AsyncClick
   end
-  object IWGradButton2: TIWGradButton
+  object btn4: TIWGradButton
     Left = 416
     Top = 34
     Width = 329
@@ -149,8 +150,8 @@ object FrmView2: TFrmView2
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    FriendlyName = 'IWGradButton1'
+    FriendlyName = 'btn4'
     TabOrder = 2
-    OnAsyncClick = IWGradButton2AsyncClick
+    OnAsyncClick = btn4AsyncClick
   end
 end

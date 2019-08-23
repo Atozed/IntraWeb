@@ -14,6 +14,7 @@ type
     procedure IWServerControllerBaseCreate(Sender: TObject);
     procedure IWServerControllerBaseDestroy(Sender: TObject);
     procedure IWServerControllerBaseConfig(Sender: TObject);
+    procedure IWServerControllerBaseBackButton(var VResyncInfo: TIWResyncInfo);
   private
     { Private declarations }
     FUserIds: TStringList;
@@ -34,7 +35,7 @@ uses
   IWInit, IWGlobal,
   IW.Common.SysTools,
   uUserList,  // sample data structure which takes care of user login
-  IW.Content.Handlers, IW.Content.Base, IW.Content.Form;  // Content handler support
+  IW.Content.Handlers, IW.Content.Base, IW.Content.Form, IWForm;  // Content handler support
 
 function IWServerController: TIWServerController;
 begin
@@ -98,6 +99,12 @@ begin
 
     TUserList.Instance.Add(User);
   end;
+end;
+
+procedure TIWServerController.IWServerControllerBaseBackButton(var VResyncInfo: TIWResyncInfo);
+begin
+  VResyncInfo.ExecuteForm := True;
+  VResyncInfo.SetActiveForm := True;
 end;
 
 initialization
