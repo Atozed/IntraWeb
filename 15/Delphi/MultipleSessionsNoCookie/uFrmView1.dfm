@@ -154,40 +154,4 @@ object FrmView1: TFrmView1
     TabOrder = 2
     OnAsyncClick = btn2AsyncClick
   end
-  object IWButton1: TIWButton
-    Left = 1192
-    Top = 42
-    Width = 75
-    Height = 25
-    Caption = 'IWButton1'
-    Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    FriendlyName = 'IWButton1'
-    ScriptEvents = <
-      item
-        EventCode.Strings = (
-          
-            'executeAjaxEvent("&key=1", null, "gotoRecord", false, null, fals' +
-            'e);')
-        Event = 'onClick'
-      end>
-    TabOrder = 3
-  end
-  object IWEdit1: TIWEdit
-    Left = 816
-    Top = 92
-    Width = 121
-    Height = 21
-    StyleRenderOptions.RenderBorder = False
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    FriendlyName = 'IWEdit1'
-    SubmitOnAsyncEvent = True
-    TabOrder = 4
-    OnAsyncMouseOver = IWEdit1AsyncMouseOver
-    Text = 'IWEdit1'
-  end
 end

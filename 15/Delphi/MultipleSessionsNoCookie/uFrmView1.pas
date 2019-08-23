@@ -14,8 +14,6 @@ type
     btn1: TIWGradButton;
     IWURL1: TIWURL;
     btn2: TIWGradButton;
-    IWButton1: TIWButton;
-    IWEdit1: TIWEdit;
     procedure IWAppFormRender(Sender: TObject);
     procedure IWAppFormCreate(Sender: TObject);
     procedure btn1AsyncClick(Sender: TObject;
