@@ -109,12 +109,26 @@ uses
   QuickTimeForm;
 
 procedure TframMenu.Move(AFormClass: TIWAppFormClass);
+var
+  NewForm: TIWAppForm;
 begin
-  // Release the current form
-  TIWAppForm(WebApplication.ActiveForm).Release;
-  // Create the next form
-  AFormClass.Create(WebApplication).Show;
+  if (AFormClass.ClassName <> WebApplication.ActiveForm.ClassName) then
+  begin
+    // Release the current form
+    TIWAppForm(WebApplication.ActiveForm).Release;
+    // Create the next form
+    NewForm := AFormClass.Create(WebApplication);
+    NewForm.Show;
+  end;
 end;
+
+//procedure TframMenu.Move(AFormClass: TIWAppFormClass);
+//begin
+//  // Release the current form
+//  TIWAppForm(WebApplication.ActiveForm).Release;
+//  // Create the next form
+//  AFormClass.Create(WebApplication).Show;
+//end;
 
 procedure TframMenu.linkSimpleInputFormClick(Sender: TObject);
 begin

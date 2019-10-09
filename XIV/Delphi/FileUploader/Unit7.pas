@@ -35,8 +35,6 @@ type
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWFileUploader5AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
-    procedure IWFileUploader1AsyncUploadError(Sender: TObject;
-      EventParams: TStringList);
   public
   end;
 
@@ -123,13 +121,7 @@ begin
   SaveFile := False;
 end;
 
-iprocedure TIWForm7.IWFileUploader1AsyncUploadError(Sender: TObject;
-  EventParams: TStringList);
-begin
-
-end;
-
-nitialization
+initialization
   TIWForm7.SetAsMainForm;
 
 end.

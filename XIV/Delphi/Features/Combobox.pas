@@ -11,7 +11,8 @@ uses
   IWHTMLControls, IWCompLabel, IWCompText, IWCompCheckbox, IWCompListbox,
   IWCompExtCtrls, IWCompRectangle, IWRegion, MenuFrame, IWContainer,
   IWBaseControl, IWVCLBaseContainer, IWVCLBaseControl, IWHTMLContainer,
-  IWBaseHTMLControl, IWHTML40Container;
+  IWBaseHTMLControl, IWHTML40Container, IWCompButton, IWCompGrids,
+  IWCompCalendar;
 
 type
   TformComboboxes = class(TIWAppForm)
@@ -31,10 +32,15 @@ type
     IWCheckBox2: TIWCheckBox;
     IWLabel4: TIWLabel;
     framMenu1: TframMenu;
+    IWButton1: TIWButton;
+    IWButton2: TIWButton;
+    IWButton3: TIWButton;
+    IWCalendar1: TIWCalendar;
     procedure cmboNumbersChange(Sender: TObject);
     procedure chckCheckboxClick(Sender: TObject);
     procedure IWCheckBox2Click(Sender: TObject);
     procedure IWCheckBox1Click(Sender: TObject);
+    procedure IWAppFormCheckFormId(Sender: TObject; var Allow: Boolean);
   public
   end;
 
@@ -69,6 +75,14 @@ begin
     IWCheckBox1.Caption := 'Cool Checkbox - Checked'
   else
     IWCheckBox1.Caption := 'Cool Checkbox - Unchecked';
+end;
+
+procedure TformComboboxes.IWAppFormCheckFormId(Sender: TObject;
+  var Allow: Boolean);
+begin
+//  if Allow then begin
+//    WebApplication.ShowMessage('Allow');
+//  end;
 end;
 
 end.

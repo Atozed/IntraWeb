@@ -8,7 +8,7 @@
         <FrameworkType>VCL</FrameworkType>
         <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
         <ProjectVersion>18.4</ProjectVersion>
-        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -32,6 +32,12 @@
     <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
         <Cfg_2>true</Cfg_2>
         <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
         <Base>true</Base>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base)'!=''">
@@ -70,6 +76,14 @@
         <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
         <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
         <DCC_Optimize>false</DCC_Optimize>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <Icon_MainIcon>Features_Icon.ico</Icon_MainIcon>
+        <Manifest_File>(None)</Manifest_File>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_MapFile>3</DCC_MapFile>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">

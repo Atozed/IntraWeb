@@ -26,7 +26,8 @@ implementation
 
 uses
   IWInit, IWGlobal, IW.Browser.Other, IW.Browser.InternetExplorer,
-  IW.Content.Handlers, IW.ContentBot, IW.ContentBot2;
+  IW.Content.Handlers, IW.ContentBot, IW.ContentBot2,
+  IWServerSession;
 
 function IWServerController: TIWServerController;
 begin
@@ -40,6 +41,8 @@ end;
 
 procedure TIWServerController.IWServerControllerBaseConfig(Sender: TObject);
 begin
+  SessionOptions.AllowSearchEngines := True;
+
   // Tell IntraWeb to redirect SearchEngine requests to some ContentHandler
   SearchEngineOptions.RedirectToContentHandler := True;
 

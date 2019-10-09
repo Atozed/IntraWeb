@@ -11,8 +11,6 @@ uses
 type
   TIWServerController = class(TIWServerControllerBase)
     procedure IWServerControllerBaseNewSession(ASession: TIWApplication);
-    procedure IWServerControllerBaseRewriteURL(ARequest: THttpRequest;
-      var ARewriteURL: string);
 
   private
     { Private declarations }
@@ -49,12 +47,6 @@ procedure TIWServerController.IWServerControllerBaseNewSession(
   ASession: TIWApplication);
 begin
   ASession.Data := TIWUserSession.Create(nil, ASession);
-end;
-
-procedure TIWServerController.IWServerControllerBaseRewriteURL(
-  ARequest: THttpRequest; var ARewriteURL: string);
-begin
-  ARewriteURL := '/sa/reverse/';
 end;
 
 initialization

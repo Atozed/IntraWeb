@@ -9,6 +9,9 @@
         <Projects Include="CGIRunnerReport\CGIRunnerReport.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="CGIRunner2\CGIRunner2.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="CGIRunnerReport:Make">
         <MSBuild Projects="CGIRunnerReport\CGIRunnerReport.dproj" Targets="Make"/>
     </Target>
+    <Target Name="CGIRunner2">
+        <MSBuild Projects="CGIRunner2\CGIRunner2.dproj"/>
+    </Target>
+    <Target Name="CGIRunner2:Clean">
+        <MSBuild Projects="CGIRunner2\CGIRunner2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CGIRunner2:Make">
+        <MSBuild Projects="CGIRunner2\CGIRunner2.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="CGIReport;CGIRunnerReport"/>
+        <CallTarget Targets="CGIReport;CGIRunnerReport;CGIRunner2"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="CGIReport:Clean;CGIRunnerReport:Clean"/>
+        <CallTarget Targets="CGIReport:Clean;CGIRunnerReport:Clean;CGIRunner2:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="CGIReport:Make;CGIRunnerReport:Make"/>
+        <CallTarget Targets="CGIReport:Make;CGIRunnerReport:Make;CGIRunner2:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

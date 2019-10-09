@@ -48,4 +48,32 @@ object IWForm46: TIWForm46
     TabOrder = 1
     OnAsyncClick = IWButton1AsyncClick
   end
+  object IWButton2: TIWButton
+    Left = 144
+    Top = 40
+    Width = 75
+    Height = 25
+    Caption = 'IWButton1'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    TabOrder = 2
+    OnAsyncClick = IWButton2AsyncClick
+  end
+  object IWButton3: TIWButton
+    Left = 240
+    Top = 40
+    Width = 75
+    Height = 25
+    Caption = 'IWButton1'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    TabOrder = 3
+    OnClick = IWButton3Click
+  end
 end

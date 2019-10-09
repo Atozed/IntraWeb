@@ -2,10 +2,11 @@ object IWForm1: TIWForm1
   Left = 0
   Top = 0
   Width = 797
-  Height = 400
+  Height = 731
   RenderInvisibleControls = False
   AllowPageAccess = True
   ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
   Background.Fixed = False
   LayoutMgr = IWTemplateProcessorHTML1
   HandleTabs = False
@@ -20,7 +21,7 @@ object IWForm1: TIWForm1
     Left = 264
     Top = 184
     Width = 225
-    Height = 41
+    Height = 73
     Caption = 'Send me an Unicode File'
     Color = clBtnFace
     Font.Color = clNone
@@ -50,6 +51,7 @@ object IWForm1: TIWForm1
     Top = 344
     Width = 75
     Height = 25
+    Visible = False
     Css = 'class2'
     Caption = 'IWButton3'
     Color = clBtnFace
@@ -87,6 +89,37 @@ object IWForm1: TIWForm1
     ItemIndex = -1
     FriendlyName = 'IWComboBox1'
     NoSelectionText = '-- No Selection --'
+  end
+  object tablGrid: TIWGrid
+    Left = 264
+    Top = 428
+    Width = 345
+    Height = 177
+    StyleRenderOptions.UseDisplay = True
+    BorderColors.Color = clNone
+    BorderColors.Light = clNone
+    BorderColors.Dark = clNone
+    BGColor = clNone
+    BorderSize = 1
+    BorderStyle = tfVertSides
+    Caption = 'Account Balances'
+    CellPadding = 2
+    CellSpacing = 0
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FrameBuffer = 40
+    Lines = tlAll
+    OnRenderCell = tablGridRenderCell
+    UseFrame = True
+    UseSize = True
+    InnerTableCss = 'my_table_class'
+    FriendlyName = 'tablGrid'
+    ColumnCount = 5
+    RowCount = 10
+    ShowEmptyCells = True
+    ShowInvisibleRows = True
+    ScrollToCurrentRow = False
   end
   object IWTemplateProcessorHTML1: TIWTemplateProcessorHTML
     TagType = ttIntraWeb

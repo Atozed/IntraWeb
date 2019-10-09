@@ -14,6 +14,7 @@ type
     procedure IWServerControllerBaseAfterDispatch(Request: THttpRequest;
       aReply: THttpReply);
     procedure IWServerControllerBaseConfig(Sender: TObject);
+    procedure IWServerControllerBaseBackButton(var VResyncInfo: TIWResyncInfo);
   private
     FCSPValue: string;
     FHPKPValue: string;
@@ -65,6 +66,14 @@ procedure TIWServerController.IWServerControllerBaseAfterDispatch(
 begin
   aReply.AddHeader('Content-Security-Policy', FCSPValue);
   aReply.AddHeader('Public-Key-Pins', FHPKPValue);
+end;
+
+procedure TIWServerController.IWServerControllerBaseBackButton(
+  var VResyncInfo: TIWResyncInfo);
+var
+  s: string;
+begin
+  s := VResyncInfo.FormName;
 end;
 
 initialization

@@ -97,6 +97,7 @@ object IWForm7: TIWForm7
     Style.DropAreaActiveOptions.ToColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.Height = 60
     Style.DropAreaActiveOptions.Width = 0
+    AcceptFiles = 'image/*'
     CssClasses.Strings = (
       'button='
       'button-hover='
@@ -115,7 +116,6 @@ object IWForm7: TIWForm7
       'success-icon='
       'fail-icon=')
     OnAsyncUploadCompleted = IWFileUploader1AsyncUploadCompleted
-    OnAsyncUploadError = IWFileUploader1AsyncUploadError
     FriendlyName = 'IWFileUploader1'
     Font.Color = clNone
     Font.Size = 10

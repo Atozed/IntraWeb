@@ -34,6 +34,7 @@ begin
   CGIRunner := TIWCGIRunner.Create;
   try
     CGIRunner.CGIModule := CGIModuleName;
+    //CGIRunner.SetWorkingDir := False;
     CGIRunner.Execute(WebApplication, WebApplication.Request);
     if CGIRunner.StatusResult = 0 then
     begin
