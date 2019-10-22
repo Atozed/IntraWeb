@@ -43,7 +43,7 @@ implementation
 {$R *.dfm}
 
 uses
-  IW.Common.AppInfo, IWFileCheck;
+  IW.Common.AppInfo;
 
 procedure TIWForm7.IWAppFormCreate(Sender: TObject);
 begin
@@ -112,7 +112,7 @@ begin
   // get the app path
   CurDir := TIWAppInfo.GetAppPath;
 
-  MimeType := GetUploadedFileMimeType;
+  MimeType := TIWFileUploader.CheckMimeType;  // this needs IW 15.1.6 or later. If using other version, comment this line to build it
 
   // save in the same application directory, with the same name of the original file. Overwrite if it already exists.
   IWFileUploader5.SaveToFile(FileName, CurDir + FileName, True);
