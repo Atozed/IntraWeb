@@ -1,8 +1,8 @@
 object IWServerController: TIWServerController
   OldCreateOrder = False
-  AppName = 'MyApp'
-  Description = 'My IntraWeb Application'
-  DisplayName = 'IntraWeb Application'
+  AppName = 'IWDBLookupCombo'
+  Description = 'IWDBLookupCombo Demo Application'
+  DisplayName = 'IWDBLookupCombo Demo Application'
   Port = 8888
   URLBase = '/DBLookupCombo/'
   Version = '15.0.0'

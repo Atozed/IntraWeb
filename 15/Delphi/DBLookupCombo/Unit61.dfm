@@ -198,8 +198,8 @@ object IWForm61: TIWForm61
     TargetOptions.Toolbar = True
     TerminateApp = False
     URL = 
-      'https://github.com/Atozed/IntraWeb/tree/master/15/Delphi/ImageBu' +
-      'ttons'
+      'https://github.com/Atozed/IntraWeb/tree/master/15/Delphi/DBLooku' +
+      'pCombo'
     UseTarget = False
     FriendlyName = 'IWURL1'
     TabOrder = 3
