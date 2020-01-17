@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<DATAPACKET Version="2.0">
+    <METADATA>
+        <FIELDS>
+            <FIELD attrname="Id" fieldtype="i2" />
+            <FIELD attrname="Name" fieldtype="string" WIDTH="24" />
+            <FIELD attrname="State_Id" fieldtype="i2" />
+         </FIELDS>
+     </METADATA>
+    <ROWDATA>
+        <ROW Id="1" Name="Rio de Janeiro" State_Id="1"/>
+        <ROW Id="2" Name="Buzios" State_Id="1"/>
+
+        <ROW Id="3" Name="Sao Paulo" State_Id="2"/>
+        <ROW Id="4" Name="Campinas" State_Id="2"/>
+
+        <ROW Id="5" Name="Belo Horizonte" State_Id="3"/>
+        <ROW Id="6" Name="Ouro Preto" State_Id="3"/>
+ 
+		<ROW Id="7" Name="Toronto" State_Id="4"/>
+        <ROW Id="8" Name="Brampton" State_Id="4"/>
+
+		<ROW Id="9" Name="Montreal" State_Id="5"/>
+        <ROW Id="10" Name="Quebec City" State_Id="5"/>
+
+		<ROW Id="11" Name="Vancouver" State_Id="6"/>
+        <ROW Id="12" Name="Victoria" State_Id="6"/>
+        
+		<ROW Id="13" Name="Los Angeles" State_Id="7"/>
+		<ROW Id="14" Name="San Francisco" State_Id="7"/>
+
+        <ROW Id="15" Name="Miami" State_Id="8"/>
+        <ROW Id="16" Name="Jacksonville" State_Id="8"/>
+
+        <ROW Id="17" Name="Houston" State_Id="9"/>
+        <ROW Id="18" Name="Dallas" State_Id="9"/>
+    </ROWDATA>
+</DATAPACKET>

@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="yes"?>
+<DATAPACKET Version="2.0">
+    <METADATA>
+        <FIELDS>
+            <FIELD attrname="Id" fieldtype="i2" />
+            <FIELD attrname="Name" fieldtype="string" WIDTH="24" />
+            <FIELD attrname="Country_Id" fieldtype="i2" />
+         </FIELDS>
+     </METADATA>
+    <ROWDATA>
+        <ROW Id="1" Name="Rio de Janeiro" Country_Id="1"/>
+        <ROW Id="2" Name="Sao Paulo" Country_Id="1"/>
+        <ROW Id="3" Name="Minas Gerais" Country_Id="1"/>
+        
+		<ROW Id="4" Name="Ontario" Country_Id="2"/>
+        <ROW Id="5" Name="Quebec" Country_Id="2"/>
+        <ROW Id="6" Name="British Columbia" Country_Id="2"/>
+        
+		<ROW Id="7" Name="California" Country_Id="3"/>
+        <ROW Id="8" Name="Florida" Country_Id="3"/>
+        <ROW Id="9" Name="Texas" Country_Id="3"/>
+    </ROWDATA>
+</DATAPACKET>

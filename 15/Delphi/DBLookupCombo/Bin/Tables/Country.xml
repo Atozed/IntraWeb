@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<DATAPACKET Version="2.0">
+    <METADATA>
+        <FIELDS>
+            <FIELD attrname="Id" fieldtype="i2" />
+            <FIELD attrname="Name" fieldtype="string" WIDTH="24" />
+         </FIELDS>
+     </METADATA>
+    <ROWDATA>
+        <ROW Id="1" Name="Brazil" />
+        <ROW Id="2" Name="Canada" />
+        <ROW Id="3" Name="United States"/>
+    </ROWDATA>
+</DATAPACKET>
