@@ -48,6 +48,9 @@ end;
 
 procedure TFrmMain.IWAppFormRender(Sender: TObject);
 begin
+  // this "applies" DataTables to our grid. Please notice that the ID of the element used
+  // in the following code will be always 'TBL' + < Name of your IWGrid >
+  // and always in UPPERCASE (JavaScript is case sensitive)
   AddToInitProc('$("#TBLIWGRID1").DataTable();');
 end;
 
@@ -111,6 +114,8 @@ end;
 
 procedure TFrmMain.cbStyleChange(Sender: TObject);
 begin
+  // this applies the DataTables style to our table structure (when rendered,
+  // IWGrid contains a <TABLE> tag. That table tag is the one used by DataTables)
   IWGrid1.InnerTableCss := LowerCase(cbStyle.SelectedValue);
 end;
 
