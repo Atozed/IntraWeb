@@ -5,7 +5,7 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompGrids,
-  udmMain, DB, IWCompLabel, IWCompListbox;
+  udmMain, DB, IWCompLabel, IWCompListbox, IWHTMLControls;
 
 type
   TFrmMain = class(TIWAppForm)
@@ -14,6 +14,7 @@ type
     IWLabel1: TIWLabel;
     IWLabel2: TIWLabel;
     cbStyle: TIWComboBox;
+    IWURL1: TIWURL;
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWComboBox1Change(Sender: TObject);
     procedure IWAppFormRender(Sender: TObject);
@@ -32,8 +33,14 @@ implementation
 
 procedure TFrmMain.IWAppFormCreate(Sender: TObject);
 begin
-  ContentFiles.Add('https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css');
-  ContentFiles.Add('https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js');
+  // Use this (uncomment) if you want to use files from cdn
+  //ContentFiles.Add('https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css');
+  //ContentFiles.Add('https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js');
+
+  // - OR - use these if you want to have files served locally by IntraWeb itself
+  // In this case, you need to deploy both files inside wwwroot folder too
+  ContentFiles.Add('jquery.dataTables.min.css');
+  ContentFiles.Add('jquery.dataTables.min.js');
 
   Fdm := TdmMain.Create(Self);
   PopulateCountry;

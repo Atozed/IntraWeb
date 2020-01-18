@@ -113,4 +113,32 @@ object FrmMain: TFrmMain
     FriendlyName = 'cbStyle'
     NoSelectionText = '< Default >'
   end
+  object IWURL1: TIWURL
+    Left = 672
+    Top = 48
+    Width = 265
+    Height = 25
+    Hint = 
+      'https://github.com/Atozed/IntraWeb/tree/master/15/Delphi/IWGridD' +
+      'ataTables'
+    Alignment = taLeftJustify
+    Color = clNone
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = [fsUnderline]
+    HasTabOrder = True
+    TargetOptions.AddressBar = True
+    TargetOptions.Menu = True
+    TargetOptions.Toolbar = True
+    TerminateApp = False
+    URL = 
+      'https://github.com/Atozed/IntraWeb/tree/master/15/Delphi/IWGridD' +
+      'ataTables'
+    UseTarget = False
+    FriendlyName = 'IWURL1'
+    TabOrder = 2
+    RawText = False
+    Caption = 'Source Code on github'
+  end
 end
