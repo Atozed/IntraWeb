@@ -38,7 +38,7 @@ procedure TIWForm3.IWButton1AsyncClick(Sender: TObject;
 var
   js: string;
 begin
-  js := 'el = IW.$("IWREGION1");' +
+  js := 'var el = IW.$("IWREGION1");' +
         'el.scrollTop = el.scrollTop + 10;';
   WebApplication.CallbackResponse.AddJavaScriptToExecute(js);
 end;
@@ -48,7 +48,7 @@ procedure TIWForm3.IWButton2AsyncClick(Sender: TObject;
 var
   js: string;
 begin
-  js := 'el = IW.$("IWREGION1");' +
+  js := 'var el = IW.$("IWREGION1");' +
         'el.scrollTop = el.scrollTop - 10;';
   WebApplication.CallbackResponse.AddJavaScriptToExecute(js);
 end;
