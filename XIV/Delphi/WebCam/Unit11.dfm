@@ -2,7 +2,7 @@ object IWForm11: TIWForm11
   Left = 0
   Top = 0
   Width = 944
-  Height = 848
+  Height = 738
   RenderInvisibleControls = False
   OnRender = IWAppFormRender
   AllowPageAccess = True
@@ -44,7 +44,10 @@ object IWForm11: TIWForm11
     #9#9'stream.stop();'
     #9#9'streamError();'
     #9'};'
-    #9'video.src = webkitURL.createObjectURL(stream);'
+    '                video.srcObject = stream;'
+    
+      #9'//video.src = webkitURL.createObjectURL(stream);  -> Deprecated' +
+      ' '
     '}'
     ''
     'function noStream() {'
@@ -67,7 +70,6 @@ object IWForm11: TIWForm11
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
   DesignLeft = 8
   DesignTop = 8
   object imgCam: TIWImage
@@ -75,14 +77,9 @@ object IWForm11: TIWForm11
     Top = 76
     Width = 420
     Height = 340
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    BorderOptions.Color = clNone
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
     BorderOptions.Width = 0
-    ScriptEvents = <>
     TabOrder = -1
     UseSize = False
     FriendlyName = 'imgCam'
@@ -98,18 +95,9 @@ object IWForm11: TIWForm11
     Top = 76
     Width = 420
     Height = 340
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     AutoSize = False
     FriendlyName = 'monitor'
@@ -123,18 +111,9 @@ object IWForm11: TIWForm11
     Top = 454
     Width = 420
     Height = 340
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     AutoSize = False
     FriendlyName = 'monitor'
@@ -146,111 +125,61 @@ object IWForm11: TIWForm11
     Top = 54
     Width = 222
     Height = 16
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     FriendlyName = 'IWLabel2'
     Caption = 'This is a HTML 5 <video> element:'
-    RawText = False
   end
   object IWLabel3: TIWLabel
     Left = 24
     Top = 432
     Width = 232
     Height = 16
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     FriendlyName = 'IWLabel2'
     Caption = 'This is a HTML 5 <canvas> element:'
-    RawText = False
   end
   object IWLabel4: TIWLabel
     Left = 496
     Top = 54
     Width = 226
     Height = 16
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     FriendlyName = 'IWLabel2'
     Caption = 'This is a standard IWImage control:'
-    RawText = False
   end
   object IWLabel5: TIWLabel
     Left = 24
     Top = 14
     Width = 823
     Height = 23
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
     Font.Color = clWebRED
     Font.Size = 14
     Font.Style = [fsBold]
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     FriendlyName = 'IWLabel2'
     Caption = 
       'This demo only works in a WebKit browser (Chrome) and requires a' +
       ' web cam:'
-    RawText = False
   end
   object LblStatus: TIWLabel
     Left = 496
     Top = 432
     Width = 57
     Height = 16
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
-    Alignment = taLeftJustify
-    BGColor = clNone
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
-    NoWrap = False
-    ConvertSpaces = False
     HasTabOrder = False
     FriendlyName = 'LblStatus'
     Caption = 'LblStatus'
-    RawText = False
   end
 end
