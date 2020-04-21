@@ -9,7 +9,6 @@ object IWServerController: TIWServerController
   Theme = 'iw-flat-blue'
   Version = '15.0.0'
   JavaScriptOptions.UseUncompressedFiles = True
-  SessionOptions.UniqueURL = True
   OnNewSession = IWServerControllerBaseNewSession
   Height = 648
   Width = 744

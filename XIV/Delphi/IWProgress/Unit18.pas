@@ -40,10 +40,15 @@ var
   WorkerThread: TWorkerThread;
 begin
   IWButton1.Enabled := False;
+  progressBar.Width := 0;
+  progressBar.Invalidate;  // force refresh
+  IWLabel1.Caption := '';
 
+  WebApplication.Status.Value := 0;
   IWMonitor1.Interval := 200;
   IWMonitor1.TargetValue := 100;
   IWMonitor1.Active := True;
+  IWMonitor1.Enabled := True;
 
   WorkerThread := TWorkerThread.Create(WebApplication);
   WorkerThread.Start;
