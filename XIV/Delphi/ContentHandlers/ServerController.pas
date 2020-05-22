@@ -55,7 +55,7 @@ begin
   FormHandler := TContentForm.Create(TRedForm);
   // But you can't start the session using http://<server>/redform.html
   // in this case it will be redirected to the main page
-  FormHandler.CanStartSession := True;
+  FormHandler.CanStartSession := False;
   FormHandler.RequiresSessionStart := True;
   THandlers.Add('', 'redform.html', FormHandler);
 end;
