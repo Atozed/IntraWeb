@@ -41,10 +41,23 @@ begin
 end;
 
 procedure TIWServerController.IWServerControllerBaseConfig(Sender: TObject);
+var
+  FormHandler: TContentForm;
 begin
   THandlers.Add('', 'mydoc.html', TContentRedirect.Create('/AtozedDoc.html'));
-  THandlers.Add('', 'blueform.html', TContentForm.Create(TBlueForm));
-  THandlers.Add('', 'redform.html', TContentForm.Create(TRedForm));
+
+  FormHandler := TContentForm.Create(TBlueForm);
+  // You can start the session using http://<server>/blueform.html
+  FormHandler.CanStartSession := True;
+  FormHandler.RequiresSessionStart := False;
+  THandlers.Add('', 'blueform.html', FormHandler);
+
+  FormHandler := TContentForm.Create(TRedForm);
+  // But you can't start the session using http://<server>/redform.html
+  // in this case it will be redirected to the main page
+  FormHandler.CanStartSession := True;
+  FormHandler.RequiresSessionStart := True;
+  THandlers.Add('', 'redform.html', FormHandler);
 end;
 
 procedure TIWServerController.IWServerControllerBaseNewSession(
