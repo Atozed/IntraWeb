@@ -13,6 +13,7 @@ object IWServerController: TIWServerController
   SessionOptions.SessionTimeout = 1
   OnConfig = IWServerControllerBaseConfig
   OnNewSession = IWServerControllerBaseNewSession
+  OnParseParameter = IWServerControllerBaseParseParameter
   Height = 310
   Width = 342
 end

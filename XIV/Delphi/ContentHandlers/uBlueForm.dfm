@@ -13,7 +13,6 @@ object BlueForm: TBlueForm
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
   DesignLeft = 8
   DesignTop = 8
   object IWLabel1: TIWLabel
@@ -31,9 +30,9 @@ object BlueForm: TBlueForm
   object IWButton1: TIWButton
     Left = 48
     Top = 80
-    Width = 161
+    Width = 233
     Height = 25
-    Caption = 'Back to Main Form'
+    Caption = 'Back to Main Form (Sync Request)'
     Color = clBtnFace
     Font.Color = clNone
     Font.Size = 10
@@ -41,5 +40,19 @@ object BlueForm: TBlueForm
     FriendlyName = 'IWButton1'
     TabOrder = 0
     OnClick = IWButton1Click
+  end
+  object IWButton2: TIWButton
+    Left = 48
+    Top = 128
+    Width = 233
+    Height = 25
+    Caption = 'Back to Main Form (Async Request)'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    TabOrder = 1
+    OnAsyncClick = IWButton2AsyncClick
   end
 end

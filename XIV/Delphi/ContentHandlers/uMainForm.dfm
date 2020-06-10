@@ -12,13 +12,12 @@ object MainForm: TMainForm
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
   DesignLeft = 8
   DesignTop = 8
   object IWButton1: TIWButton
     Left = 24
-    Top = 320
-    Width = 305
+    Top = 376
+    Width = 377
     Height = 25
     Caption = 'External HTML document (uses TContentRedirect)'
     Color = clBtnFace
@@ -31,10 +30,10 @@ object MainForm: TMainForm
   end
   object IWButton2: TIWButton
     Left = 24
-    Top = 232
-    Width = 305
+    Top = 288
+    Width = 377
     Height = 25
-    Caption = 'Call Red Form (uses TContentForm class)'
+    Caption = 'Call Red Form via Sync call  (uses TContentForm class)'
     Color = clBtnFace
     Font.Color = clNone
     Font.Size = 10
@@ -45,10 +44,10 @@ object MainForm: TMainForm
   end
   object IWButton3: TIWButton
     Left = 24
-    Top = 272
-    Width = 305
+    Top = 328
+    Width = 377
     Height = 25
-    Caption = 'Call Blue Form (also uses TContentForm)'
+    Caption = 'Call Blue Form via Async call (also uses TContentForm)'
     Color = clBtnFace
     Font.Color = clNone
     Font.Size = 10
@@ -61,7 +60,7 @@ object MainForm: TMainForm
     Left = 24
     Top = 25
     Width = 753
-    Height = 176
+    Height = 232
     StyleRenderOptions.RenderBorder = False
     BGColor = clNone
     Editable = True
@@ -77,6 +76,9 @@ object MainForm: TMainForm
     FriendlyName = 'IWMemo1'
     Lines.Strings = (
       'This demo shows the basic usage of new TContent* classes.'
+      ''
+      'Please use IntraWeb 15.2.2 or later'
+      ''
       
         'These classes allow you to redirect any incoming request for an ' +
         'arbitrary URL'
