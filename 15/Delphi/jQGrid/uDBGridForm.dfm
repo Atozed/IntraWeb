@@ -81,16 +81,18 @@ object DBGridForm: TDBGridForm
       item
         Width = 70
         Name = 'Area'
+        Alignment = taRightJustify
         DataType = dtFloat
         Title = 'Area'
         Editable = True
-        DecimalPlaces = 2
+        DecimalPlaces = 1
         ShowThousandSeparator = True
         FieldName = 'Area'
       end
       item
         Width = 70
         Name = 'Population'
+        Alignment = taRightJustify
         DataType = dtFloat
         Title = 'Population'
         Editable = True
