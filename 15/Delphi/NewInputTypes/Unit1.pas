@@ -40,7 +40,6 @@ type
     IWLabel20: TIWLabel;
     IWLabel21: TIWLabel;
     IWLabel22: TIWLabel;
-    procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
   public
   end;
 
@@ -48,16 +47,6 @@ implementation
 
 {$R *.dfm}
 
-
-procedure TIWForm1.IWButton2AsyncClick(Sender: TObject;
-  EventParams: TStringList);
-var
-  LButton: TIWLabel;
-begin
-  LButton := TIWLabel.Create(Self);
-  LButton.Parent := Self;
-  LButton.Name := 'IWLABEL_NEW';
-end;
 
 initialization
   TIWForm1.SetAsMainForm;
