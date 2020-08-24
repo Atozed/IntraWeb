@@ -27,6 +27,7 @@ type
     IWButton4: TIWButton;
     IWButton5: TIWButton;
     IWText1: TIWText;
+    IWButton6: TIWButton;
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton3AsyncClick(Sender: TObject; EventParams: TStringList);
@@ -38,6 +39,7 @@ type
       EventParams: TStringList; const RowID: string);
     procedure IWButton4AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton5AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWButton6AsyncClick(Sender: TObject; EventParams: TStringList);
   private
     procedure Log(const s: string);
   public
@@ -103,6 +105,14 @@ end;
 procedure TDBGridForm.Log(const s: string);
 begin
   IWMemo1.Lines.Insert(0, s);
+end;
+
+procedure TDBGridForm.IWButton6AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  ClientDataSet1.Edit;
+  ClientDataSet1.FieldByName('Continent').AsString := 'abcd';
+  ClientDataSet1.Post;
 end;
 
 end.

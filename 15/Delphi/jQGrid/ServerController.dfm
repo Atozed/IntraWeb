@@ -1,8 +1,8 @@
 object IWServerController: TIWServerController
   OldCreateOrder = False
-  AppName = 'MyApp'
-  Description = 'My IntraWeb Application'
-  DisplayName = 'IntraWeb Application'
+  AppName = 'IWNewGridsDemo'
+  Description = 'IWNewGridsDemo'
+  DisplayName = 'IWNewGridsDemo'
   Port = 8888
   Theme = 'iw-flat-blue'
   Version = '15.0.0'

@@ -18,7 +18,7 @@ object GridForm: TGridForm
   DesignTop = 8
   object IWjQGrid1: TIWjQGrid
     Left = 80
-    Top = 168
+    Top = 156
     Width = 601
     Height = 398
     Caption = ''
@@ -31,6 +31,7 @@ object GridForm: TGridForm
         Width = 200
         Name = 'Employee'
         Title = 'Employee'
+        Editable = True
       end
       item
         Width = 90
@@ -46,7 +47,9 @@ object GridForm: TGridForm
         Title = 'Amount'
       end>
     RowCount = 20
+    OnAsyncSelectRow = IWjQGrid1AsyncSelectRow
     OnGetCellText = IWjQGrid1GetCellText
+    OnSaveCell = IWjQGrid1SaveCell
   end
   object IWButton1: TIWButton
     Left = 80
@@ -59,7 +62,6 @@ object GridForm: TGridForm
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 0
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWLabel1: TIWLabel
@@ -77,7 +79,7 @@ object GridForm: TGridForm
     Left = 80
     Top = 64
     Width = 601
-    Height = 65
+    Height = 86
     BGColor = clNone
     ConvertSpaces = False
     Font.Color = clNone
@@ -91,7 +93,6 @@ object GridForm: TGridForm
         'in virtual mode i.e. it doesn'#39't "own" the data. All data is prov' +
         'ided through OnGetCellText event. It'#39's able to generate and rend' +
         'er 1 thousand records in a few milliseconds.'
-      ''
       'Here, this grid is using Bootstrap UI')
     RawText = False
     UseFrame = False
@@ -99,7 +100,7 @@ object GridForm: TGridForm
   end
   object IWButton4: TIWButton
     Left = 704
-    Top = 168
+    Top = 144
     Width = 120
     Height = 30
     Caption = 'Refresh Data'
@@ -113,7 +114,7 @@ object GridForm: TGridForm
   end
   object IWButton5: TIWButton
     Left = 704
-    Top = 209
+    Top = 185
     Width = 120
     Height = 30
     Caption = 'Clear Grid'
@@ -124,5 +125,23 @@ object GridForm: TGridForm
     FriendlyName = 'IWButton2'
     TabOrder = 2
     OnAsyncClick = IWButton5AsyncClick
+  end
+  object IWMemo1: TIWMemo
+    Left = 80
+    Top = 560
+    Width = 601
+    Height = 145
+    StyleRenderOptions.RenderBorder = False
+    BGColor = clNone
+    Editable = True
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    InvisibleBorder = False
+    HorizScrollBar = False
+    VertScrollBar = True
+    Required = False
+    SubmitOnAsyncEvent = True
+    FriendlyName = 'IWMemo1'
   end
 end

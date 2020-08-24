@@ -25,7 +25,6 @@ object DBGridForm: TDBGridForm
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 0
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWButton2: TIWButton
@@ -49,7 +48,7 @@ object DBGridForm: TDBGridForm
     Height = 361
     Caption = 'Countries'
     VisibleRowCount = 14
-    Options = [goViewRecords, goGridView, goHoverRows, goSortable, goZebraStriped, goShowHideBtn, goShowPager]
+    Options = [goViewRecords, goCellEdit, goGridView, goHoverRows, goSortable, goZebraStriped, goShowHideBtn, goShowPager]
     DateFormat = 'd-m-Y'
     UI = uiJQuery
     DataSource = DataSource1
@@ -60,7 +59,6 @@ object DBGridForm: TDBGridForm
         Title = 'Name'
         Searchable = True
         Link = True
-        Editable = True
         EditType = etText
         FieldName = 'Name'
       end
@@ -138,8 +136,8 @@ object DBGridForm: TDBGridForm
   object IWLabel1: TIWLabel
     Left = 80
     Top = 538
-    Width = 70
-    Height = 16
+    Width = 93
+    Height = 21
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -199,6 +197,20 @@ object DBGridForm: TDBGridForm
     RawText = False
     UseFrame = False
     WantReturns = True
+  end
+  object IWButton6: TIWButton
+    Left = 792
+    Top = 324
+    Width = 120
+    Height = 30
+    Caption = 'Edit'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton2'
+    TabOrder = 6
+    OnAsyncClick = IWButton6AsyncClick
   end
   object ClientDataSet1: TClientDataSet
     PersistDataPacket.Data = {

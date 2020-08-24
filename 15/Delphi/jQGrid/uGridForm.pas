@@ -5,7 +5,7 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWjQGrid,
-  IWCompButton, IWCompText, IWCompLabel;
+  IWCompButton, IWCompText, IWCompLabel, IWCompMemo;
 
 type
   TGridForm = class(TIWAppForm)
@@ -15,6 +15,7 @@ type
     IWText1: TIWText;
     IWButton4: TIWButton;
     IWButton5: TIWButton;
+    IWMemo1: TIWMemo;
     procedure IWjQGrid1GetCellText(Sender: TObject; const Row, Col: Integer;
       var CellText: string);
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
@@ -22,6 +23,11 @@ type
     procedure IWAppFormDestroy(Sender: TObject);
     procedure IWButton4AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton5AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWjQGrid1SaveCell(Sender: TObject; const RowID: string;
+      ACol: Integer; const AColName: string; var AValue: string;
+      var ASave: Boolean; var AErrorMessage: string);
+    procedure IWjQGrid1AsyncSelectRow(Sender: TObject; EventParams: TStringList;
+      const RowID: string);
   private
     FFirstNames,
     FLastNames: TStringList;
@@ -32,6 +38,8 @@ implementation
 
 {$R *.dfm}
 
+var
+  GridData: array[0..10 - 1, 0..10 - 1] of string;
 
 procedure TGridForm.IWAppFormCreate(Sender: TObject);
 begin
@@ -302,6 +310,21 @@ begin
       CellText := Format('%s$%f', [iif(LAmount < 0, '-', ''), Abs(LAmount)]);
     end;
   end;
+end;
+
+procedure TGridForm.IWjQGrid1SaveCell(Sender: TObject; const RowID: string;
+  ACol: Integer; const AColName: string; var AValue: string; var ASave: Boolean;
+  var AErrorMessage: string);
+begin
+  ASave := False;
+  AErrorMessage := 'Read only';
+end;
+
+procedure TGridForm.IWjQGrid1AsyncSelectRow(Sender: TObject;
+  EventParams: TStringList; const RowID: string);
+begin
+  IWMemo1.Lines.Add('Selected Row: ' + RowID);
+  //IWMemo1.ScrollToBottom;
 end;
 
 end.

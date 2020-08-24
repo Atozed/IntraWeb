@@ -4,7 +4,8 @@ interface
 
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
-  IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompButton;
+  IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompButton,
+  IWCompEdit;
 
 type
   TMainForm = class(TIWAppForm)
