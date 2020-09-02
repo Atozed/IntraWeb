@@ -8,20 +8,11 @@ object IWForm16: TIWForm16
   ConnectionMode = cmAny
   OnCreate = IWAppFormCreate
   Background.Fixed = False
-  HandleTabs = True
+  HandleTabs = False
   LeftToRight = True
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  JavaScript.Strings = (
-    'window.onpopstate = function(event) {'
-    '  alert('#39'browser-back: '#39' + window.location.search.substring(1));'
-    '  var id = IW.getAsyncIdFromState();'
-    '  if (id) {'
-    '      ajaxCall(id);'
-    '  }'
-    '  //window.location.reload();'
-    '};')
   DesignLeft = 2
   DesignTop = 2
   object IWButton1: TIWButton

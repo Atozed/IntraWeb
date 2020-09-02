@@ -10,14 +10,12 @@ object IWServerController: TIWServerController
   ShowStartParams = False
   ExceptionLogger.Enabled = True
   CookieOptions.UseCookies = False
-  JavaScriptOptions.UseUncompressedFiles = True
   JavaScriptOptions.RenderjQuery = False
   SecurityOptions.CheckSameUA = False
   SecurityOptions.CheckWindowId = False
   SecurityOptions.SurrogateSessionId = False
-  PostRedirectGet = prgEnabled
   AutoLoadIniSettings = False
   OnNewSession = IWServerControllerBaseNewSession
-  Height = 617
-  Width = 779
+  Height = 310
+  Width = 342
 end
