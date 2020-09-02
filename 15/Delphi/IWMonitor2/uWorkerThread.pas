@@ -32,23 +32,31 @@ uses
 // Once this thread is created with a 2000 milliseconds interval, this signaling will happen at each 10 seconds
 procedure TWorkerThread.DoExecute;
 var
-  AList: TList;
+  LSessionList: TStringList;
   i: Integer;
-  ASession: TIWApplication;
-  xValue: Integer;
 begin
   Inc(FValue);
-  if FValue >= 5 then begin               // 5 means that we have to signal all sessions that we have some "new data"
-    FValue := 0;                          // reset our counter
-    AList := gSessions.LockList(False);   // get a list of all sessions, using a readonly lock
-    try
-      for i := 0 to AList.Count - 1 do begin
-        ASession := TIWApplication(AList[i]);
-        ASession.Status.Value := 100;     // sessions are prepared to understand this arbitrary value (100) as the signal that new data has arrived
-      end;
-    finally
-      gSessions.UnLockList(AList);        // Unlock the list
+  if FValue < 5 then Exit;
+
+                    // >= 5 means that we have to signal all sessions that we have some "new data"
+  FValue := 0;      // reset our counter
+
+  // First, create a session list to hold the session IDs
+  LSessionList := TStringList.Create;
+  try
+    gSessions.GetList(LSessionList);
+    for i := 0 to LSessionList.Count - 1 do begin
+      gSessions.Execute(LSessionList[i],
+        procedure(aSession: TObject)
+        var
+          LSession: TIWApplication absolute aSession;
+        begin
+          LSession.Status.Value := 100;
+        end
+      );
     end;
+  finally
+    LSessionList.Free;
   end;
 end;
 

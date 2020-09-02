@@ -12,8 +12,8 @@ object IWForm9: TIWForm9
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 8
-  DesignTop = 8
+  DesignLeft = 2
+  DesignTop = 2
   object IWButton1: TIWButton
     Left = 48
     Top = 48
@@ -25,7 +25,6 @@ object IWForm9: TIWForm9
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 0
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWRegion1: TIWRegion
@@ -34,9 +33,6 @@ object IWForm9: TIWForm9
     Width = 665
     Height = 289
     RenderInvisibleControls = True
-    BorderOptions.NumericWidth = 1
-    BorderOptions.BorderWidth = cbwNumeric
-    BorderOptions.Style = cbsSolid
     BorderOptions.Color = clWebDARKGRAY
     Color = clMenu
   end

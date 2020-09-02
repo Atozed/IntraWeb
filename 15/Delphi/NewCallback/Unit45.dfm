@@ -13,9 +13,8 @@ object IWForm45: TIWForm45
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
-  DesignLeft = 8
-  DesignTop = 8
+  DesignLeft = 2
+  DesignTop = 2
   object IWButton1: TIWButton
     Left = 48
     Top = 40
@@ -38,7 +37,6 @@ object IWForm45: TIWForm45
           ');')
         Event = 'onClick'
       end>
-    TabOrder = 0
   end
   object IWButton3: TIWButton
     Left = 48
@@ -62,6 +60,49 @@ object IWForm45: TIWForm45
           '     return true;'
           '   }'
           ');')
+        Event = 'onClick'
+      end>
+    TabOrder = 3
+  end
+  object IWButton2: TIWButton
+    Left = 48
+    Top = 180
+    Width = 193
+    Height = 33
+    Caption = 'Call ProcessString'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <
+      item
+        EventCode.Strings = (
+          'ajaxCall("Multiply2", "&s=parameter", false, '
+          '   function(response) {'
+          '     alert("Result is: " + response);'
+          '     return true;'
+          '   }'
+          ');')
+        Event = 'onClick'
+      end>
+    TabOrder = 2
+  end
+  object IWButton4: TIWButton
+    Left = 48
+    Top = 260
+    Width = 193
+    Height = 33
+    Caption = 'Call ProcessString'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <
+      item
+        EventCode.Strings = (
+          'ajaxCall("SetCaption", "&newcaption=Set from JavaScript");')
         Event = 'onClick'
       end>
     TabOrder = 1

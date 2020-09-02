@@ -8,13 +8,22 @@ object IWForm16: TIWForm16
   ConnectionMode = cmAny
   OnCreate = IWAppFormCreate
   Background.Fixed = False
-  HandleTabs = False
+  HandleTabs = True
   LeftToRight = True
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 8
-  DesignTop = 8
+  JavaScript.Strings = (
+    'window.onpopstate = function(event) {'
+    '  alert('#39'browser-back: '#39' + window.location.search.substring(1));'
+    '  var id = IW.getAsyncIdFromState();'
+    '  if (id) {'
+    '      ajaxCall(id);'
+    '  }'
+    '  //window.location.reload();'
+    '};')
+  DesignLeft = 2
+  DesignTop = 2
   object IWButton1: TIWButton
     Left = 80
     Top = 56
@@ -29,7 +38,6 @@ object IWForm16: TIWForm16
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 0
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWComboBox1: TIWComboBox

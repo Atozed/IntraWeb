@@ -76,7 +76,7 @@ begin
   FRegion1.Parent := Self;
   FRegion1.Width := 500;
   FRegion1.Height := 500;
-  FRegion1.Visible := True;
+  FRegion1.Visible := False;
   FRegion1.BorderOptions.NumericWidth := 0;
 
   FButton1 := TIWButton.Create(Self);
@@ -254,6 +254,8 @@ end;
 
 procedure TIWForm16.IWButton1AsyncClick(Sender: TObject;
   EventParams: TStringList);
+var
+  state: string;
 begin
   FreeAll;
 
@@ -268,6 +270,9 @@ begin
     7: CreateTabControl;
     8: CreateComboBox;
   end;
+
+  state := IntToStr(IWComboBox1.ItemIndex);
+  WebApplication.CallBackResponse.PushState(state);
 end;
 
 procedure TIWForm16.IWButton2Click(Sender: TObject);
