@@ -62,38 +62,14 @@ object IWForm45: TIWForm45
           ');')
         Event = 'onClick'
       end>
-    TabOrder = 3
-  end
-  object IWButton2: TIWButton
-    Left = 48
-    Top = 180
-    Width = 193
-    Height = 33
-    Caption = 'Call ProcessString'
-    Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    FriendlyName = 'IWButton1'
-    ScriptEvents = <
-      item
-        EventCode.Strings = (
-          'ajaxCall("Multiply2", "&s=parameter", false, '
-          '   function(response) {'
-          '     alert("Result is: " + response);'
-          '     return true;'
-          '   }'
-          ');')
-        Event = 'onClick'
-      end>
     TabOrder = 2
   end
   object IWButton4: TIWButton
     Left = 48
-    Top = 260
+    Top = 180
     Width = 193
     Height = 33
-    Caption = 'Call ProcessString'
+    Caption = 'Call SetCaption'
     Color = clBtnFace
     Font.Color = clNone
     Font.Size = 10

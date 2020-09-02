@@ -11,7 +11,6 @@ type
   TIWForm45 = class(TIWAppForm)
     IWButton1: TIWButton;
     IWButton3: TIWButton;
-    IWButton2: TIWButton;
     IWButton4: TIWButton;
     procedure IWAppFormCreate(Sender: TObject);
   public
