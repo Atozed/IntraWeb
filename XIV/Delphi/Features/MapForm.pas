@@ -11,14 +11,15 @@ uses
   {$IFDEF Linux}IWJpeg,{$ELSE}jpeg,{$ENDIF}
   IWAppForm, IWApplication, IWTypes, Classes, IWControl,
   IWHTMLControls, IWCompLabel, MenuFrame, IWBaseControl,
-  IWVCLBaseControl, IWBaseHTMLControl, IWCompExtCtrls;
+  IWVCLBaseControl, IWBaseHTMLControl, IWCompExtCtrls, IWCompMemo;
 
 type
   TformMap = class(TIWAppForm)
     imagMap: TIWImage;
     IWLabel1: TIWLabel;
     framMenu1: TframMenu;
-    procedure imagMapMouseDown(ASender: TObject; const AX, AY: Integer);
+    IWMemo1: TIWMemo;
+    procedure imagMapAsyncMouseDown(Sender: TObject; EventParams: TStringList);
   protected
     FLastX: Integer;
     FLastY: Integer;
@@ -28,21 +29,17 @@ type
 implementation
 {$R *.dfm}
 
-procedure TformMap.imagMapMouseDown(ASender: TObject; const AX, AY: Integer);
+uses
+  System.SysUtils;
+
+procedure TformMap.imagMapAsyncMouseDown(Sender: TObject;
+  EventParams: TStringList);
+var
+  x, y: Integer;
 begin
-  with imagMap.Picture.Bitmap.Canvas do begin
-    Brush.Style := bsClear;
-    Font.Color := clRed;
-    Font.Style := [fsBold];
-    TextOut(AX - TextWidth('X') div 2, AY - TextHeight('X') div 2, 'X');
-    if (FLastX > 0) and (FLastY > 0) then begin
-      Pen.Color := clBlue;
-      MoveTo(FLastX, FLastY);
-      LineTo(AX, AY);
-    end;
-    FLastX := AX;
-    FLastY := AY;
-  end;
+  x := imagMap.GetAsyncParam('X', 0);
+  y := imagMap.GetAsyncParam('Y', 0);
+  IWMemo1.Lines.Add('X = ' + IntToStr(x) + ', Y = ' + IntToStr(y));
 end;
 
 end.
