@@ -6,7 +6,7 @@ object IWServerController: TIWServerController
   Compression.Level = 6
   Description = 'My IntraWeb Application'
   DisplayName = 'IntraWeb Application'
-  Port = 8888
+  Port = 8889
   SSLOptions.SSLVersion = SSLv3
   Version = '15.0.0'
   JavaScriptOptions.UseUncompressedFiles = True

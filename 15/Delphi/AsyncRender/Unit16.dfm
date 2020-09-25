@@ -13,8 +13,8 @@ object IWForm16: TIWForm16
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 8
-  DesignTop = 8
+  DesignLeft = 2
+  DesignTop = 2
   object IWButton1: TIWButton
     Left = 80
     Top = 56
@@ -29,7 +29,6 @@ object IWForm16: TIWForm16
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 0
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWComboBox1: TIWComboBox

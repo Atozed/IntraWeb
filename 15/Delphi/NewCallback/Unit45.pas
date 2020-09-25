@@ -11,6 +11,7 @@ type
   TIWForm45 = class(TIWAppForm)
     IWButton1: TIWButton;
     IWButton3: TIWButton;
+    IWButton4: TIWButton;
     procedure IWAppFormCreate(Sender: TObject);
   public
   end;
@@ -19,6 +20,8 @@ implementation
 
 {$R *.dfm}
 
+uses
+  IW.Common.RenderStream;
 
 procedure TIWForm45.IWAppFormCreate(Sender: TObject);
 begin
@@ -40,6 +43,13 @@ begin
       begin
         s := aParams.Values['s'];
         AResult := 'String received is: ' + s;
+      end
+    );
+
+  RegisterCallBack('SetCaption',
+      procedure (aParams: TStrings)
+      begin
+        IWButton4.Caption := aParams.Values['newcaption'];
       end
     );
 end;

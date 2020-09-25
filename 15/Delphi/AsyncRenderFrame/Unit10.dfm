@@ -10,11 +10,7 @@ object IWFrame10: TIWFrame10
     Width = 501
     Height = 181
     RenderInvisibleControls = True
-    TabOrder = 0
     Align = alClient
-    BorderOptions.NumericWidth = 1
-    BorderOptions.BorderWidth = cbwNumeric
-    BorderOptions.Style = cbsSolid
     BorderOptions.Color = clWebDARKGRAY
     Color = clWebWHITE
     object iwlbl1: TIWLabel
@@ -41,7 +37,6 @@ object IWFrame10: TIWFrame10
       Font.Style = []
       FriendlyName = 'iwdt1'
       SubmitOnAsyncEvent = True
-      TabOrder = 0
       OnAsyncKeyDown = iwdt1AsyncChange
       DataType = stNumber
       DataTypeOptions.NumberType = ntInteger
@@ -71,7 +66,6 @@ object IWFrame10: TIWFrame10
       Font.Style = []
       FriendlyName = 'iwdt2'
       SubmitOnAsyncEvent = True
-      TabOrder = 1
       OnAsyncKeyDown = iwdt1AsyncChange
       DataType = stNumber
       DataTypeOptions.NumberType = ntInteger
@@ -102,7 +96,6 @@ object IWFrame10: TIWFrame10
       FriendlyName = 'iwdt3'
       ReadOnly = True
       SubmitOnAsyncEvent = True
-      TabOrder = 2
     end
   end
 end

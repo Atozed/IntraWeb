@@ -1,13 +1,15 @@
-program IWMonitor2Demo;
+program PostDataDemo;
 
 uses
   IWRtlFix,
+  IWJclStackTrace,
+  IWJclDebug,
   Forms,
   IWStart,
-  Unit18 in 'Unit18.pas' {IWForm18: TIWAppForm},
+  Unit2 in 'Unit2.pas' {IWForm2: TIWAppForm},
   ServerController in 'ServerController.pas' {IWServerController: TIWServerControllerBase},
   UserSessionUnit in 'UserSessionUnit.pas' {IWUserSession: TIWUserSessionBase},
-  uWorkerThread in 'uWorkerThread.pas';
+  IW.Content.XML in 'IW.Content.XML.pas';
 
 {$R *.res}
 
