@@ -2,6 +2,7 @@ program HttpSysDemo1;
 
 uses
   IWRtlFix,
+  IWServer,
   IWJclStackTrace,
   IWJclDebug,
   IWStartHSys,

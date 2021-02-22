@@ -106,21 +106,57 @@ uses
   SubTemplatesForm,
   TimerForm, TemplateForm, pdfDemoForm,
   TreeViewForm, Threaded, RegionForm, ResizeForm, ActiveXForm, MPEGForm,
-  QuickTimeForm;
+  QuickTimeForm, IWApplication;
 
-procedure TframMenu.Move(AFormClass: TIWAppFormClass);
+function ShowForm(AWebApplication: TIWApplication; AFormClass: TIWAppFormClass; AReleaseCurrent: Boolean): TIWAppForm;
 var
-  NewForm: TIWAppForm;
+  LActiveForm: TComponent;
 begin
-  if (AFormClass.ClassName <> WebApplication.ActiveForm.ClassName) then
-  begin
-    // Release the current form
-    TIWAppForm(WebApplication.ActiveForm).Release;
-    // Create the next form
-    NewForm := AFormClass.Create(WebApplication);
-    NewForm.Show;
+  Result := nil;
+  if not Assigned(AFormClass) then begin
+    Exit;
+  end;
+
+  // If desired form is already active form there's no need to do anything
+  LActiveForm := AWebApplication.ActiveForm;
+  if Assigned(LActiveForm) and (AFormClass = LActiveForm.ClassType) then begin
+    Exit(LActiveForm as TIWAppForm);
+  end;
+
+  // Check if desired form already exists. If so, use it, otherwise create a new one
+  Result := AWebApplication.FindFormByClassName(AFormClass.ClassName) as TIWAppForm;
+  if not Assigned(Result) then begin
+    Result := AFormClass.Create(AWebApplication);
+  end;
+
+  // Show the form. Optionally destroy the current active form
+  if Assigned(Result) then begin
+    if AReleaseCurrent and Assigned(LActiveForm) then begin
+      TIWAppForm(LActiveForm).Release;
+    end;
+    Result.Show;
   end;
 end;
+
+procedure TframMenu.Move(AFormClass: TIWAppFormClass);
+begin
+  //ShowForm(WebApplication, AFormClass, True);
+  WebApplication.ShowForm(AFormClass, True);
+end;
+
+//procedure TframMenu.Move(AFormClass: TIWAppFormClass);
+//var
+//  NewForm: TIWAppForm;
+//begin
+//  if (AFormClass.ClassName <> WebApplication.ActiveForm.ClassName) then
+//  begin
+//    // Release the current form
+//    TIWAppForm(WebApplication.ActiveForm).Release;
+//    // Create the next form
+//    NewForm := AFormClass.Create(WebApplication);
+//    NewForm.Show;
+//  end;
+//end;
 
 //procedure TframMenu.Move(AFormClass: TIWAppFormClass);
 //begin

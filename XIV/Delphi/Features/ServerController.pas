@@ -15,9 +15,12 @@ type
       aReply: THttpReply);
     procedure IWServerControllerBaseConfig(Sender: TObject);
     procedure IWServerControllerBaseBackButton(var VResyncInfo: TIWResyncInfo);
+    procedure IWServerControllerBaseRewriteURL(ARequest: THttpRequest;
+      var ARewriteURL: string);
   private
     FCSPValue: string;
     FHPKPValue: string;
+    function GetCSPValue(aReply: THttpReply): string;
   public
   end;
 
@@ -47,11 +50,13 @@ begin
 
   // you may add to the server list other domains, for instance, a google API resource:
   // LServerList := QuotedStr('self') + ' https://fonts.googleapis.com ';
-  LServerList := QuotedStr('self') + ' ';
-  FCSPValue := 'default-src ' + LServerList + '; ' +
-               'script-src ' + LServerList + QuotedStr('unsafe-inline') + ' ' + QuotedStr('unsafe-eval') + '; ' +
-               'style-src ' + LServerList + QuotedStr('unsafe-inline') + '; ' +
-               'img-src ' + LServerList + ';';
+  //LServerList := QuotedStr('self') + ' ';
+  LServerList := 'http://127.0.0.1:8888 ';
+  FCSPValue := 'frame-ancestors ' + QuotedStr('none') + '; ' +
+               'default-src ' + LServerList + '; ' + 'nonce-';
+               //'script-src ' + LServerList + QuotedStr('unsafe-inline') + ' ' + QuotedStr('unsafe-eval') + '; ' +
+               //'style-src ' + LServerList + QuotedStr('unsafe-inline') + '; ' +
+               //'img-src ' + LServerList + ';';
 
   // HTTP Public Key Pinning - HPKP
   FHPKPValue := 'pin-sha256="F9BNFsxzgvmpLdIVPoFFJT8/5z/vMzSWRHB6yT7TOl8=";' +
@@ -61,11 +66,31 @@ begin
                 //'report-uri="https://www.yoursite.com/report"';
 end;
 
+function TIWServerController.GetCSPValue(aReply: THttpReply): string;
+var
+  LServerList: string;
+  LNonce: string;
+  WebApp: TIWApplication;
+begin
+  // Content Security Policy - CSP
+  // you may add to the server list other domains, for instance, a google API resource:
+  // LServerList := QuotedStr('self') + ' https://fonts.googleapis.com ';
+  //LServerList := QuotedStr('self') + ' ';
+  LServerList := 'http://127.0.0.1:8888 ';
+  Result := 'frame-ancestors ' + QuotedStr('none') + '; ' +
+            'base-uri '+ LServerList + '; ' +
+            'default-src ' + LServerList + ' ' + QuotedStr('nonce-' + aReply.Nonce) + ' ' + QuotedStr('unsafe-eval') + {' ' + QuotedStr('unsafe-inline') +} '; ' +
+            'script-src ' + LServerList + ' ' + QuotedStr('nonce-' + aReply.Nonce) + ' ' + QuotedStr('unsafe-eval') + '; ' +
+               //'script-src ' + LServerList + QuotedStr('unsafe-inline') + ' ' + QuotedStr('unsafe-eval') + '; ' +
+            'style-src ' + LServerList + ' ' + QuotedStr('nonce-' + aReply.Nonce) + ' ' + QuotedStr('unsafe-inline') + '; ' +
+            'img-src ' + LServerList + ';';
+end;
+
 procedure TIWServerController.IWServerControllerBaseAfterDispatch(
   Request: THttpRequest; aReply: THttpReply);
 begin
-  aReply.AddHeader('Content-Security-Policy', FCSPValue);
-  aReply.AddHeader('Public-Key-Pins', FHPKPValue);
+  //aReply.AddHeader('Content-Security-Policy', GetCSPValue(aReply));
+  //aReply.AddHeader('Public-Key-Pins', FHPKPValue);
 end;
 
 procedure TIWServerController.IWServerControllerBaseBackButton(
@@ -74,6 +99,12 @@ var
   s: string;
 begin
   s := VResyncInfo.FormName;
+end;
+
+procedure TIWServerController.IWServerControllerBaseRewriteURL(
+  ARequest: THttpRequest; var ARewriteURL: string);
+begin
+  //ARewriteURL := '/MyApp/';
 end;
 
 initialization

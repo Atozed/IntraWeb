@@ -49,7 +49,7 @@ begin
   with IWTreeView1.Items.Add do begin
     ParentItem := Sender as TIWTreeViewItem;
     Caption := 'Item' + IntToStr(FItemCount);
-    OnClick := ItemClick;
+    //OnClick := ItemClick;
   end;
   inc(FItemCount);
 end;

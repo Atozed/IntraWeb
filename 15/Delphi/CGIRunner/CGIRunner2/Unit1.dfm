@@ -1,8 +1,8 @@
 object IWForm1: TIWForm1
   Left = 0
   Top = 0
-  Width = 892
-  Height = 586
+  Width = 636
+  Height = 477
   RenderInvisibleControls = True
   AllowPageAccess = True
   ConnectionMode = cmAny
@@ -12,28 +12,13 @@ object IWForm1: TIWForm1
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
-  DesignLeft = 8
-  DesignTop = 8
-  object iwbtn1: TIWButton
-    Left = 48
-    Top = 40
-    Width = 233
-    Height = 33
-    Caption = 'Execute CGI'
-    Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    FriendlyName = 'iwbtn1'
-    TabOrder = 0
-    OnAsyncClick = iwbtn1AsyncClick
-  end
+  DesignLeft = 2
+  DesignTop = 2
   object IWMemo1: TIWMemo
-    Left = 48
-    Top = 96
-    Width = 793
-    Height = 457
+    Left = 64
+    Top = 88
+    Width = 521
+    Height = 361
     StyleRenderOptions.RenderBorder = False
     BGColor = clNone
     Editable = True
@@ -44,7 +29,6 @@ object IWForm1: TIWForm1
     HorizScrollBar = False
     VertScrollBar = True
     Required = False
-    TabOrder = 1
     SubmitOnAsyncEvent = True
     FriendlyName = 'IWMemo1'
   end

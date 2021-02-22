@@ -10,6 +10,7 @@ object IWServerController: TIWServerController
   HttpSysOptions.VirtualHostNames = 'mail.atozed.com'
   SessionOptions.SessionTimeout = 2
   SessionOptions.RestartExpiredSession = True
+  OnConfig = IWServerControllerBaseConfig
   OnNewSession = IWServerControllerBaseNewSession
   OnBackButton = IWServerControllerBaseBackButton
   Height = 480

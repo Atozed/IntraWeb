@@ -6,6 +6,6 @@ object IWServerController: TIWServerController
   Port = 8888
   Version = '15.0.0'
   OnNewSession = IWServerControllerBaseNewSession
-  Height = 310
-  Width = 342
+  Height = 528
+  Width = 596
 end

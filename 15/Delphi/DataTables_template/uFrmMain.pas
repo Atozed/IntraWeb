@@ -7,13 +7,14 @@ uses
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompGrids,
   IWCompLabel, IWCompListbox, IWHTMLControls, IWVCLComponent,
   IWBaseLayoutComponent, IWBaseContainerLayout, IWContainerLayout,
-  IWTemplateProcessorHTML;
+  IWTemplateProcessorHTML, IWCompExtCtrls;
 
 type
   TFrmMain = class(TIWAppForm)
     IWTemplateProcessorHTML: TIWTemplateProcessorHTML;
     IWLabel3: TIWLabel;
     IWLabelGrid: TIWLabel;
+    IWImage1: TIWImage;
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWAppFormRender(Sender: TObject);
   private

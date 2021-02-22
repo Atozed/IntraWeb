@@ -33,6 +33,8 @@ type
     procedure IWGradButton14AsyncClick(Sender: TObject;
       EventParams: TStringList);
     procedure IWGradButton16Click(Sender: TObject);
+    procedure IWGradButton8AsyncClick(Sender: TObject;
+      EventParams: TStringList);
   public
   end;
 
@@ -40,6 +42,8 @@ implementation
 
 {$R *.dfm}
 
+uses
+  IWCertManager;
 
 procedure TIWForm2.IWGradButton13AsyncClick(Sender: TObject;
   EventParams: TStringList);
@@ -67,6 +71,12 @@ procedure TIWForm2.IWGradButton1AsyncClick(Sender: TObject;
   EventParams: TStringList);
 begin
   IWGradButton2.Enabled := not IWGradButton2.Enabled;
+end;
+
+procedure TIWForm2.IWGradButton8AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  WebApplication.ShowMessage('shouldn''t see this');
 end;
 
 initialization

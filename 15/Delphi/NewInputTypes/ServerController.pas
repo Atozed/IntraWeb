@@ -12,6 +12,7 @@ type
   TIWServerController = class(TIWServerControllerBase)
     procedure IWServerControllerBaseNewSession(ASession: TIWApplication);
     procedure IWServerControllerBaseBackButton(var VResyncInfo: TIWResyncInfo);
+    procedure IWServerControllerBaseConfig(Sender: TObject);
 
   private
     { Private declarations }
@@ -54,6 +55,15 @@ procedure TIWServerController.IWServerControllerBaseBackButton(
   var VResyncInfo: TIWResyncInfo);
 begin
   VResyncInfo.SetActiveForm := False;
+end;
+
+procedure TIWServerController.IWServerControllerBaseConfig(Sender: TObject);
+begin
+  Self.RegionalSettings.DecimalSeparator := ',';
+  Self.RegionalSettings.ThousandSeparator := '.';
+  Self.RegionalSettings.CurrencyString := ' €';
+  Self.RegionalSettings.CurrencyFormat := 1;
+  Self.RegionalSettings.ShowThousandSeparator := True;
 end;
 
 initialization

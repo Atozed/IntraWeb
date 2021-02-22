@@ -3,11 +3,11 @@ unit uDBGridForm;
 interface
 
 uses
-  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWjQGrid,
-  IWCompTabControl, Vcl.Forms, IWVCLBaseContainer, IWContainer, IWHTMLContainer,
-  IWHTML40Container, IWRegion, Data.DB, Datasnap.DBClient, IWCompButton,
-  IWCompLabel, IWCompMemo, IWCompText;
+  IWCompTabControl, DB, DBClient, IWCompText, IWCompLabel, IWCompMemo,
+  IWCompButton, Forms, IWVCLBaseContainer, IWContainer, IWHTMLContainer,
+  IWHTML40Container;
 
 type
   TDBGridForm = class(TIWAppForm)
@@ -40,6 +40,7 @@ type
     procedure IWButton4AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton5AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton6AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWAppFormCreate(Sender: TObject);
   private
     procedure Log(const s: string);
   public
@@ -49,6 +50,11 @@ implementation
 
 {$R *.dfm}
 
+
+procedure TDBGridForm.IWAppFormCreate(Sender: TObject);
+begin
+  IWjQDBGrid1.DataSource := DataSource1;
+end;
 
 procedure TDBGridForm.IWButton1AsyncClick(Sender: TObject;
   EventParams: TStringList);
@@ -98,8 +104,11 @@ end;
 
 procedure TDBGridForm.IWjQDBGrid1AsyncSelectRow(Sender: TObject;
   EventParams: TStringList; const RowID: string);
+var
+  LRowIsSelected: Boolean;
 begin
-  Log('AsyncSelectRow: RowId = ' + RowID);
+  LRowIsSelected := IWjQDBGrid1.RowSelectedStatus;
+  Log('AsyncSelectRow: RowId = ' + RowID + ', Row is selected: ' + BoolToStr(LRowIsSelected, True));
 end;
 
 procedure TDBGridForm.Log(const s: string);

@@ -36,11 +36,15 @@ type
     IWButton2: TIWButton;
     IWButton3: TIWButton;
     IWCalendar1: TIWCalendar;
+    IWCheckBox3: TIWCheckBox;
+    lablCheckbox2: TIWLabel;
+    IWCheckBox4: TIWCheckBox;
     procedure cmboNumbersChange(Sender: TObject);
-    procedure chckCheckboxClick(Sender: TObject);
-    procedure IWCheckBox2Click(Sender: TObject);
     procedure IWCheckBox1Click(Sender: TObject);
     procedure IWAppFormCheckFormId(Sender: TObject; var Allow: Boolean);
+    procedure IWCheckBox3AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWCheckBox4Change(Sender: TObject);
+    procedure IWCheckBox2Change(Sender: TObject);
   public
   end;
 
@@ -53,20 +57,6 @@ begin
     lablNumber.Caption := cmboNumbers.NoSelectionText
   else
     lablNumber.Caption := cmboNumbers.Items[cmboNumbers.ItemIndex];
-end;
-
-procedure TformComboboxes.chckCheckboxClick(Sender: TObject);
-begin
-  if chckCheckbox.Checked then begin
-    lablCheckbox.Caption := 'Checked';
-  end else begin
-    lablCheckbox.Caption := 'Unchecked';
-  end;
-end;
-
-procedure TformComboboxes.IWCheckBox2Click(Sender: TObject);
-begin
-  IWRegion1.Visible := IWCheckbox2.Checked;
 end;
 
 procedure TformComboboxes.IWCheckBox1Click(Sender: TObject);
@@ -83,6 +73,26 @@ begin
 //  if Allow then begin
 //    WebApplication.ShowMessage('Allow');
 //  end;
+end;
+
+procedure TformComboboxes.IWCheckBox3AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  if IWCheckBox3.Checked then begin
+    lablCheckbox2.Caption := 'Checked';
+  end else begin
+    lablCheckbox2.Caption := 'Unchecked';
+  end;
+end;
+
+procedure TformComboboxes.IWCheckBox4Change(Sender: TObject);
+begin
+//
+end;
+
+procedure TformComboboxes.IWCheckBox2Change(Sender: TObject);
+begin
+  IWRegion1.Visible := IWCheckbox2.Checked;
 end;
 
 end.

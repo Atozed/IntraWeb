@@ -3,7 +3,7 @@ unit uGridForm;
 interface
 
 uses
-  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWjQGrid,
   IWCompButton, IWCompText, IWCompLabel, IWCompMemo;
 
@@ -16,6 +16,7 @@ type
     IWButton4: TIWButton;
     IWButton5: TIWButton;
     IWMemo1: TIWMemo;
+    IWButton2: TIWButton;
     procedure IWjQGrid1GetCellText(Sender: TObject; const Row, Col: Integer;
       var CellText: string);
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);

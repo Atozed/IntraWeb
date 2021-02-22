@@ -3,7 +3,7 @@ unit uMainForm;
 interface
 
 uses
-  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
+  Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompButton,
   IWCompEdit;
 

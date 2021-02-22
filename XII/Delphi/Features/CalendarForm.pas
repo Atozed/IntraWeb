@@ -5,7 +5,7 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWTypes, Controls,
   IWBaseControl, IWControl, IWCompCalendar, IWCompLabel,
-  IWCompCheckbox, DB, DBTables, IWDBGrids,
+  IWCompCheckbox, DB, IWDBGrids,
   IWCompListbox, IWCompButton, IWCompEdit, IWCompText, Forms, MenuFrame,
   IWVCLBaseControl, IWBaseHTMLControl, IWCompGrids;
 

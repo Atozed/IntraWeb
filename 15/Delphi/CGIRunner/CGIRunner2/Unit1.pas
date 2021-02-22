@@ -9,7 +9,6 @@ uses
 
 type
   TIWForm1 = class(TIWAppForm)
-    iwbtn1: TIWButton;
     IWMemo1: TIWMemo;
     procedure iwbtn1AsyncClick(Sender: TObject; EventParams: TStringList);
   private

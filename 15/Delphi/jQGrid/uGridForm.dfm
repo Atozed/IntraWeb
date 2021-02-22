@@ -14,16 +14,17 @@ object GridForm: TGridForm
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 8
-  DesignTop = 8
+  DesignLeft = 2
+  DesignTop = 2
   object IWjQGrid1: TIWjQGrid
-    Left = 80
-    Top = 156
-    Width = 601
+    Left = 0
+    Top = 357
+    Width = 1118
     Height = 398
+    Align = alBottom
     Caption = ''
     VisibleRowCount = 15
-    Options = [goViewRecords, goAutoColumnWidth, goHoverRows, goIgnoreCase, goSortable, goZebraStriped, goShowHideBtn, goShowPager, goRowSelect]
+    Options = [goViewRecords, goAutoGridWidth, goHoverRows, goIgnoreCase, goSortable, goZebraStriped, goShowHideBtn, goShowPager, goRowSelect]
     DateFormat = 'd-m-Y'
     ShowBusyOnAsyncEvent = True
     Columns = <
@@ -39,6 +40,7 @@ object GridForm: TGridForm
         Alignment = taCenter
         DataType = dtDate
         Title = 'Date'
+        Resizable = False
       end
       item
         Width = 120
@@ -123,12 +125,12 @@ object GridForm: TGridForm
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton2'
-    TabOrder = 2
+    TabOrder = 3
     OnAsyncClick = IWButton5AsyncClick
   end
   object IWMemo1: TIWMemo
-    Left = 80
-    Top = 560
+    Left = 3
+    Top = 185
     Width = 601
     Height = 145
     StyleRenderOptions.RenderBorder = False
@@ -143,5 +145,18 @@ object GridForm: TGridForm
     Required = False
     SubmitOnAsyncEvent = True
     FriendlyName = 'IWMemo1'
+  end
+  object IWButton2: TIWButton
+    Left = 704
+    Top = 233
+    Width = 120
+    Height = 30
+    Caption = 'Clear Grid'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton2'
+    TabOrder = 2
   end
 end

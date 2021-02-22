@@ -89,17 +89,14 @@
         </DelphiCompile>
         <DCCReference Include="Unit1.pas">
             <Form>IWForm1</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TIWAppForm</DesignClass>
         </DCCReference>
         <DCCReference Include="ServerController.pas">
             <Form>IWServerController</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TIWServerControllerBase</DesignClass>
         </DCCReference>
         <DCCReference Include="UserSessionUnit.pas">
             <Form>IWUserSession</Form>
-            <FormType>dfm</FormType>
             <DesignClass>TIWUserSessionBase</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Release">

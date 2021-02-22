@@ -6,7 +6,7 @@ uses
   SysUtils, Classes, Controls, Forms,
   IWVCLBaseContainer, IWColor, IWContainer, IWRegion, IWHTMLContainer,
   IWHTML40Container, IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl,
-  IWControl, IWCompLabel, IWCompEdit;
+  IWControl, IWCompLabel, IWCompEdit, IWCompButton;
 
 type
   TIWFrame10 = class(TFrame)
@@ -17,7 +17,9 @@ type
     iwdt2: TIWEdit;
     IWLabel2: TIWLabel;
     iwdt3: TIWEdit;
+    IWButton1: TIWButton;
     procedure iwdt1AsyncChange(Sender: TObject; EventParams: TStringList);
+    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
   private
     { Private declarations }
   public
@@ -27,6 +29,9 @@ type
 implementation
 
 {$R *.dfm}
+
+uses
+  IWAppForm;
 
 procedure TIWFrame10.iwdt1AsyncChange(Sender: TObject;
   EventParams: TStringList);
@@ -42,6 +47,15 @@ begin
   end else begin
     iwdt3.Text := '';
   end;
+end;
+
+procedure TIWFrame10.IWButton1AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+var
+  frm: TIWAppForm;
+begin
+  frm := GetIWParentForm(Self) as TIWAppForm;
+  frm.WebApplication.ShowMessage(iwdt1.HTMLName);
 end;
 
 end.

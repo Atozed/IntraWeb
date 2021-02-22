@@ -2,7 +2,7 @@ object IWForm1: TIWForm1
   Left = 0
   Top = 0
   Width = 1371
-  Height = 795
+  Height = 993
   RenderInvisibleControls = True
   AllowPageAccess = True
   ConnectionMode = cmAny
@@ -27,6 +27,7 @@ object IWForm1: TIWForm1
     '</style>')
   HiddenFields.Strings = (
     'HiddenInput1=')
+  OnCreate = IWAppFormCreate
   ActiveControl = IWEdit1
   Background.Fixed = False
   HandleTabs = False
@@ -34,8 +35,8 @@ object IWForm1: TIWForm1
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 8
-  DesignTop = 8
+  DesignLeft = 2
+  DesignTop = 2
   object IWEdit1: TIWEdit
     Left = 112
     Top = 79
@@ -49,13 +50,12 @@ object IWForm1: TIWForm1
     Font.Style = []
     FriendlyName = 'IWEdit1'
     SubmitOnAsyncEvent = True
-    TabOrder = 0
     DataType = stDate
   end
   object IWLabel1: TIWLabel
     Left = 384
     Top = 79
-    Width = 190
+    Width = 112
     Height = 24
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
@@ -63,7 +63,7 @@ object IWForm1: TIWForm1
     Font.Style = []
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
-    Caption = 'DataType = stDate'
+    Caption = 'Date picker'
   end
   object IWEdit2: TIWEdit
     Left = 112
@@ -84,7 +84,7 @@ object IWForm1: TIWForm1
   object IWLabel2: TIWLabel
     Left = 384
     Top = 161
-    Width = 192
+    Width = 114
     Height = 24
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
@@ -92,11 +92,11 @@ object IWForm1: TIWForm1
     Font.Style = []
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
-    Caption = 'DataType = stTime'
+    Caption = 'Time picker'
   end
   object IWEdit3: TIWEdit
     Left = 112
-    Top = 243
+    Top = 411
     Width = 200
     Height = 32
     StyleRenderOptions.RenderBorder = False
@@ -116,8 +116,8 @@ object IWForm1: TIWForm1
   end
   object IWLabel3: TIWLabel
     Left = 382
-    Top = 243
-    Width = 220
+    Top = 411
+    Width = 181
     Height = 24
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
@@ -125,13 +125,14 @@ object IWForm1: TIWForm1
     Font.Style = []
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
-    Caption = 'DataType = stNumber'
+    Caption = 'Spin Edit (Integer)'
   end
   object IWLabel4: TIWLabel
     Left = 656
-    Top = 221
+    Top = 389
     Width = 369
     Height = 24
+    Visible = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
@@ -142,9 +143,10 @@ object IWForm1: TIWForm1
   end
   object IWLabel5: TIWLabel
     Left = 656
-    Top = 251
+    Top = 419
     Width = 287
     Height = 24
+    Visible = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
@@ -155,7 +157,7 @@ object IWForm1: TIWForm1
   end
   object IWEdit4: TIWEdit
     Left = 112
-    Top = 325
+    Top = 493
     Width = 200
     Height = 32
     StyleRenderOptions.RenderBorder = False
@@ -168,7 +170,6 @@ object IWForm1: TIWForm1
     SubmitOnAsyncEvent = True
     TabOrder = 3
     DataType = stNumber
-    DataTypeOptions.Max = '100'
     DataTypeOptions.Min = '0'
     DataTypeOptions.Step = '1'
     DataTypeOptions.NumberType = ntInteger
@@ -176,7 +177,7 @@ object IWForm1: TIWForm1
   end
   object IWLabel6: TIWLabel
     Left = 384
-    Top = 325
+    Top = 493
     Width = 220
     Height = 24
     Font.Color = clNone
@@ -189,9 +190,10 @@ object IWForm1: TIWForm1
   end
   object IWLabel7: TIWLabel
     Left = 656
-    Top = 303
+    Top = 471
     Width = 578
     Height = 24
+    Visible = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
@@ -202,9 +204,10 @@ object IWForm1: TIWForm1
   end
   object IWLabel8: TIWLabel
     Left = 656
-    Top = 408
+    Top = 576
     Width = 405
     Height = 24
+    Visible = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
@@ -215,7 +218,7 @@ object IWForm1: TIWForm1
   end
   object IWEdit5: TIWEdit
     Left = 112
-    Top = 408
+    Top = 576
     Width = 200
     Height = 32
     StyleRenderOptions.RenderBorder = False
@@ -236,8 +239,8 @@ object IWForm1: TIWForm1
   end
   object IWLabel9: TIWLabel
     Left = 384
-    Top = 408
-    Width = 220
+    Top = 576
+    Width = 339
     Height = 24
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
@@ -245,13 +248,14 @@ object IWForm1: TIWForm1
     Font.Style = []
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
-    Caption = 'DataType = stNumber'
+    Caption = 'Numeric input with max/min check'
   end
   object IWLabel10: TIWLabel
     Left = 656
-    Top = 378
+    Top = 546
     Width = 555
     Height = 24
+    Visible = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
@@ -262,9 +266,10 @@ object IWForm1: TIWForm1
   end
   object IWLabel11: TIWLabel
     Left = 656
-    Top = 333
+    Top = 501
     Width = 194
     Height = 24
+    Visible = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
@@ -273,11 +278,263 @@ object IWForm1: TIWForm1
     FriendlyName = 'IWLabel1'
     Caption = 'Min = 0, Max = 100'
   end
+  object IWEdit7: TIWEdit
+    Left = 112
+    Top = 328
+    Width = 200
+    Height = 32
+    StyleRenderOptions.RenderBorder = False
+    Alignment = taCenter
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    FriendlyName = 'IWEdit1'
+    SubmitOnAsyncEvent = True
+    TabOrder = 8
+    DataType = stRange
+    DataTypeOptions.Max = '100'
+    DataTypeOptions.Min = '0'
+  end
+  object IWLabel15: TIWLabel
+    Left = 384
+    Top = 328
+    Width = 71
+    Height = 24
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'Ranges'
+  end
+  object IWLabel16: TIWLabel
+    Left = 656
+    Top = 328
+    Width = 194
+    Height = 24
+    Visible = False
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'Min = 0, Max = 100'
+  end
+  object IWLabel17: TIWLabel
+    Left = 656
+    Top = 652
+    Width = 305
+    Height = 24
+    Visible = False
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'Min and Max are not applicable'
+  end
+  object IWEdit8: TIWEdit
+    Left = 112
+    Top = 652
+    Width = 200
+    Height = 32
+    StyleRenderOptions.RenderBorder = False
+    Alignment = taCenter
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    FriendlyName = 'IWEdit6'
+    SubmitOnAsyncEvent = True
+    TabOrder = 9
+    DataType = stNumber
+    DataTypeOptions.Step = '1'
+    DataTypeOptions.NumberValidation = nvIntraWeb
+  end
+  object IWLabel18: TIWLabel
+    Left = 384
+    Top = 652
+    Width = 220
+    Height = 24
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'DataType = stNumber'
+  end
+  object IWLabel19: TIWLabel
+    Left = 656
+    Top = 622
+    Width = 551
+    Height = 24
+    Visible = False
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'NumberType = ntText, NumberValidation = nvIntraWeb'
+  end
+  object IWLabel20: TIWLabel
+    Left = 382
+    Top = 13
+    Width = 192
+    Height = 24
+    Visible = False
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'DataType property:'
+  end
+  object IWLabel21: TIWLabel
+    Left = 656
+    Top = 13
+    Width = 267
+    Height = 24
+    Visible = False
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'DataTypeOptions property:'
+  end
+  object IWLabel22: TIWLabel
+    Left = 112
+    Top = 13
+    Width = 201
+    Height = 24
+    Visible = False
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'New IWEdit features'
+  end
+  object IWButton1: TIWButton
+    Left = 775
+    Top = 792
+    Width = 120
+    Height = 30
+    Visible = False
+    Caption = 'IWButton1'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    TabOrder = 10
+    OnClick = IWButton1Click
+  end
+  object IWEdit9: TIWEdit
+    Left = 112
+    Top = 726
+    Width = 200
+    Height = 32
+    StyleRenderOptions.RenderBorder = False
+    Alignment = taCenter
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    FriendlyName = 'IWEdit1'
+    SubmitOnAsyncEvent = True
+    TabOrder = 7
+    DataTypeOptions.Max = '100'
+    DataTypeOptions.Min = '0'
+    DataTypeOptions.StringCase = scUppercase
+  end
+  object IWLabel23: TIWLabel
+    Left = 384
+    Top = 726
+    Width = 292
+    Height = 24
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'String types upper/lower case'
+  end
+  object IWLabel24: TIWLabel
+    Left = 656
+    Top = 726
+    Width = 256
+    Height = 24
+    Visible = False
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'StringCase = scUppercase'
+  end
+  object IWEdit10: TIWEdit
+    Left = 112
+    Top = 798
+    Width = 200
+    Height = 32
+    StyleRenderOptions.RenderBorder = False
+    Alignment = taCenter
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    FriendlyName = 'IWEdit1'
+    SubmitOnAsyncEvent = True
+    TabOrder = 6
+    DataType = stPassword
+    DataTypeOptions.Max = '100'
+    DataTypeOptions.Min = '0'
+  end
+  object IWLabel25: TIWLabel
+    Left = 384
+    Top = 798
+    Width = 235
+    Height = 24
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'DataType = stPassword'
+  end
+  object IWLabel26: TIWLabel
+    Left = 656
+    Top = 798
+    Width = 36
+    Height = 24
+    Visible = False
+    Font.Color = clNone
+    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
+    Font.Size = 12
+    Font.Style = []
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'N/A'
+  end
   object IWLabel12: TIWLabel
     Left = 656
-    Top = 490
+    Top = 242
     Width = 231
     Height = 24
+    Visible = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
@@ -288,7 +545,7 @@ object IWForm1: TIWForm1
   end
   object IWEdit6: TIWEdit
     Left = 112
-    Top = 490
+    Top = 242
     Width = 200
     Height = 32
     StyleRenderOptions.RenderBorder = False
@@ -309,8 +566,8 @@ object IWForm1: TIWForm1
   end
   object IWLabel13: TIWLabel
     Left = 384
-    Top = 490
-    Width = 220
+    Top = 242
+    Width = 283
     Height = 24
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
@@ -318,13 +575,14 @@ object IWForm1: TIWForm1
     Font.Style = []
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
-    Caption = 'DataType = stNumber'
+    Caption = 'Currency + localized settings'
   end
   object IWLabel14: TIWLabel
     Left = 656
-    Top = 460
+    Top = 212
     Width = 592
     Height = 24
+    Visible = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
@@ -332,145 +590,5 @@ object IWForm1: TIWForm1
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'NumberType = ntCurrency, NumberValidation = nvIntraWeb'
-  end
-  object IWEdit7: TIWEdit
-    Left = 112
-    Top = 655
-    Width = 200
-    Height = 32
-    StyleRenderOptions.RenderBorder = False
-    Alignment = taCenter
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    FriendlyName = 'IWEdit1'
-    SubmitOnAsyncEvent = True
-    TabOrder = 7
-    DataType = stRange
-    DataTypeOptions.Max = '100'
-    DataTypeOptions.Min = '0'
-  end
-  object IWLabel15: TIWLabel
-    Left = 384
-    Top = 655
-    Width = 204
-    Height = 24
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'IWLabel1'
-    Caption = 'DataType = stRange'
-  end
-  object IWLabel16: TIWLabel
-    Left = 656
-    Top = 655
-    Width = 194
-    Height = 24
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'IWLabel1'
-    Caption = 'Min = 0, Max = 100'
-  end
-  object IWLabel17: TIWLabel
-    Left = 656
-    Top = 572
-    Width = 305
-    Height = 24
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'IWLabel1'
-    Caption = 'Min and Max are not applicable'
-  end
-  object IWEdit8: TIWEdit
-    Left = 112
-    Top = 572
-    Width = 200
-    Height = 32
-    StyleRenderOptions.RenderBorder = False
-    Alignment = taCenter
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    FriendlyName = 'IWEdit6'
-    SubmitOnAsyncEvent = True
-    TabOrder = 6
-    DataType = stNumber
-    DataTypeOptions.Step = '1'
-    DataTypeOptions.NumberValidation = nvIntraWeb
-  end
-  object IWLabel18: TIWLabel
-    Left = 384
-    Top = 572
-    Width = 220
-    Height = 24
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'IWLabel1'
-    Caption = 'DataType = stNumber'
-  end
-  object IWLabel19: TIWLabel
-    Left = 656
-    Top = 542
-    Width = 551
-    Height = 24
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'IWLabel1'
-    Caption = 'NumberType = ntText, NumberValidation = nvIntraWeb'
-  end
-  object IWLabel20: TIWLabel
-    Left = 382
-    Top = 13
-    Width = 192
-    Height = 24
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'IWLabel1'
-    Caption = 'DataType property:'
-  end
-  object IWLabel21: TIWLabel
-    Left = 656
-    Top = 13
-    Width = 267
-    Height = 24
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'IWLabel1'
-    Caption = 'DataTypeOptions property:'
-  end
-  object IWLabel22: TIWLabel
-    Left = 112
-    Top = 13
-    Width = 201
-    Height = 24
-    Font.Color = clNone
-    Font.FontFamily = 'Tahoma, Geneva, sans-serif'
-    Font.Size = 12
-    Font.Style = []
-    HasTabOrder = False
-    FriendlyName = 'IWLabel1'
-    Caption = 'New IWEdit features'
   end
 end

@@ -13,8 +13,8 @@ object IWForm45: TIWForm45
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 2
-  DesignTop = 2
+  DesignLeft = 8
+  DesignTop = 8
   object IWButton1: TIWButton
     Left = 48
     Top = 40
@@ -60,25 +60,6 @@ object IWForm45: TIWForm45
           '     return true;'
           '   }'
           ');')
-        Event = 'onClick'
-      end>
-    TabOrder = 2
-  end
-  object IWButton4: TIWButton
-    Left = 48
-    Top = 180
-    Width = 193
-    Height = 33
-    Caption = 'Call SetCaption'
-    Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    FriendlyName = 'IWButton1'
-    ScriptEvents = <
-      item
-        EventCode.Strings = (
-          'ajaxCall("SetCaption", "&newcaption=Set from JavaScript");')
         Event = 'onClick'
       end>
     TabOrder = 1

@@ -12,7 +12,6 @@ object IWForm5: TIWForm5
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
   DesignLeft = 8
   DesignTop = 8
   object IWMemo1: TIWMemo

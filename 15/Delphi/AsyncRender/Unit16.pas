@@ -9,7 +9,7 @@ uses
   IWHTMLContainer, IWHTML40Container, IWCompEdit, IWCompListbox, IWCompCheckbox,
   IWCompRadioButton, IWCompTabControl, IWCompTreeview, IWCompGrids,
   IWCompGridCommon, IWFont, Graphics, IWCompObject, IWCompMPEG, IWCompText,
-  IWCompExtCtrls, IWHTMLControls;
+  IWCompExtCtrls, IWHTMLControls, IWCompMemo, IWjQAccordion, IWjQPageControl;
 
 type
   TIWForm16 = class(TIWAppForm)
@@ -46,6 +46,8 @@ type
     FIWGrid: TIWGrid;
     FTabControl: TIWTabControl;
     FIWModalWindow1: TIWModalWindow;
+    FAccordion: TIWjQAccordion;
+    FjQPageControl: TIWjQPageControl;
     FX, FY: Integer;
     procedure CreateButton(AParent: TWinControl = nil);
     procedure CreateComboBox(AParent: TWinControl = nil);
@@ -56,6 +58,8 @@ type
     procedure CreateTabControl(AParent: TWinControl = nil);
     procedure CreateTreeView(AParent: TWinControl = nil);
     procedure CreateGrid(AParent: TWinControl = nil);
+    procedure CreatejQAccordion(AParent: TWinControl = nil);
+    procedure CreatejQPageControl(AParent: TWinControl = nil);
     procedure FreeAll;
   end;
 
@@ -68,6 +72,8 @@ uses
 
 procedure TIWForm16.CreateModalWindow;
 begin
+  gSessions.Count;
+
   if Assigned(FIWModalWindow1) then
     Exit;
 
@@ -134,7 +140,7 @@ begin
   FEdit.Height := 30;
   FEdit.Width := 225;
   FEdit.Text := 'Created in async!';
-  FEdit.OnAsyncKeyPress := MyKeyPressEvent;
+//  FEdit.OnAsyncKeyPress := MyKeyPressEvent;
 end;
 
 procedure TIWForm16.CreateLabel(AParent: TWinControl = nil);
@@ -169,7 +175,7 @@ begin
   FRegion.Parent := AParent;
   FRegion.Top := FY;
   FRegion.Left := FX;
-  FRegion.Width := 300;
+  FRegion.Width := 500;
   FRegion.Height := 300;
   FRegion.Visible := True;
   FRegion.BorderOptions.BorderWidth := cbwNumeric;
@@ -178,6 +184,9 @@ begin
   FRegion.BorderOptions.Style := cbsSolid;
 
   CreateLabel(FRegion);
+  Inc(FY, 50);
+  CreateIWEdit(FRegion);
+  Dec(FY, 50);
 end;
 
 procedure TIWForm16.CreateComboBox(AParent: TWinControl = nil);
@@ -250,6 +259,8 @@ begin
   FreeAndNil(FTabControl);
   FreeAndNil(FIWModalWindow1);
   FreeAndNil(FRegion1);
+  FreeAndNil(FAccordion);
+  FreeAndNil(FjQPageControl);
 end;
 
 procedure TIWForm16.IWButton1AsyncClick(Sender: TObject;
@@ -267,6 +278,8 @@ begin
     6: CreateGrid;
     7: CreateTabControl;
     8: CreateComboBox;
+    9: CreatejQAccordion;
+    10: CreatejQPageControl;
   end;
 end;
 
@@ -287,6 +300,7 @@ end;
 
 procedure TIWForm16.MyButtonClick(Sender: TObject; EventParams: TStringList);
 begin
+//  SElf.PageContext.AddStyle('#iwbutton { style blab la bla; }'#13#10);
   WebApplication.ShowMessage('You clicked on ' + TIWControl(Sender).Name);
 end;
 
@@ -361,6 +375,50 @@ begin
 
   CreateButton(Page1);
   CreateComboBox(Page0);
+end;
+
+procedure TIWForm16.CreatejQAccordion(AParent: TWinControl);
+begin
+  FAccordion := TIWjQAccordion.Create(Self);
+
+  FAccordion.Name := 'IWjQAccordion2';
+  FAccordion.Parent := Self;
+  FAccordion.Left := 168;
+  FAccordion.Top := 200;
+  FAccordion.Width := 393;
+  FAccordion.Height := 337;
+  FAccordion.RenderInvisibleControls := True;
+  FAccordion.TabHeight := 34;
+  FAccordion.TabTextHeight := 17;
+  FAccordion.TabBorderHeight := 2;
+  FAccordion.TabMargin := 2;
+  FAccordion.TabPadding := 13;
+  FAccordion.CreateSection('Section 1');
+  FAccordion.CreateSection('Section 2');
+  FAccordion.CreateSection('Section 3');
+  FAccordion.ActiveSectionIndex := 0;
+end;
+
+procedure TIWForm16.CreatejQPageControl(AParent: TWinControl);
+begin
+  FjQPageControl := TIWjQPageControl.Create(Self);
+
+  FjQPageControl.Name := 'IWjQPageControl1';
+  FjQPageControl.Parent := Self;
+  FjQPageControl.Left := 168;
+  FjQPageControl.Top := 200;
+  FjQPageControl.Width := 393;
+  FjQPageControl.Height := 337;
+  FjQPageControl.RenderInvisibleControls := True;
+  FjQPageControl.TabHeight := 30;
+  FjQPageControl.TabTextHeight := 17;
+  FjQPageControl.TabMargin := 7;
+  FjQPageControl.TabPadding := 13;
+  FjQPageControl.TabBorderHeight := 0;
+  FjQPageControl.CreatePage('Page 1');
+  FjQPageControl.CreatePage('Page 2');
+  FjQPageControl.CreatePage('Page 3');
+  FjQPageControl.ActivePageIndex := 0;
 end;
 
 procedure TIWForm16.IWAppFormCreate(Sender: TObject);

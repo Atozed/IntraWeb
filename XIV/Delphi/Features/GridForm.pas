@@ -9,13 +9,14 @@ uses
   {$IFDEF Linux}QForms,{$ELSE}Forms,{$ENDIF}
   {$IFDEF Linux}QControls,{$ELSE}Controls,{$ENDIF}
   IWCompButton, IWControl, IWCompCheckbox, MenuFrame, IWBaseControl,
-  IWVCLBaseControl, IWBaseHTMLControl, IWCompGrids;
+  IWVCLBaseControl, IWBaseHTMLControl, IWCompGrids, IWDBGrids;
 
 type
   TformGrids = class(TIWAppForm)
     tablGrid: TIWGrid;
     chckUseFrame: TIWCheckBox;
     framMenu1: TframMenu;
+    IWDBGrid1: TIWDBGrid;
     procedure IWFormModuleBaseCreate(Sender: TObject);
     procedure tablGridRenderCell(ACell: TIWGridCell; const ARow,
       AColumn: Integer);

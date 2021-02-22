@@ -4,14 +4,9 @@ object IWServerController: TIWServerController
   Description = 'My IntraWeb Application'
   DisplayName = 'IntraWeb Application'
   Port = 8888
-  ServerResizeTimeout = 0
-  ShowLoadingAnimation = True
-  SessionTimeout = 1
-  SSLOptions.NonSSLRequest = nsAccept
-  SSLOptions.Port = 0
-  SSLOptions.SSLVersions = []
-  Version = '14.1.4'
-  AllowMultipleSessionsPerUser = True
+  Version = '15.0.0'
+  SessionOptions.UniqueURL = True
+  SessionOptions.SessionTimeout = 1
   OnConfig = IWServerControllerBaseConfig
   OnNewSession = IWServerControllerBaseNewSession
   Height = 310

@@ -12,7 +12,6 @@ object IWForm2: TIWForm2
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
   DesignLeft = 8
   DesignTop = 8
   object IWGradButton1: TIWGradButton
@@ -20,11 +19,6 @@ object IWForm2: TIWForm2
     Top = 40
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 1051800
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -66,7 +60,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton1'
-    ScriptEvents = <>
     TabOrder = 0
     OnAsyncClick = IWGradButton1AsyncClick
   end
@@ -75,11 +68,6 @@ object IWForm2: TIWForm2
     Top = 96
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 10712576
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -121,7 +109,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton2'
-    ScriptEvents = <>
     TabOrder = 1
   end
   object IWGradButton3: TIWGradButton
@@ -129,11 +116,6 @@ object IWForm2: TIWForm2
     Top = 152
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 1213267
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -175,7 +157,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton3'
-    ScriptEvents = <>
     TabOrder = 2
   end
   object IWGradButton4: TIWGradButton
@@ -183,11 +164,6 @@ object IWForm2: TIWForm2
     Top = 208
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 1901175
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -229,7 +205,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton4'
-    ScriptEvents = <>
     TabOrder = 3
   end
   object IWGradButton5: TIWGradButton
@@ -237,11 +212,6 @@ object IWForm2: TIWForm2
     Top = 264
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 818394
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -283,7 +253,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton5'
-    ScriptEvents = <>
     TabOrder = 4
   end
   object IWGradButton6: TIWGradButton
@@ -291,11 +260,6 @@ object IWForm2: TIWForm2
     Top = 320
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 10384082
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -337,7 +301,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton6'
-    ScriptEvents = <>
     TabOrder = 5
   end
   object IWGradButton7: TIWGradButton
@@ -345,11 +308,6 @@ object IWForm2: TIWForm2
     Top = 376
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 6771273
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -391,7 +349,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton7'
-    ScriptEvents = <>
     TabOrder = 6
   end
   object IWGradButton8: TIWGradButton
@@ -399,11 +356,6 @@ object IWForm2: TIWForm2
     Top = 40
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 10712576
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -446,19 +398,14 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton7'
-    ScriptEvents = <>
     TabOrder = 7
+    OnAsyncClick = IWGradButton8AsyncClick
   end
   object IWGradButton9: TIWGradButton
     Left = 328
     Top = 96
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 1051800
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -501,7 +448,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton9'
-    ScriptEvents = <>
     TabOrder = 8
   end
   object IWGradButton10: TIWGradButton
@@ -509,11 +455,6 @@ object IWForm2: TIWForm2
     Top = 432
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 6771273
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -555,7 +496,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton7'
-    ScriptEvents = <>
     TabOrder = 9
   end
   object IWGradButton11: TIWGradButton
@@ -563,11 +503,6 @@ object IWForm2: TIWForm2
     Top = 152
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 10384082
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -611,7 +546,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton11'
-    ScriptEvents = <>
     TabOrder = 10
   end
   object IWGradButton12: TIWGradButton
@@ -619,11 +553,6 @@ object IWForm2: TIWForm2
     Top = 208
     Width = 140
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 818394
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -667,7 +596,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton12'
-    ScriptEvents = <>
     TabOrder = 11
   end
   object IWGradButton13: TIWGradButton
@@ -675,11 +603,6 @@ object IWForm2: TIWForm2
     Top = 264
     Width = 209
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 10712576
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -721,7 +644,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton13'
-    ScriptEvents = <>
     TabOrder = 12
     OnClick = IWGradButton13Click
     OnAsyncClick = IWGradButton13AsyncClick
@@ -731,11 +653,6 @@ object IWForm2: TIWForm2
     Top = 320
     Width = 209
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 10712576
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -777,7 +694,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton13'
-    ScriptEvents = <>
     TabOrder = 13
     OnAsyncClick = IWGradButton14AsyncClick
   end
@@ -786,11 +702,6 @@ object IWForm2: TIWForm2
     Top = 376
     Width = 209
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 10712576
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -832,7 +743,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton13'
-    ScriptEvents = <>
     TabOrder = 14
     OnClick = IWGradButton13Click
   end
@@ -841,11 +751,6 @@ object IWForm2: TIWForm2
     Top = 432
     Width = 209
     Height = 36
-    Cursor = crAuto
-    ParentShowHint = False
-    ShowHint = True
-    ZIndex = 0
-    RenderSize = True
     Style.Border.Color = 10712576
     Style.Border.Width = 1
     Style.BorderDisabled.Color = clWebGRAY
@@ -887,7 +792,6 @@ object IWForm2: TIWForm2
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWGradButton13'
-    ScriptEvents = <>
     TabOrder = 15
     OnClick = IWGradButton16Click
   end

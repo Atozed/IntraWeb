@@ -3,9 +3,10 @@ object IWServerController: TIWServerController
   AppName = 'IWGridDataTables'
   Description = 'IWGridDataTables Demo Application'
   DisplayName = 'IWGridDataTables Demo Application'
-  Port = 8888
+  Port = 80
+  URLBase = '/IWGridDataTables/'
   Version = '15.0.0'
   OnNewSession = IWServerControllerBaseNewSession
-  Height = 310
-  Width = 342
+  Height = 621
+  Width = 743
 end

@@ -26,10 +26,6 @@ type
     IWFileUploader5: TIWFileUploader;
     btnSelect: TIWButton;
     btnUpload: TIWButton;
-    IWLabel6: TIWLabel;
-    IWFileUploader6: TIWFileUploader;
-    IWButton1: TIWButton;
-    IWButton2: TIWButton;
     procedure IWFileUploader1AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
     procedure IWFileUploader2AsyncUploadCompleted(Sender: TObject; var DestPath,
@@ -39,8 +35,6 @@ type
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWFileUploader5AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
-    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
-    procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
   public
   end;
 
@@ -84,7 +78,11 @@ procedure TIWForm7.IWFileUploader3AsyncUploadCompleted(Sender: TObject;
   var DestPath, FileName: string; var SaveFile, Overwrite: Boolean);
 var
   MS: TMemoryStream;
+  MimeType: string;
 begin
+  MimeType := TIWFileUploader.CheckMimeType;  // this needs IW 15.1.6 or later. If using other version, comment this line to build it
+
+
   // Create any TStream descendant
   MS := TMemoryStream.Create;
   try
@@ -125,18 +123,6 @@ begin
 
   // Inform IWFileUploader that we are taking care of file saving ourselves
   SaveFile := False;
-end;
-
-procedure TIWForm7.IWButton1AsyncClick(Sender: TObject;
-  EventParams: TStringList);
-begin
-  IWFileUploader6.SelectFile;
-end;
-
-procedure TIWForm7.IWButton2AsyncClick(Sender: TObject;
-  EventParams: TStringList);
-begin
-  IWFileUploader6.StartUpload;
 end;
 
 initialization

@@ -11,5 +11,5 @@ uses
 {$R *.res}
 
 begin
-  TIWStart.Execute(True);
+  TIWStart.Execute(False);
 end.

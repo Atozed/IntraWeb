@@ -2,6 +2,7 @@ library FeaturesISAPI;
 
 uses
   ISAPIApp,
+  MidasLib,
   IWStart,
   IWInitISAPI,
   Threaded in 'Threaded.pas' {formThreaded: TIWFormModuleBase},

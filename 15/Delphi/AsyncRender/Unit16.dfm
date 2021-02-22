@@ -52,7 +52,9 @@ object IWForm16: TIWForm16
       'ModalWindow'
       'Grid'
       'Tab Control'
-      'ComboBox')
+      'ComboBox'
+      'jQAccordion'
+      'jqPageControl')
     FriendlyName = 'IWComboBox1'
     NoSelectionText = ''
   end
@@ -60,7 +62,7 @@ object IWForm16: TIWForm16
     Left = 640
     Top = 56
     Width = 521
-    Height = 217
+    Height = 329
     BGColor = clNone
     ConvertSpaces = False
     Font.Color = clNone
@@ -87,7 +89,7 @@ object IWForm16: TIWForm16
   end
   object IWURL1: TIWURL
     Left = 640
-    Top = 304
+    Top = 415
     Width = 265
     Height = 25
     Hint = 

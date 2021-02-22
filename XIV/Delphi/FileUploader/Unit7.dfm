@@ -14,7 +14,7 @@ object IWForm7: TIWForm7
   LockOnSubmit = True
   ShowHint = True
   DesignLeft = 2
-  DesignTop = -79
+  DesignTop = 2
   object IWFileUploader1: TIWFileUploader
     Left = 40
     Top = 68
@@ -122,8 +122,8 @@ object IWForm7: TIWForm7
   object IWLabel1: TIWLabel
     Left = 40
     Top = 41
-    Width = 357
-    Height = 16
+    Width = 464
+    Height = 21
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -134,8 +134,8 @@ object IWForm7: TIWForm7
   object IWLabel2: TIWLabel
     Left = 40
     Top = 151
-    Width = 345
-    Height = 16
+    Width = 446
+    Height = 21
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -249,8 +249,8 @@ object IWForm7: TIWForm7
   object IWLabel3: TIWLabel
     Left = 40
     Top = 271
-    Width = 651
-    Height = 16
+    Width = 844
+    Height = 21
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -366,8 +366,8 @@ object IWForm7: TIWForm7
   object IWLabel4: TIWLabel
     Left = 40
     Top = 385
-    Width = 711
-    Height = 16
+    Width = 916
+    Height = 21
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -484,8 +484,8 @@ object IWForm7: TIWForm7
   object IWLabel5: TIWLabel
     Left = 40
     Top = 497
-    Width = 297
-    Height = 16
+    Width = 387
+    Height = 21
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -639,8 +639,8 @@ object IWForm7: TIWForm7
   object IWLabel6: TIWLabel
     Left = 40
     Top = 609
-    Width = 314
-    Height = 16
+    Width = 412
+    Height = 21
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -765,7 +765,6 @@ object IWForm7: TIWForm7
     Font.Style = []
     FriendlyName = 'Select File'
     TabOrder = 5
-    OnAsyncClick = IWButton1AsyncClick
   end
   object IWButton2: TIWButton
     Left = 40
@@ -779,7 +778,6 @@ object IWForm7: TIWForm7
     Font.Style = []
     FriendlyName = 'IWButton1'
     TabOrder = 6
-    OnAsyncClick = IWButton2AsyncClick
   end
   object ClientDataSet1: TClientDataSet
     Aggregates = <>

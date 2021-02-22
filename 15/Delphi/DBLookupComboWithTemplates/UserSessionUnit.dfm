@@ -74,4 +74,29 @@ object IWUserSession: TIWUserSession
     Left = 328
     Top = 304
   end
+  object ClientDataSet1: TClientDataSet
+    PersistDataPacket.Data = {
+      2C0000009619E0BD0100000018000000010000000000030000002C0009436F75
+      6E747279494402000100000000000000}
+    Active = True
+    Aggregates = <>
+    FieldDefs = <
+      item
+        Name = 'CountryID'
+        DataType = ftSmallint
+      end>
+    IndexDefs = <>
+    Params = <>
+    StoreDefs = True
+    Left = 224
+    Top = 400
+    object ClientDataSet1CountryID: TSmallintField
+      FieldName = 'CountryID'
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ClientDataSet1
+    Left = 336
+    Top = 400
+  end
 end

@@ -12,7 +12,6 @@ object IWForm60: TIWForm60
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
   DesignLeft = 8
   DesignTop = 8
   object IWRectangle1: TIWRectangle
@@ -355,6 +354,7 @@ object IWForm60: TIWForm60
     Top = 36
     Width = 348
     Height = 21
+    StyleRenderOptions.RenderBorder = False
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -368,6 +368,7 @@ object IWForm60: TIWForm60
     Top = 73
     Width = 348
     Height = 21
+    StyleRenderOptions.RenderBorder = False
     Font.Color = clNone
     Font.Size = 10
     Font.Style = []
@@ -419,19 +420,24 @@ object IWForm60: TIWForm60
       Top = 37
       Width = 337
       Height = 21
+      StyleRenderOptions.RenderBorder = False
       Font.Color = clNone
       Font.Size = 10
       Font.Style = []
       FriendlyName = 'IWEdit1'
       SubmitOnAsyncEvent = True
       TabOrder = 1
-      Enabled = False
+      DataType = stNumber
+      DataTypeOptions.Max = '1000'
+      DataTypeOptions.Min = '0'
+      DataTypeOptions.NumberType = ntInteger
+      DataTypeOptions.NumberValidation = nvIntraWeb
     end
     object IWLabel1: TIWLabel
       Left = 33
       Top = 256
-      Width = 457
-      Height = 16
+      Width = 592
+      Height = 21
       Font.Color = clNone
       Font.Size = 10
       Font.Style = []
@@ -451,6 +457,7 @@ object IWForm60: TIWForm60
       Font.Color = clNone
       Font.Size = 10
       Font.Style = [fsUnderline]
+      HasTabOrder = True
       DoSubmitValidation = False
       FriendlyName = 'IWLink1'
       TabOrder = 11

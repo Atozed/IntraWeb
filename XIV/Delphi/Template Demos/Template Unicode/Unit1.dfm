@@ -14,7 +14,7 @@ object IWForm1: TIWForm1
   LockUntilLoaded = True
   LockOnSubmit = False
   ShowHint = True
-  XPTheme = True
+  RenderAsyncEnabled = True
   DesignLeft = 8
   DesignTop = 8
   object IWButton1: TIWButton

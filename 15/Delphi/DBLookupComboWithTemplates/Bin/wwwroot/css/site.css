@@ -1,0 +1,11 @@
+/* jstree overrides */
+.jstree-default .jstree-icon:empty {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.jstree-default .jstree-anchor {
+  line-height: 32px;
+  height: 32px;
+}

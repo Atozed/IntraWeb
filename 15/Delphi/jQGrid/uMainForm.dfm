@@ -25,7 +25,6 @@ object MainForm: TMainForm
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 0
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWButton2: TIWButton

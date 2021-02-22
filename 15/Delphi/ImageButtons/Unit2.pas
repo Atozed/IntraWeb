@@ -5,7 +5,8 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompButton,
-  IWCompRectangle, IWCompLabel, IWCompText, IWCompListbox;
+  IWCompRectangle, IWCompLabel, IWCompText, IWCompListbox,IWCompEdit,
+  IWHTMLControls;
 
 type
   TIWForm2 = class(TIWAppForm)
@@ -24,7 +25,10 @@ type
     IWText2: TIWText;
     IWComboBox1: TIWComboBox;
     IWLabel2: TIWLabel;
+    IWLink1: TIWLink;
     procedure IWComboBox1Change(Sender: TObject);
+    procedure IWButton1Click(Sender: TObject);
+    procedure IWLink1Click(Sender: TObject);
   public
   end;
 
@@ -39,6 +43,17 @@ begin
     Self.Css := ''
   else
     Self.Css := IWComboBox1.SelectedText;
+end;
+
+procedure TIWForm2.IWButton1Click(Sender: TObject);
+begin
+  Sleep(30000);
+  WebApplication.ShowMessage('click');
+end;
+
+procedure TIWForm2.IWLink1Click(Sender: TObject);
+begin
+  Webapplication.ShowMessage('click');
 end;
 
 initialization

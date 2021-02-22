@@ -17,18 +17,21 @@ object formComboboxes: TformComboboxes
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
+  RenderAsyncEnabled = True
   DesignLeft = 8
   DesignTop = 8
   object cmboNumbers: TIWComboBox
     Left = 324
-    Top = 304
+    Top = 309
     Width = 121
     Height = 21
     RenderSize = False
     StyleRenderOptions.RenderSize = False
     StyleRenderOptions.RenderBorder = False
     Font.Color = clNone
+    Font.FontName = 'Verdana'
+    Font.FontFamily = 'Arial, Sans-Serif, Verdana'
+    Font.FontVariant = 'Sans-Serif'
     Font.Size = 10
     Font.Style = []
     RequireSelection = False
@@ -80,12 +83,12 @@ object formComboboxes: TformComboboxes
     Caption = 'Checkbox'
     Editable = True
     Font.Color = clNone
+    Font.FontFamily = '"Times New Roman", Times, serif'
     Font.Size = 10
     Font.Style = []
     SubmitOnAsyncEvent = True
     Style = stNormal
-    TabOrder = 2
-    OnClick = chckCheckboxClick
+    TabOrder = 5
     Checked = False
     FriendlyName = 'chckCheckbox'
   end
@@ -103,19 +106,20 @@ object formComboboxes: TformComboboxes
     Caption = 'Unchecked'
   end
   object IWCheckBox1: TIWCheckBox
-    Left = 12
-    Top = 96
+    Left = 20
+    Top = 113
     Width = 121
     Height = 21
     Cursor = crAuto
     Caption = 'Cool Checkbox'
     Editable = True
     Font.Color = clNone
+    Font.FontVariant = 'Verdana'
     Font.Size = 10
     Font.Style = []
     SubmitOnAsyncEvent = True
     Style = stCool
-    TabOrder = 3
+    TabOrder = 6
     OnClick = IWCheckBox1Click
     Checked = False
     FriendlyName = 'IWCheckBox1'
@@ -147,8 +151,8 @@ object formComboboxes: TformComboboxes
     Font.Style = []
     SubmitOnAsyncEvent = True
     Style = stNormal
-    TabOrder = 5
-    OnClick = IWCheckBox2Click
+    TabOrder = 1
+    OnChange = IWCheckBox2Change
     Checked = True
     FriendlyName = 'IWCheckBox2'
   end
@@ -176,7 +180,7 @@ object formComboboxes: TformComboboxes
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 7
+    TabOrder = 8
   end
   object IWButton2: TIWButton
     Left = 507
@@ -190,7 +194,7 @@ object formComboboxes: TformComboboxes
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 8
+    TabOrder = 9
   end
   object IWButton3: TIWButton
     Left = 507
@@ -203,7 +207,7 @@ object formComboboxes: TformComboboxes
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    TabOrder = 9
+    TabOrder = 10
   end
   object IWCalendar1: TIWCalendar
     Left = 368
@@ -233,9 +237,59 @@ object formComboboxes: TformComboboxes
     CalendarHeaderFont.Color = clNone
     CalendarHeaderFont.Size = 10
     CalendarHeaderFont.Style = []
+    SelectedDate = 43709.000000000000000000
     FriendlyName = 'IWCalendar1'
     StartDate = 43727.942867800930000000
     DisplayYear = True
+  end
+  object IWCheckBox3: TIWCheckBox
+    Left = 20
+    Top = 91
+    Width = 121
+    Height = 21
+    Cursor = crAuto
+    Caption = 'Checkbox'
+    Editable = True
+    Font.Color = clNone
+    Font.FontName = 'Tahoma'
+    Font.Size = 10
+    Font.Style = []
+    SubmitOnAsyncEvent = True
+    Style = stNormal
+    TabOrder = 11
+    OnAsyncClick = IWCheckBox3AsyncClick
+    Checked = False
+    FriendlyName = 'chckCheckbox'
+  end
+  object lablCheckbox2: TIWLabel
+    Left = 204
+    Top = 96
+    Width = 75
+    Height = 16
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    HasTabOrder = False
+    AutoSize = False
+    FriendlyName = 'lablCheckbox'
+    Caption = 'Unchecked'
+  end
+  object IWCheckBox4: TIWCheckBox
+    Left = 232
+    Top = 256
+    Width = 161
+    Height = 33
+    Caption = 'IWCheckBox1'
+    Editable = True
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    SubmitOnAsyncEvent = True
+    Style = stNormal
+    TabOrder = 12
+    OnChange = IWCheckBox4Change
+    Checked = False
+    FriendlyName = 'IWCheckBox1'
   end
   object IWRegion1: TIWRegion
     Left = 12
@@ -245,7 +299,7 @@ object formComboboxes: TformComboboxes
     HorzScrollBar.Range = 289
     VertScrollBar.Range = 185
     RenderInvisibleControls = False
-    TabOrder = 0
+    TabOrder = 2
     BorderOptions.NumericWidth = 0
     BorderOptions.BorderWidth = cbwNumeric
     BorderOptions.Style = cbsSolid
@@ -274,6 +328,9 @@ object formComboboxes: TformComboboxes
       RawText = False
       Editable = True
       Font.Color = clNone
+      Font.FontName = 'Georgia'
+      Font.FontFamily = 'Georgia, serif'
+      Font.FontVariant = 'Sans Serif'
       Font.Size = 10
       Font.Style = []
       FriendlyName = 'IWRadioGroup1'
@@ -283,7 +340,7 @@ object formComboboxes: TformComboboxes
         'No'
         'Maybe')
       Layout = glHorizontal
-      TabOrder = 1
+      TabOrder = 3
     end
     object IWLabel3: TIWLabel
       Left = 8
@@ -355,7 +412,7 @@ object formComboboxes: TformComboboxes
     inherited IWFrameRegion: TIWRegion
       Width = 760
       Height = 491
-      TabOrder = 6
+      TabOrder = 7
       inherited IWMenu1: TIWMenu
         Width = 760
       end

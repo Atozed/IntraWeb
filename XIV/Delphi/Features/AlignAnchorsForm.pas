@@ -28,6 +28,7 @@ type
     IWRectangle8: TIWRectangle;
     framMenu1: TframMenu;
     procedure IWButton1Click(Sender: TObject);
+    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
   protected
   public
   end;
@@ -42,6 +43,12 @@ begin
   WebApplication.ShowMessage('Hello');
 
   
+end;
+
+procedure TformAlignAnchor.IWButton1AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  WebApplication.ShowMessage('async event');
 end;
 
 initialization

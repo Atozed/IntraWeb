@@ -26,10 +26,6 @@ type
     IWLabel9: TIWLabel;
     IWLabel10: TIWLabel;
     IWLabel11: TIWLabel;
-    IWLabel12: TIWLabel;
-    IWEdit6: TIWEdit;
-    IWLabel13: TIWLabel;
-    IWLabel14: TIWLabel;
     IWEdit7: TIWEdit;
     IWLabel15: TIWLabel;
     IWLabel16: TIWLabel;
@@ -40,6 +36,19 @@ type
     IWLabel20: TIWLabel;
     IWLabel21: TIWLabel;
     IWLabel22: TIWLabel;
+    IWButton1: TIWButton;
+    IWEdit9: TIWEdit;
+    IWLabel23: TIWLabel;
+    IWLabel24: TIWLabel;
+    IWEdit10: TIWEdit;
+    IWLabel25: TIWLabel;
+    IWLabel26: TIWLabel;
+    IWLabel12: TIWLabel;
+    IWEdit6: TIWEdit;
+    IWLabel13: TIWLabel;
+    IWLabel14: TIWLabel;
+    procedure IWButton1Click(Sender: TObject);
+    procedure IWAppFormCreate(Sender: TObject);
   public
   end;
 
@@ -47,6 +56,17 @@ implementation
 
 {$R *.dfm}
 
+
+procedure TIWForm1.IWAppFormCreate(Sender: TObject);
+begin
+  IWEdit9.Text := 'abcdefg';
+end;
+
+procedure TIWForm1.IWButton1Click(Sender: TObject);
+begin
+//  WebApplication.ShowMessage(IntToStr(IWEdit4.AsInteger) + ' ' + FloatToStr(IWEdit5.AsFloat));
+  WebApplication.ShowMessage(IWEdit10.Text);
+end;
 
 initialization
   TIWForm1.SetAsMainForm;

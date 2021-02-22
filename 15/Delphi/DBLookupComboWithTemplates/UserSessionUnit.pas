@@ -18,6 +18,9 @@ type
     dsCountry: TDataSource;
     dsState: TDataSource;
     dsCity: TDataSource;
+    ClientDataSet1: TClientDataSet;
+    ClientDataSet1CountryID: TSmallintField;
+    DataSource1: TDataSource;
     procedure IWUserSessionBaseCreate(Sender: TObject);
   private
     { Private declarations }

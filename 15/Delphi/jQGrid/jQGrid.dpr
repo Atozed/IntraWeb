@@ -2,6 +2,7 @@ program jQGrid;
 
 uses
   IWRtlFix,
+  MidasLib,
   IWJclStackTrace,
   IWJclDebug,
   IWStart,

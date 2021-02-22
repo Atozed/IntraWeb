@@ -8,7 +8,8 @@ uses
   Unit9 in 'Unit9.pas' {IWForm9: TIWAppForm},
   ServerController in 'ServerController.pas' {IWServerController: TIWServerControllerBase},
   UserSessionUnit in 'UserSessionUnit.pas' {IWUserSession: TIWUserSessionBase},
-  Unit10 in 'Unit10.pas' {IWFrame10: TFrame};
+  Unit10 in 'Unit10.pas' {IWFrame10: TFrame},
+  Unit11 in 'Unit11.pas' {IWFrame11: TFrame};
 
 {$R *.res}
 

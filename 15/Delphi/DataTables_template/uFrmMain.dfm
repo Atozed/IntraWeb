@@ -30,8 +30,8 @@ object FrmMain: TFrmMain
     RawText = True
   end
   object IWLabelGrid: TIWLabel
-    Left = 48
-    Top = 120
+    Left = 40
+    Top = 112
     Width = 609
     Height = 529
     Font.Color = clNone
@@ -42,6 +42,23 @@ object FrmMain: TFrmMain
     FriendlyName = 'IWLabelGrid'
     Caption = 'DataTable placeholder'
     RawText = True
+  end
+  object IWImage1: TIWImage
+    Left = 760
+    Top = 328
+    Width = 89
+    Height = 112
+    RenderSize = False
+    StyleRenderOptions.RenderSize = False
+    BorderOptions.Width = 0
+    TabOrder = -1
+    UseSize = False
+    FriendlyName = 'IWImage1'
+    TransparentColor = clNone
+    JpegOptions.CompressionQuality = 90
+    JpegOptions.Performance = jpBestSpeed
+    JpegOptions.ProgressiveEncoding = False
+    JpegOptions.Smoothing = True
   end
   object IWTemplateProcessorHTML: TIWTemplateProcessorHTML
     TagType = ttIntraWeb

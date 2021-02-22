@@ -1,7 +1,9 @@
 program Features;
 
 uses
+  FastMM4,
   MidasLib,
+  Vcl.Controls,
   Forms,
   IWStart,
   Threaded in 'Threaded.pas' {formThreaded: TIWFormModuleBase},
@@ -33,7 +35,8 @@ uses
   ActiveXForm in 'ActiveXForm.pas' {formActiveX: TIWAppForm},
   MPEGForm in 'MPEGForm.pas' {formMPEG: TIWAppForm},
   QuickTimeForm in 'QuickTimeForm.pas' {formQuickTime: TIWAppForm},
-  SubTemplatesForm in 'SubTemplatesForm.pas' {formSubTemplates: TIWAppForm};
+  SubTemplatesForm in 'SubTemplatesForm.pas' {formSubTemplates: TIWAppForm},
+  Classes;
 
 {$R *.res}
 

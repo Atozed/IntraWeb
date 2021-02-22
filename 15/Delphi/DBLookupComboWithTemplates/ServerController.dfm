@@ -4,8 +4,9 @@ object IWServerController: TIWServerController
   Description = 'IWDBLookupCombo Demo Application'
   DisplayName = 'IWDBLookupCombo Demo Application'
   Port = 8888
-  URLBase = '/DBLookupCombo/'
   Version = '15.0.0'
+  SessionOptions.SessionTimeout = 2
+  SessionOptions.RestartExpiredSession = True
   OnNewSession = IWServerControllerBaseNewSession
   Height = 677
   Width = 826

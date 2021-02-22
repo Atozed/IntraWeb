@@ -10,14 +10,18 @@ object IWFrame10: TIWFrame10
     Width = 501
     Height = 181
     RenderInvisibleControls = True
+    TabOrder = 0
     Align = alClient
+    BorderOptions.NumericWidth = 1
+    BorderOptions.BorderWidth = cbwNumeric
+    BorderOptions.Style = cbsSolid
     BorderOptions.Color = clWebDARKGRAY
     Color = clWebWHITE
     object iwlbl1: TIWLabel
       Left = 40
       Top = 34
-      Width = 138
-      Height = 19
+      Width = 174
+      Height = 24
       Font.Color = clNone
       Font.Size = 12
       Font.Style = []
@@ -37,6 +41,7 @@ object IWFrame10: TIWFrame10
       Font.Style = []
       FriendlyName = 'iwdt1'
       SubmitOnAsyncEvent = True
+      TabOrder = 0
       OnAsyncKeyDown = iwdt1AsyncChange
       DataType = stNumber
       DataTypeOptions.NumberType = ntInteger
@@ -45,8 +50,8 @@ object IWFrame10: TIWFrame10
     object IWLabel1: TIWLabel
       Left = 158
       Top = 84
-      Width = 15
-      Height = 23
+      Width = 18
+      Height = 28
       Font.Color = clNone
       Font.Size = 14
       Font.Style = []
@@ -66,6 +71,7 @@ object IWFrame10: TIWFrame10
       Font.Style = []
       FriendlyName = 'iwdt2'
       SubmitOnAsyncEvent = True
+      TabOrder = 1
       OnAsyncKeyDown = iwdt1AsyncChange
       DataType = stNumber
       DataTypeOptions.NumberType = ntInteger
@@ -74,8 +80,8 @@ object IWFrame10: TIWFrame10
     object IWLabel2: TIWLabel
       Left = 310
       Top = 84
-      Width = 15
-      Height = 23
+      Width = 18
+      Height = 28
       Font.Color = clNone
       Font.Size = 14
       Font.Style = []
@@ -96,6 +102,21 @@ object IWFrame10: TIWFrame10
       FriendlyName = 'iwdt3'
       ReadOnly = True
       SubmitOnAsyncEvent = True
+      TabOrder = 2
+    end
+    object IWButton1: TIWButton
+      Left = 158
+      Top = 128
+      Width = 120
+      Height = 30
+      Caption = 'IWButton1'
+      Color = clBtnFace
+      Font.Color = clNone
+      Font.Size = 10
+      Font.Style = []
+      FriendlyName = 'IWButton1'
+      TabOrder = 3
+      OnAsyncClick = IWButton1AsyncClick
     end
   end
 end

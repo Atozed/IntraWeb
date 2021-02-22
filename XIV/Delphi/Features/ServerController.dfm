@@ -8,12 +8,15 @@ object IWServerController: TIWServerController
   SSLOptions.SSLVersion = SSLv3
   Version = '15.0.0'
   ExceptionLogger.ReportInfos = [riAppInfo, riExceptionInfo, riIWAppInfo, riStackTrace]
+  CookieOptions.UseCookies = False
+  JavaScriptOptions.UseUncompressedFiles = True
   SecurityOptions.CheckFormId = True
-  SessionOptions.UniqueURL = True
+  SecurityOptions.SurrogateSessionId = False
   OnAfterDispatch = IWServerControllerBaseAfterDispatch
   OnConfig = IWServerControllerBaseConfig
   OnNewSession = IWServerControllerBaseNewSession
   OnBackButton = IWServerControllerBaseBackButton
+  OnRewriteURL = IWServerControllerBaseRewriteURL
   Height = 319
   Width = 435
 end

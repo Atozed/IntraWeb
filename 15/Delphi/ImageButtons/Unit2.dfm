@@ -63,6 +63,7 @@ object IWForm2: TIWForm2
     TabOrder = 0
     RenderButtonTag = True
     Image.WebFontClass = 'fi-paperclip'
+    OnClick = IWButton1Click
   end
   object IWButton2: TIWButton
     Left = 56
@@ -285,5 +286,24 @@ object IWForm2: TIWForm2
     AutoSize = False
     FriendlyName = 'IWLabel2'
     Caption = 'Change UI Theme'
+  end
+  object IWLink1: TIWLink
+    Left = 608
+    Top = 367
+    Width = 65
+    Height = 17
+    Alignment = taLeftJustify
+    Color = clNone
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = [fsUnderline]
+    HasTabOrder = True
+    Confirmation = 'Are you sure?'
+    DoSubmitValidation = False
+    FriendlyName = 'IWLink1'
+    OnClick = IWLink1Click
+    TabOrder = 9
+    RawText = False
+    Caption = 'IWLink1'
   end
 end

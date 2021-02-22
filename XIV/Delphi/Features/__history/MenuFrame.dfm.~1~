@@ -16,7 +16,6 @@ object framMenu: TframMenu
     Top = 0
     Width = 733
     Height = 468
-    Cursor = crAuto
     HorzScrollBar.Visible = False
     VertScrollBar.Visible = False
     RenderInvisibleControls = False
@@ -26,23 +25,14 @@ object framMenu: TframMenu
     BorderOptions.BorderWidth = cbwNumeric
     BorderOptions.Style = cbsSolid
     BorderOptions.Color = clNone
-    Color = clNone
-    ParentShowHint = False
-    ShowHint = True
     ClipRegion = False
-    ZIndex = 1000
-    Splitter = False
     object IWMenu1: TIWMenu
       Left = 0
       Top = 0
       Width = 733
       Height = 25
-      Cursor = crAuto
       Align = alTop
-      ParentShowHint = False
-      ShowHint = True
       ZIndex = 100
-      RenderSize = True
       FriendlyName = 'IWMenu1'
       AttachedMenu = MainMenu1
       ItemSpacing = itsNone
@@ -86,6 +76,7 @@ object framMenu: TframMenu
     object Basefeatures1: TMenuItem
       Caption = 'Base features'
       object SimpleInputForm1: TMenuItem
+        AutoCheck = True
         Caption = 'Simple Input Form'
         OnClick = linkSimpleInputFormClick
       end
@@ -229,7 +220,7 @@ object framMenu: TframMenu
   object IWImageList1: TIWImageList
     Left = 392
     Bitmap = {
-      494C0101010005002C0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010101000500040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       0000000000000000000000000000000000008484840084848400848484008484
       8400848484008484840084848400848484008484840084848400FFFFFF00C6C6

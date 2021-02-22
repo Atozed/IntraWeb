@@ -1,8 +1,8 @@
 object framMenu: TframMenu
   Left = 0
   Top = 0
-  Width = 733
-  Height = 26
+  Width = 544
+  Height = 333
   HorzScrollBar.Range = 185
   HorzScrollBar.Visible = False
   VertScrollBar.Range = 468
@@ -14,17 +14,13 @@ object framMenu: TframMenu
   object IWFrameRegion: TIWRegion
     Left = 0
     Top = 0
-    Width = 733
+    Width = 544
     Height = 468
     HorzScrollBar.Visible = False
     VertScrollBar.Visible = False
     RenderInvisibleControls = False
-    TabOrder = 0
     Align = alClient
     BorderOptions.NumericWidth = 0
-    BorderOptions.BorderWidth = cbwNumeric
-    BorderOptions.Style = cbsSolid
-    BorderOptions.Color = clNone
     ClipRegion = False
     object IWMenu1: TIWMenu
       Left = 0

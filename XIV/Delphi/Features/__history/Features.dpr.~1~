@@ -1,6 +1,7 @@
 program Features;
 
 uses
+  MidasLib,
   Forms,
   IWStart,
   Threaded in 'Threaded.pas' {formThreaded: TIWFormModuleBase},
