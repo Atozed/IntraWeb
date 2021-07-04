@@ -34,7 +34,9 @@ begin
     aReply.ContentType := MIME_XML;
     aReply.WriteString('<xml>My xml content here</xml>');
   end;
-  aSession.Terminate;
+  // If Handler's RequireSession = False, then aSession is not assigned
+  if Assigned(aSession) then
+    aSession.Terminate;
 end;
 
 initialization

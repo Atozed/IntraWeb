@@ -10,8 +10,6 @@ uses
 type
   TIWServerController = class(TIWServerControllerBase)
     procedure IWServerControllerBaseNewSession(ASession: TIWApplication);
-    procedure IWServerControllerBaseBrowserCheck(aSession: TIWApplication;
-      var rBrowser: TBrowser);
     procedure IWServerControllerBaseConfig(Sender: TObject);
 
   private
@@ -40,15 +38,6 @@ begin
   Result := TIWUserSession(WebApplication.Data);
 end;
 
-procedure TIWServerController.IWServerControllerBaseBrowserCheck(
-  aSession: TIWApplication; var rBrowser: TBrowser);
-begin
-  if rBrowser is TOther then begin
-    rBrowser.Free;
-    rBrowser := TInternetExplorer.Create(8);
-  end;
-end;
-
 procedure TIWServerController.IWServerControllerBaseConfig(Sender: TObject);
 begin
   // Tell IntraWeb to redirect SearchEngine requests to some ContentHandler
@@ -73,7 +62,10 @@ initialization
   with THandlers.Add('', 'GiveMeSomeXML', TContentXML.Create) do begin
     CanStartSession := True;
     RequiresSessionStart := False;
-    //RequiresSession := False;
+    // This means that we can serve the XML without even creating a session
+    // Set it to True to create a session before executing the content handler
+    // (if you need a session)
+    RequiresSession := False;
   end;
 
 end.
