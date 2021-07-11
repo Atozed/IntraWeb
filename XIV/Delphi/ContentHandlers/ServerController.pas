@@ -45,6 +45,7 @@ end;
 procedure TIWServerController.IWServerControllerBaseConfig(Sender: TObject);
 var
   FormHandler: TContentForm;
+  RedirectHandler: TContentRedirect;
 begin
   // content handler which redirects any incoming request to mydoc.html to
   // the actual document AtozedDoc.html. It can be used to redirect to any URL,
@@ -75,7 +76,15 @@ begin
   // in this case it will be redirected to the main page
   FormHandler.CanStartSession := False;
   FormHandler.RequiresSessionStart := True;
+  // You can play with this property and see how the browser URL changes (or not) when,
+  // for instance, a button is clicked in the Red form
+  //FormHandler.AppendMappedURL := False;
   THandlers.Add('', '/redform.html', FormHandler);
+
+  RedirectHandler := TContentRedirect.Create('/');
+  RedirectHandler.CanStartSession := True;
+  RedirectHandler.RequiresSessionStart := False;
+  THandlers.Add('/test/', '*', RedirectHandler);
 end;
 
 procedure TIWServerController.IWServerControllerBaseNewSession(
