@@ -10,6 +10,7 @@ object IWServerController: TIWServerController
   Version = '15.0.0'
   ExceptionLogger.ReportInfos = [riAppInfo, riExceptionInfo, riIWAppInfo, riStackTrace]
   JavaScriptOptions.UseUncompressedFiles = True
+  SessionOptions.UniqueURL = True
   SessionOptions.SessionTimeout = 1
   OnConfig = IWServerControllerBaseConfig
   OnNewSession = IWServerControllerBaseNewSession

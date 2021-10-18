@@ -32,12 +32,12 @@ end;
 procedure TMainForm.IWButton3AsyncClick(Sender: TObject;
   EventParams: TStringList);
 begin
-  WebApplication.GotoURL('/blueform.html');
+  WebApplication.GotoURL('/blueform/');
 end;
 
 procedure TMainForm.IWButton2Click(Sender: TObject);
 begin
-  WebApplication.GotoURL('/redform.html');
+  WebApplication.GotoURL('/redform');
 end;
 
 initialization

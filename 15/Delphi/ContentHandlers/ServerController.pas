@@ -50,7 +50,9 @@ begin
   // content handler which redirects any incoming request to mydoc.html to
   // the actual document AtozedDoc.html. It can be used to redirect to any URL,
   // not only files
-  THandlers.Add('', '/mydoc.html', TContentRedirect.Create('/AtozedDoc.html'));
+  RedirectHandler := TContentRedirect.Create('/AtozedDoc.html');
+  RedirectHandler.RequiresSession := False;
+  THandlers.Add('', '/mydoc.html', RedirectHandler);
 
   // this is needed to actually serve HTML files (i.e. static content), owtherwise
   // IW will redirect to the main page
@@ -68,7 +70,7 @@ begin
   // You can start the session using http://<server>/blueform.html
   FormHandler.CanStartSession := True;
   FormHandler.RequiresSessionStart := False;
-  THandlers.Add('', '/blueform.html', FormHandler);
+  THandlers.Add('/blueform/', '', FormHandler);
 
   // TContentForm which handles the "Red" form
   FormHandler := TContentForm.Create(TRedForm);
@@ -79,7 +81,7 @@ begin
   // You can play with this property and see how the browser URL changes (or not) when,
   // for instance, a button is clicked in the Red form
   //FormHandler.AppendMappedURL := False;
-  THandlers.Add('', '/redform.html', FormHandler);
+  THandlers.Add('', '/redform', FormHandler);
 
   RedirectHandler := TContentRedirect.Create('/');
   RedirectHandler.CanStartSession := True;
