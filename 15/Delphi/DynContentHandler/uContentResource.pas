@@ -18,7 +18,7 @@ type
 implementation
 
 uses
-  System.SysUtils, IW.Common.FileStream, ServerController;
+  System.SysUtils, IW.Common.FileStream, ServerController, IWURL;
 
 constructor TContentResource.Create;
 begin
@@ -36,7 +36,8 @@ begin
   Result := True;
   if Assigned(aReply) then begin
      aResourceName := aRequest.GetQueryFieldValue('res');
-     aFileName := IncludeTrailingPathDelimiter(IWServerController.ContentPath) + aResourceName;
+     // TURL.UrlPathToFilePath() is used to prevent that a file outside wwwroot folder (SC.ContentPath) is served
+     aFileName := TURL.UrlPathToFilePath(IWServerController.ContentPath, aResourceName);
      if FileExists(aFileName) then begin
        aHtmlContent := TIWTextFileReader.ReadAllText(aFileName);
        aReply.WriteString(aHtmlContent);
