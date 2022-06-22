@@ -13,9 +13,10 @@ type
     IWEdit1: TIWEdit;
     IWButton1: TIWButton;
     IWButton2: TIWButton;
+    IWButton3: TIWButton;
     procedure IWLink1AsyncClick(Sender: TObject; EventParams: TStringList);
-    procedure IWButton1Click(Sender: TObject);
-    procedure IWButton2Click(Sender: TObject);
+    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
   public
   end;
 
@@ -23,12 +24,14 @@ implementation
 
 {$R *.dfm}
 
-procedure TIWForm3.IWButton1Click(Sender: TObject);
+procedure TIWForm3.IWButton1AsyncClick(Sender: TObject;
+  EventParams: TStringList);
 begin
   WebApplication.GoToURL('/MainForm');
 end;
 
-procedure TIWForm3.IWButton2Click(Sender: TObject);
+procedure TIWForm3.IWButton2AsyncClick(Sender: TObject;
+  EventParams: TStringList);
 begin
   WebApplication.GoToURL('/SecondForm');
 end;

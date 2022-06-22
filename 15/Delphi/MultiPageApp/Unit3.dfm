@@ -47,7 +47,7 @@ object IWForm3: TIWForm3
   object IWButton1: TIWButton
     Left = 312
     Top = 63
-    Width = 120
+    Width = 305
     Height = 30
     Caption = 'Go to MainForm'
     Color = clBtnFace
@@ -55,12 +55,12 @@ object IWForm3: TIWForm3
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    OnClick = IWButton1Click
+    OnAsyncClick = IWButton1AsyncClick
   end
   object IWButton2: TIWButton
     Left = 312
     Top = 125
-    Width = 120
+    Width = 305
     Height = 30
     Caption = 'Go to SecondForm'
     Color = clBtnFace
@@ -68,6 +68,24 @@ object IWForm3: TIWForm3
     Font.Size = 10
     Font.Style = []
     FriendlyName = 'IWButton1'
-    OnClick = IWButton2Click
+    OnAsyncClick = IWButton2AsyncClick
+  end
+  object IWButton3: TIWButton
+    Left = 312
+    Top = 197
+    Width = 305
+    Height = 30
+    Caption = 'Go back to previous form using history.back()'
+    Color = clBtnFace
+    Font.Color = clNone
+    Font.Size = 10
+    Font.Style = []
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <
+      item
+        EventCode.Strings = (
+          'history.back();')
+        Event = 'onClick'
+      end>
   end
 end

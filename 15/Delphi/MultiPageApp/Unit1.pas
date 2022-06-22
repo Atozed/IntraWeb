@@ -14,8 +14,13 @@ type
     IWLink1: TIWLink;
     IWEdit1: TIWEdit;
     IWText1: TIWText;
+    IWButton2: TIWButton;
+    IWLink2: TIWLink;
+    IWEdit2: TIWEdit;
     procedure IWLink1AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton1Click(Sender: TObject);
+    procedure IWLink2Click(Sender: TObject);
   private
     FCounter: Integer;
   public
@@ -33,13 +38,23 @@ begin
   WebApplication.GoToURL('/SecondForm');
 end;
 
+procedure TIWForm1.IWButton2AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  WebApplication.GoToURL('/SecondForm');
+end;
+
 procedure TIWForm1.IWLink1AsyncClick(Sender: TObject; EventParams: TStringList);
 begin
   Inc(FCounter);
   WebApplication.ShowMessage('Hello from ' + Name + ' (' + IntToStr(FCounter) + '): ' + IWEdit1.Text);
 end;
 
-//<script type = "text/javascript" > history.pushState(null, null, location.href); history.back(); history.forward(); window.onpopstate = function () { history.go(1); }; </script>
+procedure TIWForm1.IWLink2Click(Sender: TObject);
+begin
+  Inc(FCounter);
+  WebApplication.ShowMessage('Hello from ' + Name + ' (' + IntToStr(FCounter) + '): ' + IWEdit1.Text);
+end;
 
 initialization
   TIWForm1.SetAsMainForm;

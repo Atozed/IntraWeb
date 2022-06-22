@@ -5,7 +5,7 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompCheckbox,
-  Unit1, IWCompButton, IWCompEdit, IWHTMLControls, IWCompListbox;
+  Unit1, IWCompButton, IWCompEdit, IWHTMLControls, IWCompListbox, IWCompText;
 
 type
   TIWForm2 = class(TIWAppForm)
@@ -13,8 +13,11 @@ type
     IWLink1: TIWLink;
     IWEdit1: TIWEdit;
     IWListbox1: TIWListbox;
-    procedure IWLink1Click(Sender: TObject);
+    IWButton2: TIWButton;
+    IWText1: TIWText;
+    procedure IWLink1AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton1Click(Sender: TObject);
+    procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
   public
   end;
 
@@ -24,15 +27,18 @@ implementation
 
 procedure TIWForm2.IWButton1Click(Sender: TObject);
 begin
-  // You can switch forms both from Async and from Sync events.
-  // However, and this is important, if you want the state of the controls of the form
-  // to be preserved (e.g. the items that you added to the ListBox),
-  // in case of a user uses the back button, you should change forms
-  // via SYNC events (OnClick instead of OnAsyncClick, etc).
+  // From version 15.2.58 you can switch forms both from Async and from Sync events.
+  // IW will keep the server and the browser in sync when the back button is hit
   WebApplication.GoToURL('/Form3');
 end;
 
-procedure TIWForm2.IWLink1Click(Sender: TObject);
+procedure TIWForm2.IWButton2AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  WebApplication.GoToURL('/Form3');
+end;
+
+procedure TIWForm2.IWLink1AsyncClick(Sender: TObject; EventParams: TStringList);
 begin
   if Trim(IWEdit1.Text) <> '' then
   begin
