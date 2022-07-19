@@ -19,8 +19,8 @@ type
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton3AsyncClick(Sender: TObject; EventParams: TStringList);
-    procedure IWSignaturePad1PngImageUploaded(Sender: TObject; aImage: TPngImage);
     procedure IWButton4AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWSignaturePad1PngImageUploaded(Sender: TObject; aImage: TPngImage);
   public
   end;
 
@@ -28,6 +28,8 @@ implementation
 
 {$R *.dfm}
 
+uses
+  IW.Common.AppInfo;
 
 procedure TIWForm27.IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
 begin
@@ -51,7 +53,7 @@ end;
 
 procedure TIWForm27.IWSignaturePad1PngImageUploaded(Sender: TObject; aImage: TPngImage);
 begin
-  aImage.SaveToFile('uploaded_signature.png');
+  aImage.SaveToFile(TIWAppInfo.GetAppPath + 'uploaded_signature.png');
 end;
 
 initialization
