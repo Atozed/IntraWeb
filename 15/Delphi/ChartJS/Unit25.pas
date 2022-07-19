@@ -95,8 +95,6 @@ begin
   IWChartJS4.Legend.Font.Color := clWEBOrange;
   IWChartJS4.Legend.Font.FontFamily := 'Verdana';
   IWChartJS4.Legend.Title.Visible := False;
-
-  IWChartJS4.Invalidate;
 end;
 
 initialization
