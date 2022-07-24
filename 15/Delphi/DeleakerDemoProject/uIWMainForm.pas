@@ -26,14 +26,21 @@ implementation
 
 {$R *.dfm}
 
+uses
+  IW.Common.AppInfo;
+
 procedure TIWMainForm.CreateTestFile;
 const
-  FILENAME = 'C:\temp\testfile.txt';
+  FILENAME = 'testfile.txt';
+var
+  LFileName: string;
 begin
-  FileHandle := CreateFile(PChar(FILENAME), GENERIC_WRITE or GENERIC_READ, FILE_SHARE_WRITE or FILE_SHARE_READ, nil,
+  LFileName := TIWAppInfo.GetTempPath + FILENAME;
+
+  FileHandle := CreateFile(PChar(LFileName), GENERIC_WRITE or GENERIC_READ, FILE_SHARE_WRITE or FILE_SHARE_READ, nil,
                             CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, 0);
   if FileHandle = INVALID_HANDLE_VALUE then
-    raise Exception.CreateFmt('Error creating file "%s": %s', [FILENAME, SysErrorMessage(GetLastError)]);
+    raise Exception.CreateFmt('Error creating file "%s": %s', [LFileName, SysErrorMessage(GetLastError)]);
 end;
 
 procedure TIWMainForm.IWAppFormCreate(Sender: TObject);
