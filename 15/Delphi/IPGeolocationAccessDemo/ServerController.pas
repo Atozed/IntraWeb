@@ -55,7 +55,6 @@ begin
   end;
 
   // Option 2: Grant access only if comming from certain countries:
-//  vCanCreate := False;
 //  if not IsLocalHost(aRequest.RemoteAddr) and not IsPrivateIP(aRequest.RemoteAddr) then
 //  begin
 //    vCanCreate := not TIWIPGeolocationHelper.AllowAccess(aRequest.RemoteAddr, 'NZ');  // Will grant access only from New Zealand
