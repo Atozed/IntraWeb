@@ -47,7 +47,6 @@ procedure TIWServerController.IWServerControllerBaseBeforeNewSession(const aUrlP
   out vCanCreate: Boolean);
 begin
   // Option 1: Block access if comes from certain countries:
-  vCanCreate := True;
   if not IsLocalHost(aRequest.RemoteAddr) and not IsPrivateIP(aRequest.RemoteAddr) then
   begin
     // Will block everything from USA, Russia, China, Brazil and India. Sorry folks :-)
