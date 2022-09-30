@@ -22,9 +22,6 @@ object formThreaded: TformThreaded
     Height = 41
     BGColor = clNone
     ConvertSpaces = True
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWText1'
     Lines.Strings = (
       
@@ -44,14 +41,10 @@ object formThreaded: TformThreaded
     Height = 17
     Alignment = taLeftJustify
     Color = clNone
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     HasTabOrder = True
     DoSubmitValidation = False
     FriendlyName = 'linkStart'
     OnClick = linkStartClick
-    TabOrder = 0
     RawText = False
     Caption = 'Start'
   end
@@ -60,9 +53,6 @@ object formThreaded: TformThreaded
     Top = 56
     Width = 169
     Height = 16
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     HasTabOrder = False
     AutoSize = False
     FriendlyName = 'lablPercentComplete'
@@ -76,9 +66,6 @@ object formThreaded: TformThreaded
     Visible = False
     Alignment = taLeftJustify
     Color = clNone
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     HasTabOrder = True
     DoSubmitValidation = False
     FriendlyName = 'linkStop'
@@ -95,9 +82,6 @@ object formThreaded: TformThreaded
     BGColor = clWebSILVER
     FriendlyName = 'IWProgressBar1'
     Color = clWebBLUE
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     Percent = 0
     ShowText = False
   end
@@ -108,14 +92,11 @@ object formThreaded: TformThreaded
     Height = 17
     Alignment = taLeftJustify
     Color = clNone
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     HasTabOrder = True
     DoSubmitValidation = False
     FriendlyName = 'linkBack'
     OnClick = linkBackClick
-    TabOrder = 3
+    TabOrder = 2
     RawText = False
     Caption = 'Back'
   end
