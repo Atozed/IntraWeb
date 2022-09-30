@@ -71,7 +71,7 @@ var
   i: Integer;
 begin
   // Execute whatever you need to execute here and (optionally) increment the percentage of work done
-  for i := 1 to 10 do begin
+  for i := 1 to 100 do begin
     AtomicIncrement(FPercentComplete);
     if Terminated then begin
       Exit;
