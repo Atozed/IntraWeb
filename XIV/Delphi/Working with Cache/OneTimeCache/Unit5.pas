@@ -104,10 +104,14 @@ var
   xFileStream: TFileStream;
 begin
   xFileStream := TFileStream.Create(TIWAppInfo.GetAppPath + 'sample.pdf', fmOpenRead);
-  // add the pdf stream to the cache. cache type is defined as ctOneTime, i.e., the file will be deleted when served
-  xURL := TIWAppCache.StreamToCacheFile(Self, xFileStream, TIWMimeTypes.GetAsString(mtPDF), ctOneTime);
-  // open a new window with our PDF file
-  IWURLWindow1.URI := xURL;
+  try
+    // add the pdf stream to the cache. cache type is defined as ctOneTime, i.e., the file will be deleted when served
+    xURL := TIWAppCache.StreamToCacheFile(Self, xFileStream, TIWMimeTypes.GetAsString(mtPDF), ctOneTime);
+    // open a new window with our PDF file
+    IWURLWindow1.URI := xURL;
+  finally
+    xFileStream.Free;
+  end;
 end;
 
 initialization

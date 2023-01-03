@@ -22,14 +22,10 @@ object IWForm5: TIWForm5
     StyleRenderOptions.RenderBorder = False
     BGColor = clNone
     Editable = True
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     InvisibleBorder = False
     HorizScrollBar = False
     VertScrollBar = True
     Required = False
-    TabOrder = 0
     SubmitOnAsyncEvent = True
     FriendlyName = 'IWMemo1'
     Lines.Strings = (
@@ -62,8 +58,8 @@ object IWForm5: TIWForm5
   object IWLabel1: TIWLabel
     Left = 42
     Top = 24
-    Width = 623
-    Height = 40
+    Width = 512
+    Height = 33
     Font.Color = clWebRED
     Font.Size = 20
     Font.Style = []
@@ -113,9 +109,6 @@ object IWForm5: TIWForm5
     Style.TextShadow.ColorTransparency = 0.500000000000000000
     Caption = 'Open PDF in New Window'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWGradButton1'
     TabOrder = 1
     OnClick = IWGradButton1Click
@@ -162,9 +155,6 @@ object IWForm5: TIWForm5
     Style.TextShadow.ColorTransparency = 0.500000000000000000
     Caption = 'Open Image in New Window'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWGradButton1'
     TabOrder = 2
     OnClick = IWGradButton2Click
@@ -222,11 +212,8 @@ object IWForm5: TIWForm5
     Style.TextShadow.ColorTransparency = 0.500000000000000000
     Caption = 'Open PDF in URLWindow'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWGradButton1'
-    TabOrder = 4
+    TabOrder = 3
     OnClick = IWGradButton3Click
   end
   object IWGradButton4: TIWGradButton
@@ -271,11 +258,8 @@ object IWForm5: TIWForm5
     Style.TextShadow.ColorTransparency = 0.500000000000000000
     Caption = 'Open PDF in URLWindow (Async)'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWGradButton1'
-    TabOrder = 5
+    TabOrder = 4
     OnAsyncClick = IWGradButton4AsyncClick
   end
   object IWGradButton5: TIWGradButton
@@ -320,11 +304,8 @@ object IWForm5: TIWForm5
     Style.TextShadow.ColorTransparency = 0.500000000000000000
     Caption = 'Open PDF Stream in URLWindow (Async)'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWGradButton1'
-    TabOrder = 6
+    TabOrder = 5
     OnAsyncClick = IWGradButton5AsyncClick
   end
 end
