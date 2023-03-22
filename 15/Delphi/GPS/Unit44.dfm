@@ -15,6 +15,7 @@ object IWForm44: TIWForm44
   ShowHint = True
   JavaScript.Strings = (
     'function SendGeolocation() {'
+    ' var f=ajaxCall, c="GetGeolocation";'
     ' if (navigator.geolocation) {'
     '      var latitude, longitude = null;'
     '      navigator.geolocation.getCurrentPosition('
@@ -22,16 +23,14 @@ object IWForm44: TIWForm44
     '              latitude = position.coords.latitude;'
     '              longitude = position.coords.longitude;'
     
-      '              ajaxCall("GetGeolocation", "status=0&latitude="+la' +
-      'titude + "&longitude="+longitude);  '
+      '              f(c, "status=0&lat="+latitude + "&lon="+longitude)' +
+      ';  '
     '          },'
     '          function(error) {'
-    
-      '              ajaxCall("GetGeolocation", "status="+error.code); ' +
-      ' '
+    '              f(c, "status="+error.code);  '
     '          });'
     '  } else {'
-    '      ajaxCall("GetGeolocation", "status=unavailable");  '
+    '      f(c, "status=unavailable");  '
     '  }'
     '}')
   DesignLeft = 8

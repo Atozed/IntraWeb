@@ -29,6 +29,8 @@ end;
 procedure TIWForm44.IWButton1AsyncClick(Sender: TObject;
   EventParams: TStringList);
 begin
+  // In case you get an error here, replace it with:
+  //WebApplication.CallBackResponse.AddJavaScriptToExecuteAsCDATA('SendGeolocation();');
   WebApplication.ExecuteJS('SendGeolocation();');
 end;
 
@@ -46,8 +48,8 @@ begin
 
   case status of
     0: begin
-         latitude := EventParams.Values['latitude'];
-         longitude := EventParams.Values['longitude'];
+         latitude := EventParams.Values['lat'];
+         longitude := EventParams.Values['lon'];
           IWMemo1.Lines.Add('Position is: longitude ' + longitude + ', latitude ' + latitude);
        end;
     1: IWMemo1.Lines.Add('Error: The user denied permission to access their location');
