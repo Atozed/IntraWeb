@@ -21,6 +21,7 @@ object IWForm32: TIWForm32
     Top = 72
     Width = 377
     Height = 95
+    OnSuccess = IWReCaptcha1Success
     OnValidationError = IWReCaptcha1ValidationError
   end
   object IWMemo1: TIWMemo
