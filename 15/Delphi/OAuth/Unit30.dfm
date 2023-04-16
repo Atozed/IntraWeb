@@ -17,7 +17,7 @@ object IWForm30: TIWForm30
     1264
     868)
   DesignLeft = 8
-  DesignTop = -23
+  DesignTop = 1
   object btnLoginGoogle: TIWImageButton
     AlignWithMargins = False
     Left = 64
@@ -215,6 +215,7 @@ object IWForm30: TIWForm30
           
             '2. Create a new project by clicking on the project dropdown menu' +
             ' on the top left of the screen and selecting "New Project".'
+          ''
           '3. Give your project a name and click "Create".'
           ''
           
