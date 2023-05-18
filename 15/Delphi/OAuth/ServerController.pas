@@ -12,6 +12,8 @@ type
   TIWServerController = class(TIWServerControllerBase)
     procedure IWServerControllerBaseNewSession(ASession: TIWApplication);
     procedure IWServerControllerBaseConfig(Sender: TObject);
+    procedure IWServerControllerBaseOAuthSuccess(ASession: TIWApplication;
+      var Handled: Boolean);
 
   private
     { Private declarations }
@@ -29,7 +31,7 @@ implementation
 
 uses
   IWInit, IWGlobal, IWIPGeolocationClient, IW.Common.SysTools, StrUtils,
-  IW.Content.Handlers, IW.OAuth.Base, IW.OAuth.Client;
+  IW.Content.Handlers, IW.OAuth.Base, IW.OAuth.Client, IW.Common.Crypt;
 
 function IWServerController: TIWServerController;
 begin
@@ -62,6 +64,7 @@ begin
     TenantID := 'your Microsoft Azure tenant ID here';
     ClientID := 'your Microsoft Azure client ID here';
     ClientSecret := 'your Microsoft Azure client secret here';
+
     PromptType := ptConsent;
     RegisterApplication;
   end;
@@ -76,6 +79,26 @@ begin
     PromptType := ptConsent;
     RegisterApplication;
   end;
+
+  with TIWOAuthAppFacebook.Create do begin
+    ClientID := 'your Facebook API client ID here';
+    ClientSecret := 'your Facebook API client secret here';
+
+    PromptType := ptLogin;
+    RegisterApplication;
+  end;
+end;
+
+type
+  TIWAppAccess = class(TIWApplication);
+
+procedure TIWServerController.IWServerControllerBaseOAuthSuccess(
+  ASession: TIWApplication; var Handled: Boolean);
+begin
+  Assert(Assigned(ASession), 'Session not assigned'); //should be always assigned
+
+  TIWUserSession(ASession.Data).IsLoggedIn := True;
+  TIWUserSession(ASession.Data).SaveTokenInfo;
 end;
 
 initialization
