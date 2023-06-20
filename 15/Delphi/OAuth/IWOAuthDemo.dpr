@@ -5,9 +5,10 @@ uses
   MidasLib,
   IWStart,
   IW.Http.IndyClient,
-  Unit30 in 'Unit30.pas' {IWForm30: TIWAppForm},
+  uLoginForm in 'uLoginForm.pas' {LoginForm: TIWAppForm},
   ServerController in 'ServerController.pas' {IWServerController: TIWServerControllerBase},
-  UserSessionUnit in 'UserSessionUnit.pas' {IWUserSession: TIWUserSessionBase};
+  UserSessionUnit in 'UserSessionUnit.pas' {IWUserSession: TIWUserSessionBase},
+  uMainForm in 'uMainForm.pas' {MainForm: TIWAppForm};
 
 {$R *.res}
 

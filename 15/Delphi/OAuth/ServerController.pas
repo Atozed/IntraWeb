@@ -31,7 +31,7 @@ implementation
 
 uses
   IWInit, IWGlobal, IWIPGeolocationClient, IW.Common.SysTools, StrUtils,
-  IW.Content.Handlers, IW.OAuth.Base, IW.OAuth.Client, IW.Common.Crypt;
+  IW.Content.Handlers, IW.OAuth.Base, IW.OAuth.Client, uMainForm;
 
 function IWServerController: TIWServerController;
 begin
@@ -99,6 +99,7 @@ begin
 
   TIWUserSession(ASession.Data).IsLoggedIn := True;
   TIWUserSession(ASession.Data).SaveTokenInfo;
+  ASession.ShowForm(TMainForm, True, False);
 end;
 
 initialization

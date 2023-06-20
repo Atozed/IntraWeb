@@ -1,4 +1,4 @@
-unit Unit30;
+unit uLoginForm;
 
 interface
 
@@ -10,7 +10,7 @@ uses
   IdComponent, IdCustomTCPServer, IdTCPServer, IdCmdTCPServer, IdHTTPProxyServer;
 
 type
-  TIWForm30 = class(TIWAppForm)
+  TLoginForm = class(TIWAppForm)
     btnLoginGoogle: TIWImageButton;
     btnLoginAzure: TIWImageButton;
     imgLoginOK: TIWImageFile;
@@ -24,13 +24,11 @@ type
     IWMemo3: TIWMemo;
     btnLoginFacebook: TIWImageButton;
     lbUserEmail: TIWLabel;
-    btnLogout: TIWImageButton;
     procedure IWAppFormRender(Sender: TObject);
     procedure btnLoginGoogleClick(Sender: TObject);
     procedure btnLoginFacebookClick(Sender: TObject);
     procedure btnLoginAzureClick(Sender: TObject);
     procedure IWAppFormCreate(Sender: TObject);
-    procedure btnLogoutClick(Sender: TObject);
   end;
 
 implementation
@@ -38,29 +36,34 @@ implementation
 {$R *.dfm}
 
 uses
-  ServerController;
+  ServerController, uMainForm;
 
-procedure TIWForm30.IWAppFormCreate(Sender: TObject);
+procedure TLoginForm.IWAppFormCreate(Sender: TObject);
 begin
-  UserSession.CheckUserIsLoggedIn;
+  // Check if user is already logged in. If so, switch to the main form without showing
+  // the oAuth login form
+  if UserSession.CheckUserIsLoggedIn then
+  begin
+    WebApplication.ShowForm(TMainForm, True, False);
+  end;
 end;
 
-procedure TIWForm30.btnLoginGoogleClick(Sender: TObject);
+procedure TLoginForm.btnLoginGoogleClick(Sender: TObject);
 begin
   WebApplication.OAuth.StartAuthentication('Google');
 end;
 
-procedure TIWForm30.btnLoginAzureClick(Sender: TObject);
+procedure TLoginForm.btnLoginAzureClick(Sender: TObject);
 begin
   WebApplication.OAuth.StartAuthentication('Azure');
 end;
 
-procedure TIWForm30.btnLoginFacebookClick(Sender: TObject);
+procedure TLoginForm.btnLoginFacebookClick(Sender: TObject);
 begin
   WebApplication.OAuth.StartAuthentication('Facebook');
 end;
 
-procedure TIWForm30.IWAppFormRender(Sender: TObject);
+procedure TLoginForm.IWAppFormRender(Sender: TObject);
 var
   LoggedIn: Boolean;
 begin
@@ -71,7 +74,6 @@ begin
   imgLoginOK.Visible := LoggedIn;
   lbUserName.Visible := LoggedIn;
   lbUserEmail.Visible := LoggedIn;
-  btnLogout.Visible := LoggedIn;
 
   if LoggedIn and Assigned(WebApplication.OAuth.UserInfo) then begin
     lbUserName.Caption := 'User name: ' + WebApplication.OAuth.UserInfo.Name;
@@ -79,12 +81,7 @@ begin
   end;
 end;
 
-procedure TIWForm30.btnLogoutClick(Sender: TObject);
-begin
-  UserSession.Logoff;
-end;
-
 initialization
-  TIWForm30.SetAsMainForm;
+  TLoginForm.SetAsMainForm;
 
 end.

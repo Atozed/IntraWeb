@@ -1,4 +1,4 @@
-object IWForm30: TIWForm30
+object LoginForm: TLoginForm
   Left = 0
   Top = 0
   Width = 1286
@@ -104,22 +104,8 @@ object IWForm30: TIWForm30
     FriendlyName = 'btnLoginFacebook'
     ImageFile.Filename = 'facebook.png'
   end
-  object btnLogout: TIWImageButton
-    AlignWithMargins = False
-    Left = 747
-    Top = 156
-    Width = 278
-    Height = 60
-    Anchors = [akTop, akRight]
-    BorderOptions.Width = 0
-    UseSize = True
-    OnClick = btnLogoutClick
-    Cacheable = True
-    FriendlyName = 'btnLogout'
-    ImageFile.Filename = 'logout.png'
-  end
   object IWjQPageControl1: TIWjQPageControl
-    Left = 64
+    Left = 63
     Top = 232
     Width = 1180
     Height = 636
@@ -138,103 +124,6 @@ object IWForm30: TIWForm30
     DesignSize = (
       1180
       636)
-    object IWjQPageControl1_page2: TIWjQTabPage
-      Left = 1
-      Top = 38
-      Width = 1178
-      Height = 597
-      RenderInvisibleControls = True
-      Caption = 'Creating a new Microsoft Azure app'
-      PageIndex = 1
-      Anchors = [akLeft, akTop, akRight, akBottom]
-      DesignSize = (
-        1178
-        597)
-      object IWMemo2: TIWMemo
-        AlignWithMargins = False
-        Left = 15
-        Top = 15
-        Width = 1122
-        Height = 538
-        Anchors = [akLeft, akTop, akRight, akBottom]
-        StyleRenderOptions.RenderBorder = False
-        BGColor = clNone
-        Editable = True
-        InvisibleBorder = False
-        HorizScrollBar = False
-        VertScrollBar = True
-        Required = False
-        SubmitOnAsyncEvent = True
-        ResizeDirection = rdNone
-        FriendlyName = 'IWMemo1'
-        Lines.Strings = (
-          '1. Go to the Azure portal at https://portal.azure.com/'
-          ''
-          
-            '2. If you don'#39't have an Azure account, sign up for a free trial ' +
-            'by clicking on "Create a resource" on the left-hand side of the ' +
-            'screen and selecting "See all".'
-          ''
-          
-            '3. Search for "Azure Active Directory" and select it from the re' +
-            'sults.'
-          ''
-          
-            '4. Go to the "App registrations" tab on the left-hand side of th' +
-            'e screen and click on "+ New registration".'
-          ''
-          
-            '5. Give your application a name and select the appropriate accou' +
-            'nt type (single tenant or multi-tenant).'
-          ''
-          
-            '6. In the "Redirect URI" section, select the type of redirect UR' +
-            'I you want to use (e.g. Web or Public client/native) and enter t' +
-            'he appropriate URI for your application (for IntraWeb applicatio' +
-            'ns it should be http://localhost:8888/$/oauth/v2, when testing l' +
-            'ocally).'
-          ''
-          
-            '7. Under "Certificates & secrets", click on "+ New client secret' +
-            '" to create a new secret for your application.'
-          ''
-          
-            '8. Enter a description for your secret and select the expiration' +
-            ' date.'
-          ''
-          
-            '9. Once your secret is created, copy the value and store it in a' +
-            ' secure location.'
-          ''
-          
-            '10. Under "API permissions", click on "+ Add a permission" to ad' +
-            'd the API permissions your application needs (e.g. Microsoft Gra' +
-            'ph API).'
-          ''
-          
-            '11. Follow the prompts to select the appropriate permission type' +
-            ' and grant admin consent if necessary.'
-          ''
-          
-            '12. Once your permissions are added, go to the "Overview" tab an' +
-            'd copy the "Application (client) ID" value. This is your client ' +
-            'ID.'
-          ''
-          
-            '13. You should also copy the "Directory (tenant) ID" value if yo' +
-            'u need to use multi-tenant authentication.'
-          ''
-          
-            'That'#39's it! You can now use the client ID, tenant ID and client s' +
-            'ecret with your application. Remember to keep these values secur' +
-            'e. '
-          ''
-          
-            'Now you should create and register a new TIWOAuthAppAzure in you' +
-            'r IntraWeb application (ServerController.OnConfig event is recom' +
-            'mended)')
-      end
-    end
     object IWjQPageControl1_page3: TIWjQTabPage
       Left = 1
       Top = 38
@@ -342,6 +231,103 @@ object IWForm30: TIWForm30
             'Now you should create and register a new TIWOAuthAppFacebook in ' +
             'your IntraWeb application (ServerController.OnConfig event is re' +
             'commended)')
+      end
+    end
+    object IWjQPageControl1_page2: TIWjQTabPage
+      Left = 1
+      Top = 38
+      Width = 1178
+      Height = 597
+      RenderInvisibleControls = True
+      Caption = 'Creating a new Microsoft Azure app'
+      PageIndex = 1
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      DesignSize = (
+        1178
+        597)
+      object IWMemo2: TIWMemo
+        AlignWithMargins = False
+        Left = 15
+        Top = 15
+        Width = 1122
+        Height = 538
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        StyleRenderOptions.RenderBorder = False
+        BGColor = clNone
+        Editable = True
+        InvisibleBorder = False
+        HorizScrollBar = False
+        VertScrollBar = True
+        Required = False
+        SubmitOnAsyncEvent = True
+        ResizeDirection = rdNone
+        FriendlyName = 'IWMemo1'
+        Lines.Strings = (
+          '1. Go to the Azure portal at https://portal.azure.com/'
+          ''
+          
+            '2. If you don'#39't have an Azure account, sign up for a free trial ' +
+            'by clicking on "Create a resource" on the left-hand side of the ' +
+            'screen and selecting "See all".'
+          ''
+          
+            '3. Search for "Azure Active Directory" and select it from the re' +
+            'sults.'
+          ''
+          
+            '4. Go to the "App registrations" tab on the left-hand side of th' +
+            'e screen and click on "+ New registration".'
+          ''
+          
+            '5. Give your application a name and select the appropriate accou' +
+            'nt type (single tenant or multi-tenant).'
+          ''
+          
+            '6. In the "Redirect URI" section, select the type of redirect UR' +
+            'I you want to use (e.g. Web or Public client/native) and enter t' +
+            'he appropriate URI for your application (for IntraWeb applicatio' +
+            'ns it should be http://localhost:8888/$/oauth/v2, when testing l' +
+            'ocally).'
+          ''
+          
+            '7. Under "Certificates & secrets", click on "+ New client secret' +
+            '" to create a new secret for your application.'
+          ''
+          
+            '8. Enter a description for your secret and select the expiration' +
+            ' date.'
+          ''
+          
+            '9. Once your secret is created, copy the value and store it in a' +
+            ' secure location.'
+          ''
+          
+            '10. Under "API permissions", click on "+ Add a permission" to ad' +
+            'd the API permissions your application needs (e.g. Microsoft Gra' +
+            'ph API).'
+          ''
+          
+            '11. Follow the prompts to select the appropriate permission type' +
+            ' and grant admin consent if necessary.'
+          ''
+          
+            '12. Once your permissions are added, go to the "Overview" tab an' +
+            'd copy the "Application (client) ID" value. This is your client ' +
+            'ID.'
+          ''
+          
+            '13. You should also copy the "Directory (tenant) ID" value if yo' +
+            'u need to use multi-tenant authentication.'
+          ''
+          
+            'That'#39's it! You can now use the client ID, tenant ID and client s' +
+            'ecret with your application. Remember to keep these values secur' +
+            'e. '
+          ''
+          
+            'Now you should create and register a new TIWOAuthAppAzure in you' +
+            'r IntraWeb application (ServerController.OnConfig event is recom' +
+            'mended)')
       end
     end
     object IWjQPageControl1_page1: TIWjQTabPage

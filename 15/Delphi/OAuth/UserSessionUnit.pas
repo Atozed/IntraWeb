@@ -87,8 +87,9 @@ var
   Api, Token, RefreshToken: string;
 begin
   // If WebApplication.OAuth.UserInfo is nil here, there is no user information
-  // so the user hasn't authenticated yet
-  loggedIn := Assigned(WebApplication.OAuth.UserInfo);
+  // so the user hasn't authenticated yet.
+  // The UserInfo can also exist but has been cleared after a logoff
+  loggedIn := Assigned(WebApplication.OAuth.UserInfo) and (WebApplication.OAuth.UserInfo.Email <> '');
 
   if not loggedIn then begin
     // We check here if there is a token hash contained in an application cookie.
@@ -262,6 +263,7 @@ end;
 
 procedure TIWUserSession.Logoff;
 begin
+  WebApplication.OAuth.UserInfo.ResetToDefaults;
   IsLoggedIn := False;
 end;
 
