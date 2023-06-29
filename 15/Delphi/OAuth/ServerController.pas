@@ -31,7 +31,8 @@ implementation
 
 uses
   IWInit, IWGlobal, IWIPGeolocationClient, IW.Common.SysTools, StrUtils,
-  IW.Content.Handlers, IW.OAuth.Base, IW.OAuth.Client, uMainForm;
+  IW.Content.Handlers, IW.OAuth.Base, IW.OAuth.Client, IW.Common.Crypt,
+  uMainForm;
 
 function IWServerController: TIWServerController;
 begin
@@ -65,6 +66,10 @@ begin
     ClientID := 'your Microsoft Azure client ID here';
     ClientSecret := 'your Microsoft Azure client secret here';
 
+    TenantID := 'c32303c8-a221-4739-b2c7-376bd207d185';
+    ClientID := 'b64ee379-d1ac-4efd-a07d-411fb6faab72';
+    ClientSecret := 'ww68Q~iZj5krkZ7fRz_tlzhtQQ6EDRQ25VcbwcaB';
+
     PromptType := ptConsent;
     RegisterApplication;
   end;
@@ -84,6 +89,8 @@ begin
     ClientID := 'your Facebook API client ID here';
     ClientSecret := 'your Facebook API client secret here';
 
+    ClientID := '540200826025515';
+    ClientSecret := '07c27c2f22794ef918c321d720a5410f';
     PromptType := ptLogin;
     RegisterApplication;
   end;

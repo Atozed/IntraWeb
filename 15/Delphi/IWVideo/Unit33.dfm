@@ -15,11 +15,13 @@ object IWForm33: TIWForm33
   DesignLeft = 8
   DesignTop = 8
   object IWVideo1: TIWVideo
+    AlignWithMargins = False
     Left = 40
     Top = 40
     Width = 569
     Height = 337
     VideoFile.Filename = 'lion.mp4'
+    Muted = True
     OnAsyncEnded = IWVideo1AsyncEnded
     OnAsyncPlay = IWVideo1AsyncPlay
     OnAsyncPause = IWVideo1AsyncPause
@@ -27,6 +29,7 @@ object IWForm33: TIWForm33
     OnAsyncWaiting = IWVideo1AsyncWaiting
   end
   object IWMemo1: TIWMemo
+    AlignWithMargins = False
     Left = 40
     Top = 448
     Width = 569
@@ -42,6 +45,7 @@ object IWForm33: TIWForm33
     FriendlyName = 'IWMemo1'
   end
   object IWButton1: TIWButton
+    AlignWithMargins = False
     Left = 40
     Top = 400
     Width = 145
@@ -52,6 +56,7 @@ object IWForm33: TIWForm33
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWButton2: TIWButton
+    AlignWithMargins = False
     Left = 208
     Top = 400
     Width = 153
