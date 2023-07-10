@@ -53,7 +53,7 @@ end;
 procedure TIWServerController.IWServerControllerBaseConfig(Sender: TObject);
 begin
   LockerOptions.Style := lsDark;  // use a dark overlay (background) and a light locker animation/text
-  // LockerOptions.RGBA := 'rgba(0,0,0,0.8); // we could set our own background color/opaciti using an rgba() representation string
+  // LockerOptions.RGBA := 'rgba(0,0,0,0.8); // we could set our own background color/opacity using an rgba() representation string
   LockerOptions.Caption := 'Please wait...';
 end;
 
