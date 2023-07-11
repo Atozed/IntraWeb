@@ -15,13 +15,16 @@ type
     IWRadioGroup1: TIWRadioGroup;
     chkTitle: TIWCheckBox;
     edtTitle: TIWEdit;
+    cbCustomCallback: TIWCheckBox;
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
   private
+    procedure ShowConfirmationWithCustomCallback(const Msg: string);
+    procedure ShowConfirmationWithCallback(const Msg: string);
     procedure ShowDialogs(const Msg, Title: string; Option: Integer);
     procedure MyConfirmCallback(EventParams: TStringList);
+    procedure MyConfirmCallback2(EventParams: TStringList);
     procedure MyPromptCallback(EventParams: TStringList);
-  public
   end;
 
 implementation
@@ -31,6 +34,7 @@ implementation
 procedure TIWForm1.IWAppFormCreate(Sender: TObject);
 begin
   WebApplication.RegisterCallBack('MyConfirmCallback', MyConfirmCallback);
+  WebApplication.RegisterCallBack('MyConfirmCallback2', MyConfirmCallback2);
   WebApplication.RegisterCallBack('MyPromptCallback', MyPromptCallback);
 end;
 
@@ -67,6 +71,26 @@ begin
                                   MsgType);
 end;
 
+procedure TIWForm1.MyConfirmCallback2(EventParams: TStringList);
+begin
+  // This callback is called when Confirmation executes and all it does is to
+  // simulate some lenghty operation
+  Sleep(5000);
+end;
+
+procedure TIWForm1.ShowConfirmationWithCustomCallback(const Msg: string);
+var
+  jsCallbackCode: string;
+begin
+  jsCallbackCode := 'javascript:ajaxCall(''MyConfirmCallback2'', '''', {text:''Please wait until MyConfirmCallback2 returns''});';
+  WebApplication.ShowConfirm(Msg, jsCallbackCode, Title, 'Yes', 'No');
+end;
+
+procedure TIWForm1.ShowConfirmationWithCallback(const Msg: string);
+begin
+  WebApplication.ShowConfirm(Msg, 'MyConfirmCallback', Title, 'Yes', 'No');
+end;
+
 procedure TIWForm1.MyPromptCallback(EventParams: TStringList);
 var
   Response: Boolean;
@@ -99,7 +123,12 @@ procedure TIWForm1.ShowDialogs(const Msg, Title: string; Option: Integer);
 begin
   case Option of
     1: WebApplication.ShowMessage(Msg);
-    2: WebApplication.ShowConfirm(Msg, 'MyConfirmCallback', Title, 'Yes', 'No');
+    2: begin
+         if not cbCustomCallback.Checked then
+           ShowConfirmationWithCallback(Msg)
+         else
+           ShowConfirmationWithCustomCallback(Msg);
+       end;
     3: WebApplication.ShowPrompt(Msg,  'MyPromptCallback', Title, 'This is the default value');
     4: WebApplication.ShowNotification(Msg);
   end;
