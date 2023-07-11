@@ -13,11 +13,11 @@ uses
 type
   TIWForm18 = class(TIWAppForm)
     IWMonitor1: TIWMonitor;
-    IWButton1: TIWButton;
+    btnExecute: TIWButton;
     IWModalWindow1: TIWModalWindow;
     IWProgressBar2: TIWProgressBar;
     btnCancel: TIWButton;
-    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure btnExecuteAsyncClick(Sender: TObject; EventParams: TStringList);
     procedure btnCancelAsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWMonitor1AsyncEvent(Sender: TObject; EventParams: TStringList);
   private
@@ -32,9 +32,10 @@ implementation
 uses
   ServerController;
 
-procedure TIWForm18.IWButton1AsyncClick(Sender: TObject;
+procedure TIWForm18.btnExecuteAsyncClick(Sender: TObject;
   EventParams: TStringList);
 begin
+  btnExecute.Enabled := False;
   btnCancel.Visible := True;
   btnCancel.Caption := 'Cancel';
   WebApplication.Status.Value := 0;
@@ -46,6 +47,7 @@ end;
 
 procedure TIWForm18.TerminateThread;
 begin
+  btnExecute.Enabled := True;
   btnCancel.Visible := False;
   IWMonitor1.Enabled := False;
   IWProgressBar2.Percent := 0;

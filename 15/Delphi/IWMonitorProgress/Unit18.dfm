@@ -14,7 +14,7 @@ object IWForm18: TIWForm18
   ShowHint = True
   DesignLeft = 8
   DesignTop = 8
-  object IWButton1: TIWButton
+  object btnExecute: TIWButton
     AlignWithMargins = False
     Left = 48
     Top = 56
@@ -22,8 +22,8 @@ object IWForm18: TIWForm18
     Height = 41
     Caption = 'Execute some long running task'
     Color = clBtnFace
-    FriendlyName = 'IWButton1'
-    OnAsyncClick = IWButton1AsyncClick
+    FriendlyName = 'btnExecute'
+    OnAsyncClick = btnExecuteAsyncClick
   end
   object IWProgressBar2: TIWProgressBar
     AlignWithMargins = False
