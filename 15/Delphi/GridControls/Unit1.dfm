@@ -1,0 +1,159 @@
+object IWForm1: TIWForm1
+  Left = 0
+  Top = 0
+  Width = 1059
+  Height = 710
+  RenderInvisibleControls = True
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  DesignLeft = 8
+  DesignTop = 8
+  object IWRegion1: TIWRegion
+    Left = 0
+    Top = 0
+    Width = 1059
+    Height = 60
+    RenderInvisibleControls = True
+    Align = alTop
+  end
+  object IWRegion2: TIWRegion
+    Left = 0
+    Top = 60
+    Width = 1059
+    Height = 650
+    RenderInvisibleControls = True
+    Align = alClient
+    object IWMemo1: TIWMemo
+      AlignWithMargins = False
+      Left = 25
+      Top = 336
+      Width = 352
+      Height = 185
+      StyleRenderOptions.RenderBorder = False
+      BGColor = clNone
+      Editable = True
+      InvisibleBorder = False
+      HorizScrollBar = False
+      VertScrollBar = True
+      Required = False
+      SubmitOnAsyncEvent = True
+      FriendlyName = 'IWMemo1'
+    end
+    object IWGrid1: TIWGrid
+      AlignWithMargins = False
+      Left = 25
+      Top = 64
+      Width = 352
+      Height = 201
+      BorderColors.Color = clNone
+      BorderColors.Light = clNone
+      BorderColors.Dark = clNone
+      BGColor = clNone
+      BorderSize = 1
+      BorderStyle = tfDefault
+      CellPadding = 3
+      CellSpacing = 0
+      Font.Color = clNone
+      Font.FontFamily = 'Helvetica, Arial, Verdana'
+      Font.Size = 10
+      Font.Style = []
+      Font.PxSize = 13
+      FrameBuffer = 40
+      Lines = tlAll
+      UseFrame = False
+      UseSize = True
+      ShowEmptyCells = True
+      ShowInvisibleRows = True
+      FriendlyName = 'IWGrid1'
+      ColumnCount = 4
+      RowCount = 4
+      ScrollToCurrentRow = False
+    end
+    object IWButton1: TIWButton
+      AlignWithMargins = False
+      Left = 257
+      Top = 271
+      Width = 120
+      Height = 30
+      Caption = 'Check IWGrid1'
+      Color = clBtnFace
+      FriendlyName = 'IWButton1'
+      OnAsyncClick = IWButton1AsyncClick
+    end
+    object IWGrid2: TIWGrid
+      AlignWithMargins = False
+      Left = 505
+      Top = 64
+      Width = 352
+      Height = 201
+      BorderColors.Color = clNone
+      BorderColors.Light = clNone
+      BorderColors.Dark = clNone
+      BGColor = clNone
+      BorderSize = 1
+      BorderStyle = tfDefault
+      CellPadding = 3
+      CellSpacing = 0
+      Font.Color = clNone
+      Font.FontFamily = 'Helvetica, Arial, Verdana'
+      Font.Size = 10
+      Font.Style = []
+      Font.PxSize = 13
+      FrameBuffer = 40
+      Lines = tlAll
+      UseFrame = False
+      UseSize = True
+      ShowEmptyCells = True
+      ShowInvisibleRows = True
+      FriendlyName = 'IWGrid2'
+      ColumnCount = 4
+      RowCount = 4
+      ScrollToCurrentRow = False
+    end
+    object IWMemo2: TIWMemo
+      AlignWithMargins = False
+      Left = 505
+      Top = 336
+      Width = 352
+      Height = 185
+      StyleRenderOptions.RenderBorder = False
+      BGColor = clNone
+      Editable = True
+      InvisibleBorder = False
+      HorizScrollBar = False
+      VertScrollBar = True
+      Required = False
+      SubmitOnAsyncEvent = True
+      FriendlyName = 'IWMemo1'
+    end
+    object IWButton2: TIWButton
+      AlignWithMargins = False
+      Left = 737
+      Top = 271
+      Width = 120
+      Height = 30
+      Caption = 'Check IWGrid2'
+      Color = clBtnFace
+      FriendlyName = 'IWButton1'
+      OnAsyncClick = IWButton2AsyncClick
+    end
+    object IWButton3: TIWButton
+      AlignWithMargins = False
+      Left = 611
+      Top = 271
+      Width = 120
+      Height = 30
+      Caption = 'Fill IWGrid2'
+      Color = clBtnFace
+      FriendlyName = 'IWButton1'
+      OnAsyncClick = IWButton3AsyncClick
+    end
+  end
+end
