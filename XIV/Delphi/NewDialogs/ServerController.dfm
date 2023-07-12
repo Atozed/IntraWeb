@@ -4,6 +4,7 @@ object IWServerController: TIWServerController
   Description = 'My IntraWeb Application'
   DisplayName = 'IntraWeb Application'
   Port = 8888
+  Version = '15.2.57'
   OnNewSession = IWServerControllerBaseNewSession
   Height = 310
   Width = 342

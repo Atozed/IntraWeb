@@ -72,17 +72,26 @@ begin
 end;
 
 procedure TIWForm1.MyConfirmCallback2(EventParams: TStringList);
+var
+  userPressedYes: Boolean;
 begin
+  userPressedYes := SameText(EventParams.Values['RetValue'], 'True');
   // This callback is called when Confirmation executes and all it does is to
   // simulate some lenghty operation
-  Sleep(5000);
+  if userPressedYes then
+  begin
+    Sleep(5000);
+  end;
 end;
 
 procedure TIWForm1.ShowConfirmationWithCustomCallback(const Msg: string);
 var
   jsCallbackCode: string;
 begin
-  jsCallbackCode := 'javascript:ajaxCall(''MyConfirmCallback2'', '''', {text:''Please wait until MyConfirmCallback2 returns''});';
+  jsCallbackCode := 'var msg;' +
+                    'if (e == true) {msg = ''Please wait while we are generating your report''};'+
+                    'ajaxCall(''MyConfirmCallback2'', ''&RetValue='' + e, {text:msg});';
+  jsCallbackCode := 'javascript:' + jsCallbackCode;
   WebApplication.ShowConfirm(Msg, jsCallbackCode, Title, 'Yes', 'No');
 end;
 
