@@ -40,7 +40,7 @@ object IWForm61: TIWForm61
       '- AutoSetDetailState'
       ''
       
-        'When AutoSetListSourceCursor is TRUE, IntraWeb will generates co' +
+        'When AutoSetListSourceCursor is TRUE, IntraWeb generates co' +
         'de which sets the cursor of the underlying ListSource'
       
         'DataSet whenever the selected item changes. This happens in asyn' +
