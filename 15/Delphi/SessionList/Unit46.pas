@@ -11,11 +11,7 @@ type
   TIWForm46 = class(TIWAppForm)
     IWMemo1: TIWMemo;
     IWButton1: TIWButton;
-    IWButton2: TIWButton;
-    IWButton3: TIWButton;
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
-    procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
-    procedure IWButton3Click(Sender: TObject);
   private
     procedure GetSessionList;
   public
@@ -55,18 +51,6 @@ procedure TIWForm46.IWButton1AsyncClick(Sender: TObject;
 begin
   IWMemo1.Lines.Clear;
   GetSessionList;
-end;
-
-procedure TIWForm46.IWButton2AsyncClick(Sender: TObject;
-  EventParams: TStringList);
-begin
-  WebApplication.Terminate('<!DOCTYPE html><html><head><title>Terminating</title></head><body>Terminated</body></html>');
-end;
-
-procedure TIWForm46.IWButton3Click(Sender: TObject);
-begin
-  Sleep(5000);
-  WebApplication.Terminate('<!DOCTYPE html><html><head><title>Terminating</title></head><body>Terminated</body></html>');
 end;
 
 initialization
