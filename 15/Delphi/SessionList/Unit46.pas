@@ -30,7 +30,13 @@ begin
   // First, create a session list to hold the session IDs
   LSessionList := TStringList.Create;
   try
+    // Retrieve the session list using GetList() method from TIWSessions class
     gSessions.GetList(LSessionList);
+
+    // The session list contains a session of SessionIDs, not the actual session object.
+    // You can obtain the session corresponding to a specific session Id, calling the TIWSessions.Execute() method
+    // Execute() is a method that receives a SessionId as the first paramter, and an anonymous method as the second parameter
+    // The anonymous method, when executed, will pass the aSession as the parameter. See below:
     for i := 0 to LSessionList.Count - 1 do begin
       gSessions.Execute(LSessionList[i],
         procedure(aSession: TObject)
