@@ -5,8 +5,7 @@ object IWServerController: TIWServerController
   DisplayName = 'IntraWeb Application'
   Port = 8888
   Theme = 'iw-flat-blue'
-  Version = '15.0.0'
-  SessionOptions.SessionTimeout = 10
+  Version = '15.2.57'
   OnNewSession = IWServerControllerBaseNewSession
   Height = 310
   Width = 342

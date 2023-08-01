@@ -12,7 +12,7 @@
         <Projects Include="OneTimeCache\OneTimeCache.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="CacheHttpSys\CacheHttpSys.dproj">
+        <Projects Include="DownloadFromCache\DownloadFromCache.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -50,23 +50,23 @@
     <Target Name="OneTimeCache:Make">
         <MSBuild Projects="OneTimeCache\OneTimeCache.dproj" Targets="Make"/>
     </Target>
-    <Target Name="CacheHttpSys">
-        <MSBuild Projects="CacheHttpSys\CacheHttpSys.dproj"/>
+    <Target Name="DownloadFromCache">
+        <MSBuild Projects="DownloadFromCache\DownloadFromCache.dproj"/>
     </Target>
-    <Target Name="CacheHttpSys:Clean">
-        <MSBuild Projects="CacheHttpSys\CacheHttpSys.dproj" Targets="Clean"/>
+    <Target Name="DownloadFromCache:Clean">
+        <MSBuild Projects="DownloadFromCache\DownloadFromCache.dproj" Targets="Clean"/>
     </Target>
-    <Target Name="CacheHttpSys:Make">
-        <MSBuild Projects="CacheHttpSys\CacheHttpSys.dproj" Targets="Make"/>
+    <Target Name="DownloadFromCache:Make">
+        <MSBuild Projects="DownloadFromCache\DownloadFromCache.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="SessionCache;FormCache;OneTimeCache;CacheHttpSys"/>
+        <CallTarget Targets="SessionCache;FormCache;OneTimeCache;DownloadFromCache"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="SessionCache:Clean;FormCache:Clean;OneTimeCache:Clean;CacheHttpSys:Clean"/>
+        <CallTarget Targets="SessionCache:Clean;FormCache:Clean;OneTimeCache:Clean;DownloadFromCache:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="SessionCache:Make;FormCache:Make;OneTimeCache:Make;CacheHttpSys:Make"/>
+        <CallTarget Targets="SessionCache:Make;FormCache:Make;OneTimeCache:Make;DownloadFromCache:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

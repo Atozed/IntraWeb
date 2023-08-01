@@ -5,7 +5,8 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes,
   IWCompGradButton, IWCompLabel, Controls, IWVCLBaseControl, IWBaseControl,
-  IWBaseHTMLControl, IWControl, IWCompMemo, IWHTMLControls, IWCompButton;
+  IWBaseHTMLControl, IWControl, IWCompMemo, IWHTMLControls, IWCompButton,
+  IWBaseComponent, IWBaseHTMLComponent, IWBaseHTML40Component, IWCompExtCtrls;
 
 type
   TIWForm5 = class(TIWAppForm)
@@ -17,12 +18,16 @@ type
     IWGradButton3: TIWGradButton;
     IWGradButton4: TIWGradButton;
     IWGradButton5: TIWGradButton;
+    IWGradButton6: TIWGradButton;
+    IWModalWindow1: TIWModalWindow;
     procedure IWGradButton1Click(Sender: TObject);
     procedure IWGradButton2Click(Sender: TObject);
     procedure IWGradButton3Click(Sender: TObject);
     procedure IWGradButton4AsyncClick(Sender: TObject;
       EventParams: TStringList);
     procedure IWGradButton5AsyncClick(Sender: TObject;
+      EventParams: TStringList);
+    procedure IWGradButton6AsyncClick(Sender: TObject;
       EventParams: TStringList);
   public
     procedure SendPdfFileToURLWindow;
@@ -49,6 +54,30 @@ begin
   xURL := TIWAppCache.AddFileToCache(Self, xFileName, TIWMimeTypes.GetAsString(mtPDF), ctOneTime);
   // open a new window with our PDF file
   WebApplication.NewWindow(xURL);
+end;
+
+procedure TIWForm5.IWGradButton6AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+var
+  xFileName: string;
+  xURL: string;
+begin
+  // the same method of adding a pdf file to the cache:
+  xFileName := TIWAppCache.NewTempFileName;
+  FileCopy(TIWAppInfo.GetAppPath + 'sample.pdf', xFileName, True);
+  xURL := TIWAppCache.AddFileToCache(Self, xFileName, 'myreport.pdf', TIWMimeTypes.GetAsString(mtPDF), False, ctOneTime);
+
+  // open a modal window with our PDF file
+  with IWModalWindow1 do begin
+    Reset;
+    Autosize := False;
+    Title := 'My PDF report';
+    Draggable := False;
+    WindowWidth := 97;
+    WindowHeight := 97;
+    Src := xURL;
+    Show;
+  end;
 end;
 
 procedure TIWForm5.IWGradButton2Click(Sender: TObject);
