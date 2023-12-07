@@ -12,10 +12,10 @@ object IWForm46: TIWForm46
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  XPTheme = True
   DesignLeft = 8
   DesignTop = 8
   object IWMemo1: TIWMemo
+    AlignWithMargins = False
     Left = 48
     Top = 88
     Width = 681
@@ -23,57 +23,23 @@ object IWForm46: TIWForm46
     StyleRenderOptions.RenderBorder = False
     BGColor = clNone
     Editable = True
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     InvisibleBorder = False
     HorizScrollBar = False
     VertScrollBar = True
     Required = False
-    TabOrder = 0
     SubmitOnAsyncEvent = True
     FriendlyName = 'IWMemo1'
   end
   object IWButton1: TIWButton
+    AlignWithMargins = False
     Left = 48
     Top = 40
-    Width = 75
+    Width = 185
     Height = 25
-    Caption = 'IWButton1'
+    Caption = 'Get Session List'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWButton1'
     TabOrder = 1
     OnAsyncClick = IWButton1AsyncClick
-  end
-  object IWButton2: TIWButton
-    Left = 144
-    Top = 40
-    Width = 75
-    Height = 25
-    Caption = 'IWButton1'
-    Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    FriendlyName = 'IWButton1'
-    TabOrder = 2
-    OnAsyncClick = IWButton2AsyncClick
-  end
-  object IWButton3: TIWButton
-    Left = 240
-    Top = 40
-    Width = 75
-    Height = 25
-    Caption = 'IWButton1'
-    Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
-    FriendlyName = 'IWButton1'
-    TabOrder = 3
-    OnClick = IWButton3Click
   end
 end

@@ -5,7 +5,7 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, IWCompButton,
   IWCompLabel, Vcl.Controls, IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl,
-  IWControl, IWCompMemo, IWHTMLControls;
+  IWControl, IWCompMemo, IWHTMLControls, Vcl.Menus;
 
 type
   TIWForm1 = class(TIWAppForm)

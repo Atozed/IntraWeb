@@ -1,9 +1,10 @@
 program OneTimeCache;
 
 uses
-  Forms,
-  IWStartHSys,
-  UTF8ContentParser,
+  IWRtlFix,
+  IWJclStackTrace,
+  IWJclDebug,
+  IWStart,
   Unit5 in 'Unit5.pas' {IWForm5: TIWAppForm},
   ServerController in 'ServerController.pas' {IWServerController: TIWServerControllerBase},
   UserSessionUnit in 'UserSessionUnit.pas' {IWUserSession: TIWUserSessionBase};
@@ -11,5 +12,5 @@ uses
 {$R *.res}
 
 begin
-  TIWStartHSys.Execute(True);
+  TIWStart.Execute(True);
 end.

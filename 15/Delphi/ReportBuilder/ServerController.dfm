@@ -1,12 +1,12 @@
 object IWServerController: TIWServerController
-  OldCreateOrder = False
+  OldCreateOrder = True
   AppName = 'MyApp'
   Description = 'My IntraWeb Application'
   DisplayName = 'IntraWeb Application'
   Port = 8888
-  Theme = 'iw-flat-blue'
-  Version = '15.2.57'
+  Version = '15.4.0'
+  SessionOptions.SessionTimeout = 10
   OnNewSession = IWServerControllerBaseNewSession
-  Height = 310
-  Width = 342
+  Height = 388
+  Width = 428
 end

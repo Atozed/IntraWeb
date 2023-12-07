@@ -18,6 +18,7 @@ object IWForm1: TIWForm1
   DesignLeft = 8
   DesignTop = 8
   object IWMemo1: TIWMemo
+    AlignWithMargins = False
     Left = 32
     Top = 152
     Width = 657
@@ -30,6 +31,7 @@ object IWForm1: TIWForm1
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
     Font.Style = []
+    Font.PxSize = 16
     InvisibleBorder = False
     HorizScrollBar = False
     VertScrollBar = True
@@ -38,6 +40,7 @@ object IWForm1: TIWForm1
     FriendlyName = 'IWMemo1'
   end
   object IWLabel1: TIWLabel
+    AlignWithMargins = False
     Left = 32
     Top = 88
     Width = 353
@@ -46,11 +49,13 @@ object IWForm1: TIWForm1
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
     Font.Style = []
+    Font.PxSize = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'Write some text and click on "Send it!" button'
   end
   object IWButton1: TIWButton
+    AlignWithMargins = False
     Left = 720
     Top = 152
     Width = 201
@@ -62,10 +67,12 @@ object IWForm1: TIWForm1
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
     Font.Style = []
+    Font.PxSize = 16
     FriendlyName = 'IWButton1'
     OnAsyncClick = IWButton2AsyncClick
   end
   object IWButton2: TIWButton
+    AlignWithMargins = False
     Left = 720
     Top = 256
     Width = 201
@@ -77,6 +84,7 @@ object IWForm1: TIWForm1
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
     Font.Style = []
+    Font.PxSize = 16
     FriendlyName = 'IWButton1'
     ScriptEvents = <
       item
@@ -86,6 +94,7 @@ object IWForm1: TIWForm1
       end>
   end
   object IWButton3: TIWButton
+    AlignWithMargins = False
     Left = 720
     Top = 202
     Width = 201
@@ -97,10 +106,12 @@ object IWForm1: TIWForm1
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
     Font.Style = []
+    Font.PxSize = 16
     FriendlyName = 'IWButton1'
     OnAsyncClick = IWButton3AsyncClick
   end
   object IWLabel2: TIWLabel
+    AlignWithMargins = False
     Left = 32
     Top = 120
     Width = 921
@@ -109,6 +120,7 @@ object IWForm1: TIWForm1
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
     Font.Style = []
+    Font.PxSize = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 
@@ -116,6 +128,7 @@ object IWForm1: TIWForm1
       ' be read by others. Be civilized and do not abuse it!'
   end
   object IWLabel3: TIWLabel
+    AlignWithMargins = False
     Left = 32
     Top = 25
     Width = 928
@@ -124,6 +137,7 @@ object IWForm1: TIWForm1
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
     Font.Style = []
+    Font.PxSize = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 
@@ -131,6 +145,7 @@ object IWForm1: TIWForm1
       'n SSL libraries in the same folder where the EXE is.'
   end
   object IWLink1: TIWLink
+    AlignWithMargins = False
     Left = 32
     Top = 56
     Width = 297
@@ -141,6 +156,7 @@ object IWForm1: TIWForm1
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 12
     Font.Style = [fsUnderline]
+    Font.PxSize = 16
     ScriptEvents = <
       item
         EventCode.Strings = (
