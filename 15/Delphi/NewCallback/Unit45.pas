@@ -12,6 +12,7 @@ type
     IWButton1: TIWButton;
     IWButton3: TIWButton;
     IWButton4: TIWButton;
+    IWButton2: TIWButton;
     procedure IWAppFormCreate(Sender: TObject);
   public
   end;
@@ -50,6 +51,13 @@ begin
       procedure (aParams: TStrings)
       begin
         IWButton4.Caption := aParams.Values['newcaption'];
+      end
+    );
+
+  RegisterCallBack('OtherCallback',
+      procedure (aParams: TStrings; out aResult: string)
+      begin
+        AResult := '{"id":1, "name":"Clederson Maia"}';
       end
     );
 end;
