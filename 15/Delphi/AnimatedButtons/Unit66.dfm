@@ -174,7 +174,7 @@ object IWForm66: TIWForm66
     '  box-shadow: none;'
     '}'
     '</style>')
-  Title = 'abc'
+  Title = 'Animated Button demo'
   Background.Fixed = False
   HandleTabs = False
   LeftToRight = True
