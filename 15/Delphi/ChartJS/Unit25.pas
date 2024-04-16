@@ -42,7 +42,8 @@ begin
   IWChartJS1.Labels.Add(['Italy', 'France', 'Spain', 'USA', 'Argentina']);
   IWChartJS1.MainSeries.Colors.Add([clWebRed, clWEBGreen, clWEBBlue, clWEBOrange, clWEBBrown]);
   IWChartJS1.ChartType := ctPie;
-  IWChartJS1.Legend.Visible := False;
+  IWChartJS1.Legend.Visible := True;
+  IWChartJS1.Legend.Position := tpLeft;
   IWChartJS1.Title.Text := 'World Wine Production 2018';
   IWChartJS1.Title.Visible := True;
 end;

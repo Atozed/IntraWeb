@@ -12,9 +12,10 @@ object IWForm27: TIWForm27
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 8
-  DesignTop = 8
+  DesignLeft = 2
+  DesignTop = 2
   object IWButton1: TIWButton
+    AlignWithMargins = False
     Left = 72
     Top = 552
     Width = 120
@@ -25,6 +26,7 @@ object IWForm27: TIWForm27
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWButton2: TIWButton
+    AlignWithMargins = False
     Left = 224
     Top = 552
     Width = 120
@@ -35,6 +37,7 @@ object IWForm27: TIWForm27
     OnAsyncClick = IWButton2AsyncClick
   end
   object IWButton3: TIWButton
+    AlignWithMargins = False
     Left = 376
     Top = 552
     Width = 120
@@ -45,6 +48,7 @@ object IWForm27: TIWForm27
     OnAsyncClick = IWButton3AsyncClick
   end
   object IWButton4: TIWButton
+    AlignWithMargins = False
     Left = 520
     Top = 552
     Width = 120
@@ -55,10 +59,11 @@ object IWForm27: TIWForm27
     OnAsyncClick = IWButton4AsyncClick
   end
   object IWLabel1: TIWLabel
+    AlignWithMargins = False
     Left = 64
     Top = 32
-    Width = 418
-    Height = 30
+    Width = 474
+    Height = 31
     Font.Color = clWebMAROON
     Font.Size = 19
     Font.Style = []
@@ -74,11 +79,13 @@ object IWForm27: TIWForm27
     Height = 449
     RenderInvisibleControls = True
     object IWSignaturePad1: TIWSignaturePad
+      AlignWithMargins = False
       Left = 1
       Top = 1
       Width = 679
       Height = 447
       Align = alClient
+      BorderOptions.Width = 0
       Font.Color = clNone
       Font.FontName = 'sans-serif'
       Font.Size = 8
@@ -87,8 +94,6 @@ object IWForm27: TIWForm27
       OnPngImageUploaded = IWSignaturePad1PngImageUploaded
       BrushColor = clWebWHITE
       GlobalAlpha = 1.000000000000000000
-      ExplicitLeft = 3
-      ExplicitTop = 105
     end
   end
 end

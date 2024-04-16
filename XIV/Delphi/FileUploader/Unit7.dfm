@@ -16,6 +16,7 @@ object IWForm7: TIWForm7
   DesignLeft = 2
   DesignTop = 2
   object IWFileUploader1: TIWFileUploader
+    AlignWithMargins = False
     Left = 40
     Top = 68
     Width = 400
@@ -43,6 +44,7 @@ object IWForm7: TIWForm7
     Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonOptions.Font.Size = 10
     Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Font.PxSize = 13
     Style.ButtonOptions.FromColor = clWebMAROON
     Style.ButtonOptions.ToColor = clWebMAROON
     Style.ButtonOptions.Height = 30
@@ -52,6 +54,7 @@ object IWForm7: TIWForm7
     Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonHoverOptions.Font.Size = 10
     Style.ButtonHoverOptions.Font.Style = []
+    Style.ButtonHoverOptions.Font.PxSize = 13
     Style.ButtonHoverOptions.FromColor = 214
     Style.ButtonHoverOptions.ToColor = 214
     Style.ListOptions.Alignment = taLeftJustify
@@ -59,6 +62,7 @@ object IWForm7: TIWForm7
     Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListOptions.Font.Size = 10
     Style.ListOptions.Font.Style = []
+    Style.ListOptions.Font.PxSize = 13
     Style.ListOptions.FromColor = clWebGOLD
     Style.ListOptions.ToColor = clWebGOLD
     Style.ListOptions.Height = 30
@@ -68,6 +72,7 @@ object IWForm7: TIWForm7
     Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListSuccessOptions.Font.Size = 10
     Style.ListSuccessOptions.Font.Style = []
+    Style.ListSuccessOptions.Font.PxSize = 13
     Style.ListSuccessOptions.FromColor = clWebFORESTGREEN
     Style.ListSuccessOptions.ToColor = clWebFORESTGREEN
     Style.ListErrorOptions.Alignment = taLeftJustify
@@ -75,6 +80,7 @@ object IWForm7: TIWForm7
     Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListErrorOptions.Font.Size = 10
     Style.ListErrorOptions.Font.Style = []
+    Style.ListErrorOptions.Font.PxSize = 13
     Style.ListErrorOptions.FromColor = clWebRED
     Style.ListErrorOptions.ToColor = clWebRED
     Style.DropAreaOptions.Alignment = taCenter
@@ -82,6 +88,7 @@ object IWForm7: TIWForm7
     Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaOptions.Font.Size = 10
     Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Font.PxSize = 13
     Style.DropAreaOptions.FromColor = clWebDARKORANGE
     Style.DropAreaOptions.ToColor = clWebDARKORANGE
     Style.DropAreaOptions.Height = 60
@@ -91,11 +98,12 @@ object IWForm7: TIWForm7
     Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaActiveOptions.Font.Size = 10
     Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Font.PxSize = 13
     Style.DropAreaActiveOptions.FromColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.ToColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.Height = 60
     Style.DropAreaActiveOptions.Width = 0
-    AcceptFiles = 'image/*'
+    AcceptFiles = 'video/mp4,video/x-m4v,video/*'
     CssClasses.Strings = (
       'button='
       'button-hover='
@@ -115,35 +123,29 @@ object IWForm7: TIWForm7
       'fail-icon=')
     OnAsyncUploadCompleted = IWFileUploader1AsyncUploadCompleted
     FriendlyName = 'IWFileUploader1'
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
   end
   object IWLabel1: TIWLabel
+    AlignWithMargins = False
     Left = 40
     Top = 41
-    Width = 464
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
+    Width = 416
+    Height = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'This will upload a file and save it to a custom folder/path'
   end
   object IWLabel2: TIWLabel
+    AlignWithMargins = False
     Left = 40
     Top = 151
-    Width = 446
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
+    Width = 399
+    Height = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'This will upload a file and save it with a different name'
   end
   object IWFileUploader2: TIWFileUploader
+    AlignWithMargins = False
     Left = 40
     Top = 176
     Width = 400
@@ -171,6 +173,7 @@ object IWForm7: TIWForm7
     Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonOptions.Font.Size = 10
     Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Font.PxSize = 13
     Style.ButtonOptions.FromColor = clWebMAROON
     Style.ButtonOptions.ToColor = clWebMAROON
     Style.ButtonOptions.Height = 30
@@ -180,6 +183,7 @@ object IWForm7: TIWForm7
     Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonHoverOptions.Font.Size = 10
     Style.ButtonHoverOptions.Font.Style = []
+    Style.ButtonHoverOptions.Font.PxSize = 13
     Style.ButtonHoverOptions.FromColor = 214
     Style.ButtonHoverOptions.ToColor = 214
     Style.ListOptions.Alignment = taLeftJustify
@@ -187,6 +191,7 @@ object IWForm7: TIWForm7
     Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListOptions.Font.Size = 10
     Style.ListOptions.Font.Style = []
+    Style.ListOptions.Font.PxSize = 13
     Style.ListOptions.FromColor = clWebGOLD
     Style.ListOptions.ToColor = clWebGOLD
     Style.ListOptions.Height = 30
@@ -196,6 +201,7 @@ object IWForm7: TIWForm7
     Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListSuccessOptions.Font.Size = 10
     Style.ListSuccessOptions.Font.Style = []
+    Style.ListSuccessOptions.Font.PxSize = 13
     Style.ListSuccessOptions.FromColor = clWebFORESTGREEN
     Style.ListSuccessOptions.ToColor = clWebFORESTGREEN
     Style.ListErrorOptions.Alignment = taLeftJustify
@@ -203,6 +209,7 @@ object IWForm7: TIWForm7
     Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListErrorOptions.Font.Size = 10
     Style.ListErrorOptions.Font.Style = []
+    Style.ListErrorOptions.Font.PxSize = 13
     Style.ListErrorOptions.FromColor = clWebRED
     Style.ListErrorOptions.ToColor = clWebRED
     Style.DropAreaOptions.Alignment = taCenter
@@ -210,6 +217,7 @@ object IWForm7: TIWForm7
     Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaOptions.Font.Size = 10
     Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Font.PxSize = 13
     Style.DropAreaOptions.FromColor = clWebDARKORANGE
     Style.DropAreaOptions.ToColor = clWebDARKORANGE
     Style.DropAreaOptions.Height = 60
@@ -219,6 +227,7 @@ object IWForm7: TIWForm7
     Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaActiveOptions.Font.Size = 10
     Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Font.PxSize = 13
     Style.DropAreaActiveOptions.FromColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.ToColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.Height = 60
@@ -242,18 +251,13 @@ object IWForm7: TIWForm7
       'fail-icon=')
     OnAsyncUploadCompleted = IWFileUploader2AsyncUploadCompleted
     FriendlyName = 'IWFileUploader2'
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
   end
   object IWLabel3: TIWLabel
+    AlignWithMargins = False
     Left = 40
     Top = 271
-    Width = 844
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
+    Width = 756
+    Height = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 
@@ -261,6 +265,7 @@ object IWForm7: TIWForm7
       ' stream, including DataSet BLOB fields.'
   end
   object IWFileUploader3: TIWFileUploader
+    AlignWithMargins = False
     Left = 40
     Top = 296
     Width = 400
@@ -288,6 +293,7 @@ object IWForm7: TIWForm7
     Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonOptions.Font.Size = 10
     Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Font.PxSize = 13
     Style.ButtonOptions.FromColor = clWebMAROON
     Style.ButtonOptions.ToColor = clWebMAROON
     Style.ButtonOptions.Height = 30
@@ -297,6 +303,7 @@ object IWForm7: TIWForm7
     Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonHoverOptions.Font.Size = 10
     Style.ButtonHoverOptions.Font.Style = []
+    Style.ButtonHoverOptions.Font.PxSize = 13
     Style.ButtonHoverOptions.FromColor = 214
     Style.ButtonHoverOptions.ToColor = 214
     Style.ListOptions.Alignment = taLeftJustify
@@ -304,6 +311,7 @@ object IWForm7: TIWForm7
     Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListOptions.Font.Size = 10
     Style.ListOptions.Font.Style = []
+    Style.ListOptions.Font.PxSize = 13
     Style.ListOptions.FromColor = clWebGOLD
     Style.ListOptions.ToColor = clWebGOLD
     Style.ListOptions.Height = 30
@@ -313,6 +321,7 @@ object IWForm7: TIWForm7
     Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListSuccessOptions.Font.Size = 10
     Style.ListSuccessOptions.Font.Style = []
+    Style.ListSuccessOptions.Font.PxSize = 13
     Style.ListSuccessOptions.FromColor = clWebFORESTGREEN
     Style.ListSuccessOptions.ToColor = clWebFORESTGREEN
     Style.ListErrorOptions.Alignment = taLeftJustify
@@ -320,6 +329,7 @@ object IWForm7: TIWForm7
     Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListErrorOptions.Font.Size = 10
     Style.ListErrorOptions.Font.Style = []
+    Style.ListErrorOptions.Font.PxSize = 13
     Style.ListErrorOptions.FromColor = clWebRED
     Style.ListErrorOptions.ToColor = clWebRED
     Style.DropAreaOptions.Alignment = taCenter
@@ -327,6 +337,7 @@ object IWForm7: TIWForm7
     Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaOptions.Font.Size = 10
     Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Font.PxSize = 13
     Style.DropAreaOptions.FromColor = clWebDARKORANGE
     Style.DropAreaOptions.ToColor = clWebDARKORANGE
     Style.DropAreaOptions.Height = 60
@@ -336,6 +347,7 @@ object IWForm7: TIWForm7
     Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaActiveOptions.Font.Size = 10
     Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Font.PxSize = 13
     Style.DropAreaActiveOptions.FromColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.ToColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.Height = 60
@@ -357,20 +369,16 @@ object IWForm7: TIWForm7
       'upload-fail='
       'success-icon='
       'fail-icon=')
+    AllowDragAndDrop = False
     OnAsyncUploadCompleted = IWFileUploader3AsyncUploadCompleted
     FriendlyName = 'IWFileUploader2'
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
   end
   object IWLabel4: TIWLabel
+    AlignWithMargins = False
     Left = 40
     Top = 385
-    Width = 916
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
+    Width = 819
+    Height = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 
@@ -378,6 +386,7 @@ object IWForm7: TIWForm7
       'be save to C:\Temp folder. No code is needed. '
   end
   object IWFileUploader4: TIWFileUploader
+    AlignWithMargins = False
     Left = 40
     Top = 408
     Width = 400
@@ -405,6 +414,7 @@ object IWForm7: TIWForm7
     Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonOptions.Font.Size = 10
     Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Font.PxSize = 13
     Style.ButtonOptions.FromColor = clWebMAROON
     Style.ButtonOptions.ToColor = clWebMAROON
     Style.ButtonOptions.Height = 30
@@ -414,6 +424,7 @@ object IWForm7: TIWForm7
     Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonHoverOptions.Font.Size = 10
     Style.ButtonHoverOptions.Font.Style = []
+    Style.ButtonHoverOptions.Font.PxSize = 13
     Style.ButtonHoverOptions.FromColor = 214
     Style.ButtonHoverOptions.ToColor = 214
     Style.ListOptions.Alignment = taLeftJustify
@@ -421,6 +432,7 @@ object IWForm7: TIWForm7
     Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListOptions.Font.Size = 10
     Style.ListOptions.Font.Style = []
+    Style.ListOptions.Font.PxSize = 13
     Style.ListOptions.FromColor = clWebGOLD
     Style.ListOptions.ToColor = clWebGOLD
     Style.ListOptions.Height = 30
@@ -430,6 +442,7 @@ object IWForm7: TIWForm7
     Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListSuccessOptions.Font.Size = 10
     Style.ListSuccessOptions.Font.Style = []
+    Style.ListSuccessOptions.Font.PxSize = 13
     Style.ListSuccessOptions.FromColor = clWebFORESTGREEN
     Style.ListSuccessOptions.ToColor = clWebFORESTGREEN
     Style.ListErrorOptions.Alignment = taLeftJustify
@@ -437,6 +450,7 @@ object IWForm7: TIWForm7
     Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListErrorOptions.Font.Size = 10
     Style.ListErrorOptions.Font.Style = []
+    Style.ListErrorOptions.Font.PxSize = 13
     Style.ListErrorOptions.FromColor = clWebRED
     Style.ListErrorOptions.ToColor = clWebRED
     Style.DropAreaOptions.Alignment = taCenter
@@ -444,6 +458,7 @@ object IWForm7: TIWForm7
     Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaOptions.Font.Size = 10
     Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Font.PxSize = 13
     Style.DropAreaOptions.FromColor = clWebDARKORANGE
     Style.DropAreaOptions.ToColor = clWebDARKORANGE
     Style.DropAreaOptions.Height = 60
@@ -453,6 +468,7 @@ object IWForm7: TIWForm7
     Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaActiveOptions.Font.Size = 10
     Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Font.PxSize = 13
     Style.DropAreaActiveOptions.FromColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.ToColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.Height = 60
@@ -477,28 +493,25 @@ object IWForm7: TIWForm7
       'success-icon='
       'fail-icon=')
     FriendlyName = 'IWFileUploader1'
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
   end
   object IWLabel5: TIWLabel
+    AlignWithMargins = False
     Left = 40
     Top = 497
-    Width = 387
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
+    Width = 348
+    Height = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'Upload triggered by a button (Using JavaScript)'
   end
   object IWFileUploader5: TIWFileUploader
+    AlignWithMargins = False
     Left = 184
     Top = 528
     Width = 256
     Height = 60
     TabOrder = 7
+    Multiple = True
     TextStrings.DragText = 'Drop files here to upload'
     TextStrings.UploadButtonText = 'Upload a file'
     TextStrings.CancelButtonText = 'Cancel'
@@ -521,6 +534,7 @@ object IWForm7: TIWForm7
     Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonOptions.Font.Size = 10
     Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Font.PxSize = 13
     Style.ButtonOptions.FromColor = clWebMAROON
     Style.ButtonOptions.ToColor = clWebMAROON
     Style.ButtonOptions.Height = 30
@@ -530,6 +544,7 @@ object IWForm7: TIWForm7
     Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonHoverOptions.Font.Size = 10
     Style.ButtonHoverOptions.Font.Style = []
+    Style.ButtonHoverOptions.Font.PxSize = 13
     Style.ButtonHoverOptions.FromColor = 214
     Style.ButtonHoverOptions.ToColor = 214
     Style.ListOptions.Alignment = taLeftJustify
@@ -537,6 +552,7 @@ object IWForm7: TIWForm7
     Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListOptions.Font.Size = 10
     Style.ListOptions.Font.Style = []
+    Style.ListOptions.Font.PxSize = 13
     Style.ListOptions.FromColor = clWebGOLD
     Style.ListOptions.ToColor = clWebGOLD
     Style.ListOptions.Height = 30
@@ -546,6 +562,7 @@ object IWForm7: TIWForm7
     Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListSuccessOptions.Font.Size = 10
     Style.ListSuccessOptions.Font.Style = []
+    Style.ListSuccessOptions.Font.PxSize = 13
     Style.ListSuccessOptions.FromColor = clWebFORESTGREEN
     Style.ListSuccessOptions.ToColor = clWebFORESTGREEN
     Style.ListErrorOptions.Alignment = taLeftJustify
@@ -553,6 +570,7 @@ object IWForm7: TIWForm7
     Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListErrorOptions.Font.Size = 10
     Style.ListErrorOptions.Font.Style = []
+    Style.ListErrorOptions.Font.PxSize = 13
     Style.ListErrorOptions.FromColor = clWebRED
     Style.ListErrorOptions.ToColor = clWebRED
     Style.DropAreaOptions.Alignment = taCenter
@@ -560,6 +578,7 @@ object IWForm7: TIWForm7
     Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaOptions.Font.Size = 10
     Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Font.PxSize = 13
     Style.DropAreaOptions.FromColor = clWebDARKORANGE
     Style.DropAreaOptions.ToColor = clWebDARKORANGE
     Style.DropAreaOptions.Height = 60
@@ -569,6 +588,7 @@ object IWForm7: TIWForm7
     Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaActiveOptions.Font.Size = 10
     Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Font.PxSize = 13
     Style.DropAreaActiveOptions.FromColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.ToColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.Height = 60
@@ -594,20 +614,15 @@ object IWForm7: TIWForm7
       'fail-icon=')
     OnAsyncUploadCompleted = IWFileUploader5AsyncUploadCompleted
     FriendlyName = 'IWFileUploader1'
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
   end
   object btnSelect: TIWButton
+    AlignWithMargins = False
     Left = 40
     Top = 528
     Width = 121
     Height = 25
     Caption = 'Select File'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'Select File'
     ScriptEvents = <
       item
@@ -618,15 +633,13 @@ object IWForm7: TIWForm7
     TabOrder = 8
   end
   object btnUpload: TIWButton
+    AlignWithMargins = False
     Left = 40
     Top = 563
     Width = 121
     Height = 25
     Caption = 'Upload File'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWButton1'
     ScriptEvents = <
       item
@@ -637,18 +650,17 @@ object IWForm7: TIWForm7
     TabOrder = 9
   end
   object IWLabel6: TIWLabel
+    AlignWithMargins = False
     Left = 40
     Top = 609
-    Width = 412
-    Height = 21
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
+    Width = 371
+    Height = 16
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'Upload triggered by a button (Using Async events)'
   end
   object IWFileUploader6: TIWFileUploader
+    AlignWithMargins = False
     Left = 184
     Top = 640
     Width = 256
@@ -676,6 +688,7 @@ object IWForm7: TIWForm7
     Style.ButtonOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonOptions.Font.Size = 10
     Style.ButtonOptions.Font.Style = []
+    Style.ButtonOptions.Font.PxSize = 13
     Style.ButtonOptions.FromColor = clWebMAROON
     Style.ButtonOptions.ToColor = clWebMAROON
     Style.ButtonOptions.Height = 30
@@ -685,6 +698,7 @@ object IWForm7: TIWForm7
     Style.ButtonHoverOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ButtonHoverOptions.Font.Size = 10
     Style.ButtonHoverOptions.Font.Style = []
+    Style.ButtonHoverOptions.Font.PxSize = 13
     Style.ButtonHoverOptions.FromColor = 214
     Style.ButtonHoverOptions.ToColor = 214
     Style.ListOptions.Alignment = taLeftJustify
@@ -692,6 +706,7 @@ object IWForm7: TIWForm7
     Style.ListOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListOptions.Font.Size = 10
     Style.ListOptions.Font.Style = []
+    Style.ListOptions.Font.PxSize = 13
     Style.ListOptions.FromColor = clWebGOLD
     Style.ListOptions.ToColor = clWebGOLD
     Style.ListOptions.Height = 30
@@ -701,6 +716,7 @@ object IWForm7: TIWForm7
     Style.ListSuccessOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListSuccessOptions.Font.Size = 10
     Style.ListSuccessOptions.Font.Style = []
+    Style.ListSuccessOptions.Font.PxSize = 13
     Style.ListSuccessOptions.FromColor = clWebFORESTGREEN
     Style.ListSuccessOptions.ToColor = clWebFORESTGREEN
     Style.ListErrorOptions.Alignment = taLeftJustify
@@ -708,6 +724,7 @@ object IWForm7: TIWForm7
     Style.ListErrorOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.ListErrorOptions.Font.Size = 10
     Style.ListErrorOptions.Font.Style = []
+    Style.ListErrorOptions.Font.PxSize = 13
     Style.ListErrorOptions.FromColor = clWebRED
     Style.ListErrorOptions.ToColor = clWebRED
     Style.DropAreaOptions.Alignment = taCenter
@@ -715,6 +732,7 @@ object IWForm7: TIWForm7
     Style.DropAreaOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaOptions.Font.Size = 10
     Style.DropAreaOptions.Font.Style = []
+    Style.DropAreaOptions.Font.PxSize = 13
     Style.DropAreaOptions.FromColor = clWebDARKORANGE
     Style.DropAreaOptions.ToColor = clWebDARKORANGE
     Style.DropAreaOptions.Height = 60
@@ -724,6 +742,7 @@ object IWForm7: TIWForm7
     Style.DropAreaActiveOptions.Font.FontFamily = 'Arial, Sans-Serif, Verdana'
     Style.DropAreaActiveOptions.Font.Size = 10
     Style.DropAreaActiveOptions.Font.Style = []
+    Style.DropAreaActiveOptions.Font.PxSize = 13
     Style.DropAreaActiveOptions.FromColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.ToColor = clWebLIMEGREEN
     Style.DropAreaActiveOptions.Height = 60
@@ -749,33 +768,26 @@ object IWForm7: TIWForm7
       'fail-icon=')
     OnAsyncUploadCompleted = IWFileUploader5AsyncUploadCompleted
     FriendlyName = 'IWFileUploader1'
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
   end
   object IWButton1: TIWButton
+    AlignWithMargins = False
     Left = 40
     Top = 640
     Width = 121
     Height = 25
     Caption = 'Select File'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'Select File'
     TabOrder = 5
   end
   object IWButton2: TIWButton
+    AlignWithMargins = False
     Left = 40
     Top = 675
     Width = 121
     Height = 25
     Caption = 'Upload File'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWButton1'
     TabOrder = 6
   end

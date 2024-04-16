@@ -13,22 +13,21 @@ object IWForm1: TIWForm1
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 8
-  DesignTop = 8
+  DesignLeft = 2
+  DesignTop = 2
   object IWButton1: TIWButton
+    AlignWithMargins = False
     Left = 352
     Top = 277
     Width = 241
     Height = 30
     Caption = 'Go to SecondForm Sync'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWButton1'
     OnClick = IWButton1Click
   end
   object IWLink1: TIWLink
+    AlignWithMargins = False
     Left = 32
     Top = 325
     Width = 169
@@ -38,6 +37,7 @@ object IWForm1: TIWForm1
     Font.Color = clNone
     Font.Size = 10
     Font.Style = [fsUnderline]
+    Font.PxSize = 13
     HasTabOrder = True
     DoSubmitValidation = False
     FriendlyName = 'IWLink1'
@@ -47,28 +47,27 @@ object IWForm1: TIWForm1
     Caption = 'Say hello from MainForm'
   end
   object IWEdit1: TIWEdit
+    AlignWithMargins = False
     Left = 32
     Top = 277
     Width = 200
     Height = 32
     StyleRenderOptions.RenderBorder = False
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWEdit1'
     SubmitOnAsyncEvent = True
   end
   object IWText1: TIWText
+    AlignWithMargins = False
     Left = 32
     Top = 40
     Width = 657
     Height = 193
     BGColor = clNone
-    ConvertSpaces = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 11
     Font.Style = []
+    Font.PxSize = 14
     FriendlyName = 'IWText1'
     Lines.Strings = (
       
@@ -96,19 +95,18 @@ object IWForm1: TIWForm1
     WantReturns = True
   end
   object IWButton2: TIWButton
+    AlignWithMargins = False
     Left = 352
     Top = 360
     Width = 241
     Height = 30
     Caption = 'Go to SecondForm Async'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWButton2'
     OnAsyncClick = IWButton2AsyncClick
   end
   object IWLink2: TIWLink
+    AlignWithMargins = False
     Left = 32
     Top = 421
     Width = 257
@@ -118,6 +116,7 @@ object IWForm1: TIWForm1
     Font.Color = clNone
     Font.Size = 10
     Font.Style = [fsUnderline]
+    Font.PxSize = 13
     HasTabOrder = True
     DoSubmitValidation = False
     FriendlyName = 'IWLink1'
@@ -127,15 +126,20 @@ object IWForm1: TIWForm1
     Caption = ' Say hello from MainForm Sync'
   end
   object IWEdit2: TIWEdit
+    AlignWithMargins = False
     Left = 32
     Top = 373
     Width = 200
     Height = 32
     StyleRenderOptions.RenderBorder = False
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWEdit1'
     SubmitOnAsyncEvent = True
+  end
+  object IWRegion1: TIWRegion
+    Left = 288
+    Top = 444
+    Width = 378
+    Height = 161
+    RenderInvisibleControls = True
   end
 end

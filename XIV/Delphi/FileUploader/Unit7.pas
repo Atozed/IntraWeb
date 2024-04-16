@@ -45,6 +45,27 @@ implementation
 uses
   IW.Common.AppInfo;
 
+procedure PercorreDataSet(ds: TDataSet);
+var
+  Bookmark: TBookmark;
+begin
+  Bookmark := ds.GetBookmark;
+  try
+    ds.DisableControls;
+    ds.First;
+    while not ds.EOF do
+    begin
+       // faça o que vc quer fazer aqui
+      ds.Next;
+    end;
+    ds.GotoBookmark(Bookmark);
+  finally
+    ds.EnableControls;
+    ds.FreeBookmark(Bookmark);
+  end;
+end;
+
+
 procedure TIWForm7.IWAppFormCreate(Sender: TObject);
 begin
   // Create the DataSet so we can use it later

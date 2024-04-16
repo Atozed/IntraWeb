@@ -17,6 +17,7 @@ type
     IWButton2: TIWButton;
     IWLink2: TIWLink;
     IWEdit2: TIWEdit;
+    IWRegion1: TIWRegion;
     procedure IWLink1AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton1Click(Sender: TObject);

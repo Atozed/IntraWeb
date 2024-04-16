@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IntraWeb template demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" data-iw-type="internal-file">
+    <link href="css/sticky-menu.css" rel="stylesheet" data-iw-type="internal-file">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">What</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top">What</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#why">Why</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#how">How</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About Intraweb</a>
+                    </li>
+                </ul>
+            </div>	<!-- .navbar-collapse -->
+        </div>		<!-- .container -->
+    </nav>
+
+    <section id="what" class="what-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Storing templates as resources</h1>
+                    <p>This demo shows how to store an HTML template as a resource in your project binary file (EXE, DLL, BPL). </p>
+					<p>Embedding a resource in a binary like an EXE or DLL involves incorporating resources directly into the compiled binary file.</p>
+					<p>You can store only the HTML template files or everything, including JS and CSS files</p>
+					<p>&nbsp;</p>
+                    <a class="btn btn-primary page-scroll" href="#how">Click here to learn how</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="why-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Why</h1>
+                    <h4>1. Simplified Deployment</h4>
+                    <p>By embedding HTML templates directly into the executable as resources, you simplify the deployment process. You don't need to worry about distributing individual template files alongside the executable, reducing the chances of missing or misplaced files during deployment.</p>
+                    
+                    <h4>2. Enhanced Security</h4>
+                    <p>Embedding HTML templates as resources can enhance security by preventing direct access to template files by users or unauthorized parties. This reduces the risk of tampering or unauthorized modification of templates, which could potentially lead to security vulnerabilities or unintended behavior in the application.</p>
+                    
+                    <h4>3. Improved Performance</h4>
+                    <p>Accessing resources embedded within the executable can improve performance compared to loading external files from disk, especially in scenarios where the application needs to access multiple resources frequently. Resource access from memory is typically faster than file access from disk, leading to better overall application performance.</p>
+                    
+                    <h4>4. Versioning and Consistency</h4>
+                    <p>Embedding HTML templates as resources ensures that the application always uses the correct version of the templates. This helps maintain consistency across different deployments and ensures that all users see the same version of the templates, reducing compatibility issues that may arise from using different versions of external template files.</p>
+                    
+                    <h4>5. Offline Usage</h4>
+                    <p>Embedding HTML templates allows the application to function offline without relying on external files. This is particularly useful for scenarios where the application needs to be distributed in environments with limited or no internet connectivity, ensuring that all necessary resources are available locally.</p>
+                    
+                    <h4>6. Ease of Maintenance</h4>
+                    <p>Managing HTML templates as embedded resources can simplify maintenance efforts by consolidating all resources within the executable. Developers can update and manage templates directly within the application codebase, making it easier to track changes and maintain consistency across different versions of the application.</p>
+                                   </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="how-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>How</h1>
+                    <h4>1. Compile the Resource</h4> 
+                    <p>First, you need to compile the resource files into a resource file (.RES) can be embedded into the binary. This is achieved using BRCC tool (Borland Resource Compiler) that comes with Delphi/C++Builder.</p>
+                    <p>Create a resource script file (.RC) like this. The resource script file will be used by the resource compiler (BRCC) to create a RES file which contains the resource.</p>
+                    <p>&nbsp;</p>
+                    <h4>2. Link the resource to your executable in your Delphi</h4> 
+                    <p>Here is the simplest step. You just need to link the resource file in your source code with this:</p>
+                    <p>{$R myresource.res} (in Delphi), or</p>
+                    <p>#pragma resource "myresource.res" (in C++ Builder)</p>
+                    <h4>3. JavaScript and CSS</h4> 
+                    <p>JavaScript and CSS require an extra step. You also need to add those files to the TIWServerInternalFiles instance.</p>
+                    <p>Please refer to the source code for more information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About IntraWeb</h1>
+                    <p>IntraWeb product page: <a href="https://www.atozed.com/intraweb/" target="_blank">https://www.atozed.com/intraweb/</a></p> 
+                    <p>IntraWeb support forums: <a href="https://atozed.com/forums/" target="_blank">https://atozed.com/forums/</a></p> 
+                    <p>IntraWeb Telegram channel: <a href="https://t.me/IntraWebEn" target="_blank">https://t.me/IntraWebEn</a></p> 
+                    <p>IntraWeb on Facebook: <a href="https://www.facebook.com/AtozedIntraWeb" target="_blank">https://www.facebook.com/AtozedIntraWeb</a></p> 
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+	
+    <!-- jQuery -->
+    <!-- <script src="js/jquery.js" data-iw-type="internal-file"></script> -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js" data-iw-type="internal-file"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js" data-iw-type="internal-file"></script>
+    <script src="js/sticky-menu.js" data-iw-type="internal-file"></script>
+
+</body>
+
+</html>
