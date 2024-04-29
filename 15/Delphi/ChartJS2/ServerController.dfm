@@ -1,11 +1,10 @@
 object IWServerController: TIWServerController
+  OldCreateOrder = False
   AppName = 'MyApp'
-  Compression.UseExternalLib = True
   Description = 'My IntraWeb Application'
   DisplayName = 'IntraWeb Application'
   Port = 8888
-  Version = '15.5.7'
-  JavaScriptOptions.UseUncompressedFiles = True
+  Version = '15.2.61'
   SessionOptions.SessionTimeout = 10
   OnNewSession = IWServerControllerBaseNewSession
   Height = 310

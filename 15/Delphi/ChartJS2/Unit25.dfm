@@ -1,0 +1,93 @@
+object IWForm25: TIWForm25
+  Left = 0
+  Top = 0
+  Width = 1486
+  Height = 726
+  RenderInvisibleControls = True
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWAppFormCreate
+  Background.Fixed = False
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  DesignLeft = 2
+  DesignTop = 2
+  object IWChartJS2: TIWChartJS
+    AlignWithMargins = False
+    Left = 32
+    Top = 16
+    Width = 697
+    Height = 481
+    BorderOptions.Width = 0
+    Font.Color = clNone
+    Font.FontName = 'sans-serif'
+    Font.Size = 8
+    Font.Style = []
+    Font.PxSize = 10
+    Legend.Title.Text = 'Weekly sales'
+    XScale.Title.Text = 'Day'
+    XScale.ScaleType = stTime
+    XScale.TimeUnit = 'day'
+    YScale.SuggestedMax = 20.000000000000000000
+    Zoom.Pan.Enabled = True
+  end
+  object IWText1: TIWText
+    AlignWithMargins = False
+    Left = 32
+    Top = 512
+    Width = 665
+    Height = 41
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 12
+    Font.Style = []
+    Font.PxSize = 16
+    FriendlyName = 'IWText1'
+    Lines.Strings = (
+      'Bar chart with date/time scale axis')
+    RawText = False
+    UseFrame = False
+    WantReturns = True
+  end
+  object IWChartJS1: TIWChartJS
+    AlignWithMargins = False
+    Left = 749
+    Top = 16
+    Width = 708
+    Height = 481
+    BorderOptions.Width = 0
+    Font.Color = clNone
+    Font.FontName = 'sans-serif'
+    Font.Size = 8
+    Font.Style = []
+    Font.PxSize = 10
+    ChartType = ctScatter
+    Legend.Title.Text = 'Weekly sales'
+    XScale.Title.Text = 'Day'
+    XScale.ScaleType = stTime
+    XScale.TimeUnit = 'day'
+    YScale.SuggestedMax = 20.000000000000000000
+    Zoom.Pan.Enabled = True
+  end
+  object IWText2: TIWText
+    AlignWithMargins = False
+    Left = 749
+    Top = 512
+    Width = 665
+    Height = 41
+    BGColor = clNone
+    Font.Color = clNone
+    Font.Size = 12
+    Font.Style = []
+    Font.PxSize = 16
+    FriendlyName = 'IWText1'
+    Lines.Strings = (
+      'Scatter (Point) chart')
+    RawText = False
+    UseFrame = False
+    WantReturns = True
+  end
+end

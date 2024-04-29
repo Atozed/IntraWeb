@@ -5,7 +5,7 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompLabel,
-  IWCompButton, IWCompMemo;
+  IWCompButton, IWCompMemo, IW.Http.Reply;
 
 type
   TRedForm = class(TIWAppForm)
@@ -19,6 +19,7 @@ type
     procedure IWButton2Click(Sender: TObject);
     procedure IWButton3AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton4AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWAppFormGenerateForm(aReply: THttpReply; var aHandled: Boolean);
   private
     procedure BackToMain;
   public
@@ -28,11 +29,28 @@ implementation
 
 {$R *.dfm}
 
+uses
+  IWMimeTypes, IW.Common.RenderStream;
 
 procedure TRedForm.BackToMain;
 begin
   Release;
   WebApplication.GoToURL('/');
+end;
+
+procedure TRedForm.IWAppFormGenerateForm(aReply: THttpReply; var aHandled: Boolean);
+//var
+//  LStream: TIWRenderStream;
+begin
+//  aReply.ResetReplyType;
+  aReply.WriteString('bla bla bla');
+  aReply.ContentType := MIME_TXT;
+  aHandled := True;
+
+//  LStream := TIWRenderStream.Create;
+//  LStream.WriteText('bla bla bla');
+//  WebApplication.SetRenderOverride(LStream);
+//  aHandled := True;
 end;
 
 procedure TRedForm.IWButton1Click(Sender: TObject);
