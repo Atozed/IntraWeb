@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful DataTable Example</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Popper.js, and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .table-container {
+            margin: 20px;
+            max-width: 900px; /* Set a max-width for the container */
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand {
+            color: #fff;
+        }
+        .table {
+            background-color: #fff;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .dataTables_wrapper .dataTables_filter {
+            text-align: right;
+        }
+        .table-responsive {
+            overflow-x: auto; /* Allow horizontal scrolling within this container */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">IntraWeb DataTable Demo</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid table-container">
+        <h2 class="text-center mb-4">IntraWeb DataTable Example</h2>
+
+        <div class="table-responsive">
+            <table id="mainDataTable" class="table table-striped table-bordered" style="width:100%">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+   
+	<!--
+    <script>
+        $(document).ready(function() {
+            $('#mainDataTable').DataTable({
+                language: {
+                    search: "_INPUT_",
+                    searchPlaceholder: "Search records"
+                },
+                responsive: true,
+                pagingType: "simple_numbers",
+                autoWidth: false,
+                paging: true,
+                ordering: true,
+                searching: true,
+                serverSide: true,
+                ajax: "/$/callback?callback=GetRecords"
+            });
+        });
+    </script>
+    -->
+	
+</body>
+</html>
