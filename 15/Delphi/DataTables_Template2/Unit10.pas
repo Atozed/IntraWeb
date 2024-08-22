@@ -30,11 +30,18 @@ implementation
 {$R *.dfm}
 
 uses
-  System.JSON, System.Generics.Collections, IWJsonDataObjects,
-  IWDBCommon;
+  System.JSON, System.Generics.Collections, IWJsonDataObjects;
 
-// Use this function instead of the one in IWDBCommon,
+// Use these 2 functions instead of the ones in IWDBCommon,
 // if using version prior to 15.6.4.
+function CheckDataSet(ADataSet: TDataSet; AMustBeActive: Boolean = True): Boolean;
+begin
+  Result := False;
+  if ADataSet <> nil then begin
+    Result := not (AMustBeActive) or ADataset.Active;
+  end;
+end;
+
 function DataSetToDataTablesJson(ds: TDataSet; const aDraw: Integer = -1; const aFiltered: Integer = -1): string;
 var
   JsonObject: TJsonObject;

@@ -231,7 +231,7 @@ object MainForm: TMainForm
     Params = <>
     StoreDefs = True
     Left = 352
-    Top = 88
+    Top = 96
     object ClientDataSet1Name: TWideStringField
       FieldName = 'Name'
       Size = 25
