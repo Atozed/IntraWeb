@@ -59,8 +59,8 @@ begin
               Sleep(30 * 1000);
 
               // Store the result of the execution in the Status property of the session
-              // please notice that Status property is thread safe, meaning that it can be safely
-              // writen to and read from by concurrent threads. If you are writting other types
+              // please notice that Status.Value property is thread safe, meaning that it can be safely
+              // written to and read from by concurrent threads. If you are writting other types
               // of data (e.g. a string), make sure that it is safe to write from it from a secondary thread
               WebApplication.Status.Value := dataRef.Result;
               // Release the object here
