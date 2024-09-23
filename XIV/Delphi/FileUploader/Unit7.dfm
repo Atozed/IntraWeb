@@ -659,6 +659,30 @@ object IWForm7: TIWForm7
     FriendlyName = 'IWLabel1'
     Caption = 'Upload triggered by a button (Using Async events)'
   end
+  object IWButton1: TIWButton
+    AlignWithMargins = False
+    Left = 40
+    Top = 640
+    Width = 121
+    Height = 25
+    Caption = 'Select File'
+    Color = clBtnFace
+    FriendlyName = 'Select File'
+    TabOrder = 5
+    OnClick = IWButton1Click
+    OnAsyncClick = IWButton1AsyncClick
+  end
+  object IWButton2: TIWButton
+    AlignWithMargins = False
+    Left = 40
+    Top = 675
+    Width = 121
+    Height = 25
+    Caption = 'Upload File'
+    Color = clBtnFace
+    FriendlyName = 'IWButton1'
+    TabOrder = 6
+  end
   object IWFileUploader6: TIWFileUploader
     AlignWithMargins = False
     Left = 184
@@ -768,28 +792,6 @@ object IWForm7: TIWForm7
       'fail-icon=')
     OnAsyncUploadCompleted = IWFileUploader5AsyncUploadCompleted
     FriendlyName = 'IWFileUploader1'
-  end
-  object IWButton1: TIWButton
-    AlignWithMargins = False
-    Left = 40
-    Top = 640
-    Width = 121
-    Height = 25
-    Caption = 'Select File'
-    Color = clBtnFace
-    FriendlyName = 'Select File'
-    TabOrder = 5
-  end
-  object IWButton2: TIWButton
-    AlignWithMargins = False
-    Left = 40
-    Top = 675
-    Width = 121
-    Height = 25
-    Caption = 'Upload File'
-    Color = clBtnFace
-    FriendlyName = 'IWButton1'
-    TabOrder = 6
   end
   object ClientDataSet1: TClientDataSet
     Aggregates = <>

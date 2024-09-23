@@ -26,6 +26,7 @@ type
     IWFileUploader5: TIWFileUploader;
     btnSelect: TIWButton;
     btnUpload: TIWButton;
+    IWFileUploader6: TIWFileUploader;
     procedure IWFileUploader1AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
     procedure IWFileUploader2AsyncUploadCompleted(Sender: TObject; var DestPath,
@@ -33,6 +34,8 @@ type
     procedure IWFileUploader3AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
     procedure IWAppFormCreate(Sender: TObject);
+    procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWButton1Click(Sender: TObject);
     procedure IWFileUploader5AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
   public
@@ -70,6 +73,17 @@ procedure TIWForm7.IWAppFormCreate(Sender: TObject);
 begin
   // Create the DataSet so we can use it later
   ClientDataSet1.CreateDataSet;
+end;
+
+procedure TIWForm7.IWButton1AsyncClick(Sender: TObject; EventParams:
+    TStringList);
+begin
+  IWFileUploader6.SelectFile;
+end;
+
+procedure TIWForm7.IWButton1Click(Sender: TObject);
+begin
+  IWFileUploader6.StartUpload;
 end;
 
 procedure TIWForm7.IWFileUploader1AsyncUploadCompleted(Sender: TObject;
