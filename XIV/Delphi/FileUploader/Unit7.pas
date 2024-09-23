@@ -35,7 +35,7 @@ type
       FileName: string; var SaveFile, Overwrite: Boolean);
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
-    procedure IWButton1Click(Sender: TObject);
+    procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWFileUploader5AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
   public
@@ -81,7 +81,8 @@ begin
   IWFileUploader6.SelectFile;
 end;
 
-procedure TIWForm7.IWButton1Click(Sender: TObject);
+procedure TIWForm7.IWButton2AsyncClick(Sender: TObject; EventParams:
+    TStringList);
 begin
   IWFileUploader6.StartUpload;
 end;
@@ -142,19 +143,23 @@ begin
   end;
 end;
 
+// Shared between IWFileUploader5 and IWFileUploader6
 procedure TIWForm7.IWFileUploader5AsyncUploadCompleted(Sender: TObject;
   var DestPath, FileName: string; var SaveFile, Overwrite: Boolean);
 var
   CurDir: string;
   MimeType: string;
 begin
+  if not (Sender is TIWFileUploader) then
+    Exit;
+
   // get the app path
   CurDir := TIWAppInfo.GetAppPath;
 
   MimeType := TIWFileUploader.CheckMimeType;  // this needs IW 15.1.6 or later. If using other version, comment this line to build it
 
   // save in the same application directory, with the same name of the original file. Overwrite if it already exists.
-  IWFileUploader5.SaveToFile(FileName, CurDir + FileName, True);
+  TIWFileUploader(Sender).SaveToFile(FileName, CurDir + FileName, True);
 
   // Inform IWFileUploader that we are taking care of file saving ourselves
   SaveFile := False;

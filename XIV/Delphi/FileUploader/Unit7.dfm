@@ -371,7 +371,7 @@ object IWForm7: TIWForm7
       'fail-icon=')
     AllowDragAndDrop = False
     OnAsyncUploadCompleted = IWFileUploader3AsyncUploadCompleted
-    FriendlyName = 'IWFileUploader2'
+    FriendlyName = 'IWFileUploader3'
   end
   object IWLabel4: TIWLabel
     AlignWithMargins = False
@@ -492,7 +492,7 @@ object IWForm7: TIWForm7
       'upload-fail='
       'success-icon='
       'fail-icon=')
-    FriendlyName = 'IWFileUploader1'
+    FriendlyName = 'IWFileUploader4'
   end
   object IWLabel5: TIWLabel
     AlignWithMargins = False
@@ -613,7 +613,7 @@ object IWForm7: TIWForm7
       'success-icon='
       'fail-icon=')
     OnAsyncUploadCompleted = IWFileUploader5AsyncUploadCompleted
-    FriendlyName = 'IWFileUploader1'
+    FriendlyName = 'IWFileUploader5'
   end
   object btnSelect: TIWButton
     AlignWithMargins = False
@@ -668,8 +668,13 @@ object IWForm7: TIWForm7
     Caption = 'Select File'
     Color = clBtnFace
     FriendlyName = 'Select File'
-    TabOrder = 5
-    OnClick = IWButton1Click
+    ScriptEvents = <
+      item
+        EventCode.Strings = (
+          'IW.FileUploader("IWFILEUPLOADER6").selectFile();')
+        Event = 'onClick'
+      end>
+    TabOrder = 4
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWButton2: TIWButton
@@ -681,7 +686,8 @@ object IWForm7: TIWForm7
     Caption = 'Upload File'
     Color = clBtnFace
     FriendlyName = 'IWButton1'
-    TabOrder = 6
+    TabOrder = 5
+    OnAsyncClick = IWButton2AsyncClick
   end
   object IWFileUploader6: TIWFileUploader
     AlignWithMargins = False
@@ -689,7 +695,8 @@ object IWForm7: TIWForm7
     Top = 640
     Width = 256
     Height = 60
-    TabOrder = 4
+    TabOrder = 6
+    Multiple = True
     TextStrings.DragText = 'Drop files here to upload'
     TextStrings.UploadButtonText = 'Upload a file'
     TextStrings.CancelButtonText = 'Cancel'
@@ -790,8 +797,7 @@ object IWForm7: TIWForm7
       'upload-fail='
       'success-icon='
       'fail-icon=')
-    OnAsyncUploadCompleted = IWFileUploader5AsyncUploadCompleted
-    FriendlyName = 'IWFileUploader1'
+    FriendlyName = 'IWFileUploader6'
   end
   object ClientDataSet1: TClientDataSet
     Aggregates = <>
