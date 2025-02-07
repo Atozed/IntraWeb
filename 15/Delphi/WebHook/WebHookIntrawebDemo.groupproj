@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{77D3D13B-EED3-479D-BAA4-1CE524728B01}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PaymentServer\PaymentServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PaymentApp\PaymentApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PaymentServer">
+        <MSBuild Projects="PaymentServer\PaymentServer.dproj"/>
+    </Target>
+    <Target Name="PaymentServer:Clean">
+        <MSBuild Projects="PaymentServer\PaymentServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PaymentServer:Make">
+        <MSBuild Projects="PaymentServer\PaymentServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PaymentApp">
+        <MSBuild Projects="PaymentApp\PaymentApp.dproj"/>
+    </Target>
+    <Target Name="PaymentApp:Clean">
+        <MSBuild Projects="PaymentApp\PaymentApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PaymentApp:Make">
+        <MSBuild Projects="PaymentApp\PaymentApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PaymentServer;PaymentApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PaymentServer:Clean;PaymentApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PaymentServer:Make;PaymentApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
