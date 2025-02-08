@@ -52,6 +52,11 @@ begin
 
   // Tell IW that it should accept json requests
   RegisterContentType('application/json');
+
+  // Set our money format
+  RegionalSettings.DecimalSeparator := '.';
+  RegionalSettings.ThousandSeparator := ',';
+  RegionalSettings.CurrencyString := '$';
 end;
 
 { TIWServerController }
