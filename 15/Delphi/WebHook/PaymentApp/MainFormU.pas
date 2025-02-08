@@ -118,6 +118,9 @@ begin
   // Process the payment server response
   if Res then
   begin
+    // Since we started the payment we need to enable the monitor that will trigger
+    // the page with success or failure
+    IWMonitor1.Active := True;
     // Indicate to our user session that we are waiting for a payment to be processed
     UserSession.PaymentInitiated(LMessageId, FValue);
   end

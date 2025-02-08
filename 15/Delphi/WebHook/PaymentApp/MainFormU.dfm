@@ -52,8 +52,9 @@ object MainForm: TMainForm
     Top = 376
   end
   object IWMonitor1: TIWMonitor
+    Active = False
     OnAsyncEvent = IWMonitor1AsyncEvent
     Left = 336
-    Top = 384
+    Top = 368
   end
 end
