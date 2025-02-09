@@ -42,7 +42,9 @@ begin
   if aRequest.Files.Count = 1 then begin
     xFile := THttpFile(aRequest.Files[0]);
     // read the json packet into a string
-    s := TIWTextFileReader.ReadAllText(xFile.TempPathName, True);
+    // Users reported having issues with a write lock here while reading the file (Antivirus?),
+    // so the write lock (second parameter of the call) is not active
+    s := TIWTextFileReader.ReadAllText(xFile.TempPathName, False);
     json := TJsonObject.Parse(s) as TJsonObject;
     try
       ProcessPayment(json, aRequest, aReply);
