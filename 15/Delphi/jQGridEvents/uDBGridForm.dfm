@@ -23,7 +23,7 @@ object DBGridForm: TDBGridForm
     Height = 401
     Caption = 'Countries'
     VisibleRowCount = 14
-    Options = [goViewRecords, goCellEdit, goGridView, goHoverRows, goSortable, goZebraStriped, goShowHideBtn, goShowToolbar, goShowPager, goRowSelect, goShowFilterToolbar]
+    Options = [goViewRecords, goCellEdit, goGridView, goHoverRows, goSortable, goZebraStriped, goShowHideBtn, goShowPager, goRowSelect, goShowFilterToolbar]
     DateFormat = 'd-m-Y'
     UI = uiJQuery
     jQueryUIThemeName = 'ui-lightness'
