@@ -16,15 +16,13 @@ object IWForm45: TIWForm45
   DesignLeft = 8
   DesignTop = 8
   object IWButton1: TIWButton
+    AlignWithMargins = False
     Left = 48
     Top = 40
     Width = 193
     Height = 33
     Caption = 'Call Multiply'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWButton1'
     ScriptEvents = <
       item
@@ -39,15 +37,13 @@ object IWForm45: TIWForm45
       end>
   end
   object IWButton3: TIWButton
+    AlignWithMargins = False
     Left = 48
     Top = 108
     Width = 193
     Height = 33
     Caption = 'Call ProcessString'
     Color = clBtnFace
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     FriendlyName = 'IWButton1'
     ScriptEvents = <
       item
@@ -60,6 +56,46 @@ object IWForm45: TIWForm45
           '     return true;'
           '   }'
           ');')
+        Event = 'onClick'
+      end>
+    TabOrder = 3
+  end
+  object IWButton4: TIWButton
+    AlignWithMargins = False
+    Left = 48
+    Top = 180
+    Width = 193
+    Height = 33
+    Caption = 'Call SetCaption'
+    Color = clBtnFace
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <
+      item
+        EventCode.Strings = (
+          'ajaxCall("SetCaption", "&newcaption=Set from JavaScript");')
+        Event = 'onClick'
+      end>
+    TabOrder = 2
+  end
+  object IWButton2: TIWButton
+    AlignWithMargins = False
+    Left = 48
+    Top = 252
+    Width = 193
+    Height = 33
+    Caption = 'Call OtherCallback'
+    Color = clBtnFace
+    FriendlyName = 'IWButton1'
+    ScriptEvents = <
+      item
+        EventCode.Strings = (
+          'ajaxCall("OtherCallback", "", false,'
+          '  function (response) {'
+          '     var obj = JSON.parse(response);'
+          '     alert("Id is: " + obj.id);'
+          '     alert("Name is: " + obj.name);'
+          '  }'
+          '  );')
         Event = 'onClick'
       end>
     TabOrder = 1

@@ -1,13 +1,10 @@
 //
 unit ServerController;
-
 interface
-
 uses
   SysUtils, Classes, IWServerControllerBase, IWBaseForm, HTTPApp,
   // For OnNewSession Event
   IWApplication, IWAppForm, IW.Http.Request, IW.Http.Reply;
-
 type
   TIWServerController = class(TIWServerControllerBase)
     procedure IWServerControllerBaseNewSession(aSession: TIWApplication);
@@ -23,25 +20,19 @@ type
     function GetCSPValue(aReply: THttpReply): string;
   public
   end;
-
   function IWServerController: TIWServerController;
-
 implementation
 {$R *.dfm}
-
 uses
   IWInit, IWGlobal, FDatamodule;
-
 function IWServerController: TIWServerController;
 begin
   Result := TIWServerController(GServerController);
 end;
-
 procedure TIWServerController.IWServerControllerBaseNewSession(aSession: TIWApplication);
 begin
   ASession.Data := TFeaturesDM.Create(ASession);
 end;
-
 procedure TIWServerController.IWServerControllerBaseConfig(Sender: TObject);
 var
   LServerList: string;
@@ -109,5 +100,4 @@ end;
 
 initialization
   TIWServerController.SetServerControllerClass;
-
 end.

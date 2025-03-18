@@ -1,11 +1,10 @@
 object IWServerController: TIWServerController
-  OldCreateOrder = False
   AppName = 'IWAsyncRenderDemo'
   Description = 'IWAsyncRenderDemo'
   DisplayName = 'IW AsyncRender Demo application'
   Port = 8888
   Theme = 'iw-cool'
-  Version = '15.0.0'
+  Version = '15.5.7'
   ShowStartParams = False
   ExceptionLogger.Enabled = True
   JavaScriptOptions.UseUncompressedFiles = True

@@ -29,11 +29,15 @@ type
     IWLabel1: TIWLabel;
     mainTemplate: TIWTemplateProcessorHTML;
     regionTemplate: TIWTemplateProcessorHTML;
+    IWButton6: TIWButton;
+    IWButton7: TIWButton;
     procedure IWButton1Click(Sender: TObject);
     procedure IWButton2Click(Sender: TObject);
     procedure IWButton3Click(Sender: TObject);
     procedure IWButton4Click(Sender: TObject);
     procedure IWButton5Click(Sender: TObject);
+    procedure IWButton6AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWButton7AsyncClick(Sender: TObject; EventParams: TStringList);
   public
   end;
 
@@ -67,6 +71,20 @@ end;
 procedure TformSubTemplates.IWButton5Click(Sender: TObject);
 begin
   WebApplication.ShowMessage('You did click me, now what ?');
+end;
+
+procedure TformSubTemplates.IWButton6AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  regionTemplate.Templates.Default := 'regionSubTemplates1.html';
+  IWRegion1.RefreshAsyncRender;
+end;
+
+procedure TformSubTemplates.IWButton7AsyncClick(Sender: TObject;
+  EventParams: TStringList);
+begin
+  regionTemplate.Templates.Default := 'regionSubTemplates2.html';
+  IWRegion1.RefreshAsyncRender;
 end;
 
 end.

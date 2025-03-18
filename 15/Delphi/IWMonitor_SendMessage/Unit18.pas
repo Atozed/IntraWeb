@@ -63,7 +63,9 @@ end;
 procedure TIWForm18.NotifyAllSessions;
 var
   i: Integer;
+  thisSessionId: string;
 begin
+   thisSessionId := WebApplication.AppID;
   // This will run the annonymous procedure below for all existing sessions
   // For versions of IW before 15.5, you may need to remove the AData parameter below
   // in order to build this
@@ -71,7 +73,9 @@ begin
                     var
                       LSession: TIWApplication absolute aSession;
                     begin
-                      LSession.Status.Value := 1;
+                      // Will send to all sessions except this
+                      if not SameStr(LSession.AppID, thisSessionId) then
+                        LSession.Status.Value := 1;
                     end);
 end;
 

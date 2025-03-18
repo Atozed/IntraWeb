@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        .paybtn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Payment Amount</h2>
+		{%IWEDITVALUE%}
+        <!-- <input type="number" id="amount" placeholder="Enter amount" min="0" step="0.01"> -->
+        <br>
+		{%BTNPAYNOW%}
+    </div>
+</body>
+</html>

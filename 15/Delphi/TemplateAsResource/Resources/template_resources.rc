@@ -1,0 +1,10 @@
+// All resources used by the application
+// jQuery is not part of this script, because IW already renders it
+MAINFORM                RCDATA DISCARDABLE "template\\MainForm.html"
+IW_CSS_BOOTSTRAP        RCDATA DISCARDABLE "template\\css\\bootstrap.css"
+IW_CSS_BOOTSTRAP_MIN    RCDATA DISCARDABLE "template\\css\\bootstrap.min.css"
+IW_CSS_STICKY_MENU      RCDATA DISCARDABLE "template\\css\\sticky-menu.css"
+IW_JS_BOOTSTRAP	        RCDATA DISCARDABLE "template\\js\\bootstrap.js"
+IW_JS_BOOTSTRAP_MIN	    RCDATA DISCARDABLE "template\\js\\bootstrap.min.js"
+IW_JS_JQUERY_EASING_MIN RCDATA DISCARDABLE "template\\js\\jquery.easing.min.js"
+IW_JS_STIKY_MENU        RCDATA DISCARDABLE "template\\js\\sticky-menu.js"

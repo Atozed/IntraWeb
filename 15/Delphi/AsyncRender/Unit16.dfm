@@ -16,6 +16,7 @@ object IWForm16: TIWForm16
   DesignLeft = 2
   DesignTop = 2
   object IWButton1: TIWButton
+    AlignWithMargins = False
     Left = 80
     Top = 56
     Width = 225
@@ -28,18 +29,17 @@ object IWForm16: TIWForm16
     Font.FontVariant = 'Arial'
     Font.Size = 10
     Font.Style = []
+    Font.PxSize = 13
     FriendlyName = 'IWButton1'
     OnAsyncClick = IWButton1AsyncClick
   end
   object IWComboBox1: TIWComboBox
+    AlignWithMargins = False
     Left = 328
     Top = 56
     Width = 233
     Height = 37
     StyleRenderOptions.RenderBorder = False
-    Font.Color = clNone
-    Font.Size = 10
-    Font.Style = []
     Required = True
     TabOrder = 1
     ItemIndex = -1
@@ -59,16 +59,17 @@ object IWForm16: TIWForm16
     NoSelectionText = ''
   end
   object IWText1: TIWText
+    AlignWithMargins = False
     Left = 640
     Top = 56
     Width = 521
     Height = 329
     BGColor = clNone
-    ConvertSpaces = False
     Font.Color = clNone
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 14
     Font.Style = []
+    Font.PxSize = 18
     FriendlyName = 'IWText1'
     Lines.Strings = (
       
@@ -88,6 +89,7 @@ object IWForm16: TIWForm16
     WantReturns = True
   end
   object IWURL1: TIWURL
+    AlignWithMargins = False
     Left = 640
     Top = 415
     Width = 265
@@ -101,6 +103,7 @@ object IWForm16: TIWForm16
     Font.FontFamily = 'Tahoma, Geneva, sans-serif'
     Font.Size = 14
     Font.Style = [fsUnderline]
+    Font.PxSize = 18
     HasTabOrder = True
     TargetOptions.AddressBar = True
     TargetOptions.Menu = True

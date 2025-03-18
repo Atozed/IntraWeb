@@ -1,7 +1,6 @@
 program Features;
 
 uses
-  FastMM4,
   MidasLib,
   Vcl.Controls,
   Forms,
