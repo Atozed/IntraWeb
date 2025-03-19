@@ -12,8 +12,8 @@ type
     IWButton1: TIWButton;
     IWButton2: TIWButton;
     IWLabel2: TIWLabel;
-    procedure IWAppFormCreate(Sender: TObject);
     procedure IWAppFormGenerateForm(aReply: THttpReply; var aHandled: Boolean);
+    procedure IWAppFormRender(Sender: TObject);
     procedure IWButton1Click(Sender: TObject);
     procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
   private
@@ -29,7 +29,7 @@ const
   TimerCode =
     'function setCountdown(objName, duration, displayElement, targetEvent, interval) {' + #13#10 +
     '    var start = Date.now(),' + #13#10 +
-    '	    iMin = interval || 1,' + #13#10 +
+    '	       iMin = interval || 1,' + #13#10 +
     '        diff,' + #13#10 +
     '        minutes,' + #13#10 +
     '        seconds;' + #13#10 +
@@ -40,22 +40,22 @@ const
     '       minutes = (diff / 60) | 0;' + #13#10 +
     '       seconds = (diff % 60) | 0;' + #13#10 +
     '       if (minutes < 0) {' + #13#10 +
-    '         minutes = 0;' + #13#10 +
+    '          minutes = 0;' + #13#10 +
     '       }' + #13#10 +
     '       if (seconds < 0) {' + #13#10 +
-    '         seconds = 0;' + #13#10 +
+    '          seconds = 0;' + #13#10 +
     '       }' + #13#10 +
     '       minutes = minutes < 10 ? "0" + minutes : minutes;' + #13#10 +
     '       seconds = seconds < 10 ? "0" + seconds : seconds;' + #13#10 +
     '       el = IW.$(displayElement);' + #13#10 +
     '       if (el) {' + #13#10 +
-    '         el.innerHTML = minutes + ":" + seconds;' + #13#10 +
+    '          el.innerHTML = minutes + ":" + seconds;' + #13#10 +
     '       }' + #13#10 +
     '       if (window[objName] != null & diff < 0) {' + #13#10 +
-    '  			clearInterval(window[objName]);' + #13#10 +
-    '			if (targetEvent) {' + #13#10 +
-    '				targetEvent();' + #13#10 +
-    '			}' + #13#10 +
+    '  			   clearInterval(window[objName]);' + #13#10 +
+    '			     if (targetEvent) {' + #13#10 +
+    '				      targetEvent();' + #13#10 +
+    '			     }' + #13#10 +
     '       }' + #13#10 +
     '   };' + #13#10 +
     '   internalSetTimer();' + #13#10 +
@@ -67,7 +67,7 @@ const
     'alert("Your session expired!");' +
     '}';
 
-procedure TIWForm44.IWAppFormCreate(Sender: TObject);
+procedure TIWForm44.IWAppFormRender(Sender: TObject);
 begin
   PageContext.AddToJavaScriptOnce(TimerCode);
   PageContext.AddToJavaScriptOnce(EventCode);

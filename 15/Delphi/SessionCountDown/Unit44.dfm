@@ -4,9 +4,9 @@ object IWForm44: TIWForm44
   Width = 555
   Height = 400
   RenderInvisibleControls = True
+  OnRender = IWAppFormRender
   AllowPageAccess = True
   ConnectionMode = cmAny
-  OnCreate = IWAppFormCreate
   OnGenerateForm = IWAppFormGenerateForm
   Background.Fixed = False
   HandleTabs = False
