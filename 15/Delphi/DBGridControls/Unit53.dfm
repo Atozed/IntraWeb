@@ -265,7 +265,7 @@ object IWForm53: TIWForm53
     HasTabOrder = False
     FriendlyName = 'IWLabelEx1'
     Caption = 
-      'To work properly with multilink Colum in grid, this demo require' +
+      'To work properly with multlink Colum in grid, this demo require' +
       's IntraWeb 16.0.9 or later.'
     Image.WebFontClass = 'fas fa-exclamation-circle'
   end
