@@ -4,11 +4,12 @@ interface
 
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
-  IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompLabel;
+  IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl, IWCompLabel,
+  IWCompText;
 
 type
   TIWForm10 = class(TIWAppForm)
-    IWLabel1: TIWLabel;
+    IWText1: TIWText;
   public
   end;
 

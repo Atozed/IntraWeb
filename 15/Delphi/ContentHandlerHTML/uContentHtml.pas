@@ -18,7 +18,9 @@ type
 implementation
 
 uses
-  System.SysUtils, IW.Common.FileStream, ServerController, IWURL, IWMimeTypes;
+  System.SysUtils, IW.Common.FileStream, ServerController, IWMimeTypes,
+  // Change this to IWURL if IW.Common.URL breaks the compiler
+  IW.Common.URL;
 
 constructor TContentHtml.Create(const AFileName: string);
 begin
