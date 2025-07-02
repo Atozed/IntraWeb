@@ -153,7 +153,7 @@ object IWForm11: TIWForm11
     AlignWithMargins = False
     Left = 24
     Top = 14
-    Width = 766
+    Width = 755
     Height = 25
     Font.Color = clWebRED
     Font.Size = 14
@@ -162,8 +162,8 @@ object IWForm11: TIWForm11
     HasTabOrder = False
     FriendlyName = 'IWLabel2'
     Caption = 
-      'This demo only works in a WebKit browser (Chrome) and requires a' +
-      ' web cam:'
+      'This demo works in WebKit/Firefox/Mobile browsers and requires a' +
+      ' camera:'
   end
   object LblStatus: TIWLabel
     AlignWithMargins = False
