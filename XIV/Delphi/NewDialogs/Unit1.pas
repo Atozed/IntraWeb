@@ -16,6 +16,7 @@ type
     chkTitle: TIWCheckBox;
     edtTitle: TIWEdit;
     cbCustomCallback: TIWCheckBox;
+    IWRadioGroup2: TIWRadioGroup;
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
   private
@@ -129,6 +130,8 @@ begin
 end;
 
 procedure TIWForm1.ShowDialogs(const Msg, Title: string; Option: Integer);
+var
+  notificationType: TIWNotifyType;
 begin
   case Option of
     1: WebApplication.ShowMessage(Msg);
@@ -139,7 +142,14 @@ begin
            ShowConfirmationWithCustomCallback(Msg);
        end;
     3: WebApplication.ShowPrompt(Msg,  'MyPromptCallback', Title, 'This is the default value');
-    4: WebApplication.ShowNotification(Msg);
+    4: begin
+         case IWRadioGroup2.ItemIndex of
+          0: notificationType := ntLog;
+          1: notificationType := ntSuccess;
+          2: notificationType := ntError;
+         end;
+         WebApplication.ShowNotification(Msg, notificationType);
+       end;
   end;
 end;
 

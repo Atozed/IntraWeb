@@ -2,7 +2,7 @@ object IWForm1: TIWForm1
   Left = 0
   Top = 0
   Width = 781
-  Height = 400
+  Height = 591
   RenderInvisibleControls = True
   AllowPageAccess = True
   ConnectionMode = cmAny
@@ -13,12 +13,12 @@ object IWForm1: TIWForm1
   LockUntilLoaded = True
   LockOnSubmit = True
   ShowHint = True
-  DesignLeft = 8
-  DesignTop = 8
+  DesignLeft = 2
+  DesignTop = 2
   object IWButton1: TIWButton
     AlignWithMargins = False
     Left = 40
-    Top = 295
+    Top = 335
     Width = 153
     Height = 25
     Caption = 'Show it!'
@@ -42,8 +42,8 @@ object IWForm1: TIWForm1
     AlignWithMargins = False
     Left = 40
     Top = 34
-    Width = 55
-    Height = 16
+    Width = 59
+    Height = 17
     HasTabOrder = False
     FriendlyName = 'IWLabel1'
     Caption = 'Message'
@@ -71,7 +71,7 @@ object IWForm1: TIWForm1
   object chkTitle: TIWCheckBox
     AlignWithMargins = False
     Left = 64
-    Top = 192
+    Top = 232
     Width = 233
     Height = 21
     Caption = 'Also add Title to the dialog window'
@@ -85,7 +85,7 @@ object IWForm1: TIWForm1
   object edtTitle: TIWEdit
     AlignWithMargins = False
     Left = 64
-    Top = 219
+    Top = 259
     Width = 225
     Height = 21
     StyleRenderOptions.RenderBorder = False
@@ -97,7 +97,7 @@ object IWForm1: TIWForm1
   object cbCustomCallback: TIWCheckBox
     AlignWithMargins = False
     Left = 64
-    Top = 252
+    Top = 292
     Width = 601
     Height = 21
     Caption = 
@@ -109,5 +109,22 @@ object IWForm1: TIWForm1
     TabOrder = 2
     Checked = False
     FriendlyName = 'chkTitle'
+  end
+  object IWRadioGroup2: TIWRadioGroup
+    AlignWithMargins = False
+    Left = 64
+    Top = 192
+    Width = 273
+    Height = 17
+    SubmitOnAsyncEvent = True
+    RawText = False
+    Editable = True
+    FriendlyName = 'IWRadioGroup2'
+    ItemIndex = 0
+    Items.Strings = (
+      'Log'
+      'Success'
+      'Error')
+    Layout = glHorizontal
   end
 end
