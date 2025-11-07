@@ -42,9 +42,6 @@ implementation
 
 {$R *.dfm}
 
-uses
-  IWCertManager;
-
 procedure TIWForm2.IWGradButton13AsyncClick(Sender: TObject;
   EventParams: TStringList);
 begin
