@@ -11,6 +11,6 @@ object IWServerController: TIWServerController
   JavaScriptOptions.RenderjQuery = False
   SessionOptions.LockSessionTimeout = 30000
   OnNewSession = IWServerControllerBaseNewSession
-  Height = 458
-  Width = 485
+  Height = 621
+  Width = 875
 end

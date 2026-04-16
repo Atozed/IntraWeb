@@ -6,7 +6,8 @@ interface
 uses
   Classes, SysUtils, IWAppForm, IWApplication, IWColor, IWTypes, Vcl.Controls,
   IWVCLBaseControl, IWBaseControl, IWBaseHTMLControl, IWControl,
-  IWCompFileUploader, IWCompLabel, Data.DB, Datasnap.DBClient, IWCompButton;
+  IWCompFileUploader, IWCompLabel, Data.DB, Datasnap.DBClient, IWCompButton,
+  IWCompMemo;
 
 type
   TIWForm7 = class(TIWAppForm)
@@ -27,6 +28,7 @@ type
     btnSelect: TIWButton;
     btnUpload: TIWButton;
     IWFileUploader6: TIWFileUploader;
+    IWMemo1: TIWMemo;
     procedure IWFileUploader1AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
     procedure IWFileUploader2AsyncUploadCompleted(Sender: TObject; var DestPath,
@@ -36,8 +38,14 @@ type
     procedure IWAppFormCreate(Sender: TObject);
     procedure IWButton1AsyncClick(Sender: TObject; EventParams: TStringList);
     procedure IWButton2AsyncClick(Sender: TObject; EventParams: TStringList);
+    procedure IWFileUploader4AsyncSelectFile(Sender: TObject; EventParams:
+        TStringList);
     procedure IWFileUploader5AsyncUploadCompleted(Sender: TObject; var DestPath,
       FileName: string; var SaveFile, Overwrite: Boolean);
+    procedure IWFileUploader1AsyncUploadSuccess(Sender: TObject; EventParams: TStringList);
+    procedure LogEvent(const aComponentName, aEventName: string);
+    procedure IWFileUploader1AsyncUploadError(Sender: TObject;
+      EventParams: TStringList);
   public
   end;
 
@@ -67,7 +75,6 @@ begin
     ds.FreeBookmark(Bookmark);
   end;
 end;
-
 
 procedure TIWForm7.IWAppFormCreate(Sender: TObject);
 begin
@@ -100,6 +107,19 @@ begin
 
   // Inform IWFileUploader that we are taking care of file saving ourselves
   SaveFile := False;
+
+  LogEvent(TComponent(Sender).Name, 'OnAsyncUploadCompleted');
+end;
+
+procedure TIWForm7.IWFileUploader1AsyncUploadError(Sender: TObject;
+  EventParams: TStringList);
+begin
+  LogEvent(TComponent(Sender).Name, 'OnAsyncUploadError');
+end;
+
+procedure TIWForm7.IWFileUploader1AsyncUploadSuccess(Sender: TObject; EventParams: TStringList);
+begin
+  LogEvent(TComponent(Sender).Name, 'OnAsyncUploadSuccess');
 end;
 
 procedure TIWForm7.IWFileUploader2AsyncUploadCompleted(Sender: TObject;
@@ -143,6 +163,12 @@ begin
   end;
 end;
 
+procedure TIWForm7.IWFileUploader4AsyncSelectFile(Sender: TObject; EventParams:
+    TStringList);
+begin
+//
+end;
+
 // Shared between IWFileUploader5 and IWFileUploader6
 procedure TIWForm7.IWFileUploader5AsyncUploadCompleted(Sender: TObject;
   var DestPath, FileName: string; var SaveFile, Overwrite: Boolean);
@@ -163,6 +189,11 @@ begin
 
   // Inform IWFileUploader that we are taking care of file saving ourselves
   SaveFile := False;
+end;
+
+procedure TIWForm7.LogEvent(const aComponentName, aEventName: string);
+begin
+  IWMemo1.Lines.Add('Event triggered on ' + aComponentName + ': ' + aEventName)
 end;
 
 initialization
